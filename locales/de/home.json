@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "title": "Elegantes Geschirr für jeden Anlass",
+    "subtitle": "Handgefertigte Keramik und modernes Design",
+    "cta": "Kollektion entdecken"
+  },
+  "features": {
+    "quality": { "title": "Hohe Qualität", "desc": "Jedes Stück wird sorgfältig gefertigt" },
+    "delivery": { "title": "Schnelle Lieferung", "desc": "Versand innerhalb von 2–3 Werktagen" },
+    "returns": { "title": "Einfache Rückgabe", "desc": "30 Tage Rückgaberecht" }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "hero": { "title": "Keramikk kolleksjon", "subtitle": "Håndlaget. Tidløst. Ditt.", "cta": "Kjøp nå" },
+  "offer": { "title": "Begrenset tilbud", "desc": "Kun for en begrenset tid – 20% rabatt på all keramikk", "badge": "–20%" },
+  "trust": { "reviews": "Over 500 fornøyde kunder", "shipping": "Gratis frakt over 500 kr", "handmade": "100% håndlaget" }
+}

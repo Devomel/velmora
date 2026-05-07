@@ -1,0 +1,5 @@
+{
+  "hero": { "title": "Keramik Kollektion", "subtitle": "Handgemacht. Zeitlos. Ihr.", "cta": "Jetzt kaufen" },
+  "offer": { "title": "Limitiertes Angebot", "desc": "Nur für kurze Zeit – 20% Rabatt auf alle Keramikprodukte", "badge": "–20%" },
+  "trust": { "reviews": "Über 500 zufriedene Kunden", "shipping": "Kostenloser Versand ab 50€", "handmade": "100% handgemacht" }
+}

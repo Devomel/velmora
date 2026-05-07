@@ -1,0 +1,6 @@
+{
+  "nav": { "home": "Startseite", "about": "Über uns", "cart": "Warenkorb" },
+  "footer": { "rights": "Alle Rechte vorbehalten" },
+  "cart": { "empty": "Ihr Warenkorb ist leer", "total": "Gesamt", "checkout": "Zur Kasse" },
+  "buttons": { "buy": "Kaufen", "more": "Mehr erfahren", "back": "Zurück" }
+}

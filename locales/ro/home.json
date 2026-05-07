@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "title": "Veselă elegantă pentru orice ocazie",
+    "subtitle": "Ceramică lucrată manual și design modern",
+    "cta": "Descoperă colecția"
+  },
+  "features": {
+    "quality": { "title": "Calitate înaltă", "desc": "Fiecare piesă este realizată cu grijă" },
+    "delivery": { "title": "Livrare rapidă", "desc": "Expediere în 2–3 zile lucrătoare" },
+    "returns": { "title": "Returnare simplă", "desc": "30 de zile drept de retur" }
+  }
+}

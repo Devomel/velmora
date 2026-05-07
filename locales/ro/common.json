@@ -1,0 +1,6 @@
+{
+  "nav": { "home": "Acasă", "about": "Despre noi", "cart": "Coș" },
+  "footer": { "rights": "Toate drepturile rezervate" },
+  "cart": { "empty": "Coșul tău este gol", "total": "Total", "checkout": "Finalizează comanda" },
+  "buttons": { "buy": "Cumpără", "more": "Află mai mult", "back": "Înapoi" }
+}

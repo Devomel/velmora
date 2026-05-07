@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "title": "Elegant servise til enhver anledning",
+    "subtitle": "Håndlaget keramikk og moderne design",
+    "cta": "Utforsk kolleksjonen"
+  },
+  "features": {
+    "quality": { "title": "Høy kvalitet", "desc": "Hvert stykke er nøye håndlaget" },
+    "delivery": { "title": "Rask levering", "desc": "Forsendelse innen 2–3 virkedager" },
+    "returns": { "title": "Enkel retur", "desc": "30 dagers returrett" }
+  }
+}

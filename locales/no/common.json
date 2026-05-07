@@ -1,0 +1,6 @@
+{
+  "nav": { "home": "Hjem", "about": "Om oss", "cart": "Handlekurv" },
+  "footer": { "rights": "Alle rettigheter forbeholdt" },
+  "cart": { "empty": "Handlekurven din er tom", "total": "Totalt", "checkout": "Gå til kassen" },
+  "buttons": { "buy": "Kjøp", "more": "Les mer", "back": "Tilbake" }
+}
