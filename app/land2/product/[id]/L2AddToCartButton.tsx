@@ -1,0 +1,33 @@
+'use client';
+
+import { useState } from 'react';
+import { useL2Cart } from '../../components/L2CartProvider';
+import type { L2CartItem } from '../../components/L2CartProvider';
+
+type Props = { item: Omit<L2CartItem, 'qty'>; label: string };
+
+export default function L2AddToCartButton({ item, label }: Props) {
+  const { addItem } = useL2Cart();
+  const [added, setAdded] = useState(false);
+
+  const handleClick = () => {
+    addItem(item);
+    setAdded(true);
+    setTimeout(() => setAdded(false), 1800);
+  };
+
+  return (
+    <button
+      onClick={handleClick}
+      className={`w-full flex items-center justify-center gap-3 py-4 text-sm font-semibold uppercase tracking-wider transition-colors ${
+        added ? 'bg-[#B91C1C] text-white' : 'bg-[#DC2626] hover:bg-[#B91C1C] text-white'
+      }`}
+    >
+      {added ? (
+        <><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg><span>✓</span></>
+      ) : (
+        <><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0" /></svg>{label}</>
+      )}
+    </button>
+  );
+}

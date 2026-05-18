@@ -1,30 +1,29 @@
-import { getMessages } from "@/lib/i18n";
+import { getMessages } from '@/lib/i18n';
+import { PRODUCT_DATA } from '@/lib/products';
+import L2Hero from './components/L2Hero';
+import L2Stats from './components/L2Stats';
+import L2Usp from './components/L2Usp';
+import L2Benefits from './components/L2Benefits';
+import L2Catalog from './components/L2Catalog';
+import L2Reviews from './components/L2Reviews';
+import L2Offer from './components/L2Offer';
+import L2Footer from './components/L2Footer';
+
+const LOGO_TEXT = 'Scarlet Table';
 
 export default async function Land2Page() {
   const { land2 } = await getMessages();
+
   return (
-    <div className="min-h-screen bg-stone-50">
-      <section className="py-32 px-4 text-center">
-        <span className="inline-block bg-stone-900 text-white text-xs px-4 py-1 mb-6">
-          {land2.offer.badge}
-        </span>
-        <h1 className="text-5xl font-light text-stone-900 mb-4">{land2.hero.title}</h1>
-        <p className="text-stone-500 text-lg mb-10">{land2.hero.subtitle}</p>
-        <button className="border border-stone-900 text-stone-900 px-10 py-4 text-sm hover:bg-stone-900 hover:text-white transition-colors">
-          {land2.hero.cta}
-        </button>
-      </section>
-      <section className="bg-white py-20 px-4 text-center max-w-2xl mx-auto">
-        <h2 className="text-2xl font-light mb-4">{land2.offer.title}</h2>
-        <p className="text-gray-500">{land2.offer.desc}</p>
-      </section>
-      <section className="py-12 px-4">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-sm text-stone-600">
-          <div>{land2.trust.reviews}</div>
-          <div>{land2.trust.shipping}</div>
-          <div>{land2.trust.handmade}</div>
-        </div>
-      </section>
+    <div className="min-h-screen">
+      <L2Hero t={land2.hero} />
+      <L2Stats items={land2.stats} />
+      <L2Usp t={land2.usp} />
+      <L2Benefits t={land2.benefits} />
+      <L2Catalog t={land2.catalog} data={PRODUCT_DATA} />
+      <L2Reviews t={land2.reviews} />
+      <L2Offer t={land2.offer} />
+      <L2Footer t={land2.footer} logoText={LOGO_TEXT} />
     </div>
   );
 }

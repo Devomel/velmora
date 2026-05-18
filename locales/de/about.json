@@ -1,0 +1,23 @@
+{
+  "meta": { "title": "Über uns — cookware market", "description": "Wir sind ein europäisches Online-Geschäft für Premium-Tischgeschirr." },
+  "badge": "Unsere Geschichte",
+  "title": "Wer wir sind",
+  "subtitle": "cookware market ist ein europäisches Online-Geschäft für Premium-Tischgeschirr. Wir verbinden Hersteller in Polen, Tschechien und Portugal direkt mit Ihrem Esstisch.",
+  "story": "Seit 2019 liefern wir hochwertige Keramik, Porzellan und Glas an Haushalte und Gastronomiebetriebe in ganz Europa. Jedes Produkt wird sorgfältig ausgewählt, auf Qualität geprüft und direkt vom Hersteller bezogen – ohne Zwischenhändler. So erhalten Sie erstklassige Qualität zu fairen Preisen.",
+  "values": [
+    { "title": "Qualität zuerst", "desc": "Jeder Artikel wird vor dem Versand kontrolliert. Wir arbeiten nur mit zertifizierten Herstellern zusammen." },
+    { "title": "Direktbezug", "desc": "Kein Zwischenhändler. Direkt vom Hersteller – für bessere Preise und garantierte Echtheit." },
+    { "title": "Nachhaltigkeit", "desc": "Unsere Lieferpartner setzen auf CO₂-reduzierte Logistik. Verpackungen sind recycelbar." },
+    { "title": "Kundenservice", "desc": "Echte Menschen antworten – keine Bots. Antwort innerhalb von 5 Minuten per Chat oder E-Mail." }
+  ],
+  "stats": [
+    { "value": "2 847", "label": "zufriedene Kunden" },
+    { "value": "200+", "label": "Produkte im Sortiment" },
+    { "value": "4,9 / 5", "label": "Ø-Bewertung" },
+    { "value": "seit 2019", "label": "auf dem Markt" }
+  ],
+  "teamTitle": "Unser Team",
+  "teamSubtitle": "Wir sind ein kleines, leidenschaftliches Team, das Tischkultur liebt und lebt.",
+  "ctaTitle": "Fragen? Schreiben Sie uns.",
+  "cta": "Kontakt aufnehmen"
+}

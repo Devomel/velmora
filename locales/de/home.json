@@ -1,12 +1,650 @@
 {
-  "hero": {
-    "title": "Elegantes Geschirr für jeden Anlass",
-    "subtitle": "Handgefertigte Keramik und modernes Design",
-    "cta": "Kollektion entdecken"
+  "header": {
+    "benefit1": "Lieferung in 2–5 Tagen per DHL",
+    "benefit2": "Qualitätsgarantie 14 Tage",
+    "benefit3": "Zahlung per Karte, PayPal oder Klarna",
+    "searchPlaceholder": "Geschirr suchen...",
+    "cartLabel": "Warenkorb"
   },
-  "features": {
-    "quality": { "title": "Hohe Qualität", "desc": "Jedes Stück wird sorgfältig gefertigt" },
-    "delivery": { "title": "Schnelle Lieferung", "desc": "Versand innerhalb von 2–3 Werktagen" },
-    "returns": { "title": "Einfache Rückgabe", "desc": "30 Tage Rückgaberecht" }
+  "hero": {
+    "timerLabel": "Angebot endet in:",
+    "title": "Geschirr, das",
+    "titleHighlight": "jeden Tisch besonders macht",
+    "subtitle": "Porzellan, Keramik und Glas – vom Hersteller. Kostenloser Versand ab 50 €. Spülmaschinenfest.",
+    "cta": "Katalog ansehen",
+    "ctaSecondary": "Unsere Garantien",
+    "ratingText": "4,9 · 247 Bewertungen",
+    "saleBadge": "−20%",
+    "advantages": [
+      {
+        "title": "Geprüfte Qualität",
+        "desc": "Jedes Stück wird vor dem Versand kontrolliert"
+      },
+      {
+        "title": "Lieferung 2–5 Werktage",
+        "desc": "DHL / DPD deutschlandweit – schnell und zuverlässig"
+      },
+      {
+        "title": "14 Tage Rückgabe",
+        "desc": "Nicht passend – vollständige Rückerstattung ohne Fragen"
+      },
+      {
+        "title": "Über 500 Kunden",
+        "desc": "Bewertung 4,9 / 5 auf Google und Trustpilot"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "2 847",
+      "label": "zufriedene Kunden",
+      "sub": "in den letzten 2 Jahren"
+    },
+    {
+      "value": "4,9",
+      "label": "Ø-Bewertung",
+      "sub": "Google · Trustpilot"
+    },
+    {
+      "value": "5+",
+      "label": "Jahre auf dem Markt",
+      "sub": "seit 2019"
+    }
+  ],
+  "catalog": {
+    "badge": "Sortiment",
+    "title": "Geschirrkatalog",
+    "subtitle": "Über 200 Positionen. Wöchentliche Updates.",
+    "addToCart": "In den Warenkorb",
+    "loadMore": "Mehr laden",
+    "empty": "Keine Produkte gefunden. Bitte ändern Sie die Filter.",
+    "badges": {
+      "sale": "Angebot",
+      "new": "Neu"
+    },
+    "categoryMap": {
+      "all": "Alle",
+      "pans": "Pfannen",
+      "pots": "Töpfe",
+      "accessories": "Zubehör",
+      "sets": "Sets"
+    },
+    "priceFilters": [
+      "Alle Preise",
+      "Günstig",
+      "Mittelklasse",
+      "Premium"
+    ],
+    "ratingAll": "Alle Bewertungen",
+    "ratingFrom4": "ab 4 Sterne",
+    "rating5": "5 Sterne",
+    "products": [
+      {
+        "name": "Pfannen-Set Berlin Krauff ⌀26cm und ⌀28cm",
+        "material": "Geschmiedetes Aluminium",
+        "description": "Pfanne Berlin Krauff ⌀28 cm, Pfanne Berlin Krauff ⌀26 cm",
+        "features": [
+          "Geschmiedetes Aluminium",
+          "Gleichmäßige Erwärmung und Antihaftbeschichtung",
+          "Bequemer und ergonomischer Griff",
+          "Geeignet für intensiven Einsatz",
+          "Verzerrungsresistente Pfanne"
+        ]
+      },
+      {
+        "name": "Tiefe Pfanne 28 cm Krauff Fry Power",
+        "material": "Innovative Antihaftbeschichtung der neuen Generation",
+        "description": "Tiefe Pfanne Fry Power mit 28 cm Durchmesser",
+        "features": [
+          "Innovative Antihaftbeschichtung der neuen Generation",
+          "Gleichmäßige Erwärmung über die gesamte Fläche",
+          "Bequemer ergonomischer Griff",
+          "Geeignet für alle Herdarten",
+          "Verzerrungsresistente Pfanne"
+        ]
+      },
+      {
+        "name": "Pfannen-Set Transform Krauff",
+        "material": "Abnehmbarer Griff – zum Braten und Backen im Ofen geeignet",
+        "description": "Pfannkuchenpfanne Transform Krauff 24 cm, Universalpfanne Transform Krauff 26 cm, 24cm",
+        "features": [
+          "Abnehmbarer Griff – zum Braten und Backen im Ofen geeignet",
+          "Geschmiedetes Aluminium",
+          "Gleichmäßige Erwärmung und Antihaftbeschichtung",
+          "Bequemer und ergonomischer Griff",
+          "Geeignet für intensiven Einsatz",
+          "Verzerrungsresistente Pfanne"
+        ]
+      },
+      {
+        "name": "Topfset mit Schöpfkelle Steil + GESCHENKE: Pfannenwender, Schöpflöffel, Kartoffelstampfer",
+        "material": "Edelstahl",
+        "description": "Topf mit Deckel 5,8 l; Topf mit Deckel 4,5 l; Topf mit Deckel 3,4 l; Topf mit Deckel 2,5 l; Topf mit Deckel 1,7 l; Schöpfkelle mit Deckel 1,2 l; Pfannenwender; Schöpflöffel; Kartoffelstampfer",
+        "features": [
+          "Edelstahl",
+          "5-lagiger Kapselböden",
+          "Sechs Elemente für jede Aufgabe",
+          "Geeignet für alle Herdarten"
+        ]
+      },
+      {
+        "name": "Kochgeschirr-Set 12-teilig Krauff Saporis und Pfannen Berlin 26, 28 cm",
+        "material": "5-lagiger Kapselboden;",
+        "description": "Töpfe mit Deckeln: 1,5 l 2,0 l 3,0 l 5,0 l Bratentopf 3,0 l mit Deckel Schöpfkelle 1,5 l mit Deckel Pfanne Berlin 26 cm, 28 cm",
+        "features": [
+          "5-lagiger Kapselboden;",
+          "Edelstahl der Premiumklasse;",
+          "Glasdeckel ermöglichen die Kontrolle des Gerichts ohne Wärmeverlust;",
+          "Griffe erhitzen sich nicht;",
+          "Vielseitigkeit: Set kompatibel mit allen Herdarten, einschließlich Induktion."
+        ]
+      },
+      {
+        "name": "Topfset Steil Krauff mit Schöpfkelle",
+        "material": "5-lagiger wärmespeichernder Boden,",
+        "description": "Schöpfkelle 1,2l mit Deckel Steil ⌀14cm; Topf 1,7l mit Glasdeckel Steil ⌀16cm; Topf 2,5l mit Glasdeckel Steil ⌀18cm; Topf 3,4l mit Glasdeckel Steil ⌀20cm; Topf 4,5l mit Glasdeckel Steil ⌀22cm; Topf 5,8l mit Glasdeckel Steil ⌀24cm;",
+        "features": [
+          "5-lagiger wärmespeichernder Boden,",
+          "hochwertiger Edelstahl (18/10),",
+          "Deckel mit Dampfventil, Maßskala,",
+          "spülmaschinenfest."
+        ]
+      },
+      {
+        "name": "Topfset Steil Krauff + GESCHENK: Pfannkuchenpfanne 24 cm Fry Power",
+        "material": "Edelstahl",
+        "description": "Topf 5,8 l Topf 4,5 l Topf 3,4 l Topf 2,5 l Topf 1,7 l Schöpfkelle 1,2 l Pfannkuchenpfanne 24 cm Fry Power",
+        "features": [
+          "Edelstahl",
+          "5-lagiger Kapselboden",
+          "Gleichmäßige Erwärmung",
+          "Geeignet für alle Herdarten",
+          "Deckel aus gehärtetem Glas"
+        ]
+      },
+      {
+        "name": "Topfset Prime Chef Krauff mit Bratentopf",
+        "material": "5-lagiger wärmespeichernder Boden,",
+        "description": "Schöpfkelle Prime Chef Krauff 2,1 l, 16 cm mit Deckel; Topf Prime Chef Krauff 3,8 l, 20 cm mit Deckel; Topf Prime Chef Krauff 6,3 l, 24 cm mit Deckel; Pfanne Prime Chef Krauff 24 cm mit Antihaftbeschichtung;",
+        "features": [
+          "5-lagiger wärmespeichernder Boden,",
+          "Hochwertiger Edelstahl (18/10),",
+          "Deckel mit Dampfventil."
+        ]
+      },
+      {
+        "name": "Küchen-Set \"Premium\"",
+        "material": "5-lagiger Kapselboden;",
+        "description": "Topf 1,8 l mit Deckel; Topf 2,5 l mit Deckel; Topf 3,5 l mit Deckel; Topf 6,3 l mit Deckel;",
+        "features": [
+          "5-lagiger Kapselboden;",
+          "Edelstahl der Premiumklasse;",
+          "Bequeme Griffe und hitzebeständige Glasdeckel;",
+          "Spezielle Konstruktion von Topf und Deckel zum Abgießen von Flüssigkeiten."
+        ]
+      },
+      {
+        "name": "Topf Smart Fry Krauff 6,6l mit Glasdeckel +GESCHENK: Pfannenwender, Schöpflöffel und Kartoffelstampfer",
+        "material": "Robustes geschmiedetes Aluminium",
+        "description": "Topf Krauff Smart Fry 6,6 l Ø28 cm mit Deckel Pfannenwender Krauff Schöpflöffel Krauff Kartoffelstampfer Krauff",
+        "features": [
+          "Robustes geschmiedetes Aluminium",
+          "Antihaftbeschichtung Greblon C2",
+          "Temperaturanzeige in Form einer Flamme",
+          "Griffe mit Soft-Touch-Beschichtung",
+          "Kompatibel mit allen Herdarten, einschließlich Induktion"
+        ]
+      },
+      {
+        "name": "Töpfe Krauff Serie Winzig 1,2 l und 0,7 l",
+        "material": "5-lagiger wärmespeichernder Boden,",
+        "description": "Topf Winzig mit Deckel 1,2 l; Topf Winzig mit Deckel 0,7 l;",
+        "features": [
+          "5-lagiger wärmespeichernder Boden,",
+          "Hochwertiger Edelstahl (18/10),",
+          "Deckel mit Dampfventil."
+        ]
+      },
+      {
+        "name": "Topfset Elite Krauff 1,3l, 1,9l, 4,7l",
+        "material": "5-lagiger wärmespeichernder Boden.",
+        "description": "Topf mit Deckel 1,9 l 16 cm, Topf mit Deckel 1,3 l 14 cm, Topf mit Deckel 4,7 l 22 cm, Topf mit Deckel 6,1 l 24 cm",
+        "features": [
+          "5-lagiger wärmespeichernder Boden.",
+          "Ergonomische Griffe mit Soft-Touch-Beschichtung.",
+          "Hitzebeständige Litermarkierung.",
+          "Hitzebeständiges Glas mit Dampfventil."
+        ]
+      },
+      {
+        "name": "Topfset Cook&Joy 4,6l, 3,5l, 1,8l und Pfannen Smart Fry Krauff + GESCHENKE: Pfannkuchenpfanne Smart Fry",
+        "material": "Heizungsanzeige in Form einer Flamme innen",
+        "description": "",
+        "features": [
+          "Heizungsanzeige in Form einer Flamme innen",
+          "Hitzebeständiger Glasdeckel – Kontrolle ohne Öffnen.",
+          "Edelstahl 18/10 – zuverlässige Basis zum Kochen."
+        ]
+      },
+      {
+        "name": "Topf Krauff Moxie 6,5 l +GESCHENK: Untersetzer Krauff Galaxy",
+        "material": "Wandstärke 0,5mm;",
+        "description": "Topf Krauff Moxie mit Glasdeckel 6,5 l ⌀24 cm; Untersetzer für Heißes Krauff Galaxy.",
+        "features": [
+          "Wandstärke 0,5mm;",
+          "Griffe mit Silikoneinlagen;",
+          "5-lagiger wärmespeichernder Induktionsboden;",
+          "Spiegelpolierung innen und außen;",
+          "Möglichkeit zum Abgießen von Flüssigkeiten dank der Topfkonstruktion (Ausguss), spezieller Deckel mit Abflussöffnungen."
+        ]
+      },
+      {
+        "name": "Topf mit Deckel Smart Fry 2,3l, 6,6l",
+        "material": "5-lagiger Kapselboden;",
+        "description": "Topf mit Deckel Smart Fry 2,3l, Topf mit Deckel Smart Fry 6,6l",
+        "features": [
+          "5-lagiger Kapselboden;",
+          "Kompatibel mit allen Herdarten;",
+          "Edelstahl 18/10 der Premiumklasse;"
+        ]
+      },
+      {
+        "name": "Set aus 2 Töpfen Prime Chef Krauff 3,6l, 6,1l + GESCHENK: Pfannenwender, Schöpflöffel, Pinsel",
+        "material": "Edelstahl 18/10;",
+        "description": "Topf Prime Chef Krauff 6,1 l Glasdeckel Topf Prime Chef Krauff 3,6 l Glasdeckel Pfannenwender Galaxy Schöpflöffel Galaxy Pinsel Galaxy",
+        "features": [
+          "Edelstahl 18/10;",
+          "5-lagiger Kapselboden;",
+          "Kompatibel mit allen Herdarten;",
+          "Klappbare Bakelit-Griffe;",
+          "Integrierte Maßskala;",
+          "Glasdeckel."
+        ]
+      },
+      {
+        "name": "Topf mit Deckel 3,4 l Steil und Grillpfanne",
+        "material": "5-lagiger wärmespeichernder Boden;",
+        "description": "Topf aus Edelstahl 3,4 l Ø20 cm Krauff; Silikonlöffel Schoco.",
+        "features": [
+          "5-lagiger wärmespeichernder Boden;",
+          "Hochwertiger Edelstahl (18/10);",
+          "Deckel mit Dampfventil;",
+          "Maßskala;",
+          "Spülmaschinenfest;",
+          "Kompatibel mit allen Herdarten"
+        ]
+      },
+      {
+        "name": "Topfset Steil und Pfanne Hamburg",
+        "material": "Edelstahl 18/10",
+        "description": "Topf Krauff Steil 4,5 l mit Deckel Topf Krauff Steil 3,4 l mit Deckel Pfanne Hamburg 20 cm",
+        "features": [
+          "Edelstahl 18/10",
+          "Antihaftbeschichtung",
+          "Maßskala in den Töpfen",
+          "Hitzebeständige Griffe mit Nieten",
+          "Geeignet für alle Herdarten"
+        ]
+      },
+      {
+        "name": "Topfset Fry Power",
+        "material": "Geschmiedetes Aluminium;",
+        "description": "Topf Fry Power 2,3 l mit Deckel; Topf Fry Power 4,2 l mit Deckel; Topf Fry Power 6,4 l mit Deckel;",
+        "features": [
+          "Geschmiedetes Aluminium;",
+          "Antihaftbeschichtung PTFE;",
+          "Äußere Marmorierung;",
+          "Glasdeckel mit Dampfventil;",
+          "Kompatibel mit allen Herdarten."
+        ]
+      },
+      {
+        "name": "Set aus 2 Töpfen Steil Krauff und Schöpfkelle 1,2 l Steil",
+        "material": "5-lagiger wärmespeichernder Boden;",
+        "description": "Topf 3,4l mit Glasdeckel Steil 20cm; Topf 4,5l mit Glasdeckel Steil 22cm; Schöpfkelle 1,2l mit Glasdeckel Durchmesser 14cm;",
+        "features": [
+          "5-lagiger wärmespeichernder Boden;",
+          "Hochwertiger Edelstahl (18/10);",
+          "Deckel mit Dampfventil; Maßskala;",
+          "Spülmaschinenfest."
+        ]
+      },
+      {
+        "name": "Topf mit Deckel 2,7l und Schöpfkelle mit Deckel 2l Prime Chef Krauff",
+        "material": "Geeignet für alle Herdarten",
+        "description": "Topf mit Deckel 2,7 l ⌀18cm Prime Chef; Schöpfkelle mit Deckel 2 l ⌀16cm Prime Chef;",
+        "features": [
+          "Geeignet für alle Herdarten",
+          "5-lagiger wärmespeichernder Boden",
+          "Ergonomische Griffe",
+          "Hitzebeständige Litermarkierung",
+          "Hitzebeständiges Glas mit Dampfventil"
+        ]
+      },
+      {
+        "name": "Topfset Prime Chef Krauff 8-teilig",
+        "material": "5-lagiger wärmespeichernder Boden.",
+        "description": "Schöpfkelle mit Deckel 2l Ø 16cm; Topf mit Deckel 2,7l Ø 18cm; Topf mit Deckel 4,7l Ø 22cm; Topf mit Deckel 2,0 l ⌀16 cm;",
+        "features": [
+          "5-lagiger wärmespeichernder Boden.",
+          "Ergonomische Griffe.",
+          "Hitzebeständige Litermarkierung.",
+          "Hitzebeständiges Glas mit Dampfventil."
+        ]
+      },
+      {
+        "name": "Topfset mit Schöpfkelle 10-teilig Cook&Joy",
+        "material": "Edelstahl 18/10 — Robustheit und Hygiene",
+        "description": "Schöpfkelle 1,8 l mit Deckel Topf 2,5 l Topf 3,5 l Topf 4,6 l Topf 5,8 l",
+        "features": [
+          "Edelstahl 18/10 — Robustheit und Hygiene",
+          "5-lagiger Kapselboden — gleichmäßige Wärme ohne Anbrennen",
+          "Funktionale Deckel aus gehärtetem Glas",
+          "Innere Maßskala — Präzision für tägliche Rezepte"
+        ]
+      },
+      {
+        "name": "Topfset Elegance und Schöpfkelle",
+        "material": "Möglichkeit zum Abgießen von Flüssigkeiten beim Fixieren des Deckels mit beweglichen Seitengriffen;",
+        "description": "16x10,5cm Schöpfkelle mit Deckel, 2,0l 20x11,5cm Topf mit Deckel, 3,7l 24x14,5cm Topf mit Deckel, 6,3l Pfanne mit abnehmbarem Griff, Ø 26cm.",
+        "features": [
+          "Möglichkeit zum Abgießen von Flüssigkeiten beim Fixieren des Deckels mit beweglichen Seitengriffen;",
+          "Deckelgriff-Geometrie ermöglicht die Aufnahme von Küchengeräten;",
+          "Griffe mit Soft-Touch-Beschichtung."
+        ]
+      },
+      {
+        "name": "Topf 6,3 l Herzog Krauff",
+        "material": "Deckel mit Abflussöffnungen.",
+        "description": "Topf Krauff Herzog, mit Glasdeckel, 24 cm, 6,3 l",
+        "features": [
+          "Deckel mit Abflussöffnungen.",
+          "5-lagiger wärmespeichernder Boden.",
+          "Litermarkierung"
+        ]
+      },
+      {
+        "name": "Topfset mit Deckeln Steil Krauff + GESCHENKE: Schneidebrett",
+        "material": "5-lagiger wärmespeichernder Boden,",
+        "description": "Topf 3,4 l mit Glasdeckel Steil Ø20cm; Topf 2,5 l mit Glasdeckel Steil Ø18cm; Topf 4,5 l mit Glasdeckel Steil Ø22 cm; Kunststoff-Schneidebrett KuchenArt",
+        "features": [
+          "5-lagiger wärmespeichernder Boden,",
+          "Hochwertiger Edelstahl (18/10),",
+          "Deckel mit Dampfventil,",
+          "Maßskala,",
+          "Spülmaschinenfest."
+        ]
+      },
+      {
+        "name": "Topfset 6-teilig Steil Krauff",
+        "material": "5-lagiger wärmespeichernder Boden;",
+        "description": "Topf mit Deckel Steil ⌀18 cm — 2,5 l Topf mit Deckel Steil ⌀20 cm — 3,4 l Topf mit Deckel Steil ⌀22 cm — 4,5 l",
+        "features": [
+          "5-lagiger wärmespeichernder Boden;",
+          "Hochwertiger Edelstahl (18/10);",
+          "Deckel mit Dampfventil;",
+          "Maßskala;",
+          "Spülmaschinenfest."
+        ]
+      },
+      {
+        "name": "Messer-Set auf Halter Prime Chef Krauff",
+        "material": "Vollmetallkonstruktion",
+        "description": "Halter; Kochmesser 20,5 cm; Schnitzmesser 20,8 cm; Brotmesser 20,8 cm; Universalmesser 12,8 cm; Gemüseschälmesser 9,5 cm;",
+        "features": [
+          "Vollmetallkonstruktion",
+          "Hochwertiger Edelstahl",
+          "Ergonomische Griffe",
+          "Stilvolles Design"
+        ]
+      },
+      {
+        "name": "Messer-Set Luxus",
+        "material": "Klingen aus hochwertigem Stahl X30Cr14 — korrosionsbeständig, langanhaltend scharf",
+        "description": "Messer-Set Luxus 5-teilig auf Halter",
+        "features": [
+          "Klingen aus hochwertigem Stahl X30Cr14 — korrosionsbeständig, langanhaltend scharf",
+          "Ergonomische Griffe aus ABS-Kunststoff — robust, rutschfest, angenehm zu greifen",
+          "Ideal für den täglichen Einsatz in jeder Küche"
+        ]
+      },
+      {
+        "name": "Set aus 5 Messern auf Halter Prime Chef Krauff",
+        "material": "Edelstahl;",
+        "description": "Kochmesser 20,5 cm; Santokumesser 17,5 cm; Santokumesser 13,5 cm; Universalmesser 12,5 cm; Gemüseschälmesser 9 cm;",
+        "features": [
+          "Edelstahl;",
+          "Robuste Griffe;",
+          "Stilvoller Holzhalter;",
+          "Einfache Pflege."
+        ]
+      },
+      {
+        "name": "Set aus 5 Messern Solvar Krauff",
+        "material": "Perfekte Schärfe;",
+        "description": "Kochmesser 20,5 cm; Santokumesser 17,5 cm; Santokumesser 13,5 cm; Universalmesser 12,8 cm; Gemüsemesser 9 cm; Messerblock;",
+        "features": [
+          "Perfekte Schärfe;",
+          "Durchgehende Klingen;",
+          "Vollständiges Set;",
+          "Stilvoller Block."
+        ]
+      },
+      {
+        "name": "Messer-Set auf Halter Prime Chef",
+        "material": "Hochwertiger Edelstahl",
+        "description": "Kochmesser 20,5 cm; Santokumesser 17,5 cm; Santokumesser 13,5 cm; Universalmesser 12,8 cm; Gemüsemesser 9 cm; Messerblock;",
+        "features": [
+          "Hochwertiger Edelstahl",
+          "Ergonomische Griffe aus ABS-Kunststoff",
+          "Optimale Balance",
+          "Modernes Design"
+        ]
+      },
+      {
+        "name": "Glasbehälter-Set Locker + GESCHENKE: Thermobecher Komfort 380 ml 2 Stk",
+        "material": "Luftdichte Deckel mit Silikon-Dichtungen",
+        "description": "Behälter mit Deckel 1500 ml; Behälter mit Deckel 1040 ml; Behälter mit Deckel 640 ml; Behälter mit Deckel 380 ml; Thermobecher Komfort 380 ml; Thermobecher Komfort 380 ml",
+        "features": [
+          "Luftdichte Deckel mit Silikon-Dichtungen",
+          "Hitzebeständiges Glas",
+          "Für die Mikrowelle geeignet (ohne Deckel)",
+          "Universelle Aufbewahrungsmöglichkeiten"
+        ]
+      },
+      {
+        "name": "Set Glasbehälter zur Aufbewahrung und Thermosflasche 600ml",
+        "material": "Deckel mit innovativem Öffnungsmechanismus;",
+        "description": "Aufbewahrungsbehälter Prime Chef Krauff 1,7 l mit Deckel Höhe 30 cm; Aufbewahrungsbehälter Prime Chef Krauff 0,84 l mit Deckel Höhe 17 cm; Aufbewahrungsbehälter Prime Chef Krauff 0,58 l mit Deckel Höhe 13 cm; Thermosflasche 600 ml",
+        "features": [
+          "Deckel mit innovativem Öffnungsmechanismus;",
+          "Tagesanzahl auf den Deckeln;",
+          "Verschiedene Größen;"
+        ]
+      },
+      {
+        "name": "Wasserkocher Krauff Nebion 3 l",
+        "material": "Elegante Körperlinien.",
+        "description": "Dreilagiger ferromagnetischer Boden Sicheres und kontrolliertes Einschenken",
+        "features": [
+          "Elegante Körperlinien.",
+          "Präzise Griffgeometrie.",
+          "Dreilagiger ferromagnetischer Boden",
+          "Sicheres und kontrolliertes Einschenken."
+        ]
+      },
+      {
+        "name": "Keramik-Kochgeschirr-Sets 15-teilig. Topf- und Pfannen-Set mit Antihaftbeschichtung (schwarz 15)",
+        "material": "Keramische Antihaftbeschichtung ist sicher und ungiftig",
+        "description": "Keramik-Kochgeschirr-Set mit Antihaftbeschichtung — ungiftig und besser als Teflon! Set mit 9\"/11\"-Frittierpfanne, 11\"/4,5-Quart-Frittierpfanne mit Deckel, 1,5-Quart-Schmortopf-Deckel, Silikon-Pfannenwendern, Löffeln, Zangen und 4 Schutzabdeckungen.",
+        "features": [
+          "Keramische Antihaftbeschichtung ist sicher und ungiftig",
+          "Kratzfest und sorgt für hervorragendes Gleiten der Speisen",
+          "Geschirr leicht zu reinigen",
+          "Geeignet für alle Herdarten",
+          "Nicht erhitzende Bakelit-Griffe"
+        ]
+      },
+      {
+        "name": "Keramik-Topf- und Pfannen-Set Kikcoin 16-teilig mit Antihaftbeschichtung, inklusive 9,5-Zoll-Grillpfanne, Induktions-Kochgeschirr-Set",
+        "material": "Keramische Antihaftbeschichtung ist sicher und ungiftig",
+        "description": "Aus natürlichen Mineralien hergestellt, gibt keine Dämpfe beim Überhitzen ab.",
+        "features": [
+          "Keramische Antihaftbeschichtung ist sicher und ungiftig",
+          "Kratzfest und sorgt für hervorragendes Gleiten der Speisen",
+          "Geschirr leicht zu reinigen",
+          "Geeignet für alle Herdarten",
+          "Nicht erhitzende Bakelit-Griffe"
+        ]
+      }
+    ]
+  },
+  "reviews": {
+    "badge": "Bewertungen",
+    "title": "Was Käufer sagen",
+    "subtitle": "Echte Bewertungen von Google und Trustpilot",
+    "rozetkaLink": "Alle Bewertungen auf Trustpilot",
+    "googleLink": "Bewertungen auf Google",
+    "items": [
+      {
+        "name": "Sophie M.",
+        "city": "Berlin",
+        "rating": 5,
+        "initials": "SM",
+        "text": "Ich habe das Tellerset bestellt – es kam innerhalb von 3 Tagen! Verpackung einwandfrei, kein Teil beschädigt. Das Porzellan ist wirklich dünn und qualitativ hochwertig. Ich denke schon ans nächste Teeservice.",
+        "product": "Teller-Set Marble, 6 Stk.",
+        "date": "12. April 2025",
+        "source": "Google"
+      },
+      {
+        "name": "Thomas K.",
+        "city": "München",
+        "rating": 5,
+        "initials": "TK",
+        "text": "Die Tasse als Geschenk für meine Frau gekauft – sie ist begeistert. Die Farbe ist im echten Leben noch schöner als auf dem Foto. Der Kundenservice antwortete in 5 Minuten und half bei der Auswahl.",
+        "product": "Keramiktasse Terracotta",
+        "date": "3. März 2025",
+        "source": "Trustpilot"
+      },
+      {
+        "name": "Anna B.",
+        "city": "Hamburg",
+        "rating": 5,
+        "initials": "AB",
+        "text": "Lange habe ich eine gute Salatschüssel gesucht. Das Glas ist dick, verträgt Temperaturschwankungen und ist spülmaschinenfest. Schnelle Lieferung, tolle Qualität.",
+        "product": "Glasschüssel Grande",
+        "date": "19. Februar 2025",
+        "source": "Google"
+      },
+      {
+        "name": "Michael R.",
+        "city": "Frankfurt",
+        "rating": 4,
+        "initials": "MR",
+        "text": "Das Teeservice bestellt – eine Tasse hatte einen kleinen Chip. Ich schrieb den Support an, sie schickten Ersatz ohne Rücksendung des ganzen Sets. Genau so soll Kundenservice sein!",
+        "product": "Teeservice Ivory, 14-tlg.",
+        "date": "7. Januar 2025",
+        "source": "Trustpilot"
+      }
+    ]
+  },
+  "guarantees": {
+    "badge": "Kaufsicherheit",
+    "title": "Kaufen Sie ohne Risiko",
+    "subtitle": "Wir haben alles getan, damit Ihr Einkauf so komfortabel wie möglich ist",
+    "phone": "+49 30 1234 5678",
+    "workingHours": "Mo–Fr 9:00–18:00 · Sa 10:00–15:00",
+    "items": [
+      {
+        "title": "14 Tage Rückgabe",
+        "desc": "Nicht zufrieden? Wir erstatten den vollen Betrag ohne Rückfragen. Schreiben Sie einfach im Chat."
+      },
+      {
+        "title": "Sichere Zahlung",
+        "desc": "Visa, Mastercard, PayPal, Klarna, SEPA-Lastschrift. Kartendaten verschlüsselt – wir speichern sie nicht."
+      },
+      {
+        "title": "DHL / DPD Versand",
+        "desc": "Versand täglich bis 18:00 Uhr. Bestellungen bis 15:00 – gleicher Tag. Tracking per E-Mail und SMS."
+      },
+      {
+        "title": "Zertifizierte Produkte",
+        "desc": "Alle Keramik und Porzellan entspricht EN 1388. Lebensmittelecht und sicher."
+      }
+    ]
+  },
+  "faq": {
+    "badge": "Häufige Fragen",
+    "title": "FAQ",
+    "subtitle": "Keine Antwort gefunden? Schreiben Sie im Chat – Antwort in 5 Minuten.",
+    "items": [
+      {
+        "q": "Ist das Geschirr spülmaschinenfest?",
+        "a": "Die meisten Porzellan- und Glaswaren sind spülmaschinenfest – dies steht in der Produktbeschreibung. Handbemalte Keramik sollte von Hand gewaschen werden, um das Muster zu schützen. Bis 60 °C ist für alle Artikel sicher."
+      },
+      {
+        "q": "Wie schnell kommt meine Bestellung an?",
+        "a": "Bestellungen bis 15:00 Uhr werden noch am gleichen Tag versendet. Per DHL oder DPD dauert die Lieferung in Deutschland 2–5 Werktage. Sie erhalten eine E-Mail mit Tracking-Nummer sofort nach dem Versand."
+      },
+      {
+        "q": "Was tun, wenn der Artikel beschädigt ankommt?",
+        "a": "Fotografieren Sie den Schaden und schreiben Sie uns im Chat oder per E-Mail innerhalb von 48 Stunden. Wir senden kostenlosen Ersatz oder erstatten den Betrag – Ihre Wahl. Der Artikel muss nicht zurückgesandt werden."
+      },
+      {
+        "q": "Welche Zahlungsmethoden gibt es?",
+        "a": "Wir akzeptieren Visa, Mastercard, PayPal, Klarna (Ratenkauf und Rechnung) sowie SEPA-Lastschrift. Alle Zahlungen werden verschlüsselt verarbeitet."
+      },
+      {
+        "q": "Wie kann ich einen Artikel zurückgeben?",
+        "a": "Innerhalb von 14 Tagen nach Erhalt können Sie jeden Artikel im Originalzustand zurückgeben – gemäß EU-Verbraucherrecht. Schreiben Sie uns, wir nennen die Rücksendeadresse und erstatten innerhalb von 3 Werktagen nach Wareneingang."
+      },
+      {
+        "q": "Kann ich Großhandel oder Firmenkauf anfragen?",
+        "a": "Ja! Ab 10 gleichen Artikeln gewähren wir mindestens 10 % Rabatt. Für Firmenkunden (Hotels, Restaurants, Büros) kontaktieren Sie uns für individuelle Konditionen und Rechnungskauf."
+      },
+      {
+        "q": "Wo wird das Geschirr hergestellt?",
+        "a": "Wir arbeiten mit geprüften Herstellern in Polen, Tschechien und Portugal zusammen. Alle Produkte sind nach EU-Normen zertifiziert und lebensmittelecht. Das Herstellungsland steht in der jeweiligen Produktbeschreibung."
+      }
+    ]
+  },
+  "leadCapture": {
+    "badge": "Exklusiv für Abonnenten",
+    "title": "−10% auf die erste Bestellung",
+    "subtitle": "Abonnieren Sie unseren Newsletter und erhalten Sie einen Rabattcode. Aktuelle Aktionen, neue Kollektionen und Serviertipps – kein Spam.",
+    "placeholder": "ihre@email.de",
+    "cta": "Rabatt erhalten",
+    "success": "Danke! Prüfen Sie Ihr Postfach – der Code ist bereits dort.",
+    "legalBefore": "Mit Klick stimmen Sie der",
+    "legalLink": "Datenschutzerklärung",
+    "legalAfter": "zu. Abmeldung jederzeit möglich.",
+    "socialLabel": "Folgen Sie uns:"
+  },
+  "footer": {
+    "tagline": "Geschirr für besondere Momente. Qualität, die man beim ersten Berühren spürt.",
+    "customersTitle": "Käufer",
+    "customerLinks": [
+      "Katalog",
+      "Versand & Zahlung",
+      "Rückgabe",
+      "Garantie",
+      "Bestellverfolgung"
+    ],
+    "companyTitle": "Unternehmen",
+    "companyLinks": [
+      "Über uns",
+      "Für Partner",
+      "AGB",
+      "Datenschutzerklärung"
+    ],
+    "contactTitle": "Kontakt",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-Mail",
+    "hoursLabel": "Öffnungszeiten",
+    "hours": "Mo–Fr: 9:00–18:00",
+    "legalName": "cookware market GmbH",
+    "legalId": "HRB 123456 · AG Frankfurt",
+    "legalVat": "USt-IdNr.: DE123456789",
+    "rights": "Alle Rechte vorbehalten."
   }
 }

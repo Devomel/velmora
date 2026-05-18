@@ -1,0 +1,33 @@
+{
+  "meta": { "title": "Livrare & plată — cookware market" },
+  "badge": "Livrare & plată",
+  "title": "Livrare & metode de plată",
+  "subtitle": "Condiții transparente – fără taxe ascunse.",
+  "delivery": {
+    "title": "Opțiuni de livrare",
+    "freeFrom": "Transport gratuit de la 50 €",
+    "methods": [
+      { "title": "FanCourier", "desc": "Livrare standard în România", "price": "4,90 €", "time": "1–3 zile lucrătoare" },
+      { "title": "DPD Express", "desc": "Livrare express în România", "price": "9,90 €", "time": "1 zi lucrătoare" },
+      { "title": "Livrare EU", "desc": "Livrare în toate țările UE", "price": "de la 8,90 €", "time": "3–7 zile lucrătoare" }
+    ]
+  },
+  "payment": {
+    "title": "Metode de plată",
+    "methods": [
+      { "title": "Visa / Mastercard", "desc": "Plată securizată cu cardul – confirmare imediată." },
+      { "title": "PayU", "desc": "Platformă de plată online sigură și rapidă." },
+      { "title": "Ramburs la livrare", "desc": "Plătești curieru­lui la primirea coletului." },
+      { "title": "Transfer bancar", "desc": "Virament direct din contul tău bancar." }
+    ]
+  },
+  "returns": {
+    "title": "Returnare & ramburs",
+    "desc": "Ai dreptul să returnezi comanda în 14 zile de la primire, fără a da explicații – conform legislației consumatorului din România și UE. Scrie-ne prin chat sau email și rezolvăm totul rapid. Rambursul se face în 3 zile lucrătoare de la primirea produselor returnate."
+  },
+  "faq": [
+    { "q": "De când este transportul gratuit?", "a": "Comenzile de la 50 € se livrează gratuit prin FanCourier." },
+    { "q": "Pot urmări coletul?", "a": "Da, după expediere primești un email cu link de urmărire." },
+    { "q": "Livrați în țara mea?", "a": "Livrăm în toate țările UE. Contactează-ne pentru alte regiuni." }
+  ]
+}

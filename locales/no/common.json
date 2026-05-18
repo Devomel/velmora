@@ -1,6 +1,23 @@
 {
-  "nav": { "home": "Hjem", "about": "Om oss", "cart": "Handlekurv" },
+  "nav": { "home": "Hjem", "about": "Om oss", "delivery": "Frakt & betaling", "contacts": "Kontakt", "cart": "Handlekurv" },
   "footer": { "rights": "Alle rettigheter forbeholdt" },
-  "cart": { "empty": "Handlekurven din er tom", "total": "Totalt", "checkout": "Gå til kassen" },
+  "cart": {
+    "title": "Handlekurv",
+    "empty": "Handlekurven din er tom",
+    "backToCatalog": "Gå til katalogen",
+    "total": "Totalt",
+    "checkout": "Gå til kassen",
+    "freeDeliveryRemaining": "Kun {amount} € til gratis frakt",
+    "freeDeliveryAchieved": "Gratis frakt!",
+    "upsellTitle": "Fullfør bestillingen",
+    "upsellAdd": "+ Legg til",
+    "promoPlaceholder": "Rabattkode",
+    "promoApply": "Bruk",
+    "paymentNote": "Betaling med Visa, Mastercard eller Vipps",
+    "upsellItems": [
+      { "name": "Grytedeksel", "price": 5 },
+      { "name": "Serviettesett", "price": 6 }
+    ]
+  },
   "buttons": { "buy": "Kjøp", "more": "Les mer", "back": "Tilbake" }
 }

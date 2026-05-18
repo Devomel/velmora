@@ -1,6 +1,23 @@
 {
-  "nav": { "home": "Acasă", "about": "Despre noi", "cart": "Coș" },
+  "nav": { "home": "Acasă", "about": "Despre noi", "delivery": "Livrare & plată", "contacts": "Contact", "cart": "Coș" },
   "footer": { "rights": "Toate drepturile rezervate" },
-  "cart": { "empty": "Coșul tău este gol", "total": "Total", "checkout": "Finalizează comanda" },
+  "cart": {
+    "title": "Coș de cumpărături",
+    "empty": "Coșul tău este gol",
+    "backToCatalog": "Mergi la catalog",
+    "total": "Total",
+    "checkout": "Finalizează comanda",
+    "freeDeliveryRemaining": "Mai ai {amount} € pentru transport gratuit",
+    "freeDeliveryAchieved": "Transport gratuit!",
+    "upsellTitle": "Completează comanda",
+    "upsellAdd": "+ Adaugă",
+    "promoPlaceholder": "Cod promoțional",
+    "promoApply": "Aplică",
+    "paymentNote": "Plată cu Visa, Mastercard, PayU sau ramburs",
+    "upsellItems": [
+      { "name": "Suport pentru oale", "price": 5 },
+      { "name": "Set șervețele", "price": 6 }
+    ]
+  },
   "buttons": { "buy": "Cumpără", "more": "Află mai mult", "back": "Înapoi" }
 }

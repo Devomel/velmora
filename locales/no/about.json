@@ -1,0 +1,23 @@
+{
+  "meta": { "title": "Om oss — cookware market", "description": "Vi er en europeisk nettbutikk for premium servise." },
+  "badge": "Vår historie",
+  "title": "Hvem vi er",
+  "subtitle": "cookware market er en europeisk nettbutikk for premium servise. Vi kobler produsenter i Polen, Tsjekkia og Portugal direkte til ditt spisebord.",
+  "story": "Siden 2019 har vi levert keramikk, porselen og glass av høy kvalitet til husholdninger og restauranter i hele Europa. Hvert produkt er nøye utvalgt, kvalitetstestet og kjøpt direkte fra produsenten – uten mellomledd. Slik får du førsteklasses kvalitet til rettferdige priser.",
+  "values": [
+    { "title": "Kvalitet først", "desc": "Hver vare kontrolleres før forsendelse. Vi samarbeider kun med sertifiserte produsenter." },
+    { "title": "Direktekjøp", "desc": "Ingen mellomledd. Direkte fra produsenten – for bedre priser og garantert ekthet." },
+    { "title": "Bærekraft", "desc": "Våre leveringspartnere bruker CO₂-redusert logistikk. Emballasjen er resirkulerbar." },
+    { "title": "Kundeservice", "desc": "Ekte mennesker svarer – ingen roboter. Svar innen 5 minutter via chat eller e-post." }
+  ],
+  "stats": [
+    { "value": "2 847", "label": "fornøyde kunder" },
+    { "value": "200+", "label": "produkter i sortimentet" },
+    { "value": "4,9 / 5", "label": "gjennomsnittlig vurdering" },
+    { "value": "siden 2019", "label": "på markedet" }
+  ],
+  "teamTitle": "Vårt team",
+  "teamSubtitle": "Vi er et lite, lidenskapelig team som elsker og lever bordkultur.",
+  "ctaTitle": "Spørsmål? Skriv til oss.",
+  "cta": "Ta kontakt"
+}

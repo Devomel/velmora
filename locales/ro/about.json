@@ -1,0 +1,23 @@
+{
+  "meta": { "title": "Despre noi — cookware market", "description": "Suntem un magazin online european de veselă premium." },
+  "badge": "Povestea noastră",
+  "title": "Cine suntem",
+  "subtitle": "cookware market este un magazin online european de veselă premium. Conectăm producătorii din Polonia, Cehia și Portugalia direct cu masa ta.",
+  "story": "Din 2019, livrăm ceramică, porțelan și sticlă de înaltă calitate gospodăriilor și restaurantelor din toată Europa. Fiecare produs este selectat cu grijă, testat pentru calitate și achiziționat direct de la producător – fără intermediari. Astfel obții calitate de primă clasă la prețuri corecte.",
+  "values": [
+    { "title": "Calitate pe primul loc", "desc": "Fiecare articol este verificat înainte de expediere. Lucrăm doar cu producători certificați." },
+    { "title": "Achiziție directă", "desc": "Niciun intermediar. Direct de la producător – pentru prețuri mai bune și autenticitate garantată." },
+    { "title": "Sustenabilitate", "desc": "Partenerii noștri de livrare folosesc logistică cu emisii reduse de CO₂. Ambalajele sunt reciclabile." },
+    { "title": "Serviciu clienți", "desc": "Oameni reali răspund – fără roboți. Răspuns în 5 minute prin chat sau email." }
+  ],
+  "stats": [
+    { "value": "2 847", "label": "clienți mulțumiți" },
+    { "value": "200+", "label": "produse în sortiment" },
+    { "value": "4,9 / 5", "label": "rating mediu" },
+    { "value": "din 2019", "label": "pe piață" }
+  ],
+  "teamTitle": "Echipa noastră",
+  "teamSubtitle": "Suntem o echipă mică și pasionată care iubește și trăiește cultura mesei.",
+  "ctaTitle": "Întrebări? Scrie-ne.",
+  "cta": "Contactează-ne"
+}

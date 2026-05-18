@@ -1,0 +1,25 @@
+{
+  "meta": { "title": "Kontakt — cookware market" },
+  "badge": "Kontakt",
+  "title": "Kontakt oss",
+  "subtitle": "Vi svarer innen 5 minutter – via chat eller e-post.",
+  "phone": "+47 22 12 34 56",
+  "email": "hello@cookware-market.eu",
+  "hours": "Man–fre: 9:00–18:00 · Lør: 10:00–15:00",
+  "address": "cookware market AS, Eksempelgata 12, 0150 Oslo",
+  "form": {
+    "title": "Send melding",
+    "name": "Ditt navn",
+    "email": "Din e-post",
+    "subject": "Emne",
+    "message": "Din melding...",
+    "submit": "Send",
+    "success": "Takk! Vi kontakter deg innen 24 timer.",
+    "subjects": ["Bestilling & levering", "Retur & refusjon", "Produktspørsmål", "Engros", "Annet"]
+  },
+  "infoCards": [
+    { "title": "Chat", "desc": "Umiddelbart svar man–fre 9–18" },
+    { "title": "E-post", "desc": "Svar innen 24 timer" },
+    { "title": "Telefon", "desc": "Man–fre 9:00–18:00" }
+  ]
+}

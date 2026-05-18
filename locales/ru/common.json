@@ -1,6 +1,23 @@
 {
-  "nav": { "home": "Главная", "about": "О нас", "cart": "Корзина" },
+  "nav": { "home": "Главная", "about": "О нас", "delivery": "Доставка и оплата", "contacts": "Контакты", "cart": "Корзина" },
   "footer": { "rights": "Все права защищены" },
-  "cart": { "empty": "Ваша корзина пуста", "total": "Итого", "checkout": "Оформить заказ" },
+  "cart": {
+    "title": "Корзина",
+    "empty": "Ваша корзина пуста",
+    "backToCatalog": "Перейти в каталог",
+    "total": "Итого",
+    "checkout": "Оформить заказ",
+    "freeDeliveryRemaining": "Ещё {amount} € до бесплатной доставки",
+    "freeDeliveryAchieved": "Бесплатная доставка!",
+    "upsellTitle": "Дополните заказ",
+    "upsellAdd": "+ Добавить",
+    "promoPlaceholder": "Промокод",
+    "promoApply": "Применить",
+    "paymentNote": "Оплата картой, PayPal или банковским переводом",
+    "upsellItems": [
+      { "name": "Подставка под горячее", "price": 5 },
+      { "name": "Набор салфеток", "price": 6 }
+    ]
+  },
   "buttons": { "buy": "Купить", "more": "Узнать больше", "back": "Назад" }
 }

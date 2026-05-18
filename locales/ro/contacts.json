@@ -1,0 +1,25 @@
+{
+  "meta": { "title": "Contact — cookware market" },
+  "badge": "Contact",
+  "title": "Contactează-ne",
+  "subtitle": "Răspundem în 5 minute – prin chat sau email.",
+  "phone": "+40 21 123 4567",
+  "email": "hello@cookware-market.eu",
+  "hours": "Lun–Vin: 9:00–18:00 · Sâm: 10:00–15:00",
+  "address": "cookware market SRL, Str. Exemplu 12, 010001 București",
+  "form": {
+    "title": "Trimite mesaj",
+    "name": "Numele tău",
+    "email": "Email-ul tău",
+    "subject": "Subiect",
+    "message": "Mesajul tău...",
+    "submit": "Trimite",
+    "success": "Mulțumim! Te contactăm în 24 de ore.",
+    "subjects": ["Comandă & livrare", "Returnare & ramburs", "Întrebare despre produs", "En gros", "Altele"]
+  },
+  "infoCards": [
+    { "title": "Chat", "desc": "Răspuns imediat lun–vin 9–18" },
+    { "title": "Email", "desc": "Răspuns în 24 de ore" },
+    { "title": "Telefon", "desc": "Lun–Vin 9:00–18:00" }
+  ]
+}

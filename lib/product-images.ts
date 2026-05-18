@@ -1,0 +1,36 @@
+import fs from 'fs';
+import path from 'path';
+
+function toSlug(articleKey: string): string {
+   return articleKey
+      .replace('кераміка_1', 'keramika_1')
+      .replace('кераміка_2', 'keramika_2');
+}
+
+export function getProductImages(articleKey: string): string[] {
+   const slug = toSlug(articleKey);
+   const dir = path.join(process.cwd(), 'public', 'products');
+
+   let files: string[];
+   try {
+      files = fs.readdirSync(dir);
+   } catch {
+      return [`/products/${slug}.webp`];
+   }
+
+   const matched = files
+      .filter(f => {
+         if (!f.toLowerCase().endsWith('.webp')) return false;
+         const stem = f.slice(0, -5);
+         return stem === slug || stem.startsWith(slug + '_');
+      })
+      .sort((a, b) => {
+         const suffixOf = (f: string) => f.slice(0, -5).slice(slug.length);
+         const order = (s: string) =>
+            s === '' ? 0 : s === '_2' ? 1 : s === '_3' ? 2 : 3;
+         return order(suffixOf(a)) - order(suffixOf(b));
+      })
+      .map(f => `/products/${f}`);
+
+   return matched.length > 0 ? matched : [`/products/${slug}.webp`];
+}

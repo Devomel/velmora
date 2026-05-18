@@ -1,0 +1,33 @@
+{
+  "meta": { "title": "Versand & Zahlung — cookware market" },
+  "badge": "Versand & Zahlung",
+  "title": "Versand & Zahlungsmethoden",
+  "subtitle": "Transparente Konditionen – keine versteckten Gebühren.",
+  "delivery": {
+    "title": "Versandoptionen",
+    "freeFrom": "Kostenloser Versand ab 50 €",
+    "methods": [
+      { "title": "DHL Paket", "desc": "Standardversand nach Deutschland", "price": "4,90 €", "time": "2–5 Werktage" },
+      { "title": "DPD Express", "desc": "Expressversand nach Deutschland", "price": "9,90 €", "time": "1–2 Werktage" },
+      { "title": "EU-Lieferung", "desc": "Versand in alle EU-Länder", "price": "ab 8,90 €", "time": "3–7 Werktage" }
+    ]
+  },
+  "payment": {
+    "title": "Zahlungsmethoden",
+    "methods": [
+      { "title": "Visa / Mastercard", "desc": "Sichere Kartenzahlung – sofortige Bestätigung." },
+      { "title": "PayPal", "desc": "Zahlen Sie sicher mit Ihrem PayPal-Konto." },
+      { "title": "Klarna", "desc": "Jetzt kaufen, später zahlen – Ratenkauf oder Rechnung." },
+      { "title": "SEPA-Lastschrift", "desc": "Direkte Abbuchung von Ihrem Bankkonto." }
+    ]
+  },
+  "returns": {
+    "title": "Rückgabe & Erstattung",
+    "desc": "Sie haben 14 Tage ab Erhalt das Recht, Ihre Bestellung ohne Angabe von Gründen zurückzugeben – gemäß EU-Verbraucherrecht. Schreiben Sie uns per Chat oder E-Mail, und wir regeln alles schnell und unkompliziert. Die Rückerstattung erfolgt innerhalb von 3 Werktagen nach Wareneingang."
+  },
+  "faq": [
+    { "q": "Ab wann ist der Versand kostenlos?", "a": "Bestellungen ab 50 € werden kostenlos per DHL verschickt." },
+    { "q": "Kann ich Sendung verfolgen?", "a": "Ja, nach dem Versand erhalten Sie eine E-Mail mit Tracking-Link." },
+    { "q": "Liefern Sie in mein Land?", "a": "Wir liefern in alle EU-Länder. Schreiben Sie uns für weitere Regionen." }
+  ]
+}

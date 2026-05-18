@@ -1,0 +1,25 @@
+{
+  "meta": { "title": "Kontakt — cookware market" },
+  "badge": "Kontakt",
+  "title": "Kontaktieren Sie uns",
+  "subtitle": "Wir antworten innerhalb von 5 Minuten – per Chat oder E-Mail.",
+  "phone": "+49 30 1234 5678",
+  "email": "hello@cookware-market.eu",
+  "hours": "Mo–Fr: 9:00–18:00 · Sa: 10:00–15:00",
+  "address": "cookware market GmbH, Musterstraße 12, 60311 Frankfurt am Main",
+  "form": {
+    "title": "Nachricht schreiben",
+    "name": "Ihr Name",
+    "email": "Ihre E-Mail",
+    "subject": "Betreff",
+    "message": "Ihre Nachricht...",
+    "submit": "Absenden",
+    "success": "Danke! Wir melden uns innerhalb von 24 Stunden.",
+    "subjects": ["Bestellung & Lieferung", "Rückgabe & Erstattung", "Produktfrage", "Großhandel", "Sonstiges"]
+  },
+  "infoCards": [
+    { "title": "Chat", "desc": "Sofortantwort Mo–Fr 9–18 Uhr" },
+    { "title": "E-Mail", "desc": "Antwort innerhalb von 24 Stunden" },
+    { "title": "Telefon", "desc": "Mo–Fr 9:00–18:00 Uhr" }
+  ]
+}

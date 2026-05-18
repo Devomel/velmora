@@ -1,5 +1,628 @@
 {
-  "hero": { "title": "Keramikk kolleksjon", "subtitle": "Håndlaget. Tidløst. Ditt.", "cta": "Kjøp nå" },
-  "offer": { "title": "Begrenset tilbud", "desc": "Kun for en begrenset tid – 20% rabatt på all keramikk", "badge": "–20%" },
-  "trust": { "reviews": "Over 500 fornøyde kunder", "shipping": "Gratis frakt over 500 kr", "handmade": "100% håndlaget" }
+  "meta": {
+    "title": "Emerald Keramikk – Håndlaget Servise",
+    "desc": "Oppdag håndlaget keramikk og porselen. 20% rabatt på alle varer. Gratis frakt fra 50€."
+  },
+  "hero": {
+    "badge": "Begrenset tilbud · Bare 48 timer",
+    "title": "Keramikk som gjør ditt",
+    "titleHighlight": "bord uforglemmelig",
+    "subtitle": "Håndlaget keramikk og porselen – direkte fra produsenten. 20% rabatt på alt. Gratis frakt fra 50€.",
+    "cta": "Handle nå",
+    "ctaSecondary": "Se kolleksjonen",
+    "ratingText": "4,9 · 312 anmeldelser",
+    "saleBadge": "−20%",
+    "timerLabel": "Tilbudet slutter om:",
+    "timerHours": "t",
+    "timerMinutes": "min",
+    "timerSeconds": "sek"
+  },
+  "stats": [
+    {
+      "value": "3 200+",
+      "label": "fornøyde kunder",
+      "sub": "siden 2019"
+    },
+    {
+      "value": "4,9",
+      "label": "gj.snitt vurdering",
+      "sub": "Google · Trustpilot"
+    },
+    {
+      "value": "98%",
+      "label": "anbefaler oss",
+      "sub": "begeistrede kjøpere"
+    },
+    {
+      "value": "2–5",
+      "label": "dager levering",
+      "sub": "DHL / DPD"
+    }
+  ],
+  "usp": {
+    "badge": "Hvorfor oss",
+    "title": "Det som skiller oss fra andre",
+    "subtitle": "Vi kombinerer tradisjonelt håndverk med moderne design – for bordsettinger som huskes.",
+    "items": [
+      {
+        "title": "Direkte fra produsent",
+        "desc": "Ingen mellomledd – lavere priser og reell kvalitetskontroll på hvert stykke."
+      },
+      {
+        "title": "Håndlaget kvalitet",
+        "desc": "Hvert produkt er individuelt laget og nøye kontrollert før forsendelse."
+      },
+      {
+        "title": "Godkjent for matvarer",
+        "desc": "Alle produkter oppfyller EN 1388 – trygge for daglig bruk."
+      },
+      {
+        "title": "14 dagers retur",
+        "desc": "Ikke fornøyd? Full refusjon uten spørsmål. Bare skriv til oss – vi ordner det."
+      }
+    ]
+  },
+  "benefits": {
+    "badge": "Våre løfter",
+    "title": "Handle uten risiko",
+    "items": [
+      {
+        "title": "Gratis frakt",
+        "desc": "Fra 50€ leverer vi gratis – raskt med DHL eller DPD og sporingslenke."
+      },
+      {
+        "title": "Sikker betaling",
+        "desc": "Visa, Mastercard, PayPal, Klarna – alle data kryptert og sikre."
+      },
+      {
+        "title": "Rask levering",
+        "desc": "Bestilling innen 15:00 – sendes samme dag. Ankomst om 2–5 dager."
+      },
+      {
+        "title": "Topp vurderinger",
+        "desc": "4,9 / 5 på Google og Trustpilot – tusenvis av begeistrede kunder siden 2019."
+      }
+    ]
+  },
+  "catalog": {
+    "badge": "Kolleksjon",
+    "title": "Vår keramikkolleksjon",
+    "subtitle": "Over 200 produkter – håndlaget, kontrollert, oppvaskmaskinbestandig.",
+    "filterLabel": "Kategori:",
+    "sortLabel": "Sorter:",
+    "addToCart": "Legg i kurv",
+    "loadMore": "Vis mer",
+    "empty": "Ingen produkter funnet. Juster filtrene.",
+    "badges": {
+      "sale": "−20%",
+      "new": "Ny"
+    },
+    "categories": {
+      "all": "Alle",
+      "pans": "Stekepanner",
+      "pots": "Gryter",
+      "accessories": "Tilbehør",
+      "sets": "Sett"
+    },
+    "sort": {
+      "default": "Anbefalt",
+      "priceAsc": "Pris: laveste først",
+      "priceDesc": "Pris: høyeste først",
+      "rating": "Beste vurdering"
+    },
+    "products": [
+      {
+        "name": "Stekepannesett Berlin Krauff ⌀26cm og ⌀28cm",
+        "material": "Smidd aluminium",
+        "desc": "Stekepanne Berlin Krauff ⌀28 cm, Stekepanne Berlin Krauff ⌀26 cm",
+        "features": [
+          "Smidd aluminium",
+          "Jevn oppvarming og non-stick belegg",
+          "Komfortabelt og ergonomisk håndtak",
+          "Egnet for intensiv bruk",
+          "Stekepannen er motstandsdyktig mot deformasjon"
+        ]
+      },
+      {
+        "name": "Dyp stekepanne 28 cm Krauff Fry Power",
+        "material": "Innovativt non-stick belegg av ny generasjon",
+        "desc": "Dyp stekepanne Fry Power med diameter 28 cm",
+        "features": [
+          "Innovativt non-stick belegg av ny generasjon",
+          "Jevn oppvarming over hele flaten",
+          "Komfortabelt ergonomisk håndtak",
+          "Passer til alle komfyrtyper",
+          "Stekepannen er motstandsdyktig mot deformasjon"
+        ]
+      },
+      {
+        "name": "Stekepannesett Transform Krauff",
+        "material": "Avtakbart håndtak – kan stekes og bakes i ovn",
+        "desc": "Pannekakepanne Transform Krauff 24 cm, Universalpanne Transform Krauff 26 cm, 24cm",
+        "features": [
+          "Avtakbart håndtak – kan stekes og bakes i ovn",
+          "Smidd aluminium",
+          "Jevn oppvarming og non-stick belegg",
+          "Komfortabelt og ergonomisk håndtak",
+          "Egnet for intensiv bruk",
+          "Stekepannen er motstandsdyktig mot deformasjon"
+        ]
+      },
+      {
+        "name": "Kasserolle-sett med øse Steil + GAVER: Stekespade, suppeskje, potetstamper",
+        "material": "Rustfritt stål",
+        "desc": "Kasserolle med lokk 5,8 l; Kasserolle med lokk 4,5 l; Kasserolle med lokk 3,4 l; Kasserolle med lokk 2,5 l; Kasserolle med lokk 1,7 l; Øse med lokk 1,2 l; Stekespade; Suppeskje; Potetstamper",
+        "features": [
+          "Rustfritt stål",
+          "5-lags kapselbunnbunn",
+          "Seks elementer for alle oppgaver",
+          "Passer til alle komfyrtyper"
+        ]
+      },
+      {
+        "name": "Kokekar-sett 12 deler Krauff Saporis og stekepanner Berlin 26, 28 cm",
+        "material": "5-lags kapselbunnbunn;",
+        "desc": "Kasseroller med lokk: 1,5 l 2,0 l 3,0 l 5,0 l Stekegryte 3,0 l med lokk Øse 1,5 l med lokk Stekepanne Berlin 26 cm, 28 cm",
+        "features": [
+          "5-lags kapselbunnbunn;",
+          "Premium rustfritt stål;",
+          "Glasslokk gir mulighet til å kontrollere maten uten varmetap;",
+          "Håndtakene varmes ikke opp;",
+          "Allsidighet: settet er kompatibelt med alle komfyrtyper, inkludert induksjon."
+        ]
+      },
+      {
+        "name": "Kasserolle-sett Steil Krauff med øse",
+        "material": "5-lags varmeholden bunn,",
+        "desc": "Øse 1,2l med lokk Steil ⌀14cm; Kasserolle 1,7l med glasslokk Steil ⌀16cm; Kasserolle 2,5l med glasslokk Steil ⌀18cm; Kasserolle 3,4l med glasslokk Steil ⌀20cm; Kasserolle 4,5l med glasslokk Steil ⌀22cm; Kasserolle 5,8l med glasslokk Steil ⌀24cm;",
+        "features": [
+          "5-lags varmeholden bunn,",
+          "høykvalitets rustfritt stål (18/10),",
+          "lokk med dampventil, måleskalering,",
+          "oppvaskmaskinfast."
+        ]
+      },
+      {
+        "name": "Kasserolle-sett Steil Krauff + GAVE: Pannekakepanne 24 cm Fry Power",
+        "material": "Rustfritt stål",
+        "desc": "Kasserolle 5,8 l Kasserolle 4,5 l Kasserolle 3,4 l Kasserolle 2,5 l Kasserolle 1,7 l Øse 1,2 l Pannekakepanne 24 cm Fry Power",
+        "features": [
+          "Rustfritt stål",
+          "5-lags kapselbunnbunn",
+          "Jevn oppvarming",
+          "Passer til alle komfyrtyper",
+          "Lokk av herdet glass"
+        ]
+      },
+      {
+        "name": "Kasserolle-sett Prime Chef Krauff med stekegryte",
+        "material": "5-lags varmeholden bunn,",
+        "desc": "Øse Prime Chef Krauff 2,1 l, 16 cm med lokk; Kasserolle Prime Chef Krauff 3,8 l, 20 cm med lokk; Kasserolle Prime Chef Krauff 6,3 l, 24 cm med lokk; Stekepanne Prime Chef Krauff 24 cm med non-stick belegg;",
+        "features": [
+          "5-lags varmeholden bunn,",
+          "Høykvalitets rustfritt stål (18/10),",
+          "Lokk med dampventil."
+        ]
+      },
+      {
+        "name": "Kjøkkensett \"Premium\"",
+        "material": "5-lags kapselbunnbunn;",
+        "desc": "kasserolle 1,8 l med lokk; kasserolle 2,5 l med lokk; kasserolle 3,5 l med lokk; kasserolle 6,3 l med lokk;",
+        "features": [
+          "5-lags kapselbunnbunn;",
+          "Premium rustfritt stål;",
+          "Komfortable håndtak og varmebestandige glasslokk;",
+          "Spesiell konstruksjon av kasserolle og lokk for avrenning av væske."
+        ]
+      },
+      {
+        "name": "Kasserolle Smart Fry Krauff 6,6l med glasslokk +GAVE: stekespade, suppeskje og potetstamper",
+        "material": "Robust smidd aluminium",
+        "desc": "Kasserolle Krauff Smart Fry 6,6 l Ø28 cm med lokk Stekespade Krauff Suppeskje Krauff Potetstamper Krauff",
+        "features": [
+          "Robust smidd aluminium",
+          "Non-stick belegg Greblon C2",
+          "Temperaturindikator i form av flamme",
+          "Håndtak med soft-touch belegg",
+          "Kompatibel med alle komfyrtyper, inkludert induksjon"
+        ]
+      },
+      {
+        "name": "Kasseroller Krauff serie Winzig 1,2 l og 0,7 l",
+        "material": "5-lags varmeholden bunn,",
+        "desc": "Kasserolle Winzig med lokk 1,2 l; Kasserolle Winzig med lokk 0,7 l;",
+        "features": [
+          "5-lags varmeholden bunn,",
+          "Høykvalitets rustfritt stål (18/10),",
+          "Lokk med dampventil."
+        ]
+      },
+      {
+        "name": "Kasserolle-sett Elite Krauff 1,3l, 1,9l, 4,7l",
+        "material": "5-lags varmeholden bunn.",
+        "desc": "Kasserolle med lokk 1,9 l 16 cm, Kasserolle med lokk 1,3 l 14 cm, Kasserolle med lokk 4,7 l 22 cm, Kasserolle med lokk 6,1 l 24 cm",
+        "features": [
+          "5-lags varmeholden bunn.",
+          "Ergonomiske håndtak med soft-touch belegg.",
+          "Varmebestandig literskala.",
+          "Varmebestandig glass med dampventil."
+        ]
+      },
+      {
+        "name": "Kasserolle-sett Cook&Joy 4,6l, 3,5l, 1,8l og stekepanner Smart Fry Krauff + GAVER: Pannekakepanne Smart Fry",
+        "material": "Varmeindikator i form av flamme innvendig",
+        "desc": "",
+        "features": [
+          "Varmeindikator i form av flamme innvendig",
+          "Varmebestandig glasslokk – kontroll uten åpning.",
+          "Rustfritt stål 18/10 – pålitelig grunnlag for matlaging."
+        ]
+      },
+      {
+        "name": "Kasserolle Krauff Moxie 6,5 l +GAVE: Underlag Krauff Galaxy",
+        "material": "veggtykkelse 0,5mm;",
+        "desc": "Kasserolle Krauff Moxie med glasslokk 6,5 l ⌀24 cm; Varmunderlag Krauff Galaxy.",
+        "features": [
+          "veggtykkelse 0,5mm;",
+          "håndtak med silikoninnlegg;",
+          "5-lags varmeholden induksjonsbunn;",
+          "speilpolering utvendig og innvendig;",
+          "mulighet for avrenning av væske takket være kasserollens konstruksjon (tut), spesiallokk med avrenningsåpninger."
+        ]
+      },
+      {
+        "name": "Kasserolle med lokk Smart Fry 2,3l, 6,6l",
+        "material": "5-lags kapselbunnbunn;",
+        "desc": "Kasserolle med lokk Smart Fry 2,3l, Kasserolle med lokk Smart Fry 6,6l",
+        "features": [
+          "5-lags kapselbunnbunn;",
+          "Kompatibel med alle komfyrtyper;",
+          "Premium rustfritt stål 18/10;"
+        ]
+      },
+      {
+        "name": "Sett med 2 kasseroller Prime Chef Krauff 3,6l, 6,1l + GAVE: Stekespade, suppeskje, pensel",
+        "material": "Rustfritt stål 18/10;",
+        "desc": "Kasserolle Prime Chef Krauff 6,1 l Glasslokk Kasserolle Prime Chef Krauff 3,6 l Glasslokk Stekespade Galaxy Suppeskje Galaxy Pensel Galaxy",
+        "features": [
+          "Rustfritt stål 18/10;",
+          "5-lags kapselbunnbunn;",
+          "Kompatibel med alle komfyrtyper;",
+          "Foldbare bakelit-håndtak;",
+          "Integrert literskala;",
+          "Glasslokk."
+        ]
+      },
+      {
+        "name": "Kasserolle med lokk 3,4 l Steil og Grillpanne",
+        "material": "5-lags varmeholden bunn;",
+        "desc": "Kasserolle i rustfritt stål 3,4 l Ø20 cm Krauff; Silikonmatskje Schoco.",
+        "features": [
+          "5-lags varmeholden bunn;",
+          "Høykvalitets rustfritt stål (18/10);",
+          "Lokk med dampventil;",
+          "Måleskalering;",
+          "Oppvaskmaskinfast;",
+          "Kompatibel med alle komfyrtyper"
+        ]
+      },
+      {
+        "name": "Kasserolle-sett Steil og stekepanne Hamburg",
+        "material": "Rustfritt stål 18/10",
+        "desc": "Kasserolle Krauff Steil 4,5 l med lokk Kasserolle Krauff Steil 3,4 l med lokk Stekepanne Hamburg 20 cm",
+        "features": [
+          "Rustfritt stål 18/10",
+          "Non-stick belegg",
+          "Måleskalering i kasserollene",
+          "Varmebestandige håndtak med nagler",
+          "Passer til alle komfyrtyper"
+        ]
+      },
+      {
+        "name": "Kasserolle-sett Fry Power",
+        "material": "Smidd aluminium;",
+        "desc": "Kasserolle Fry Power 2,3 l med lokk; Kasserolle Fry Power 4,2 l med lokk; Kasserolle Fry Power 6,4 l med lokk;",
+        "features": [
+          "Smidd aluminium;",
+          "Non-stick belegg PTFE;",
+          "Eksternt marmorert belegg;",
+          "Glasslokk med dampventil;",
+          "Kompatibel med alle komfyrtyper."
+        ]
+      },
+      {
+        "name": "Sett med 2 kasseroller Steil Krauff og Øse 1,2 l Steil",
+        "material": "5-lags varmeholden bunn;",
+        "desc": "Kasserolle 3,4l med glasslokk Steil 20cm; Kasserolle 4,5l med glasslokk Steil 22cm; Øse 1,2l med glasslokk diameter 14cm;",
+        "features": [
+          "5-lags varmeholden bunn;",
+          "Høykvalitets rustfritt stål (18/10);",
+          "Lokk med dampventil; måleskalering;",
+          "Oppvaskmaskinfast."
+        ]
+      },
+      {
+        "name": "Kasserolle med lokk 2,7l og øse med lokk 2l Prime Chef Krauff",
+        "material": "Passer til alle komfyrtyper",
+        "desc": "Kasserolle med lokk 2,7 l ⌀18cm Prime Chef; Øse med lokk 2 l ⌀16cm Prime Chef;",
+        "features": [
+          "Passer til alle komfyrtyper",
+          "5-lags varmeholden bunn",
+          "Ergonomiske håndtak",
+          "Varmebestandig literskala",
+          "Varmebestandig glass med dampventil"
+        ]
+      },
+      {
+        "name": "Kasserolle-sett Prime Chef Krauff 8 deler",
+        "material": "5-lags varmeholden bunn.",
+        "desc": "Øse med lokk 2l Ø 16cm; Kasserolle med lokk 2,7l Ø 18cm; Kasserolle med lokk 4,7l Ø 22cm; Kasserolle med lokk 2,0 l ⌀16 cm;",
+        "features": [
+          "5-lags varmeholden bunn.",
+          "Ergonomiske håndtak.",
+          "Varmebestandig literskala.",
+          "Varmebestandig glass med dampventil."
+        ]
+      },
+      {
+        "name": "Kasserolle-sett med øse 10 deler Cook&Joy",
+        "material": "Rustfritt stål 18/10 — holdbarhet og hygiene",
+        "desc": "Øse 1,8 l med lokk Kasserolle 2,5 l Kasserolle 3,5 l Kasserolle 4,6 l Kasserolle 5,8 l",
+        "features": [
+          "Rustfritt stål 18/10 — holdbarhet og hygiene",
+          "5-lags kapselbunnbunn — jevn varme uten å brenne",
+          "Funksjonelle lokk av herdet glass",
+          "Intern literskala — presisjon for daglige oppskrifter"
+        ]
+      },
+      {
+        "name": "Kasserolle-sett Elegance og øse",
+        "material": "Mulighet for avrenning av væske ved låsing av lokket med bevegelige sidehåndtak;",
+        "desc": "16x10,5cm øse med lokk, 2,0l 20x11,5cm kasserolle med lokk, 3,7l 24x14,5cm kasserolle med lokk, 6,3l stekepanne med avtakbart håndtak, diam 26cm.",
+        "features": [
+          "Mulighet for avrenning av væske ved låsing av lokket med bevegelige sidehåndtak;",
+          "Lokkhåndtakgeometrien gjør det mulig å plassere kjøkkenutstyr;",
+          "Håndtak med soft-touch belegg."
+        ]
+      },
+      {
+        "name": "Kasserolle 6,3 l Herzog Krauff",
+        "material": "Lokk med avrenningsåpninger.",
+        "desc": "Kasserolle Krauff Herzog, med glasslokk, 24 cm, 6,3 l",
+        "features": [
+          "Lokk med avrenningsåpninger.",
+          "5-lags varmeholden bunn.",
+          "Literskala"
+        ]
+      },
+      {
+        "name": "Kasserolle-sett med lokk Steil Krauff + GAVER: Skjærebrett",
+        "material": "5-lags varmeholden bunn,",
+        "desc": "Kasserolle 3,4 l med glasslokk Steil Ø20cm; Kasserolle 2,5 l med glasslokk Steil Ø18cm; Kasserolle 4,5 l med glasslokk Steil Ø22 cm; Plastskjærebrett KuchenArt",
+        "features": [
+          "5-lags varmeholden bunn,",
+          "Høykvalitets rustfritt stål (18/10),",
+          "Lokk med dampventil,",
+          "Måleskalering,",
+          "Oppvaskmaskinfast."
+        ]
+      },
+      {
+        "name": "Kasserolle-sett 6 deler Steil Krauff",
+        "material": "5-lags varmeholden bunn;",
+        "desc": "Kasserolle med lokk Steil ⌀18 cm — 2,5 l Kasserolle med lokk Steil ⌀20 cm — 3,4 l Kasserolle med lokk Steil ⌀22 cm — 4,5 l",
+        "features": [
+          "5-lags varmeholden bunn;",
+          "Høykvalitets rustfritt stål (18/10);",
+          "Lokk med dampventil;",
+          "Måleskalering;",
+          "Oppvaskmaskinfast."
+        ]
+      },
+      {
+        "name": "Kniv-sett på holder Prime Chef Krauff",
+        "material": "Helmetallikonstruksjon",
+        "desc": "Holder; kokniv 20,5 cm; skjærekniv 20,8 cm; brødkniv 20,8 cm; universalkniv 12,8 cm; grønnsakskniv 9,5 cm;",
+        "features": [
+          "Helmetallikonstruksjon",
+          "Høykvalitets rustfritt stål",
+          "Ergonomiske håndtak",
+          "Stilfullt design"
+        ]
+      },
+      {
+        "name": "Knivsett Luxus",
+        "material": "Blader av høykvalitets stål X30Cr14 — korrosjonsbestandig, holder seg skarpt lenge",
+        "desc": "Knivsett Luxus 5 deler på holder",
+        "features": [
+          "Blader av høykvalitets stål X30Cr14 — korrosjonsbestandig, holder seg skarpt lenge",
+          "Ergonomiske håndtak av ABS-plast — robuste, sklisikre, behagelige å holde",
+          "Ideal for daglig bruk i ethvert kjøkken"
+        ]
+      },
+      {
+        "name": "Sett med 5 kniver på holder Prime Chef Krauff",
+        "material": "Rustfritt stål;",
+        "desc": "Kokniv 20,5 cm; Santokukniv 17,5 cm; Santokukniv 13,5 cm; Universalkniv 12,5 cm; Grønnsakskniv 9 cm;",
+        "features": [
+          "Rustfritt stål;",
+          "Robuste håndtak;",
+          "Stilfullt treholder;",
+          "Enkel vedlikehold."
+        ]
+      },
+      {
+        "name": "Sett med 5 kniver Solvar Krauff",
+        "material": "Perfekt skarphet;",
+        "desc": "Kokniv 20,5 cm; Santokukniv 17,5 cm; Santokukniv 13,5 cm; Universalkniv 12,8 cm; Grønnsakskniv 9 cm; Knivblokk;",
+        "features": [
+          "Perfekt skarphet;",
+          "Hele blader;",
+          "Fullstendig sett;",
+          "Stilfullt blokk."
+        ]
+      },
+      {
+        "name": "Knivsett på holder Prime Chef",
+        "material": "Høykvalitets rustfritt stål",
+        "desc": "Kokniv 20,5 cm; Santokukniv 17,5 cm; Santokukniv 13,5 cm; Universalkniv 12,8 cm; Grønnsakskniv 9 cm; Knivblokk;",
+        "features": [
+          "Høykvalitets rustfritt stål",
+          "Ergonomiske håndtak av ABS-plast",
+          "Optimal balanse",
+          "Moderne design"
+        ]
+      },
+      {
+        "name": "Glass-beholder-sett Locker + GAVER: Termokopper Komfort 380 ml 2 stk",
+        "material": "Lufttette lokk med silikontettinger",
+        "desc": "Beholder med lokk 1500 ml; Beholder med lokk 1040 ml; Beholder med lokk 640 ml; Beholder med lokk 380 ml; Termokopp Komfort 380 ml; Termokopp Komfort 380 ml",
+        "features": [
+          "Lufttette lokk med silikontettinger",
+          "Varmebestandig glass",
+          "Tåler oppvarming i mikrobølgeovn (uten lokk)",
+          "Allsidig oppbevaring"
+        ]
+      },
+      {
+        "name": "Sett med glasbeholdere for oppbevaring og Termos 600ml",
+        "material": "Lokk med innovativ åpningsmekanisme;",
+        "desc": "Oppbevaringsbeholder Prime Chef Krauff 1,7 l med lokk høyde 30 cm; Oppbevaringsbeholder Prime Chef Krauff 0,84 l med lokk høyde 17 cm; Oppbevaringsbeholder Prime Chef Krauff 0,58 l med lokk høyde 13 cm; Termos 600 ml",
+        "features": [
+          "Lokk med innovativ åpningsmekanisme;",
+          "Dagteller på lokkene;",
+          "Varierte størrelser;"
+        ]
+      },
+      {
+        "name": "Kjele Krauff Nebion 3 l",
+        "material": "Elegante kroppslinjer.",
+        "desc": "Trelagets ferromagnetisk bunn Sikker og kontrollert helling",
+        "features": [
+          "Elegante kroppslinjer.",
+          "Presis håndtakgeometri.",
+          "Trelagets ferromagnetisk bunn",
+          "Sikker og kontrollert helling."
+        ]
+      },
+      {
+        "name": "Keramisk kokekar-sett 15 deler. Sett med kasseroller og stekepanner med non-stick belegg (sort 15)",
+        "material": "Keramisk non-stick belegg er trygt og giftfritt",
+        "desc": "Keramisk kokekar-sett med non-stick belegg — giftfritt og sunnere enn teflon! Sett med 9\"/11\" frityrkurv, 11\"/4,5 quarts frityrkurv med lokk, 1,5 quarts grytedeksel, silikonspader, skjeer, tang og 4 beskyttelseshylser.",
+        "features": [
+          "Keramisk non-stick belegg er trygt og giftfritt",
+          "Mostandsdyktig mot riper og gir utmerket glidning for mat",
+          "Kokekar er lett å rengjøre",
+          "Passer til alle komfyrtyper",
+          "Bakelit-håndtak som ikke varmes opp"
+        ]
+      },
+      {
+        "name": "Keramisk kasserolle- og stekepanne-sett Kikcoin 16 deler med non-stick belegg, inkluderer 9,5-tommers grillpanne, induksjonskokekar-sett",
+        "material": "Keramisk non-stick belegg er trygt og giftfritt",
+        "desc": "Laget av naturlige mineraler, avgir ingen damper ved overoppheting.",
+        "features": [
+          "Keramisk non-stick belegg er trygt og giftfritt",
+          "Motstandsdyktig mot riper og gir utmerket glidning for mat",
+          "Kokekar er lett å rengjøre",
+          "Passer til alle komfyrtyper",
+          "Bakelit-håndtak som ikke varmes opp"
+        ]
+      }
+    ]
+  },
+  "reviews": {
+    "badge": "Kundeomtaler",
+    "title": "Hva kundene våre sier",
+    "subtitle": "Ekte anmeldelser – ingen falske stjerner",
+    "items": [
+      {
+        "name": "Ingrid L.",
+        "city": "Oslo",
+        "rating": 5,
+        "initials": "IL",
+        "text": "Utrolig kvalitet! Marmorsettet er enda vakrere enn på bildet. Levering på 3 dager, alt kom heil og fint pakket.",
+        "product": "Tallerkenset Marble",
+        "date": "12. april 2025",
+        "source": "Google"
+      },
+      {
+        "name": "Erik H.",
+        "city": "Bergen",
+        "rating": 5,
+        "initials": "EH",
+        "text": "Terracotta-koppen som gave til kona – hun er helt begeistret. Flott håndverk og god service.",
+        "product": "Keramikkkopp Terracotta",
+        "date": "3. mars 2025",
+        "source": "Trustpilot"
+      },
+      {
+        "name": "Astrid M.",
+        "city": "Trondheim",
+        "rating": 5,
+        "initials": "AM",
+        "text": "Endelig en glasskål som holder! Solid, oppvaskmaskinbestandig og nydelig. Anbefales på det varmeste.",
+        "product": "Glasskål Grande",
+        "date": "19. februar 2025",
+        "source": "Google"
+      },
+      {
+        "name": "Lars P.",
+        "city": "Stavanger",
+        "rating": 5,
+        "initials": "LP",
+        "text": "Support byttet defekt kopp umiddelbart uten retur. Slik skal kundeservice være!",
+        "product": "Teservise Ivory",
+        "date": "7. januar 2025",
+        "source": "Trustpilot"
+      },
+      {
+        "name": "Kari S.",
+        "city": "Drammen",
+        "rating": 5,
+        "initials": "KS",
+        "text": "Nordic-settet passer perfekt til kjøkkenet mitt. Minimalistisk, høy kvalitet og god pris!",
+        "product": "Koppsett Nordic",
+        "date": "28. februar 2025",
+        "source": "Google"
+      },
+      {
+        "name": "Bjørn T.",
+        "city": "Kristiansand",
+        "rating": 5,
+        "initials": "BT",
+        "text": "Veldig fin ildfast form. Prisen er uslåelig for kvaliteten. Bestiller igjen!",
+        "product": "Ildfast form Rustic",
+        "date": "15. mars 2025",
+        "source": "Trustpilot"
+      }
+    ]
+  },
+  "offer": {
+    "badge": "Bare 48 timer",
+    "title": "−20% på din første bestilling",
+    "desc": "Benytt velkomsttilbudet: 20% rabatt på all keramikk og porselen. Ingen minsteordre, gratis frakt fra 50€.",
+    "cta": "Bestill nå",
+    "sub": "Tilbudet avsluttes snart – kun så lenge lageret rekker"
+  },
+  "footer": {
+    "tagline": "Håndlaget keramikk for uforglemmelige bordøyeblikk.",
+    "rights": "Alle rettigheter forbeholdt.",
+    "links": [
+      "Personvern",
+      "Impressum",
+      "Vilkår"
+    ],
+    "contact": "Kontakt: info@krauff.de"
+  },
+  "cart": {
+    "title": "Din handlekurv",
+    "empty": "Handlekurven din er tom",
+    "backToCatalog": "Til kolleksjonen",
+    "total": "Totalt",
+    "checkout": "Til kassen",
+    "freeDeliveryRemaining": "Bare €{amount} igjen til gratis levering",
+    "freeDeliveryAchieved": "Gratis levering inkludert!",
+    "remove": "Fjern"
+  }
 }

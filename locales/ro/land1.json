@@ -1,5 +1,628 @@
 {
-  "hero": { "title": "Colecție de ceramică", "subtitle": "Lucrat manual. Atemporal. Al tău.", "cta": "Cumpără acum" },
-  "offer": { "title": "Ofertă limitată", "desc": "Doar pentru o perioadă scurtă – 20% reducere la ceramică", "badge": "–20%" },
-  "trust": { "reviews": "Peste 500 de clienți mulțumiți", "shipping": "Transport gratuit peste 200 lei", "handmade": "100% lucrat manual" }
+  "meta": {
+    "title": "Emerald Ceramică – Veselă Artizanală",
+    "desc": "Descoperă ceramică și porțelan lucrat manual. 20% reducere la toate produsele. Livrare gratuită de la 50€."
+  },
+  "hero": {
+    "badge": "Ofertă limitată · Doar 48 de ore",
+    "title": "Ceramică ce face masa ta",
+    "titleHighlight": "de neuitat",
+    "subtitle": "Ceramică și porțelan lucrate manual – direct de la producător. 20% reducere la tot. Livrare gratuită de la 50€.",
+    "cta": "Cumpără acum",
+    "ctaSecondary": "Vezi colecția",
+    "ratingText": "4,9 · 312 recenzii",
+    "saleBadge": "−20%",
+    "timerLabel": "Oferta se termină în:",
+    "timerHours": "ore",
+    "timerMinutes": "min",
+    "timerSeconds": "sec"
+  },
+  "stats": [
+    {
+      "value": "3 200+",
+      "label": "clienți mulțumiți",
+      "sub": "din 2019"
+    },
+    {
+      "value": "4,9",
+      "label": "rating mediu",
+      "sub": "Google · Trustpilot"
+    },
+    {
+      "value": "98%",
+      "label": "recomandări",
+      "sub": "cumpărători entuziaști"
+    },
+    {
+      "value": "2–5",
+      "label": "zile livrare",
+      "sub": "DHL / DPD"
+    }
+  ],
+  "usp": {
+    "badge": "De ce noi",
+    "title": "Ce ne diferențiază cu adevărat",
+    "subtitle": "Îmbinăm meșteșugul tradițional cu designul modern – pentru momente la masă ce rămân în amintire.",
+    "items": [
+      {
+        "title": "Direct de la producător",
+        "desc": "Fără intermediari – prețuri mai mici și control real al calității pentru fiecare produs."
+      },
+      {
+        "title": "Calitate artizanală",
+        "desc": "Fiecare produs este realizat individual și verificat atent înainte de expediere."
+      },
+      {
+        "title": "Certificat pentru alimente",
+        "desc": "Toate produsele respectă EN 1388 – sigure pentru utilizare zilnică."
+      },
+      {
+        "title": "14 zile retur",
+        "desc": "Nu ești mulțumit? Rambursare completă fără întrebări. Scrie-ne și ne ocupăm."
+      }
+    ]
+  },
+  "benefits": {
+    "badge": "Promisiunile noastre",
+    "title": "Cumpără fără risc",
+    "items": [
+      {
+        "title": "Livrare gratuită",
+        "desc": "De la 50€ livrăm gratuit – rapid prin DHL sau DPD cu link de urmărire."
+      },
+      {
+        "title": "Plată securizată",
+        "desc": "Visa, Mastercard, PayPal, Klarna – toate datele criptate și în siguranță."
+      },
+      {
+        "title": "Livrare rapidă",
+        "desc": "Comandă până la 15:00 – expediem în aceeași zi. Sosire în 2–5 zile."
+      },
+      {
+        "title": "Evaluări excelente",
+        "desc": "4,9 / 5 pe Google și Trustpilot – mii de clienți mulțumiți din 2019."
+      }
+    ]
+  },
+  "catalog": {
+    "badge": "Colecție",
+    "title": "Colecția noastră de ceramică",
+    "subtitle": "Peste 200 de produse – lucrate manual, verificate, rezistente la mașina de spălat vase.",
+    "filterLabel": "Categorie:",
+    "sortLabel": "Sortează:",
+    "addToCart": "Adaugă în coș",
+    "loadMore": "Arată mai mult",
+    "empty": "Niciun produs găsit. Ajustează filtrele.",
+    "badges": {
+      "sale": "−20%",
+      "new": "Nou"
+    },
+    "categories": {
+      "all": "Toate",
+      "pans": "Tigăi",
+      "pots": "Oale",
+      "accessories": "Accesorii",
+      "sets": "Seturi"
+    },
+    "sort": {
+      "default": "Recomandat",
+      "priceAsc": "Preț: crescător",
+      "priceDesc": "Preț: descrescător",
+      "rating": "Cea mai bună evaluare"
+    },
+    "products": [
+      {
+        "name": "Set tigăi Berlin Krauff ⌀26cm și ⌀28cm",
+        "material": "Aluminiu forjat",
+        "desc": "Tigaie Berlin Krauff ⌀28 cm, Tigaie Berlin Krauff ⌀26 cm",
+        "features": [
+          "Aluminiu forjat",
+          "Încălzire uniformă și acoperire antiaderentă",
+          "Mâner confortabil și ergonomic",
+          "Potrivit pentru utilizare intensivă",
+          "Tigaia rezistă la deformări"
+        ]
+      },
+      {
+        "name": "Tigaie adâncă 28 cm Krauff Fry Power",
+        "material": "Acoperire antiaderentă inovatoare de nouă generație",
+        "desc": "Tigaie adâncă Fry Power cu diametrul de 28 cm",
+        "features": [
+          "Acoperire antiaderentă inovatoare de nouă generație",
+          "Încălzire uniformă pe toată suprafața",
+          "Mâner confortabil și ergonomic",
+          "Potrivit pentru toate tipurile de aragaze",
+          "Tigaia rezistă la deformări"
+        ]
+      },
+      {
+        "name": "Set tigăi Transform Krauff",
+        "material": "Mâner detașabil – poate fi utilizat la cuptor",
+        "desc": "Tigaie pentru clătite Transform Krauff 24 cm, Tigaie universală Transform Krauff 26 cm, 24cm",
+        "features": [
+          "Mâner detașabil – poate fi utilizat la cuptor",
+          "Aluminiu forjat",
+          "Încălzire uniformă și acoperire antiaderentă",
+          "Mâner confortabil și ergonomic",
+          "Potrivit pentru utilizare intensivă",
+          "Tigaia rezistă la deformări"
+        ]
+      },
+      {
+        "name": "Set oale cu polonic Steil + CADOURI: Spatulă, polonic, pasator de cartofi",
+        "material": "Oțel inoxidabil",
+        "desc": "Oală cu capac 5,8 l; Oală cu capac 4,5 l; Oală cu capac 3,4 l; Oală cu capac 2,5 l; Oală cu capac 1,7 l; Polonic cu capac 1,2 l; Spatulă; Polonic; Pasator de cartofi",
+        "features": [
+          "Oțel inoxidabil",
+          "Fund capsulat cu 5 straturi",
+          "Șase elemente pentru orice sarcină",
+          "Potrivit pentru toate tipurile de aragaze"
+        ]
+      },
+      {
+        "name": "Set de gătit 12 piese Krauff Saporis și tigăi Berlin 26, 28 cm",
+        "material": "Fund capsulat cu 5 straturi;",
+        "desc": "Oale cu capace: 1,5 l 2,0 l 3,0 l 5,0 l Cratiță 3,0 l cu capac Polonic 1,5 l cu capac Tigaie Berlin 26 cm, 28 cm",
+        "features": [
+          "Fund capsulat cu 5 straturi;",
+          "Oțel inoxidabil premium;",
+          "Capacele din sticlă permit controlul preparatelor fără pierderi de căldură;",
+          "Mânerele nu se încălzesc;",
+          "Versatilitate: setul este compatibil cu toate tipurile de aragaze, inclusiv inducție."
+        ]
+      },
+      {
+        "name": "Set oale Steil Krauff cu polonic",
+        "material": "Fund termoaccumulator cu 5 straturi,",
+        "desc": "Polonic 1,2l cu capac Steil ⌀14cm; Oală 1,7l cu capac din sticlă Steil ⌀16cm; Oală 2,5l cu capac din sticlă Steil ⌀18cm; Oală 3,4l cu capac din sticlă Steil ⌀20cm; Oală 4,5l cu capac din sticlă Steil ⌀22cm; Oală 5,8l cu capac din sticlă Steil ⌀24cm;",
+        "features": [
+          "Fund termoaccumulator cu 5 straturi,",
+          "oțel inoxidabil de înaltă calitate (18/10),",
+          "capac cu supapă de abur, scară gradată,",
+          "poate fi spălat în mașina de spălat vase."
+        ]
+      },
+      {
+        "name": "Set oale Steil Krauff + CADOU: Tigaie pentru clătite 24 cm Fry Power",
+        "material": "Oțel inoxidabil",
+        "desc": "Oală 5,8 l Oală 4,5 l Oală 3,4 l Oală 2,5 l Oală 1,7 l Polonic 1,2 l Tigaie pentru clătite 24 cm Fry Power",
+        "features": [
+          "Oțel inoxidabil",
+          "Fund capsulat cu 5 straturi",
+          "Încălzire uniformă",
+          "Potrivit pentru toate tipurile de aragaze",
+          "Capace din sticlă călită"
+        ]
+      },
+      {
+        "name": "Set oale Prime Chef Krauff cu cratiță",
+        "material": "Fund termoaccumulator cu 5 straturi,",
+        "desc": "Polonic Prime Chef Krauff 2,1 l, 16 cm cu capac; Oală Prime Chef Krauff 3,8 l, 20 cm cu capac; Oală Prime Chef Krauff 6,3 l, 24 cm cu capac; Tigaie Prime Chef Krauff 24 cm cu acoperire antiaderentă;",
+        "features": [
+          "Fund termoaccumulator cu 5 straturi,",
+          "Oțel inoxidabil de înaltă calitate (18/10),",
+          "Capac cu supapă de abur."
+        ]
+      },
+      {
+        "name": "Set de bucătărie \"Premium\"",
+        "material": "Fund capsulat cu 5 straturi;",
+        "desc": "oală 1,8 l cu capac; oală 2,5 l cu capac; oală 3,5 l cu capac; oală 6,3 l cu capac;",
+        "features": [
+          "Fund capsulat cu 5 straturi;",
+          "Oțel inoxidabil premium;",
+          "Mânere confortabile și capace din sticlă termorezistentă;",
+          "Constructie specială a oalei și capacului pentru scurgerea lichidelor."
+        ]
+      },
+      {
+        "name": "Oală Smart Fry Krauff 6,6l cu capac din sticlă +CADOU: spatulă, polonic și pasator de cartofi",
+        "material": "Aluminiu forjat rezistent",
+        "desc": "Oală Krauff Smart Fry 6,6 l Ø28 cm cu capac Spatulă Krauff Polonic Krauff Pasator de cartofi Krauff",
+        "features": [
+          "Aluminiu forjat rezistent",
+          "Acoperire antiaderentă Greblon C2",
+          "Indicator de căldură în formă de flacără",
+          "Mânere cu acoperire soft-touch",
+          "Compatibil cu toate tipurile de aragaze, inclusiv inducție"
+        ]
+      },
+      {
+        "name": "Oale Krauff seria Winzig 1,2 l și 0,7 l",
+        "material": "Fund termoaccumulator cu 5 straturi,",
+        "desc": "Oală Winzig cu capac 1,2 l; Oală Winzig cu capac 0,7 l;",
+        "features": [
+          "Fund termoaccumulator cu 5 straturi,",
+          "Oțel inoxidabil de înaltă calitate (18/10),",
+          "Capac cu supapă de abur."
+        ]
+      },
+      {
+        "name": "Set oale Elite Krauff 1,3l, 1,9l, 4,7l",
+        "material": "Fund termoaccumulator cu 5 straturi.",
+        "desc": "Oală cu capac 1,9 l 16 cm, Oală cu capac 1,3 l 14 cm, Oală cu capac 4,7 l 22 cm, Oală cu capac 6,1 l 24 cm",
+        "features": [
+          "Fund termoaccumulator cu 5 straturi.",
+          "Mânere ergonomice cu acoperire soft-touch.",
+          "Gradație de litraj termorezistentă.",
+          "Sticlă termorezistentă cu orificiu pentru abur."
+        ]
+      },
+      {
+        "name": "Set oale Cook&Joy 4,6l, 3,5l, 1,8l și tigăi Smart Fry Krauff + CADOURI: Tigaie pentru clătite Smart Fry",
+        "material": "Indicator de încălzire în formă de flacără interior",
+        "desc": "",
+        "features": [
+          "Indicator de încălzire în formă de flacără interior",
+          "Capac din sticlă termorezistentă – control fără deschidere.",
+          "Oțel inoxidabil 18/10 – bază fiabilă pentru gătit."
+        ]
+      },
+      {
+        "name": "Oală Krauff Moxie 6,5 l +CADOU: Suport Krauff Galaxy",
+        "material": "grosimea peretelui 0,5mm;",
+        "desc": "Oală Krauff Moxie cu capac din sticlă 6,5 l ⌀24 cm; Suport pentru vase fierbinți Krauff Galaxy.",
+        "features": [
+          "grosimea peretelui 0,5mm;",
+          "mânere cu inserții de silicon;",
+          "fund de inducție termoaccumulator cu 5 straturi;",
+          "lustruire oglindă în exterior și interior;",
+          "posibilitate de scurgere a lichidelor datorită construcției oalei (cioc), capac special cu orificii de scurgere."
+        ]
+      },
+      {
+        "name": "Oală cu capac Smart Fry 2,3l, 6,6l",
+        "material": "Fund capsulat cu 5 straturi;",
+        "desc": "Oală cu capac Smart Fry 2,3l, Oală cu capac Smart Fry 6,6l",
+        "features": [
+          "Fund capsulat cu 5 straturi;",
+          "Compatibil cu toate tipurile de aragaze;",
+          "Oțel inoxidabil 18/10 premium;"
+        ]
+      },
+      {
+        "name": "Set din 2 oale Prime Chef Krauff 3,6l, 6,1l + CADOU: Spatulă, polonic, pensulă",
+        "material": "Oțel inoxidabil 18/10;",
+        "desc": "Oală Prime Chef Krauff 6,1 l Capac din sticlă Oală Prime Chef Krauff 3,6 l Capac din sticlă Spatulă Galaxy Polonic Galaxy Pensulă Galaxy",
+        "features": [
+          "Oțel inoxidabil 18/10;",
+          "Fund capsulat cu 5 straturi;",
+          "Compatibil cu toate tipurile de aragaze;",
+          "Mânere rabatabile din bachelită;",
+          "Scară gradată integrată;",
+          "Capace din sticlă."
+        ]
+      },
+      {
+        "name": "Oală cu capac 3,4 l Steil și Tigaie grill",
+        "material": "Fund termoaccumulator cu 5 straturi;",
+        "desc": "Oală din oțel inoxidabil 3,4 l Ø20 cm Krauff; Lingură culinară din silicon Schoco.",
+        "features": [
+          "Fund termoaccumulator cu 5 straturi;",
+          "Oțel inoxidabil de înaltă calitate (18/10);",
+          "Capac cu supapă de abur;",
+          "Scară gradată;",
+          "Poate fi spălat în mașina de spălat vase;",
+          "Compatibil cu toate tipurile de aragaze"
+        ]
+      },
+      {
+        "name": "Set oale Steil și tigaie Hamburg",
+        "material": "Oțel inoxidabil 18/10",
+        "desc": "Oală Krauff Steil 4,5 l cu capac Oală Krauff Steil 3,4 l cu capac Tigaie Hamburg 20 cm",
+        "features": [
+          "Oțel inoxidabil 18/10",
+          "Acoperire antiaderentă",
+          "Scară gradată în oale",
+          "Mânere termorezistente cu nituri",
+          "Potrivit pentru toate tipurile de aragaze"
+        ]
+      },
+      {
+        "name": "Set oale Fry Power",
+        "material": "Aluminiu forjat;",
+        "desc": "Oală Fry Power 2,3 l cu capac; Oală Fry Power 4,2 l cu capac; Oală Fry Power 6,4 l cu capac;",
+        "features": [
+          "Aluminiu forjat;",
+          "Acoperire antiaderentă PTFE;",
+          "Acoperire exterioară marmurată;",
+          "Capace din sticlă cu orificiu pentru abur;",
+          "Compatibil cu toate tipurile de aragaze."
+        ]
+      },
+      {
+        "name": "Set din 2 oale Steil Krauff și Polonic 1,2 l Steil",
+        "material": "Fund termoaccumulator cu 5 straturi;",
+        "desc": "Oală 3,4l cu capac din sticlă Steil 20cm; Oală 4,5l cu capac din sticlă Steil 22cm; Polonic 1,2l cu capac din sticlă diametru 14cm;",
+        "features": [
+          "Fund termoaccumulator cu 5 straturi;",
+          "Oțel inoxidabil de înaltă calitate (18/10);",
+          "Capac cu supapă de abur; scară gradată;",
+          "Poate fi spălat în mașina de spălat vase."
+        ]
+      },
+      {
+        "name": "Oală cu capac 2,7l și polonic cu capac 2l Prime Chef Krauff",
+        "material": "Potrivit pentru toate tipurile de aragaze",
+        "desc": "Oală cu capac 2,7 l ⌀18cm Prime Chef; Polonic cu capac 2 l ⌀16cm Prime Chef;",
+        "features": [
+          "Potrivit pentru toate tipurile de aragaze",
+          "Fund termoaccumulator cu 5 straturi",
+          "Mânere ergonomice",
+          "Gradație de litraj termorezistentă",
+          "Sticlă termorezistentă cu orificiu pentru abur"
+        ]
+      },
+      {
+        "name": "Set oale Prime Chef Krauff 8 piese",
+        "material": "Fund termoaccumulator cu 5 straturi.",
+        "desc": "Polonic cu capac 2l Ø 16cm; Oală cu capac 2,7l Ø 18cm; Oală cu capac 4,7l Ø 22cm; Oală cu capac 2,0 l ⌀16 cm;",
+        "features": [
+          "Fund termoaccumulator cu 5 straturi.",
+          "Mânere ergonomice.",
+          "Gradație de litraj termorezistentă.",
+          "Sticlă termorezistentă cu orificiu pentru abur."
+        ]
+      },
+      {
+        "name": "Set oale cu polonic 10 piese Cook&Joy",
+        "material": "Oțel inoxidabil 18/10 — rezistență și igienă",
+        "desc": "Polonic 1,8 l cu capac Oală 2,5 l Oală 3,5 l Oală 4,6 l Oală 5,8 l",
+        "features": [
+          "Oțel inoxidabil 18/10 — rezistență și igienă",
+          "Fund capsulat cu 5 straturi — căldură uniformă fără ardere",
+          "Capace funcționale din sticlă călită",
+          "Scară gradată interioară — precizie pentru rețetele zilnice"
+        ]
+      },
+      {
+        "name": "Set oale Elegance și polonic",
+        "material": "Posibilitate de scurgere a lichidelor prin fixarea capacului cu mânere laterale mobile;",
+        "desc": "16x10,5cm polonic cu capac, 2,0l 20x11,5cm oală cu capac, 3,7l 24x14,5cm oală cu capac, 6,3l tigaie cu mâner detașabil, diam 26cm.",
+        "features": [
+          "Posibilitate de scurgere a lichidelor prin fixarea capacului cu mânere laterale mobile;",
+          "Geometria mânerului de pe capac permite plasarea echipamentelor de bucătărie;",
+          "Mânere cu acoperire soft-touch."
+        ]
+      },
+      {
+        "name": "Oală 6,3 l Herzog Krauff",
+        "material": "Capace cu orificii de scurgere.",
+        "desc": "Oală Krauff Herzog, cu capac din sticlă, 24 cm, 6,3 l",
+        "features": [
+          "Capace cu orificii de scurgere.",
+          "Fund termoaccumulator cu 5 straturi.",
+          "Gradație de litraj"
+        ]
+      },
+      {
+        "name": "Set oale cu capace Steil Krauff + CADOURI: Tocător",
+        "material": "Fund termoaccumulator cu 5 straturi,",
+        "desc": "Oală 3,4 l cu capac din sticlă Steil Ø20cm; Oală 2,5 l cu capac din sticlă Steil Ø18cm; Oală 4,5 l cu capac din sticlă Steil Ø22 cm; Tocător din plastic KuchenArt",
+        "features": [
+          "Fund termoaccumulator cu 5 straturi,",
+          "Oțel inoxidabil de înaltă calitate (18/10),",
+          "Capac cu supapă de abur,",
+          "Scară gradată,",
+          "Poate fi spălat în mașina de spălat vase."
+        ]
+      },
+      {
+        "name": "Set oale 6 piese Steil Krauff",
+        "material": "Fund termoaccumulator cu 5 straturi;",
+        "desc": "Oală cu capac Steil ⌀18 cm — 2,5 l Oală cu capac Steil ⌀20 cm — 3,4 l Oală cu capac Steil ⌀22 cm — 4,5 l",
+        "features": [
+          "Fund termoaccumulator cu 5 straturi;",
+          "Oțel inoxidabil de înaltă calitate (18/10);",
+          "Capac cu supapă de abur;",
+          "Scară gradată;",
+          "Poate fi spălat în mașina de spălat vase."
+        ]
+      },
+      {
+        "name": "Set cuțite pe suport Prime Chef Krauff",
+        "material": "Construcție integral metalică",
+        "desc": "Suport; cuțit de bucătar 20,5 cm; cuțit de feliat 20,8 cm; cuțit pentru pâine 20,8 cm; cuțit universal 12,8 cm; cuțit pentru curățat legume 9,5 cm;",
+        "features": [
+          "Construcție integral metalică",
+          "Oțel inoxidabil de înaltă calitate",
+          "Mânere ergonomice",
+          "Design elegant"
+        ]
+      },
+      {
+        "name": "Set cuțite Luxus",
+        "material": "Lame din oțel de înaltă calitate X30Cr14 — rezistente la coroziune, rămân ascuțite mult timp",
+        "desc": "Set cuțite Luxus 5 piese pe suport",
+        "features": [
+          "Lame din oțel de înaltă calitate X30Cr14 — rezistente la coroziune, rămân ascuțite mult timp",
+          "Mânere ergonomice din plastic ABS — rezistente, nu alunecă, plăcute la atingere",
+          "Ideal pentru utilizare zilnică în orice bucătărie"
+        ]
+      },
+      {
+        "name": "Set din 5 cuțite pe suport Prime Chef Krauff",
+        "material": "Oțel inoxidabil;",
+        "desc": "Cuțit de bucătar 20,5 cm; Cuțit santoku 17,5 cm; Cuțit santoku 13,5 cm; Cuțit universal 12,5 cm; Cuțit pentru curățat legume 9 cm;",
+        "features": [
+          "Oțel inoxidabil;",
+          "Mânere rezistente;",
+          "Suport din lemn elegant;",
+          "Îngrijire ușoară."
+        ]
+      },
+      {
+        "name": "Set din 5 cuțite Solvar Krauff",
+        "material": "Ascuțime perfectă;",
+        "desc": "Cuțit de bucătar 20,5 cm; Cuțit santoku 17,5 cm; Cuțit santoku 13,5 cm; Cuțit universal 12,8 cm; Cuțit pentru legume 9 cm; Suport pentru cuțite;",
+        "features": [
+          "Ascuțime perfectă;",
+          "Lame continue;",
+          "Set complet;",
+          "Bloc elegant."
+        ]
+      },
+      {
+        "name": "Set cuțite pe suport Prime Chef",
+        "material": "Oțel inoxidabil de înaltă calitate",
+        "desc": "Cuțit de bucătar 20,5 cm; Cuțit santoku 17,5 cm; Cuțit santoku 13,5 cm; Cuțit universal 12,8 cm; Cuțit pentru legume 9 cm; Suport pentru cuțite;",
+        "features": [
+          "Oțel inoxidabil de înaltă calitate",
+          "Mânere ergonomice din plastic ABS",
+          "Echilibru optim",
+          "Design modern"
+        ]
+      },
+      {
+        "name": "Set containere din sticlă Locker + CADOURI: Cupe termice Komfort 380 ml 2 buc",
+        "material": "Capace etanșe cu garnituri din silicon",
+        "desc": "Container cu capac 1500 ml; Container cu capac 1040 ml; Container cu capac 640 ml; Container cu capac 380 ml; Cupă termică Komfort 380 ml; Cupă termică Komfort 380 ml",
+        "features": [
+          "Capace etanșe cu garnituri din silicon",
+          "Sticlă termorezistentă",
+          "Rezistă la încălzire în microunde (fără capac)",
+          "Versatilitate în depozitare"
+        ]
+      },
+      {
+        "name": "Set recipiente din sticlă pentru depozitare și Termos 600ml",
+        "material": "Capace cu mecanism inovator de deschidere;",
+        "desc": "Recipient pentru depozitare Prime Chef Krauff 1,7 l cu capac înălțime 30 cm; Recipient pentru depozitare Prime Chef Krauff 0,84 l cu capac înălțime 17 cm; Recipient pentru depozitare Prime Chef Krauff 0,58 l cu capac înălțime 13 cm; Termos 600 ml",
+        "features": [
+          "Capace cu mecanism inovator de deschidere;",
+          "Numărător de zile pe capace;",
+          "Varietate de volume;"
+        ]
+      },
+      {
+        "name": "Ceainic Krauff Nebion 3 l",
+        "material": "Linii elegante ale corpului.",
+        "desc": "Fund feromagnetic cu trei straturi Turnare sigură și controlată",
+        "features": [
+          "Linii elegante ale corpului.",
+          "Geometrie precisă a mânerului.",
+          "Fund feromagnetic cu trei straturi",
+          "Turnare sigură și controlată."
+        ]
+      },
+      {
+        "name": "Seturi de veselă ceramică 15 buc. Set oale și tigăi cu acoperire antiaderentă (negru 15)",
+        "material": "Acoperirea ceramică antiaderentă este sigură și netoxică",
+        "desc": "Set de veselă ceramică cu acoperire antiaderentă — netoxic și mai sănătos decât Teflon! Set cu friteuză 9\"/11\", friteuză cu capac 11\"/4,5 quarts, capac tigaie 1,5 quarts, spatule din silicon, linguri, clești și 4 huse de protecție.",
+        "features": [
+          "Acoperirea ceramică antiaderentă este sigură și netoxică",
+          "Rezistentă la zgârieturi și asigură alunecare excelentă a alimentelor",
+          "Vasele se curăță ușor",
+          "Potrivit pentru toate tipurile de aragaze",
+          "Mânere din bachelită care nu se încălzesc"
+        ]
+      },
+      {
+        "name": "Set oale și tigăi ceramice Kikcoin din 16 piese cu acoperire antiaderentă, include tigaie grill 9,5 inci, set vase inducție",
+        "material": "Acoperirea ceramică antiaderentă este sigură și netoxică",
+        "desc": "Fabricat din minerale naturale, nu emite vapori la supraîncălzire.",
+        "features": [
+          "Acoperirea ceramică antiaderentă este sigură și netoxică",
+          "Rezistentă la zgârieturi și asigură alunecare excelentă a alimentelor",
+          "Vasele se curăță ușor",
+          "Potrivit pentru toate tipurile de aragaze",
+          "Mânere din bachelită care nu se încălzesc"
+        ]
+      }
+    ]
+  },
+  "reviews": {
+    "badge": "Recenzii clienți",
+    "title": "Ce spun cumpărătorii noștri",
+    "subtitle": "Recenzii reale – fără stele false",
+    "items": [
+      {
+        "name": "Maria I.",
+        "city": "București",
+        "rating": 5,
+        "initials": "MI",
+        "text": "Calitate incredibilă! Setul de marmură este și mai frumos decât în poză. Livrare în 3 zile, totul intact și frumos ambalat.",
+        "product": "Set farfurii Marble",
+        "date": "12 aprilie 2025",
+        "source": "Google"
+      },
+      {
+        "name": "Andrei P.",
+        "city": "Cluj-Napoca",
+        "rating": 5,
+        "initials": "AP",
+        "text": "Cana Terracotta ca dar pentru soție – este total entuziasmată. Meșteșug deosebit și serviciu excelent.",
+        "product": "Cană ceramică Terracotta",
+        "date": "3 martie 2025",
+        "source": "Trustpilot"
+      },
+      {
+        "name": "Elena V.",
+        "city": "Timișoara",
+        "rating": 5,
+        "initials": "EV",
+        "text": "În sfârșit un bol de sticlă care rezistă! Solid, rezistent la mașina de spălat, superb. Recomand cu căldură.",
+        "product": "Bol sticlă Grande",
+        "date": "19 februarie 2025",
+        "source": "Google"
+      },
+      {
+        "name": "Radu C.",
+        "city": "Iași",
+        "rating": 5,
+        "initials": "RC",
+        "text": "Suportul a înlocuit cana defectă imediat fără retur. Exact așa trebuie să arate serviciul clienți!",
+        "product": "Serviciu ceai Ivory",
+        "date": "7 ianuarie 2025",
+        "source": "Trustpilot"
+      },
+      {
+        "name": "Ioana M.",
+        "city": "Constanța",
+        "rating": 5,
+        "initials": "IM",
+        "text": "Setul Nordic se potrivește perfect în bucătăria mea. Minimalist, calitate înaltă și preț bun!",
+        "product": "Set căni Nordic",
+        "date": "28 februarie 2025",
+        "source": "Google"
+      },
+      {
+        "name": "Dan S.",
+        "city": "Brașov",
+        "rating": 5,
+        "initials": "DS",
+        "text": "Formă de copt foarte frumoasă. Prețul este imbatabil pentru calitate. Voi mai comanda!",
+        "product": "Formă copt Rustic",
+        "date": "15 martie 2025",
+        "source": "Trustpilot"
+      }
+    ]
+  },
+  "offer": {
+    "badge": "Doar 48 de ore",
+    "title": "−20% la prima ta comandă",
+    "desc": "Profită de oferta de bun venit: 20% reducere la toată ceramica și porțelanul. Fără comandă minimă, livrare gratuită de la 50€.",
+    "cta": "Comandă acum",
+    "sub": "Oferta se termină curând – doar cât timp durează stocul"
+  },
+  "footer": {
+    "tagline": "Ceramică artizanală pentru momente speciale la masă.",
+    "rights": "Toate drepturile rezervate.",
+    "links": [
+      "Confidențialitate",
+      "Imprint",
+      "Termeni"
+    ],
+    "contact": "Contact: info@krauff.de"
+  },
+  "cart": {
+    "title": "Coșul tău",
+    "empty": "Coșul tău este gol",
+    "backToCatalog": "La colecție",
+    "total": "Total",
+    "checkout": "La casă",
+    "freeDeliveryRemaining": "Doar €{amount} până la livrare gratuită",
+    "freeDeliveryAchieved": "Livrare gratuită inclusă!",
+    "remove": "Elimină"
+  }
 }

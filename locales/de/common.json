@@ -1,6 +1,23 @@
 {
-  "nav": { "home": "Startseite", "about": "Über uns", "cart": "Warenkorb" },
+  "nav": { "home": "Startseite", "about": "Über uns", "delivery": "Versand & Zahlung", "contacts": "Kontakt", "cart": "Warenkorb" },
   "footer": { "rights": "Alle Rechte vorbehalten" },
-  "cart": { "empty": "Ihr Warenkorb ist leer", "total": "Gesamt", "checkout": "Zur Kasse" },
+  "cart": {
+    "title": "Warenkorb",
+    "empty": "Ihr Warenkorb ist leer",
+    "backToCatalog": "Zum Katalog",
+    "total": "Gesamt",
+    "checkout": "Zur Kasse",
+    "freeDeliveryRemaining": "Noch {amount} € bis zum kostenlosen Versand",
+    "freeDeliveryAchieved": "Kostenloser Versand!",
+    "upsellTitle": "Bestellung ergänzen",
+    "upsellAdd": "+ Hinzufügen",
+    "promoPlaceholder": "Rabattcode",
+    "promoApply": "Anwenden",
+    "paymentNote": "Zahlung per Karte, PayPal oder Klarna",
+    "upsellItems": [
+      { "name": "Topfuntersetzer", "price": 5 },
+      { "name": "Servietten-Set", "price": 6 }
+    ]
+  },
   "buttons": { "buy": "Kaufen", "more": "Mehr erfahren", "back": "Zurück" }
 }
