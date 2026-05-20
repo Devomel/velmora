@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getMessages } from '@/lib/i18n';
-import { getProductById, PRODUCT_DATA, getProductImagePath } from '@/lib/products';
+import { getProductById, PRODUCT_DATA } from '@/lib/products';
 import { getProductImages } from '@/lib/product-images';
 import L2AddToCartButton from './L2AddToCartButton';
 import L2Footer from '../../components/L2Footer';
@@ -151,7 +151,7 @@ export default async function L2ProductPage({ params }: { params: Promise<{ id: 
                   className="bg-white border border-[#FECACA] hover:border-[#DC2626] hover:shadow-md transition-all duration-200 flex flex-col"
                 >
                   <div className="h-48 bg-white overflow-hidden">
-                    <img src={getProductImagePath(p.articleKey)} alt={p.locale?.name ?? ''} className="w-full h-full object-contain p-2" />
+                    <img src={getProductImages(p.articleKey)[0]} alt={p.locale?.name ?? ''} className="w-full h-full object-contain p-2" />
                   </div>
                   <div className="p-4">
                     <p className="text-[10px] text-[#6B7280] uppercase tracking-wider mb-1">{p.locale?.material}</p>

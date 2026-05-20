@@ -1,5 +1,7 @@
 import { getMessages } from '@/lib/i18n';
 import { PRODUCT_DATA } from '@/lib/products';
+import { getProductImages } from '@/lib/product-images';
+import { POT_ARTICLE_KEYS } from '@/lib/categories';
 import L1Hero from './components/L1Hero';
 import L1Stats from './components/L1Stats';
 import L1Usp from './components/L1Usp';
@@ -13,6 +15,8 @@ const LOGO_TEXT = 'Emerald Craft';
 
 export default async function Land1Page() {
   const { land1 } = await getMessages();
+  const potData = PRODUCT_DATA.filter(p => POT_ARTICLE_KEYS.includes(p.articleKey));
+  const productImages = Object.fromEntries(potData.map(p => [p.articleKey, getProductImages(p.articleKey)[0]]));
 
   return (
     <div className="min-h-screen">
@@ -20,7 +24,7 @@ export default async function Land1Page() {
       <L1Stats items={land1.stats} />
       <L1Usp t={land1.usp} />
       <L1Benefits t={land1.benefits} />
-      <L1Catalog t={land1.catalog} data={PRODUCT_DATA} />
+      <L1Catalog t={land1.catalog} data={potData} productImages={productImages} />
       <L1Reviews t={land1.reviews} />
       <L1Offer t={land1.offer} />
       <L1Footer t={land1.footer} logoText={LOGO_TEXT} />

@@ -4,7 +4,6 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { useL2Cart } from './L2CartProvider';
 import type { ProductData } from '@/lib/products';
-import { getProductImagePath } from '@/lib/products';
 
 type ProductLocale = { name: string; material: string; desc: string };
 
@@ -17,7 +16,7 @@ type CatalogT = {
   products: ProductLocale[];
 };
 
-type Props = { t: CatalogT; data: ProductData[] };
+type Props = { t: CatalogT; data: ProductData[]; productImages: Record<string, string> };
 type SortKey = 'default' | 'priceAsc' | 'priceDesc' | 'rating';
 
 function Stars({ rating }: { rating: number }) {
@@ -34,7 +33,7 @@ function Stars({ rating }: { rating: number }) {
 
 const PAGE_SIZE = 8;
 
-export default function L2Catalog({ t, data }: Props) {
+export default function L2Catalog({ t, data, productImages }: Props) {
   const { addItem } = useL2Cart();
   const [activeCategory, setActiveCategory] = useState('all');
   const [sortKey, setSortKey] = useState<SortKey>('default');
@@ -44,7 +43,7 @@ export default function L2Catalog({ t, data }: Props) {
   const categoryKeys = ['all', ...Object.keys(t.categories).filter(k => k !== 'all')];
 
   const filtered = useMemo(() => {
-    let list = data.map((p, i) => ({ ...p, locale: t.products[i] }));
+    let list = data.map(p => ({ ...p, locale: t.products[p.id - 1] }));
     if (activeCategory !== 'all') list = list.filter(p => p.categoryKey === activeCategory);
     switch (sortKey) {
       case 'priceAsc': list = [...list].sort((a, b) => a.price - b.price); break;
@@ -125,7 +124,7 @@ export default function L2Catalog({ t, data }: Props) {
                       </span>
                     )}
                     <img
-                      src={getProductImagePath(p.articleKey)}
+                      src={productImages[p.articleKey]}
                       alt={p.locale?.name ?? ''}
                       className="w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-300"
                     />

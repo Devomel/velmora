@@ -18,19 +18,29 @@ export function getProductImages(articleKey: string): string[] {
       return [`/products/${slug}.webp`];
    }
 
-   const matched = files
-      .filter(f => {
-         if (!f.toLowerCase().endsWith('.webp')) return false;
-         const stem = f.slice(0, -5);
-         return stem === slug || stem.startsWith(slug + '_');
-      })
+   const matched = files.filter(f => {
+      if (!f.toLowerCase().endsWith('.webp')) return false;
+      const stem = f.slice(0, -5);
+      return stem === slug || stem.startsWith(slug + '_');
+   });
+
+   const hasMain = matched.some(f => f.slice(0, -5) === slug);
+
+   const sorted = matched
       .sort((a, b) => {
          const suffixOf = (f: string) => f.slice(0, -5).slice(slug.length);
-         const order = (s: string) =>
-            s === '' ? 0 : s === '_2' ? 1 : s === '_3' ? 2 : 3;
+         const order = (s: string) => {
+            if (s === '') return 0;
+            if (s === '_pod' && !hasMain) return 0;
+            if (s === '_2') return 1;
+            if (s === '_3') return 2;
+            if (s === '_4') return 3;
+            if (s === '_pod') return 4;
+            return 5;
+         };
          return order(suffixOf(a)) - order(suffixOf(b));
       })
       .map(f => `/products/${f}`);
 
-   return matched.length > 0 ? matched : [`/products/${slug}.webp`];
+   return sorted.length > 0 ? sorted : [`/products/${slug}.webp`];
 }

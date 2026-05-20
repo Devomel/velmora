@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import type { HomeT } from '@/lib/i18n';
-import { PRODUCT_DATA, type ProductData, getProductImagePath } from '@/lib/products';
+import { PRODUCT_DATA, type ProductData } from '@/lib/products';
 import { useCart } from '@/components/CartProvider';
 
-type Props = { t: HomeT['catalog'] };
+type Props = { t: HomeT['catalog']; productImages: Record<string, string> };
 
 const prices = PRODUCT_DATA.map(p => p.price).sort((a, b) => a - b);
 const p33 = prices[Math.floor(prices.length / 3)];
@@ -32,10 +32,11 @@ function Stars({ rating }: { rating: number }) {
 
 type Product = ProductData & { name: string; material: string; volume?: string; description: string };
 
-function ProductCard({ product, addToCartLabel, badges }: {
+function ProductCard({ product, addToCartLabel, badges, imageSrc }: {
   product: Product;
   addToCartLabel: string;
   badges: { sale: string; new: string };
+  imageSrc: string;
 }) {
   const { addItem } = useCart();
 
@@ -47,7 +48,7 @@ function ProductCard({ product, addToCartLabel, badges }: {
       <div className="relative bg-white overflow-hidden" style={{ height: '220px' }}>
         <div className="w-full h-full group-hover:scale-[1.02] transition-transform duration-300">
           <img
-            src={getProductImagePath(product.articleKey)}
+            src={imageSrc}
             alt={product.name}
             className="w-full h-full object-contain p-3"
           />
@@ -96,7 +97,7 @@ function ProductCard({ product, addToCartLabel, badges }: {
   );
 }
 
-export default function CatalogSection({ t }: Props) {
+export default function CatalogSection({ t, productImages }: Props) {
   const [activeCategoryKey, setActiveCategoryKey] = useState('all');
   const [priceIdx, setPriceIdx] = useState(0);
   const [minRating, setMinRating] = useState(0);
@@ -176,7 +177,7 @@ export default function CatalogSection({ t }: Props) {
         {filtered.length > 0 ? (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {filtered.map(p => (
-              <ProductCard key={p.id} product={p} addToCartLabel={t.addToCart} badges={t.badges} />
+              <ProductCard key={p.id} product={p} addToCartLabel={t.addToCart} badges={t.badges} imageSrc={productImages[p.articleKey]} />
             ))}
           </div>
         ) : (
