@@ -1,0 +1,65 @@
+{
+  "product": {
+    "name": "Antihaft-Pfannen-Set, 3 Stück",
+    "tagline": "Marmorantihaftbeschichtung ⌀26/28/28 tief cm — braten ohne Öl, Reinigung in Sekunden",
+    "badge": "Sonderangebot",
+    "readMore": "Mehr anzeigen",
+    "readLess": "Weniger anzeigen",
+    "fullDesc": "Pfannen-Set — Vielseitigkeit und Komfort für die tägliche Zubereitung\n\nDas Pfannen-Set wird ein hervorragender Helfer in der Küche für die Zubereitung verschiedener Gerichte. Dank der Anti-Haft-Marmorbeschichtung brennen Lebensmittel nicht an, und das Kochen wird leicht und angenehm.\n\n✨ Ideal für den täglichen Einsatz\n\nDie Pfannen eignen sich hervorragend für:\n✔️ das Braten von Gemüse, Fleisch und Fisch\n✔️ die Zubereitung von Frühstück\n✔️ Schmoren und Anbraten\n✔️ die Zubereitung großer Portionen für die ganze Familie\n\n🍳 Anti-Haft-Marmorbeschichtung\n\nDie hochwertige Beschichtung sorgt für:\n✔️ einfache Reinigung nach der Verwendung\n✔️ Kochen mit minimalem Ölverbrauch\n✔️ komfortablen täglichen Gebrauch\n✔️ gleichmäßiges Anbraten von Lebensmitteln\n\n🔥 Gleichmäßige Wärmeverteilung\n\nDer Aluminiumkorpus erhitzt sich schnell und verteilt die Wärme gleichmäßig über die gesamte Oberfläche, was zu hervorragenden Kochergebnissen führt.\n\n💎 Lieferumfang\n\n— Aluminiumpfanne mit Anti-Haft-Marmorbeschichtung, Durchmesser 26 cm\n— Aluminiumpfanne mit Anti-Haft-Marmorbeschichtung, Durchmesser 28 cm\n— Tiefe Aluminiumpfanne mit Anti-Haft-Marmorbeschichtung, Durchmesser 28 cm\n— Universeller Glasdeckel, Durchmesser 24–28 cm\n\n🖐️ Komfort in der Verwendung\n\nDie ergonomischen Griffe sorgen für Bequemlichkeit, und der universelle Glasdeckel macht das Set noch praktischer für die tägliche Zubereitung verschiedener Gerichte.\n✨ Dies ist ein vielseitiges Set für komfortables Kochen und Freude an jedem Prozess in der Küche."
+  },
+  "heroBtn": "Jetzt bestellen",
+  "order": {
+    "badge": "Jetzt bestellen",
+    "title": "Jetzt kaufen",
+    "subtitle": "Hinterlassen Sie Ihre Kontaktdaten — ein Manager ruft zur Bestätigung an",
+    "nameLabel": "Ihr Name",
+    "namePlaceholder": "Name eingeben",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+49 ___ ___-___",
+    "qtyLabel": "Menge",
+    "totalLabel": "Gesamt",
+    "btnBuy": "Jetzt kaufen",
+    "processing": "Wird verarbeitet...",
+    "successTitle": "Vielen Dank für Ihre Bestellung!",
+    "successText": "Unser Manager wird sich in Kürze mit Ihnen in Verbindung setzen, um die Bestellung zu bestätigen und die Lieferdetails zu klären.",
+    "trust": ["Kostenlose Lieferung", "14 Tage Rückgabe", "Zahlung bei Lieferung"]
+  },
+  "reviews": {
+    "badge": "Kundenbewertungen",
+    "title": "Was Kunden sagen",
+    "subtitle": "Echte Bewertungen von Kunden, die bereits bestellt haben",
+    "items": [
+      { "name": "Claudia Bauer", "city": "Berlin", "initials": "CB", "rating": 5, "text": "Wunderbare Pfannen! Spiegeleier ohne einen Tropfen Öl — und nichts klebt an. Leicht zu reinigen, Beschichtung ist einwandfrei. Drei Größen sehr praktisch — für jeden Anlass die Richtige.", "date": "15. Mai 2025" },
+      { "name": "Ursula Braun", "city": "Hamburg", "initials": "UB", "rating": 5, "text": "Vor einer Woche bestellt — schon mehrfach Fisch, Fleisch und Pfannkuchen gebraten. Alles wunderbar! Die Griffe werden nicht heiß, universeller Deckel — sehr praktisch.", "date": "7. Mai 2025" },
+      { "name": "Helga Schwarz", "city": "Köln", "initials": "HS", "rating": 5, "text": "Die Marmorbeschichtung sieht edel aus und haftet wirklich nicht. Erhitzt sich schnell und gleichmäßig. Würde ohne Zögern wieder kaufen.", "date": "1. Mai 2025" },
+      { "name": "Brigitte Wolf", "city": "München", "initials": "BW", "rating": 4, "text": "Sehr gute Pfannen, Beschichtungsqualität ausgezeichnet — einen Monat intensiv genutzt und alles einwandfrei. In der Spülmaschine gereinigt — keine Probleme.", "date": "22. April 2025" }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über das Produkt und die Bestellung wissen möchten",
+    "items": [
+      { "q": "Welche Beschichtung haben die Pfannen?", "a": "Marmor-Antihaftbeschichtung auf Aluminiumbasis. Ermöglicht das Braten mit minimalem Öl oder ganz ohne Öl. Gesundheitlich unbedenklich." },
+      { "q": "Sind die Pfannen für Induktionsherde geeignet?", "a": "Nein, diese Pfannen sind für Gas- und Elektroherde konzipiert. Für Induktion empfehlen wir unsere Edelstahl-Topfsets mit Kapselböden." },
+      { "q": "Welche Durchmesser sind im Set enthalten?", "a": "Im Set: Pfanne ⌀26 cm, Pfanne ⌀28 cm und tiefe Pfanne ⌀28 cm. Dazu ein universeller Glasdeckel für 24–28 cm." },
+      { "q": "Wie pflegt man die Beschichtung richtig?", "a": "Mit weichem Schwamm und Spülmittel reinigen. Keine Metallspatel oder Scheuermittel verwenden. Spülmaschinenfest. Pfannen nicht ohne Schutz stapeln." },
+      { "q": "Welche Rückgabebedingungen gelten?", "a": "Es gilt eine 14-tägige Rückgabegarantie. Wenn das Produkt Sie nicht zufriedenstellt, erstatten wir den vollen Kaufpreis." }
+    ]
+  },
+  "utp": {
+    "badge": "Unsere Vorteile",
+    "title": "Warum uns wählen",
+    "subtitle": "Wir kümmern uns um jeden Kunden von der Bestellung bis zur Lieferung",
+    "items": [
+      { "title": "14 Tage Rückgabe", "desc": "Wir erstatten Ihnen den vollen Betrag ohne Fragen, wenn das Produkt nicht Ihren Erwartungen entspricht." },
+      { "title": "Bequeme Zahlung", "desc": "Per Karte online, bar bei Lieferung oder bequem auf Raten." },
+      { "title": "Schnelle Lieferung", "desc": "Versand innerhalb von 1–2 Werktagen. Lieferung in ganz Deutschland." },
+      { "title": "Qualität garantiert", "desc": "Alle Produkte sind zertifiziert und haben unsere Qualitätsprüfung bestanden." }
+    ],
+    "ctaTitle": "Bereit zu bestellen?",
+    "ctaSubtitle": "Lieferung deutschlandweit · Zahlung bei Lieferung",
+    "ctaBtn": "Jetzt bestellen"
+  },
+  "footer": { "rights": "Alle Rechte vorbehalten." }
+}

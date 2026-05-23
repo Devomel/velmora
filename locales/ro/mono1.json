@@ -1,0 +1,65 @@
+{
+  "product": {
+    "name": "Set 3 recipiente din sticlă Locker",
+    "tagline": "Capace etanșe cu garnituri din silicon — alimentele rămân proaspete mult mai mult",
+    "badge": "Preț promoțional",
+    "readMore": "Arată mai mult",
+    "readLess": "Arată mai puțin",
+    "fullDesc": "Recipiente de sticlă Locker — depozitare convenabilă și prospețime pentru alimente în fiecare zi\n\nSetul de recipiente din sticlă Locker este o soluție practică pentru depozitarea, reîncălzirea și transportul alimentelor. Recipientele sunt fabricate din sticlă rezistentă la căldură și echipate cu capace etanșe cu garnituri din silicon, care păstrează în mod fiabil prospețimea conținutului.\n\n✨ Ideal pentru utilizare zilnică\n\nRecipientele sunt perfecte pentru:\n✔️ depozitarea legumelor și fructelor\n✔️ mâncăruri gata preparate și garnituri\n✔️ sosuri și gustări\n✔️ depozitarea alimentelor în frigider sau congelator\n\n🥬 Prospețimea alimentelor mai mult timp\n\nCapacele etanșe se închid bine, prevenind scurgerile și intrarea aerului. Aceasta ajută la păstrarea gustului, aromei și prospețimii alimentelor pentru mult mai mult timp.\n\n🔥❄️ Versatilitate în utilizare\n\nRecipientele sunt potrivite pentru:\n✔️ cuptorul cu microunde (fără capac)\n✔️ frigider\n✔️ congelator\n\n💎 Conținutul setului\n\n— Recipient cu capac 1040 ml\n— Recipient cu capac 640 ml\n— Recipient cu capac 380 ml\n\n🖐️ Confort în utilizare\n✨ Locker — depozitare convenabilă, practicalitate și confort pentru bucătăria și viața de zi cu zi."
+  },
+  "heroBtn": "Comandă acum",
+  "order": {
+    "badge": "Plasează o comandă",
+    "title": "Cumpără acum",
+    "subtitle": "Lasă datele de contact — un manager va suna pentru confirmare",
+    "nameLabel": "Numele tău",
+    "namePlaceholder": "Introduceți numele",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+40 ___ ___-___",
+    "qtyLabel": "Cantitate",
+    "totalLabel": "Total",
+    "btnBuy": "Cumpără acum",
+    "processing": "Se procesează...",
+    "successTitle": "Mulțumim pentru comandă!",
+    "successText": "Managerul nostru vă va contacta în cel mai scurt timp pentru a confirma comanda și a clarifica detaliile de livrare.",
+    "trust": ["Livrare gratuită", "Returnare 14 zile", "Plată la livrare"]
+  },
+  "reviews": {
+    "badge": "Recenziile clienților",
+    "title": "Ce spun clienții",
+    "subtitle": "Recenzii reale de la clienți care au comandat deja",
+    "items": [
+      { "name": "Maria Ionescu", "city": "București", "initials": "MI", "rating": 5, "text": "Recipiente foarte practice! Capacele etanșe păstrează cu adevărat prospețimea — o săptămână cu legume tăiate în frigider și totul este încă proaspăt. Sticla este solidă și grea. Sunt foarte mulțumită!", "date": "12 mai 2025" },
+      { "name": "Elena Popa", "city": "Cluj-Napoca", "initials": "EP", "rating": 5, "text": "Comandat pentru frigider — perfect. Ocupă puțin spațiu, pot fi stivuite. Capacele se deschid ușor și se închid bine. Recomand!", "date": "3 mai 2025" },
+      { "name": "Ana Gheorghe", "city": "Timișoara", "initials": "AG", "rating": 5, "text": "Setul corespunde pe deplin descrierii. Sticla este rezistentă, am spălat deja în mașina de spălat vase — totul este în regulă. O să comand și pentru fiica mea.", "date": "28 aprilie 2025" },
+      { "name": "Cristina Stan", "city": "Iași", "initials": "CS", "rating": 4, "text": "În general mulțumită. Recipientele sunt practice și frumoase. Puțin grele, dar asta se datorează sticlei de calitate. Raportul preț/calitate este bun.", "date": "20 aprilie 2025" }
+    ]
+  },
+  "faq": {
+    "badge": "Întrebări frecvente",
+    "title": "Întrebări frecvente",
+    "subtitle": "Tot ce doriți să știți despre produs și comandă",
+    "items": [
+      { "q": "Din ce material sunt fabricate recipientele?", "a": "Recipientele sunt fabricate din sticlă solidă rezistentă la căldură. Capacele sunt din plastic alimentar cu garnituri din silicon pentru etanșeitate completă." },
+      { "q": "Pot fi folosite în cuptorul cu microunde?", "a": "Da, recipientele sunt potrivite pentru cuptorul cu microunde. Important: scoateți întotdeauna capacul înainte de utilizare." },
+      { "q": "Pot fi spălate în mașina de spălat vase?", "a": "Da, toate cele trei recipiente și capacele sunt sigure pentru mașina de spălat vase." },
+      { "q": "Ce volume sunt incluse în set?", "a": "Setul conține trei recipiente cu capace: 1040 ml, 640 ml și 380 ml — dimensiuni practice pentru diverse nevoi." },
+      { "q": "Ce condiții de returnare sunt valabile?", "a": "Se aplică o garanție de returnare de 14 zile. Dacă produsul nu vă satisface din orice motiv, vă rambursăm suma integrală." }
+    ]
+  },
+  "utp": {
+    "badge": "Avantajele noastre",
+    "title": "De ce să ne alegeți",
+    "subtitle": "Ne pasă de fiecare client de la comandă la livrare",
+    "items": [
+      { "title": "Returnare 14 zile", "desc": "Vă rambursăm suma integrală fără întrebări dacă produsul nu v-a satisfăcut." },
+      { "title": "Plată convenabilă", "desc": "Cu cardul online, numerar la livrare sau în rate." },
+      { "title": "Livrare rapidă", "desc": "Expediem în 1–2 zile lucrătoare. Livrare în toată România." },
+      { "title": "Calitate garantată", "desc": "Toate produsele sunt certificate și au trecut controlul nostru de calitate." }
+    ],
+    "ctaTitle": "Gata să comandați?",
+    "ctaSubtitle": "Livrare în toată România · Plată la livrare",
+    "ctaBtn": "Comandați acum"
+  },
+  "footer": { "rights": "Toate drepturile rezervate." }
+}

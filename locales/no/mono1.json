@@ -1,0 +1,65 @@
+{
+  "product": {
+    "name": "Sett med 3 glassbeholdere Locker",
+    "tagline": "Lufttette silikonlokk — maten holder seg frisk mye lenger",
+    "badge": "Kampanjepris",
+    "readMore": "Vis mer",
+    "readLess": "Vis mindre",
+    "fullDesc": "Glassbeholdere Locker — praktisk oppbevaring og friskhet for matvarer hver dag\n\nGlassbeholder-settet Locker er en praktisk løsning for oppbevaring, oppvarming og transport av matvarer. Beholderne er laget av holdbart varmebestandig glass og utstyrt med lufttette lokk med silikonforseglinger som pålitelig bevarer friskheten til innholdet.\n\n✨ Ideelt for daglig bruk\n\nBeholderne er perfekte for:\n✔️ oppbevaring av grønnsaker og frukt\n✔️ ferdiglagde retter og tilbehør\n✔️ sauser og snacks\n✔️ oppbevaring av mat i kjøleskap eller fryser\n\n🥬 Matvarer forblir ferske lenger\n\nDe lufttette lokkene lukkes tett og forhindrer lekkasje og luftinntrengning. Dette hjelper med å bevare smak, aroma og friskhet på matvarer mye lenger.\n\n🔥❄️ Allsidig bruk\n\nBeholderne er egnet for:\n✔️ mikrobølgeovn (uten lokk)\n✔️ kjøleskap\n✔️ fryser\n\n💎 Innhold i settet\n\n— Beholder med lokk 1040 ml\n— Beholder med lokk 640 ml\n— Beholder med lokk 380 ml\n\n🖐️ Komfort i bruk\n✨ Locker — praktisk oppbevaring, funksjonalitet og komfort for ditt kjøkken og hverdagsliv."
+  },
+  "heroBtn": "Bestill nå",
+  "order": {
+    "badge": "Bestill nå",
+    "title": "Kjøp nå",
+    "subtitle": "Legg igjen kontaktopplysningene dine — en manager ringer for å bekrefte",
+    "nameLabel": "Ditt navn",
+    "namePlaceholder": "Skriv inn navn",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+47 ___ ___-___",
+    "qtyLabel": "Antall",
+    "totalLabel": "Totalt",
+    "btnBuy": "Kjøp nå",
+    "processing": "Behandler...",
+    "successTitle": "Takk for bestillingen!",
+    "successText": "Vår manager vil kontakte deg snarest for å bekrefte bestillingen og avklare leveringsdetaljer.",
+    "trust": ["Gratis levering", "14 dagers retur", "Betaling ved levering"]
+  },
+  "reviews": {
+    "badge": "Kundeanmeldelser",
+    "title": "Hva kunder sier",
+    "subtitle": "Ekte anmeldelser fra kunder som allerede har bestilt",
+    "items": [
+      { "name": "Ingrid Hansen", "city": "Oslo", "initials": "IH", "rating": 5, "text": "Veldig praktiske beholdere! De lufttette lokkene holder virkelig friskheten — en uke med kuttet grønnsaker og alt er fortsatt friskt. Glasset er solid og tungt. Veldig fornøyd!", "date": "12. mai 2025" },
+      { "name": "Kari Andersen", "city": "Bergen", "initials": "KA", "rating": 5, "text": "Bestilt til kjøleskapet — perfekt. Tar liten plass, kan stables. Lokkene er enkle å åpne og lukker seg godt. Anbefaler!", "date": "3. mai 2025" },
+      { "name": "Mari Olsen", "city": "Trondheim", "initials": "MO", "rating": 5, "text": "Settet tilsvarer beskrivelsen helt. Glasset er solid, allerede vasket i oppvaskmaskin — alt OK. Skal kjøpe et til til datteren min.", "date": "28. april 2025" },
+      { "name": "Tone Nilsen", "city": "Stavanger", "initials": "TN", "rating": 4, "text": "Generelt fornøyd. Beholderne er praktiske og fine. Litt tunge, men det er på grunn av det gode glasset. Pris/kvalitet stemmer.", "date": "20. april 2025" }
+    ]
+  },
+  "faq": {
+    "badge": "Ofte stilte spørsmål",
+    "title": "Ofte stilte spørsmål",
+    "subtitle": "Alt du vil vite om produktet og bestillingen",
+    "items": [
+      { "q": "Hvilket materiale er beholderne laget av?", "a": "Beholderne er laget av robust, varmebestandig glass. Lokkene er av matvaresikkert plast med silikonpakninger for full hermetisering." },
+      { "q": "Er beholderne egnet for mikrobølgeovn?", "a": "Ja, beholderne kan brukes i mikrobølgeovnen. Viktig: Ta alltid av lokket før bruk i mikrobølgeovnen." },
+      { "q": "Kan de vaskes i oppvaskmaskin?", "a": "Ja, alle tre beholdere og lokk er trygge å vaske i oppvaskmaskin." },
+      { "q": "Hvilke volumer er inkludert i settet?", "a": "Settet inneholder tre beholdere med lokk: 1040 ml, 640 ml og 380 ml — praktiske størrelser for ulike behov." },
+      { "q": "Hvilke returvilkår gjelder?", "a": "Det gjelder en 14-dagers returgaranti. Hvis produktet ikke tilfredsstiller deg av en eller annen grunn, refunderer vi hele kjøpesummen." }
+    ]
+  },
+  "utp": {
+    "badge": "Våre fordeler",
+    "title": "Hvorfor velge oss",
+    "subtitle": "Vi tar vare på hver kunde fra bestilling til levering",
+    "items": [
+      { "title": "14 dagers retur", "desc": "Vi refunderer hele beløpet uten spørsmål hvis produktet ikke tilfredsstilte deg." },
+      { "title": "Enkel betaling", "desc": "Med kort online, kontant ved levering eller avbetaling." },
+      { "title": "Rask levering", "desc": "Sendes innen 1–2 virkedager. Levering over hele Norge." },
+      { "title": "Kvalitet garantert", "desc": "Alle produkter er sertifisert og har bestått vår kvalitetskontroll." }
+    ],
+    "ctaTitle": "Klar til å bestille?",
+    "ctaSubtitle": "Levering over hele Norge · Betaling ved levering",
+    "ctaBtn": "Bestill nå"
+  },
+  "footer": { "rights": "Alle rettigheter forbeholdt." }
+}

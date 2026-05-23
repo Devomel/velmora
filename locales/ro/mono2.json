@@ -1,0 +1,65 @@
+{
+  "product": {
+    "name": "Set de tigăi antiaderente, 3 buc.",
+    "tagline": "Acoperire antiaderentă cu efect de marmură ⌀26/28/28 adânc cm — gătiți fără ulei, curățare în secunde",
+    "badge": "Preț promoțional",
+    "readMore": "Arată mai mult",
+    "readLess": "Arată mai puțin",
+    "fullDesc": "Set de tigăi — versatilitate și confort pentru gătit zilnic\n\nSetul de tigăi va fi un ajutor excelent în bucătărie pentru prepararea diverselor feluri de mâncare. Datorită acoperirii antiaderente cu efect de marmură, alimentele nu se lipesc, iar gătitul devine ușor și plăcut.\n\n✨ Ideal pentru utilizare zilnică\n\nTigăile sunt perfecte pentru:\n✔️ prăjit legume, carne și pește\n✔️ prepararea micului dejun\n✔️ înăbușit și rumenire\n✔️ prepararea porțiilor mari pentru întreaga familie\n\n🍳 Acoperire antiaderentă cu efect de marmură\n\nAcoperirea de calitate asigură:\n✔️ curățare ușoară după utilizare\n✔️ gătit cu o cantitate minimă de ulei\n✔️ utilizare zilnică confortabilă\n✔️ rumenire uniformă a alimentelor\n\n🔥 Distribuție uniformă a căldurii\n\nCorpul din aluminiu se încălzește rapid și distribuie căldura uniform pe întreaga suprafață, ceea ce ajută la obținerea unor rezultate excelente de gătit.\n\n💎 Conținutul setului\n\n— Tigaie din aluminiu cu acoperire antiaderentă cu efect de marmură, diametru 26 cm\n— Tigaie din aluminiu cu acoperire antiaderentă cu efect de marmură, diametru 28 cm\n— Tigaie adâncă din aluminiu cu acoperire antiaderentă cu efect de marmură, diametru 28 cm\n— Capac universal din sticlă, diametru 24–28 cm\n\n🖐️ Confort în utilizare\n\nMânerele ergonomice asigură confort în utilizare, iar capacul universal din sticlă adaugă practicitate setului pentru gătit zilnic al diverselor feluri de mâncare.\n✨ Acesta este un set versatil pentru gătit confortabil și plăcere în fiecare proces din bucătărie."
+  },
+  "heroBtn": "Comandă acum",
+  "order": {
+    "badge": "Plasează o comandă",
+    "title": "Cumpără acum",
+    "subtitle": "Lasă datele de contact — un manager va suna pentru confirmare",
+    "nameLabel": "Numele tău",
+    "namePlaceholder": "Introduceți numele",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+40 ___ ___-___",
+    "qtyLabel": "Cantitate",
+    "totalLabel": "Total",
+    "btnBuy": "Cumpără acum",
+    "processing": "Se procesează...",
+    "successTitle": "Mulțumim pentru comandă!",
+    "successText": "Managerul nostru vă va contacta în cel mai scurt timp pentru a confirma comanda și a clarifica detaliile de livrare.",
+    "trust": ["Livrare gratuită", "Returnare 14 zile", "Plată la livrare"]
+  },
+  "reviews": {
+    "badge": "Recenziile clienților",
+    "title": "Ce spun clienții",
+    "subtitle": "Recenzii reale de la clienți care au comandat deja",
+    "items": [
+      { "name": "Maria Dumitrescu", "city": "București", "initials": "MD", "rating": 5, "text": "Tigăi minunate! Ouă ochiuri fără o picătură de ulei — și nimic nu se lipește. Ușor de curățat, acoperirea este perfectă. Cele trei dimensiuni sunt foarte practice.", "date": "15 mai 2025" },
+      { "name": "Elena Radu", "city": "Cluj-Napoca", "initials": "ER", "rating": 5, "text": "Comandat acum o săptămână — am prăjit deja pește, carne și clătite de mai multe ori. Totul este minunat! Mânerele nu se încălzesc, capac universal — foarte practic.", "date": "7 mai 2025" },
+      { "name": "Ana Munteanu", "city": "Timișoara", "initials": "AM", "rating": 5, "text": "Acoperirea cu marmură arată elegant și chiar nu se lipește. Se încălzește rapid și uniform. Aș cumpăra din nou fără ezitare.", "date": "1 mai 2025" },
+      { "name": "Cristina Dima", "city": "Iași", "initials": "CD", "rating": 4, "text": "Tigăi foarte bune, calitatea acoperirii excelentă — o lună de utilizare intensivă și totul e bine. Spălat în mașina de spălat vase — nicio problemă.", "date": "22 aprilie 2025" }
+    ]
+  },
+  "faq": {
+    "badge": "Întrebări frecvente",
+    "title": "Întrebări frecvente",
+    "subtitle": "Tot ce doriți să știți despre produs și comandă",
+    "items": [
+      { "q": "Ce acoperire au tigăile?", "a": "Acoperire antiaderentă cu efect de marmură pe bază de aluminiu. Permite gătitul cu ulei minim sau fără ulei. Sigură pentru sănătate." },
+      { "q": "Sunt tigăile potrivite pentru plita cu inducție?", "a": "Nu, aceste tigăi sunt concepute pentru aragaz și plite electrice. Pentru inducție recomandăm seturile noastre de oale din oțel inoxidabil." },
+      { "q": "Ce diametre sunt incluse în set?", "a": "În set: tigaie ⌀26 cm, tigaie ⌀28 cm și tigaie adâncă ⌀28 cm. Plus un capac universal din sticlă pentru 24–28 cm." },
+      { "q": "Cum se îngrijește acoperirea?", "a": "Spălați cu burete moale și detergent de vase. Nu folosiți spatule metalice sau substanțe abrazive. Se poate spăla la mașina de vase. Depozitați cu o cârpă moale între tigăi." },
+      { "q": "Ce condiții de returnare sunt valabile?", "a": "Se aplică o garanție de returnare de 14 zile. Dacă produsul nu vă satisface din orice motiv, vă rambursăm suma integrală." }
+    ]
+  },
+  "utp": {
+    "badge": "Avantajele noastre",
+    "title": "De ce să ne alegeți",
+    "subtitle": "Ne pasă de fiecare client de la comandă la livrare",
+    "items": [
+      { "title": "Returnare 14 zile", "desc": "Vă rambursăm suma integrală fără întrebări dacă produsul nu v-a satisfăcut." },
+      { "title": "Plată convenabilă", "desc": "Cu cardul online, numerar la livrare sau în rate." },
+      { "title": "Livrare rapidă", "desc": "Expediem în 1–2 zile lucrătoare. Livrare în toată România." },
+      { "title": "Calitate garantată", "desc": "Toate produsele sunt certificate și au trecut controlul nostru de calitate." }
+    ],
+    "ctaTitle": "Gata să comandați?",
+    "ctaSubtitle": "Livrare în toată România · Plată la livrare",
+    "ctaBtn": "Comandați acum"
+  },
+  "footer": { "rights": "Toate drepturile rezervate." }
+}

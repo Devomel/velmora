@@ -17,7 +17,11 @@ type Messages = {
   contacts: typeof import("../locales/de/contacts.json");
   land1: typeof import("../locales/de/land1.json");
   land2: typeof import("../locales/de/land2.json");
+  mono1: typeof import("../locales/de/mono1.json");
+  mono2: typeof import("../locales/de/mono2.json");
 };
+
+export type MonoT = Messages["mono1"];
 
 export type HomeT = Messages["home"];
 export type CommonT = Messages["common"];
@@ -26,7 +30,7 @@ export type DeliveryT = Messages["delivery"];
 export type ContactsT = Messages["contacts"];
 
 export async function getMessages(): Promise<Messages> {
-  const [common, home, about, delivery, contacts, land1, land2] = await Promise.all([
+  const [common, home, about, delivery, contacts, land1, land2, mono1, mono2] = await Promise.all([
     import(`../locales/${LOCALE}/common.json`),
     import(`../locales/${LOCALE}/home.json`),
     import(`../locales/${LOCALE}/about.json`),
@@ -34,6 +38,8 @@ export async function getMessages(): Promise<Messages> {
     import(`../locales/${LOCALE}/contacts.json`),
     import(`../locales/${LOCALE}/land1.json`),
     import(`../locales/${LOCALE}/land2.json`),
+    import(`../locales/${LOCALE}/mono1.json`),
+    import(`../locales/${LOCALE}/mono2.json`),
   ]);
   return {
     common: common.default,
@@ -43,5 +49,7 @@ export async function getMessages(): Promise<Messages> {
     contacts: contacts.default,
     land1: land1.default,
     land2: land2.default,
+    mono1: mono1.default,
+    mono2: mono2.default,
   };
 }

@@ -1,0 +1,65 @@
+{
+  "product": {
+    "name": "Set aus 3 Glasbehältern Locker",
+    "tagline": "Luftdichte Silikon-Deckel — Lebensmittel bleiben deutlich länger frisch",
+    "badge": "Sonderangebot",
+    "readMore": "Mehr anzeigen",
+    "readLess": "Weniger anzeigen",
+    "fullDesc": "Glasbehälter Locker — bequeme Aufbewahrung und Frische für Lebensmittel jeden Tag\n\nDas Glasbehälter-Set Locker ist eine praktische Lösung zur Aufbewahrung, zum Aufwärmen und zum Transport von Lebensmitteln. Die Behälter sind aus robustem, hitzebeständigem Glas gefertigt und mit luftdichten Deckeln mit Silikonversiegelungen ausgestattet, die die Frische des Inhalts zuverlässig erhalten.\n\n✨ Ideal für den täglichen Gebrauch\n\nDie Behälter eignen sich hervorragend für:\n✔️ die Aufbewahrung von Gemüse und Obst\n✔️ fertige Gerichte und Beilagen\n✔️ Soßen und Snacks\n✔️ die Aufbewahrung von Lebensmitteln im Kühl- oder Gefrierschrank\n\n🥬 Lebensmittel länger frisch\n\nDie luftdichten Deckel schließen fest, verhindern Auslaufen und das Eindringen von Luft. Dies hilft, Geschmack, Aroma und Frische der Lebensmittel deutlich länger zu erhalten.\n\n🔥❄️ Vielseitige Verwendung\n\nDie Behälter sind geeignet für:\n✔️ die Mikrowelle (ohne Deckel)\n✔️ den Kühlschrank\n✔️ den Gefrierschrank\n\n💎 Lieferumfang\n\n— Behälter mit Deckel 1040 ml\n— Behälter mit Deckel 640 ml\n— Behälter mit Deckel 380 ml\n\n🖐️ Komfort in der Verwendung\n✨ Locker — bequeme Aufbewahrung, Praktikalität und Komfort für Ihre Küche und Ihren Alltag."
+  },
+  "heroBtn": "Jetzt bestellen",
+  "order": {
+    "badge": "Jetzt bestellen",
+    "title": "Jetzt kaufen",
+    "subtitle": "Hinterlassen Sie Ihre Kontaktdaten — ein Manager ruft zur Bestätigung an",
+    "nameLabel": "Ihr Name",
+    "namePlaceholder": "Name eingeben",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+49 ___ ___-___",
+    "qtyLabel": "Menge",
+    "totalLabel": "Gesamt",
+    "btnBuy": "Jetzt kaufen",
+    "processing": "Wird verarbeitet...",
+    "successTitle": "Vielen Dank für Ihre Bestellung!",
+    "successText": "Unser Manager wird sich in Kürze mit Ihnen in Verbindung setzen, um die Bestellung zu bestätigen und die Lieferdetails zu klären.",
+    "trust": ["Kostenlose Lieferung", "14 Tage Rückgabe", "Zahlung bei Lieferung"]
+  },
+  "reviews": {
+    "badge": "Kundenbewertungen",
+    "title": "Was Kunden sagen",
+    "subtitle": "Echte Bewertungen von Kunden, die bereits bestellt haben",
+    "items": [
+      { "name": "Anna Müller", "city": "Berlin", "initials": "AM", "rating": 5, "text": "Sehr praktische Behälter! Die luftdichten Deckel halten die Frische wirklich — schon eine Woche Gemüse im Kühlschrank und alles noch frisch. Das Glas ist hochwertig und schwer. Sehr zufrieden!", "date": "12. Mai 2025" },
+      { "name": "Sabine Weber", "city": "Hamburg", "initials": "SW", "rating": 5, "text": "Für den Kühlschrank bestellt — perfekt. Nehmen wenig Platz ein, sind stapelbar. Deckel lassen sich leicht öffnen und schließen sicher. Sehr empfehlenswert!", "date": "3. Mai 2025" },
+      { "name": "Monika Schulz", "city": "München", "initials": "MS", "rating": 5, "text": "Set entspricht vollständig der Beschreibung. Glas ist stabil, schon mehrfach in der Spülmaschine gewaschen — alles einwandfrei. Werde es als Geschenk kaufen.", "date": "28. April 2025" },
+      { "name": "Petra Fischer", "city": "Frankfurt", "initials": "PF", "rating": 4, "text": "Insgesamt sehr zufrieden. Behälter sind praktisch und schön. Etwas schwerer, aber das liegt am hochwertigen Glas. Preis-Leistung stimmt.", "date": "20. April 2025" }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über das Produkt und die Bestellung wissen möchten",
+    "items": [
+      { "q": "Aus welchem Material sind die Behälter?", "a": "Die Behälter sind aus robustem, hitzebeständigem Glas gefertigt. Die Deckel bestehen aus lebensmittelechtem Kunststoff mit Silikon-Dichtungen für volle Dichtigkeit." },
+      { "q": "Sind die Behälter mikrowellengeeignet?", "a": "Ja, die Behälter sind für die Mikrowelle geeignet. Wichtig: Den Deckel vor der Verwendung unbedingt abnehmen." },
+      { "q": "Sind sie spülmaschinenfest?", "a": "Ja, alle drei Behälter und Deckel können sicher in der Spülmaschine gereinigt werden." },
+      { "q": "Welche Volumina sind im Set enthalten?", "a": "Das Set enthält drei Behälter mit Deckeln: 1040 ml, 640 ml und 380 ml — praktische Größen für verschiedene Bedürfnisse." },
+      { "q": "Welche Rückgabebedingungen gelten?", "a": "Es gilt eine 14-tägige Rückgabegarantie. Wenn das Produkt Sie nicht zufriedenstellt, erstatten wir den vollen Kaufpreis." }
+    ]
+  },
+  "utp": {
+    "badge": "Unsere Vorteile",
+    "title": "Warum uns wählen",
+    "subtitle": "Wir kümmern uns um jeden Kunden von der Bestellung bis zur Lieferung",
+    "items": [
+      { "title": "14 Tage Rückgabe", "desc": "Wir erstatten Ihnen den vollen Betrag ohne Fragen, wenn das Produkt nicht Ihren Erwartungen entspricht." },
+      { "title": "Bequeme Zahlung", "desc": "Per Karte online, bar bei Lieferung oder bequem auf Raten." },
+      { "title": "Schnelle Lieferung", "desc": "Versand innerhalb von 1–2 Werktagen. Lieferung in ganz Deutschland." },
+      { "title": "Qualität garantiert", "desc": "Alle Produkte sind zertifiziert und haben unsere Qualitätsprüfung bestanden." }
+    ],
+    "ctaTitle": "Bereit zu bestellen?",
+    "ctaSubtitle": "Lieferung deutschlandweit · Zahlung bei Lieferung",
+    "ctaBtn": "Jetzt bestellen"
+  },
+  "footer": { "rights": "Alle Rechte vorbehalten." }
+}

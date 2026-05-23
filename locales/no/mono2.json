@@ -1,0 +1,65 @@
+{
+  "product": {
+    "name": "Antistekepannesett, 3 stk.",
+    "tagline": "Non-stick marmorbeelegg ⌀26/28/28 dyp cm — stek uten olje, rengjøring på sekunder",
+    "badge": "Kampanjepris",
+    "readMore": "Vis mer",
+    "readLess": "Vis mindre",
+    "fullDesc": "Stekepannesett — allsidighet og komfort for daglig matlaging\n\nStekepannesettet vil bli en utmerket hjelper på kjøkkenet for å tilberede en rekke retter. Takket være non-stick marmorbelegget brenner ikke maten seg fast, og matlagingen blir lett og behagelig.\n\n✨ Ideelt for daglig bruk\n\nStekepannene er perfekte for:\n✔️ steking av grønnsaker, kjøtt og fisk\n✔️ tilberedning av frokost\n✔️ stuving og steking\n✔️ tilberedning av store porsjoner for hele familien\n\n🍳 Non-stick marmorbeelegg\n\nDet høykvalitets belegget sikrer:\n✔️ enkel rengjøring etter bruk\n✔️ matlaging med minimal mengde olje\n✔️ komfortabel daglig bruk\n✔️ jevn bruning av matvarer\n\n🔥 Jevn varmefordeling\n\nAluminiumskroppen varmes opp raskt og fordeler varmen jevnt over hele overflaten, noe som bidrar til utmerkede matlagingsresultater.\n\n💎 Innhold i settet\n\n— Aluminiumstekepanne med non-stick marmorbeelegg, diameter 26 cm\n— Aluminiumstekepanne med non-stick marmorbeelegg, diameter 28 cm\n— Dyp aluminiumstekepanne med non-stick marmorbeelegg, diameter 28 cm\n— Universelt glasslokk, diameter 24–28 cm\n\n🖐️ Komfort i bruk\n\nErgonomiske håndtak gir bekvemmelighet i bruk, og det universelle glasslokket gjør settet enda mer praktisk for daglig tilberedning av forskjellige retter.\n✨ Dette er et allsidig sett for komfortabel matlaging og glede i enhver prosess på kjøkkenet."
+  },
+  "heroBtn": "Bestill nå",
+  "order": {
+    "badge": "Bestill nå",
+    "title": "Kjøp nå",
+    "subtitle": "Legg igjen kontaktopplysningene dine — en manager ringer for å bekrefte",
+    "nameLabel": "Ditt navn",
+    "namePlaceholder": "Skriv inn navn",
+    "phoneLabel": "Telefon",
+    "phonePlaceholder": "+47 ___ ___-___",
+    "qtyLabel": "Antall",
+    "totalLabel": "Totalt",
+    "btnBuy": "Kjøp nå",
+    "processing": "Behandler...",
+    "successTitle": "Takk for bestillingen!",
+    "successText": "Vår manager vil kontakte deg snarest for å bekrefte bestillingen og avklare leveringsdetaljer.",
+    "trust": ["Gratis levering", "14 dagers retur", "Betaling ved levering"]
+  },
+  "reviews": {
+    "badge": "Kundeanmeldelser",
+    "title": "Hva kunder sier",
+    "subtitle": "Ekte anmeldelser fra kunder som allerede har bestilt",
+    "items": [
+      { "name": "Ingrid Larsen", "city": "Oslo", "initials": "IL", "rating": 5, "text": "Fantastiske stekepanner! Speilegg uten en dråpe olje — og ingenting sitter fast. Lett å rengjøre, belegget er perfekt. Tre størrelser er veldig praktisk.", "date": "15. mai 2025" },
+      { "name": "Kari Johannesen", "city": "Bergen", "initials": "KJ", "rating": 5, "text": "Bestilt for en uke siden — allerede stekt fisk, kjøtt og pannekaker flere ganger. Alt er flott! Håndtakene varmes ikke opp, universelt lokk — veldig praktisk.", "date": "7. mai 2025" },
+      { "name": "Mari Eriksen", "city": "Trondheim", "initials": "ME", "rating": 5, "text": "Marmorbelegget ser elegant ut og festet virkelig ikke. Varmes opp raskt og jevnt. Ville kjøpt igjen uten å nøle.", "date": "1. mai 2025" },
+      { "name": "Tone Berg", "city": "Stavanger", "initials": "TB", "rating": 4, "text": "Veldig gode stekepanner, beleggkvalitet utmerket — en måned med intensiv bruk og alt er bra. Vasket i oppvaskmaskin — ingen problemer.", "date": "22. april 2025" }
+    ]
+  },
+  "faq": {
+    "badge": "Ofte stilte spørsmål",
+    "title": "Ofte stilte spørsmål",
+    "subtitle": "Alt du vil vite om produktet og bestillingen",
+    "items": [
+      { "q": "Hva slags belegg har stekepannene?", "a": "Non-stick marmorbeelegg på aluminiumsbasis. Gjør det mulig å steke med minimal mengde olje eller helt uten. Trygt for helsen." },
+      { "q": "Passer stekepannene til induksjonskomfyr?", "a": "Nei, disse stekepannene er beregnet for gass- og elektriske komfyrer. For induksjon anbefaler vi våre rustfrie stålgrytesett." },
+      { "q": "Hvilke diametre er inkludert i settet?", "a": "I settet: stekepanne ⌀26 cm, stekepanne ⌀28 cm og dyp stekepanne ⌀28 cm. Pluss et universelt glasslokk for 24–28 cm." },
+      { "q": "Hvordan tar man vare på belegget?", "a": "Vask med myk svamp og flytende oppvaskmiddel. Ikke bruk metalspatel eller slipemidler. Oppvaskmaskinfast. Oppbevar med myk klut mellom pannene." },
+      { "q": "Hvilke returvilkår gjelder?", "a": "14-dagers returgaranti gjelder. Hvis produktet ikke tilfredsstiller deg av en eller annen grunn, refunderer vi hele kjøpesummen." }
+    ]
+  },
+  "utp": {
+    "badge": "Våre fordeler",
+    "title": "Hvorfor velge oss",
+    "subtitle": "Vi tar vare på hver kunde fra bestilling til levering",
+    "items": [
+      { "title": "14 dagers retur", "desc": "Vi refunderer hele beløpet uten spørsmål hvis produktet ikke tilfredsstilte deg." },
+      { "title": "Enkel betaling", "desc": "Med kort online, kontant ved levering eller avbetaling." },
+      { "title": "Rask levering", "desc": "Sendes innen 1–2 virkedager. Levering over hele Norge." },
+      { "title": "Kvalitet garantert", "desc": "Alle produkter er sertifisert og har bestått vår kvalitetskontroll." }
+    ],
+    "ctaTitle": "Klar til å bestille?",
+    "ctaSubtitle": "Levering over hele Norge · Betaling ved levering",
+    "ctaBtn": "Bestill nå"
+  },
+  "footer": { "rights": "Alle rettigheter forbeholdt." }
+}
