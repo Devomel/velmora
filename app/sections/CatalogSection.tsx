@@ -3,20 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import type { HomeT } from '@/lib/i18n';
-import { PRODUCT_DATA, type ProductData } from '@/lib/products';
+import type { ProductData } from '@/lib/products';
 import { useCart } from '@/components/CartProvider';
 
-type Props = { t: HomeT['catalog']; productImages: Record<string, string> };
-
-const prices = PRODUCT_DATA.map(p => p.price).sort((a, b) => a - b);
-const p33 = prices[Math.floor(prices.length / 3)];
-const p66 = prices[Math.floor(prices.length * 2 / 3)];
-const PRICE_RANGES = [
-  { min: 0,   max: Infinity },
-  { min: 0,   max: p33 },
-  { min: p33, max: p66 },
-  { min: p66, max: Infinity },
-];
+type Props = { t: HomeT['catalog']; productImages: Record<string, string>; products: ProductData[] };
 
 function Stars({ rating }: { rating: number }) {
   return (
@@ -97,14 +87,24 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc }: {
   );
 }
 
-export default function CatalogSection({ t, productImages }: Props) {
+export default function CatalogSection({ t, productImages, products: productData }: Props) {
   const [activeCategoryKey, setActiveCategoryKey] = useState('all');
   const [priceIdx, setPriceIdx] = useState(0);
   const [minRating, setMinRating] = useState(0);
 
+  const sortedPrices = productData.map(p => p.price).sort((a, b) => a - b);
+  const p33 = sortedPrices[Math.floor(sortedPrices.length / 3)];
+  const p66 = sortedPrices[Math.floor(sortedPrices.length * 2 / 3)];
+  const PRICE_RANGES = [
+    { min: 0,   max: Infinity },
+    { min: 0,   max: p33 },
+    { min: p33, max: p66 },
+    { min: p66, max: Infinity },
+  ];
+
   const { min, max } = PRICE_RANGES[priceIdx];
 
-  const products: Product[] = PRODUCT_DATA.map((data, i) => ({
+  const products: Product[] = productData.map((data, i) => ({
     ...data,
     name: t.products[i].name,
     material: t.products[i].material,

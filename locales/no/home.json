@@ -89,7 +89,62 @@
           "Komfortabelt og ergonomisk håndtak",
           "Egnet for intensiv bruk",
           "Stekepannen er motstandsdyktig mot deformasjon"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "2 stekepanner"
+            ],
+            [
+              "Diameter",
+              "⌀26 cm og ⌀28 cm"
+            ],
+            [
+              "Type",
+              "Stekepanne-sett"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Smidd aluminium"
+            ],
+            [
+              "Belegg",
+              "Non-stick belegg"
+            ],
+            [
+              "Håndtak",
+              "Ergonomisk, varmebestandig"
+            ]
+          ],
+          "highlights": [
+            [
+              "Jevn oppvarming",
+              "✓"
+            ],
+            [
+              "Deformasjonsmotstandig",
+              "✓"
+            ],
+            [
+              "For intensiv bruk",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Dyp stekepanne 28 cm Krauff Fry Power",
@@ -101,7 +156,62 @@
           "Komfortabelt ergonomisk håndtak",
           "Passer til alle komfyrtyper",
           "Stekepannen er motstandsdyktig mot deformasjon"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "1 stekepanne"
+            ],
+            [
+              "Diameter",
+              "⌀28 cm"
+            ],
+            [
+              "Type",
+              "Dyp stekepanne"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Smidd aluminium"
+            ],
+            [
+              "Belegg",
+              "Innovativt non-stick belegg (ny gen.)"
+            ],
+            [
+              "Håndtak",
+              "Ergonomisk"
+            ]
+          ],
+          "highlights": [
+            [
+              "Jevn oppvarming",
+              "✓"
+            ],
+            [
+              "Ny belegggenerasjon",
+              "✓"
+            ],
+            [
+              "Deformasjonsmotstandig",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Stekepannesett Transform Krauff",
@@ -114,7 +224,62 @@
           "Komfortabelt og ergonomisk håndtak",
           "Egnet for intensiv bruk",
           "Stekepannen er motstandsdyktig mot deformasjon"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "2 stekepanner"
+            ],
+            [
+              "Diameter",
+              "⌀24 cm og ⌀26 cm"
+            ],
+            [
+              "Type",
+              "Pannekake- + universalpanne"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Smidd aluminium"
+            ],
+            [
+              "Belegg",
+              "Non-stick belegg"
+            ],
+            [
+              "Håndtak",
+              "Avtakbart, ergonomisk"
+            ]
+          ],
+          "highlights": [
+            [
+              "Avtakbart håndtak",
+              "✓"
+            ],
+            [
+              "Ovnsegnet",
+              "✓"
+            ],
+            [
+              "Jevn oppvarming",
+              "✓"
+            ],
+            [
+              "Deformasjonsmotstandig",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett med øse Steil + GAVER: Stekespade, suppeskje, potetstamper",
@@ -125,7 +290,62 @@
           "5-lags kapselbunnbunn",
           "Seks elementer for alle oppgaver",
           "Passer til alle komfyrtyper"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "9 deler (6 kasseroller + 3 redskaper)"
+            ],
+            [
+              "Volum",
+              "1,2 l – 5,8 l"
+            ],
+            [
+              "Type",
+              "Kasserolle-sett med øse"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål"
+            ],
+            [
+              "Bunn",
+              "5-lags kapselbunnbunn"
+            ],
+            [
+              "Håndtak",
+              "Ergonomisk"
+            ]
+          ],
+          "highlights": [
+            [
+              "Jevn varmefordeling",
+              "✓"
+            ],
+            [
+              "Inkl. kjøkkenredskaper",
+              "✓"
+            ],
+            [
+              "6 elementer for alle oppgaver",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kokekar-sett 12 deler Krauff Saporis og stekepanner Berlin 26, 28 cm",
@@ -137,7 +357,66 @@
           "Glasslokk gir mulighet til å kontrollere maten uten varmetap;",
           "Håndtakene varmes ikke opp;",
           "Allsidighet: settet er kompatibelt med alle komfyrtyper, inkludert induksjon."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "12 deler"
+            ],
+            [
+              "Volum kasseroller",
+              "1,5 l – 5,0 l"
+            ],
+            [
+              "Stekepanner",
+              "⌀26 cm og ⌀28 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper inkl. induksjon"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Premium rustfritt stål"
+            ],
+            [
+              "Bunn",
+              "5-lags kapselbunnbunn"
+            ],
+            [
+              "Lokk",
+              "Glass"
+            ],
+            [
+              "Håndtak",
+              "Varmebestandig"
+            ]
+          ],
+          "highlights": [
+            [
+              "Håndtakene varmes ikke",
+              "✓"
+            ],
+            [
+              "Induksjonsegnet",
+              "✓"
+            ],
+            [
+              "Glasslokk for kontroll",
+              "✓"
+            ],
+            [
+              "Komplett kokesett",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett Steil Krauff med øse",
@@ -148,7 +427,62 @@
           "høykvalitets rustfritt stål (18/10),",
           "lokk med dampventil, måleskalering,",
           "oppvaskmaskinfast."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "6 deler (5 kasseroller + øse)"
+            ],
+            [
+              "Volum",
+              "1,2 l – 5,8 l"
+            ],
+            [
+              "Diameter",
+              "⌀14 cm – ⌀24 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål (18/10)"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Lokk",
+              "Glass med dampventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Literskala innvendig",
+              "✓"
+            ],
+            [
+              "Dampventil i lokket",
+              "✓"
+            ],
+            [
+              "Oppvaskmaskinfast",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett Steil Krauff + GAVE: Pannekakepanne 24 cm Fry Power",
@@ -160,7 +494,62 @@
           "Jevn oppvarming",
           "Passer til alle komfyrtyper",
           "Lokk av herdet glass"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "7 deler (6 kasseroller + pannekakepanne)"
+            ],
+            [
+              "Volum kasseroller",
+              "1,2 l – 5,8 l"
+            ],
+            [
+              "Pannekakepanne",
+              "⌀24 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål"
+            ],
+            [
+              "Bunn",
+              "5-lags kapselbunnbunn"
+            ],
+            [
+              "Lokk",
+              "Herdet glass"
+            ]
+          ],
+          "highlights": [
+            [
+              "Jevn oppvarming",
+              "✓"
+            ],
+            [
+              "Pannekakepanne inkl.",
+              "✓"
+            ],
+            [
+              "Herdede glasslokk",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett Prime Chef Krauff med stekegryte",
@@ -170,7 +559,66 @@
           "5-lags varmeholden bunn,",
           "Høykvalitets rustfritt stål (18/10),",
           "Lokk med dampventil."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "4 deler (3 kasseroller + panne ⌀24 cm)"
+            ],
+            [
+              "Volum",
+              "2,1 l, 3,8 l, 6,3 l"
+            ],
+            [
+              "Diameter",
+              "⌀16 cm, ⌀20 cm, ⌀24 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål (18/10)"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Pannebelegg",
+              "Non-stick belegg"
+            ],
+            [
+              "Lokk",
+              "Med dampventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Dampventil i lokket",
+              "✓"
+            ],
+            [
+              "Non-stick panne inkl.",
+              "✓"
+            ],
+            [
+              "Varmeholden bunn",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kjøkkensett \"Premium\"",
@@ -181,7 +629,66 @@
           "Premium rustfritt stål;",
           "Komfortable håndtak og varmebestandige glasslokk;",
           "Spesiell konstruksjon av kasserolle og lokk for avrenning av væske."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "4 kasseroller"
+            ],
+            [
+              "Volum",
+              "1,8 l, 2,5 l, 3,5 l, 6,3 l"
+            ],
+            [
+              "Type",
+              "Premium kasserolle-sett"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Premium rustfritt stål"
+            ],
+            [
+              "Bunn",
+              "5-lags kapselbunnbunn"
+            ],
+            [
+              "Lokk",
+              "Varmebestandig glass"
+            ],
+            [
+              "Håndtak",
+              "Ergonomisk"
+            ]
+          ],
+          "highlights": [
+            [
+              "Enkel avrenning av væske",
+              "✓"
+            ],
+            [
+              "Spesiell lokkkonstruksjon",
+              "✓"
+            ],
+            [
+              "Premium-kvalitet",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle Smart Fry Krauff 6,6l med glasslokk +GAVE: stekespade, suppeskje og potetstamper",
@@ -193,7 +700,66 @@
           "Temperaturindikator i form av flamme",
           "Håndtak med soft-touch belegg",
           "Kompatibel med alle komfyrtyper, inkludert induksjon"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "4 deler (kasserolle + 3 redskaper)"
+            ],
+            [
+              "Volum",
+              "6,6 l"
+            ],
+            [
+              "Diameter",
+              "⌀28 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper inkl. induksjon"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Robust smidd aluminium"
+            ],
+            [
+              "Belegg",
+              "Greblon C2 non-stick belegg"
+            ],
+            [
+              "Håndtak",
+              "Soft-touch belegg"
+            ],
+            [
+              "Lokk",
+              "Glass"
+            ]
+          ],
+          "highlights": [
+            [
+              "Temperaturindikator (flamme)",
+              "✓"
+            ],
+            [
+              "Induksjonsegnet",
+              "✓"
+            ],
+            [
+              "Soft-touch håndtak",
+              "✓"
+            ],
+            [
+              "Kjøkkenredskaper inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasseroller Krauff serie Winzig 1,2 l og 0,7 l",
@@ -203,7 +769,62 @@
           "5-lags varmeholden bunn,",
           "Høykvalitets rustfritt stål (18/10),",
           "Lokk med dampventil."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "2 kasseroller"
+            ],
+            [
+              "Volum",
+              "0,7 l og 1,2 l"
+            ],
+            [
+              "Type",
+              "Små kasseroller"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål (18/10)"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Lokk",
+              "Med dampventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Kompakt størrelse",
+              "✓"
+            ],
+            [
+              "Dampventil i lokket",
+              "✓"
+            ],
+            [
+              "Premium rustfritt stål 18/10",
+              "✓"
+            ],
+            [
+              "Varmeholden bunn",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett Elite Krauff 1,3l, 1,9l, 4,7l",
@@ -214,7 +835,66 @@
           "Ergonomiske håndtak med soft-touch belegg.",
           "Varmebestandig literskala.",
           "Varmebestandig glass med dampventil."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "4 kasseroller"
+            ],
+            [
+              "Volum",
+              "1,3 l, 1,9 l, 4,7 l, 6,1 l"
+            ],
+            [
+              "Diameter",
+              "⌀14 cm – ⌀24 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Lokk",
+              "Varmebestandig glass med dampventil"
+            ],
+            [
+              "Håndtak",
+              "Soft-touch belegg"
+            ]
+          ],
+          "highlights": [
+            [
+              "Soft-touch håndtak",
+              "✓"
+            ],
+            [
+              "Varmebestandig literskala",
+              "✓"
+            ],
+            [
+              "Dampventil i lokket",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett Cook&Joy 4,6l, 3,5l, 1,8l og stekepanner Smart Fry Krauff + GAVER: Pannekakepanne Smart Fry",
@@ -224,7 +904,62 @@
           "Varmeindikator i form av flamme innvendig",
           "Varmebestandig glasslokk – kontroll uten åpning.",
           "Rustfritt stål 18/10 – pålitelig grunnlag for matlaging."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "7+ deler (kasseroller + stekepanner)"
+            ],
+            [
+              "Volum kasseroller",
+              "1,8 l, 3,5 l, 4,6 l"
+            ],
+            [
+              "Type",
+              "Komplett kokesett"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål 18/10"
+            ],
+            [
+              "Lokk",
+              "Varmebestandig glass"
+            ],
+            [
+              "Pannebelegg",
+              "Non-stick belegg"
+            ]
+          ],
+          "highlights": [
+            [
+              "Temperaturindikator (flamme)",
+              "✓"
+            ],
+            [
+              "Kontroll uten å åpne",
+              "✓"
+            ],
+            [
+              "Stekepanner inkl.",
+              "✓"
+            ],
+            [
+              "Rustfritt stål 18/10",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle Krauff Moxie 6,5 l +GAVE: Underlag Krauff Galaxy",
@@ -236,7 +971,66 @@
           "5-lags varmeholden induksjonsbunn;",
           "speilpolering utvendig og innvendig;",
           "mulighet for avrenning av væske takket være kasserollens konstruksjon (tut), spesiallokk med avrenningsåpninger."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "2 deler (kasserolle + underlag)"
+            ],
+            [
+              "Volum",
+              "6,5 l"
+            ],
+            [
+              "Diameter",
+              "⌀24 cm"
+            ],
+            [
+              "Veggtykkelse",
+              "0,5 mm"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål (speilpolering)"
+            ],
+            [
+              "Bunn",
+              "5-lags induksjonsbunn"
+            ],
+            [
+              "Lokk",
+              "Glass med avrenningsåpninger"
+            ],
+            [
+              "Håndtak",
+              "Med silikoninnlegg"
+            ]
+          ],
+          "highlights": [
+            [
+              "Speilpolering innvendig & utvendig",
+              "✓"
+            ],
+            [
+              "Induksjonsegnet",
+              "✓"
+            ],
+            [
+              "Silikoninnlegg i håndtak",
+              "✓"
+            ],
+            [
+              "Tut for avrenning",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle med lokk Smart Fry 2,3l, 6,6l",
@@ -246,7 +1040,58 @@
           "5-lags kapselbunnbunn;",
           "Kompatibel med alle komfyrtyper;",
           "Premium rustfritt stål 18/10;"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "2 kasseroller"
+            ],
+            [
+              "Volum",
+              "2,3 l og 6,6 l"
+            ],
+            [
+              "Type",
+              "Kasserolle-sett"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Premium rustfritt stål 18/10"
+            ],
+            [
+              "Bunn",
+              "5-lags kapselbunnbunn"
+            ]
+          ],
+          "highlights": [
+            [
+              "Premium rustfritt stål 18/10",
+              "✓"
+            ],
+            [
+              "5-lags kapselbunnbunn",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ],
+            [
+              "Langvarig kvalitet",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Sett med 2 kasseroller Prime Chef Krauff 3,6l, 6,1l + GAVE: Stekespade, suppeskje, pensel",
@@ -259,7 +1104,66 @@
           "Foldbare bakelit-håndtak;",
           "Integrert literskala;",
           "Glasslokk."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "5 deler (2 kasseroller + 3 redskaper)"
+            ],
+            [
+              "Volum",
+              "3,6 l og 6,1 l"
+            ],
+            [
+              "Type",
+              "Kasserolle-sett med glasslokk"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål 18/10"
+            ],
+            [
+              "Bunn",
+              "5-lags kapselbunnbunn"
+            ],
+            [
+              "Lokk",
+              "Glass"
+            ],
+            [
+              "Håndtak",
+              "Foldbare bakelit-håndtak"
+            ]
+          ],
+          "highlights": [
+            [
+              "Foldbare håndtak",
+              "✓"
+            ],
+            [
+              "Innebygd literskala",
+              "✓"
+            ],
+            [
+              "Kjøkkenredskaper inkl.",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle med lokk 3,4 l Steil og Grillpanne",
@@ -272,7 +1176,62 @@
           "Måleskalering;",
           "Oppvaskmaskinfast;",
           "Kompatibel med alle komfyrtyper"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "2 deler (kasserolle + grillpanne)"
+            ],
+            [
+              "Volum kasserolle",
+              "3,4 l"
+            ],
+            [
+              "Diameter",
+              "⌀20 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål (18/10)"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Lokk",
+              "Med dampventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Literskala innvendig",
+              "✓"
+            ],
+            [
+              "Dampventil i lokket",
+              "✓"
+            ],
+            [
+              "Oppvaskmaskinfast",
+              "✓"
+            ],
+            [
+              "Grillpanne inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett Steil og stekepanne Hamburg",
@@ -284,7 +1243,62 @@
           "Måleskalering i kasserollene",
           "Varmebestandige håndtak med nagler",
           "Passer til alle komfyrtyper"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "3 deler (2 kasseroller + panne ⌀20 cm)"
+            ],
+            [
+              "Volum kasseroller",
+              "3,4 l og 4,5 l"
+            ],
+            [
+              "Stekepanne",
+              "Hamburg ⌀20 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kasserolle kropp",
+              "Rustfritt stål 18/10"
+            ],
+            [
+              "Pannebelegg",
+              "Non-stick belegg"
+            ],
+            [
+              "Håndtak",
+              "Varmebestandig, nagler"
+            ]
+          ],
+          "highlights": [
+            [
+              "Literskala i kasseroller",
+              "✓"
+            ],
+            [
+              "Non-stick panne inkl.",
+              "✓"
+            ],
+            [
+              "Varmebestandige håndtak",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett Fry Power",
@@ -296,7 +1310,66 @@
           "Eksternt marmorert belegg;",
           "Glasslokk med dampventil;",
           "Kompatibel med alle komfyrtyper."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "3 kasseroller"
+            ],
+            [
+              "Volum",
+              "2,3 l, 4,2 l, 6,4 l"
+            ],
+            [
+              "Type",
+              "Kasserolle-sett"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Smidd aluminium"
+            ],
+            [
+              "Belegg",
+              "PTFE non-stick belegg"
+            ],
+            [
+              "Utside",
+              "Marmorert belegg"
+            ],
+            [
+              "Lokk",
+              "Glass med dampventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "PTFE non-stick belegg",
+              "✓"
+            ],
+            [
+              "Marmorert utside",
+              "✓"
+            ],
+            [
+              "Glasslokk med dampventil",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Sett med 2 kasseroller Steil Krauff og Øse 1,2 l Steil",
@@ -307,7 +1380,62 @@
           "Høykvalitets rustfritt stål (18/10);",
           "Lokk med dampventil; måleskalering;",
           "Oppvaskmaskinfast."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "3 deler (2 kasseroller + øse)"
+            ],
+            [
+              "Volum",
+              "1,2 l, 3,4 l, 4,5 l"
+            ],
+            [
+              "Diameter",
+              "⌀14 cm – ⌀22 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål (18/10)"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Lokk",
+              "Glass med dampventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Literskala innvendig",
+              "✓"
+            ],
+            [
+              "Dampventil i lokket",
+              "✓"
+            ],
+            [
+              "Oppvaskmaskinfast",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle med lokk 2,7l og øse med lokk 2l Prime Chef Krauff",
@@ -319,7 +1447,66 @@
           "Ergonomiske håndtak",
           "Varmebestandig literskala",
           "Varmebestandig glass med dampventil"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "2 deler (kasserolle + øse)"
+            ],
+            [
+              "Volum",
+              "2,7 l (⌀18 cm) og 2,0 l (⌀16 cm)"
+            ],
+            [
+              "Type",
+              "Kasserolle + øse"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Lokk",
+              "Varmebestandig glass med dampventil"
+            ],
+            [
+              "Håndtak",
+              "Ergonomisk"
+            ]
+          ],
+          "highlights": [
+            [
+              "Ergonomiske håndtak",
+              "✓"
+            ],
+            [
+              "Varmebestandig literskala",
+              "✓"
+            ],
+            [
+              "Dampventil i lokket",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett Prime Chef Krauff 8 deler",
@@ -330,7 +1517,66 @@
           "Ergonomiske håndtak.",
           "Varmebestandig literskala.",
           "Varmebestandig glass med dampventil."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "8 deler (kasseroller + øse + lokk)"
+            ],
+            [
+              "Volum",
+              "2,0 l, 2,7 l, 4,7 l"
+            ],
+            [
+              "Diameter",
+              "⌀16 cm – ⌀22 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Lokk",
+              "Varmebestandig glass med dampventil"
+            ],
+            [
+              "Håndtak",
+              "Ergonomisk"
+            ]
+          ],
+          "highlights": [
+            [
+              "Ergonomiske håndtak",
+              "✓"
+            ],
+            [
+              "Varmebestandig literskala",
+              "✓"
+            ],
+            [
+              "Dampventil i lokket",
+              "✓"
+            ],
+            [
+              "Komplett 8-delers sett",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett med øse 10 deler Cook&Joy",
@@ -341,7 +1587,62 @@
           "5-lags kapselbunnbunn — jevn varme uten å brenne",
           "Funksjonelle lokk av herdet glass",
           "Intern literskala — presisjon for daglige oppskrifter"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "10 deler (5 kasseroller + øse + lokk)"
+            ],
+            [
+              "Volum",
+              "1,8 l – 5,8 l"
+            ],
+            [
+              "Type",
+              "Komplett kasserolle-sett"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål 18/10"
+            ],
+            [
+              "Bunn",
+              "5-lags kapselbunnbunn"
+            ],
+            [
+              "Lokk",
+              "Herdet glass"
+            ]
+          ],
+          "highlights": [
+            [
+              "Jevn oppvarming",
+              "✓"
+            ],
+            [
+              "Intern literskala",
+              "✓"
+            ],
+            [
+              "Ingen brenning",
+              "✓"
+            ],
+            [
+              "Herdede glasslokk",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett Elegance og øse",
@@ -351,7 +1652,62 @@
           "Mulighet for avrenning av væske ved låsing av lokket med bevegelige sidehåndtak;",
           "Lokkhåndtakgeometrien gjør det mulig å plassere kjøkkenutstyr;",
           "Håndtak med soft-touch belegg."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "4 deler (3 kasseroller + panne ⌀26 cm)"
+            ],
+            [
+              "Volum",
+              "2,0 l, 3,7 l, 6,3 l"
+            ],
+            [
+              "Stekepanne",
+              "⌀26 cm, avtakbart håndtak"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål"
+            ],
+            [
+              "Lokk",
+              "Glass"
+            ],
+            [
+              "Håndtak",
+              "Soft-touch belegg"
+            ]
+          ],
+          "highlights": [
+            [
+              "Avrenning med lokket festet",
+              "✓"
+            ],
+            [
+              "Soft-touch håndtak",
+              "✓"
+            ],
+            [
+              "Avtakbart panne-håndtak",
+              "✓"
+            ],
+            [
+              "Elegant design",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle 6,3 l Herzog Krauff",
@@ -361,7 +1717,62 @@
           "Lokk med avrenningsåpninger.",
           "5-lags varmeholden bunn.",
           "Literskala"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "1 kasserolle"
+            ],
+            [
+              "Volum",
+              "6,3 l"
+            ],
+            [
+              "Diameter",
+              "⌀24 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Lokk",
+              "Glass med avrenningsåpninger"
+            ]
+          ],
+          "highlights": [
+            [
+              "Avrenningsåpninger i lokket",
+              "✓"
+            ],
+            [
+              "Intern literskala",
+              "✓"
+            ],
+            [
+              "Varmeholden bunn",
+              "✓"
+            ],
+            [
+              "Stort volum",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett med lokk Steil Krauff + GAVER: Skjærebrett",
@@ -373,7 +1784,66 @@
           "Lokk med dampventil,",
           "Måleskalering,",
           "Oppvaskmaskinfast."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "4 deler (3 kasseroller + skjærebrett)"
+            ],
+            [
+              "Volum",
+              "2,5 l, 3,4 l, 4,5 l"
+            ],
+            [
+              "Diameter",
+              "⌀18 cm – ⌀22 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål (18/10)"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Lokk",
+              "Glass med dampventil"
+            ],
+            [
+              "Skjærebrett",
+              "Plast"
+            ]
+          ],
+          "highlights": [
+            [
+              "Literskala innvendig",
+              "✓"
+            ],
+            [
+              "Dampventil i lokket",
+              "✓"
+            ],
+            [
+              "Oppvaskmaskinfast",
+              "✓"
+            ],
+            [
+              "Skjærebrett inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kasserolle-sett 6 deler Steil Krauff",
@@ -385,7 +1855,62 @@
           "Lokk med dampventil;",
           "Måleskalering;",
           "Oppvaskmaskinfast."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "6 deler (3 kasseroller + 3 lokk)"
+            ],
+            [
+              "Volum",
+              "2,5 l, 3,4 l, 4,5 l"
+            ],
+            [
+              "Diameter",
+              "⌀18 cm – ⌀22 cm"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål (18/10)"
+            ],
+            [
+              "Bunn",
+              "5-lags varmeholden bunn"
+            ],
+            [
+              "Lokk",
+              "Glass med dampventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Literskala innvendig",
+              "✓"
+            ],
+            [
+              "Dampventil i lokket",
+              "✓"
+            ],
+            [
+              "Oppvaskmaskinfast",
+              "✓"
+            ],
+            [
+              "Alle komfyrtyper",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kniv-sett på holder Prime Chef Krauff",
@@ -396,7 +1921,62 @@
           "Høykvalitets rustfritt stål",
           "Ergonomiske håndtak",
           "Stilfullt design"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "6 deler (5 kniver + holder)"
+            ],
+            [
+              "Kokniv",
+              "20,5 cm"
+            ],
+            [
+              "Brødkniv",
+              "20,8 cm"
+            ],
+            [
+              "Universalkniv",
+              "12,8 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Blad",
+              "Høykvalitets rustfritt stål"
+            ],
+            [
+              "Konstruksjon",
+              "Helmetall"
+            ],
+            [
+              "Håndtak",
+              "Ergonomisk integrert"
+            ]
+          ],
+          "highlights": [
+            [
+              "Helmetallikonstruksjon",
+              "✓"
+            ],
+            [
+              "Stilfullt design",
+              "✓"
+            ],
+            [
+              "Ergonomiske håndtak",
+              "✓"
+            ],
+            [
+              "Holder inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Knivsett Luxus",
@@ -406,7 +1986,58 @@
           "Blader av høykvalitets stål X30Cr14 — korrosjonsbestandig, holder seg skarpt lenge",
           "Ergonomiske håndtak av ABS-plast — robuste, sklisikre, behagelige å holde",
           "Ideal for daglig bruk i ethvert kjøkken"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "5 kniver + holder"
+            ],
+            [
+              "Knivtype",
+              "Spesialkniver"
+            ],
+            [
+              "Stål",
+              "X30Cr14"
+            ],
+            [
+              "Bruk",
+              "Daglig bruk"
+            ]
+          ],
+          "materials": [
+            [
+              "Blad",
+              "Stål X30Cr14"
+            ],
+            [
+              "Håndtak",
+              "ABS-plast (ergonomisk)"
+            ]
+          ],
+          "highlights": [
+            [
+              "Korrosjonsbestandig",
+              "✓"
+            ],
+            [
+              "Lang skarphet",
+              "✓"
+            ],
+            [
+              "Sklisikre håndtak",
+              "✓"
+            ],
+            [
+              "Ideal for daglig bruk",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Sett med 5 kniver på holder Prime Chef Krauff",
@@ -417,7 +2048,62 @@
           "Robuste håndtak;",
           "Stilfullt treholder;",
           "Enkel vedlikehold."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "6 deler (5 kniver + treholder)"
+            ],
+            [
+              "Kokniv",
+              "20,5 cm"
+            ],
+            [
+              "Santokukniv",
+              "17,5 cm og 13,5 cm"
+            ],
+            [
+              "Universalkniv",
+              "12,5 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Blad",
+              "Rustfritt stål"
+            ],
+            [
+              "Håndtak",
+              "Robust"
+            ],
+            [
+              "Holder",
+              "Tre"
+            ]
+          ],
+          "highlights": [
+            [
+              "Stilfullt treholder",
+              "✓"
+            ],
+            [
+              "Komplett knivsett",
+              "✓"
+            ],
+            [
+              "Enkel vedlikehold",
+              "✓"
+            ],
+            [
+              "Skarpe blader",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Sett med 5 kniver Solvar Krauff",
@@ -428,7 +2114,58 @@
           "Hele blader;",
           "Fullstendig sett;",
           "Stilfullt blokk."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "6 deler (5 kniver + knivblokk)"
+            ],
+            [
+              "Kokniv",
+              "20,5 cm"
+            ],
+            [
+              "Santokukniv",
+              "17,5 cm og 13,5 cm"
+            ],
+            [
+              "Grønnsakskniv",
+              "9 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Blad",
+              "Rustfritt stål (gjennomgående)"
+            ],
+            [
+              "Blokk",
+              "Stilfullt"
+            ]
+          ],
+          "highlights": [
+            [
+              "Perfekt skarphet",
+              "✓"
+            ],
+            [
+              "Gjennomgående blader",
+              "✓"
+            ],
+            [
+              "Stilfullt blokk",
+              "✓"
+            ],
+            [
+              "Komplett sett",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Knivsett på holder Prime Chef",
@@ -439,7 +2176,58 @@
           "Ergonomiske håndtak av ABS-plast",
           "Optimal balanse",
           "Moderne design"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "6 deler (5 kniver + blokk)"
+            ],
+            [
+              "Kokniv",
+              "20,5 cm"
+            ],
+            [
+              "Santokukniv",
+              "17,5 cm og 13,5 cm"
+            ],
+            [
+              "Grønnsakskniv",
+              "9 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Blad",
+              "Høykvalitets rustfritt stål"
+            ],
+            [
+              "Håndtak",
+              "ABS-plast (ergonomisk)"
+            ]
+          ],
+          "highlights": [
+            [
+              "Optimal balanse",
+              "✓"
+            ],
+            [
+              "Ergonomiske håndtak",
+              "✓"
+            ],
+            [
+              "Moderne design",
+              "✓"
+            ],
+            [
+              "Sklisikre ABS-håndtak",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Glass-beholder-sett Locker + GAVER: Termokopper Komfort 380 ml 2 stk",
@@ -450,7 +2238,62 @@
           "Varmebestandig glass",
           "Tåler oppvarming i mikrobølgeovn (uten lokk)",
           "Allsidig oppbevaring"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "6 deler (4 beholdere + 2 termokopper)"
+            ],
+            [
+              "Volum",
+              "380 ml, 640 ml, 1040 ml, 1500 ml"
+            ],
+            [
+              "Termokopper",
+              "380 ml (×2)"
+            ],
+            [
+              "Type",
+              "Matoppbevaringsbeholdere"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Varmebestandig glass"
+            ],
+            [
+              "Lokk",
+              "Med silikontettinger"
+            ],
+            [
+              "Termokopper",
+              "Isoleringsmateriale"
+            ]
+          ],
+          "highlights": [
+            [
+              "Lufttett forsegling",
+              "✓"
+            ],
+            [
+              "Mikrobølgeovnsegnet (uten lokk)",
+              "✓"
+            ],
+            [
+              "Termokopper inkl.",
+              "✓"
+            ],
+            [
+              "Allsidig oppbevaring",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Sett med glasbeholdere for oppbevaring og Termos 600ml",
@@ -460,7 +2303,58 @@
           "Lokk med innovativ åpningsmekanisme;",
           "Dagteller på lokkene;",
           "Varierte størrelser;"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "4 deler (3 beholdere + termos)"
+            ],
+            [
+              "Volum",
+              "0,58 l, 0,84 l, 1,7 l"
+            ],
+            [
+              "Termos",
+              "600 ml"
+            ],
+            [
+              "Høyde",
+              "13 cm – 30 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Glass"
+            ],
+            [
+              "Lokk",
+              "Innovativ åpningsmekanisme"
+            ]
+          ],
+          "highlights": [
+            [
+              "Innovativ lokköpner",
+              "✓"
+            ],
+            [
+              "Dagteller på lokkene",
+              "✓"
+            ],
+            [
+              "Termos inkl.",
+              "✓"
+            ],
+            [
+              "Varierte størrelser",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kjele Krauff Nebion 3 l",
@@ -471,7 +2365,62 @@
           "Presis håndtakgeometri.",
           "Trelagets ferromagnetisk bunn",
           "Sikker og kontrollert helling."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "1 kjele"
+            ],
+            [
+              "Volum",
+              "3 l"
+            ],
+            [
+              "Type",
+              "Kjele"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper inkl. induksjon"
+            ]
+          ],
+          "materials": [
+            [
+              "Kropp",
+              "Rustfritt stål"
+            ],
+            [
+              "Bunn",
+              "Trelagets ferromagnetisk bunn"
+            ],
+            [
+              "Håndtak",
+              "Ergonomisk"
+            ]
+          ],
+          "highlights": [
+            [
+              "Elegante kroppslinjer",
+              "✓"
+            ],
+            [
+              "Sikker helling",
+              "✓"
+            ],
+            [
+              "Ferromagnetisk bunn",
+              "✓"
+            ],
+            [
+              "Induksjonsegnet",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Keramisk kokekar-sett 15 deler. Sett med kasseroller og stekepanner med non-stick belegg (sort 15)",
@@ -483,7 +2432,62 @@
           "Kokekar er lett å rengjøre",
           "Passer til alle komfyrtyper",
           "Bakelit-håndtak som ikke varmes opp"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "15 deler"
+            ],
+            [
+              "Inkl.",
+              "Frityrkurver, grytedeksel, redskaper, hylser"
+            ],
+            [
+              "Type",
+              "Keramisk kokekar"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper"
+            ]
+          ],
+          "materials": [
+            [
+              "Belegg",
+              "Keramisk non-stick belegg"
+            ],
+            [
+              "Håndtak",
+              "Bakelit (varmes ikke opp)"
+            ],
+            [
+              "Farge",
+              "Svart"
+            ]
+          ],
+          "highlights": [
+            [
+              "Trygt og giftfritt",
+              "✓"
+            ],
+            [
+              "Mostandsdyktig mot riper",
+              "✓"
+            ],
+            [
+              "Lett å rengjøre",
+              "✓"
+            ],
+            [
+              "4 beskyttelseshylser inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Keramisk kasserolle- og stekepanne-sett Kikcoin 16 deler med non-stick belegg, inkluderer 9,5-tommers grillpanne, induksjonskokekar-sett",
@@ -495,7 +2499,58 @@
           "Kokekar er lett å rengjøre",
           "Passer til alle komfyrtyper",
           "Bakelit-håndtak som ikke varmes opp"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetaljer",
+          "materialsLabel": "Materialer",
+          "highlightsLabel": "Særtrekk",
+          "details": [
+            [
+              "Antall",
+              "16 deler"
+            ],
+            [
+              "Inkl.",
+              "Grillpanne 9,5 tommer"
+            ],
+            [
+              "Type",
+              "Induksjons-kokekar-sett"
+            ],
+            [
+              "Kompatibilitet",
+              "Alle komfyrtyper inkl. induksjon"
+            ]
+          ],
+          "materials": [
+            [
+              "Belegg",
+              "Keramisk non-stick belegg (naturlige mineraler)"
+            ],
+            [
+              "Håndtak",
+              "Bakelit (varmes ikke opp)"
+            ]
+          ],
+          "highlights": [
+            [
+              "Ingen damper ved overoppheting",
+              "✓"
+            ],
+            [
+              "Induksjonsegnet",
+              "✓"
+            ],
+            [
+              "Naturlige mineraler",
+              "✓"
+            ],
+            [
+              "Lett å rengjøre",
+              "✓"
+            ]
+          ]
+        }
       }
     ]
   },

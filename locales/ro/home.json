@@ -89,7 +89,62 @@
           "Mâner confortabil și ergonomic",
           "Potrivit pentru utilizare intensivă",
           "Tigaia rezistă la deformări"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "2 tigăi"
+            ],
+            [
+              "Diametru",
+              "⌀26 cm și ⌀28 cm"
+            ],
+            [
+              "Tip",
+              "Set tigăi"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Aluminiu forjat"
+            ],
+            [
+              "Acoperire",
+              "Acoperire antiaderentă"
+            ],
+            [
+              "Mâner",
+              "Ergonomic, termorezistent"
+            ]
+          ],
+          "highlights": [
+            [
+              "Încălzire uniformă",
+              "✓"
+            ],
+            [
+              "Rezistent la deformare",
+              "✓"
+            ],
+            [
+              "Pentru utilizare intensivă",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Tigaie adâncă 28 cm Krauff Fry Power",
@@ -101,7 +156,62 @@
           "Mâner confortabil și ergonomic",
           "Potrivit pentru toate tipurile de aragaze",
           "Tigaia rezistă la deformări"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "1 tigaie"
+            ],
+            [
+              "Diametru",
+              "⌀28 cm"
+            ],
+            [
+              "Tip",
+              "Tigaie adâncă"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Aluminiu forjat"
+            ],
+            [
+              "Acoperire",
+              "Acoperire antiaderentă inovatoare (gen. nouă)"
+            ],
+            [
+              "Mâner",
+              "Ergonomic"
+            ]
+          ],
+          "highlights": [
+            [
+              "Încălzire uniformă",
+              "✓"
+            ],
+            [
+              "Acoperire nouă generație",
+              "✓"
+            ],
+            [
+              "Rezistent la deformare",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set tigăi Transform Krauff",
@@ -114,7 +224,62 @@
           "Mâner confortabil și ergonomic",
           "Potrivit pentru utilizare intensivă",
           "Tigaia rezistă la deformări"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "2 tigăi"
+            ],
+            [
+              "Diametru",
+              "⌀24 cm și ⌀26 cm"
+            ],
+            [
+              "Tip",
+              "Tigaie clătite + universală"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Aluminiu forjat"
+            ],
+            [
+              "Acoperire",
+              "Acoperire antiaderentă"
+            ],
+            [
+              "Mâner",
+              "Detașabil, ergonomic"
+            ]
+          ],
+          "highlights": [
+            [
+              "Mâner detașabil",
+              "✓"
+            ],
+            [
+              "Compatibil cu cuptorul",
+              "✓"
+            ],
+            [
+              "Încălzire uniformă",
+              "✓"
+            ],
+            [
+              "Rezistent la deformare",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale cu polonic Steil + CADOURI: Spatulă, polonic, pasator de cartofi",
@@ -125,7 +290,62 @@
           "Fund capsulat cu 5 straturi",
           "Șase elemente pentru orice sarcină",
           "Potrivit pentru toate tipurile de aragaze"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "9 piese (6 oale + 3 ustensile)"
+            ],
+            [
+              "Volum",
+              "1,2 l – 5,8 l"
+            ],
+            [
+              "Tip",
+              "Set oale cu polonic"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil"
+            ],
+            [
+              "Fund",
+              "Fund capsulat cu 5 straturi"
+            ],
+            [
+              "Mânere",
+              "Ergonomice"
+            ]
+          ],
+          "highlights": [
+            [
+              "Distribuție uniformă a căldurii",
+              "✓"
+            ],
+            [
+              "Ustensile incluse",
+              "✓"
+            ],
+            [
+              "6 elemente pentru orice sarcină",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set de gătit 12 piese Krauff Saporis și tigăi Berlin 26, 28 cm",
@@ -137,7 +357,66 @@
           "Capacele din sticlă permit controlul preparatelor fără pierderi de căldură;",
           "Mânerele nu se încălzesc;",
           "Versatilitate: setul este compatibil cu toate tipurile de aragaze, inclusiv inducție."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "12 piese"
+            ],
+            [
+              "Volum oale",
+              "1,5 l – 5,0 l"
+            ],
+            [
+              "Tigăi",
+              "⌀26 cm și ⌀28 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile inkl. inducție"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil premium"
+            ],
+            [
+              "Fund",
+              "Fund capsulat cu 5 straturi"
+            ],
+            [
+              "Capace",
+              "Sticlă"
+            ],
+            [
+              "Mânere",
+              "Termorezistente"
+            ]
+          ],
+          "highlights": [
+            [
+              "Mânerele nu se încălzesc",
+              "✓"
+            ],
+            [
+              "Compatibil inducție",
+              "✓"
+            ],
+            [
+              "Capace din sticlă",
+              "✓"
+            ],
+            [
+              "Set complet de gătit",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale Steil Krauff cu polonic",
@@ -148,7 +427,62 @@
           "oțel inoxidabil de înaltă calitate (18/10),",
           "capac cu supapă de abur, scară gradată,",
           "poate fi spălat în mașina de spălat vase."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "6 piese (5 oale + polonic)"
+            ],
+            [
+              "Volum",
+              "1,2 l – 5,8 l"
+            ],
+            [
+              "Diametru",
+              "⌀14 cm – ⌀24 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil (18/10)"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Capac",
+              "Sticlă cu supapă de abur"
+            ]
+          ],
+          "highlights": [
+            [
+              "Scară gradată interioară",
+              "✓"
+            ],
+            [
+              "Supapă de abur în capac",
+              "✓"
+            ],
+            [
+              "Mașina de spălat vase",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale Steil Krauff + CADOU: Tigaie pentru clătite 24 cm Fry Power",
@@ -160,7 +494,62 @@
           "Încălzire uniformă",
           "Potrivit pentru toate tipurile de aragaze",
           "Capace din sticlă călită"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "7 piese (6 oale + tigaie clătite)"
+            ],
+            [
+              "Volum oale",
+              "1,2 l – 5,8 l"
+            ],
+            [
+              "Tigaie clătite",
+              "⌀24 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil"
+            ],
+            [
+              "Fund",
+              "Fund capsulat cu 5 straturi"
+            ],
+            [
+              "Capace",
+              "Sticlă călită"
+            ]
+          ],
+          "highlights": [
+            [
+              "Încălzire uniformă",
+              "✓"
+            ],
+            [
+              "Tigaie clătite cadou",
+              "✓"
+            ],
+            [
+              "Capace din sticlă călită",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale Prime Chef Krauff cu cratiță",
@@ -170,7 +559,66 @@
           "Fund termoaccumulator cu 5 straturi,",
           "Oțel inoxidabil de înaltă calitate (18/10),",
           "Capac cu supapă de abur."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "4 piese (3 oale + tigaie ⌀24 cm)"
+            ],
+            [
+              "Volum",
+              "2,1 l, 3,8 l, 6,3 l"
+            ],
+            [
+              "Diametru",
+              "⌀16 cm, ⌀20 cm, ⌀24 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil (18/10)"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Acoperire tigaie",
+              "Antiaderentă"
+            ],
+            [
+              "Capac",
+              "Cu supapă de abur"
+            ]
+          ],
+          "highlights": [
+            [
+              "Supapă de abur în capac",
+              "✓"
+            ],
+            [
+              "Tigaie antiaderentă inkl.",
+              "✓"
+            ],
+            [
+              "Fund termoaccumulator",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set de bucătărie \"Premium\"",
@@ -181,7 +629,66 @@
           "Oțel inoxidabil premium;",
           "Mânere confortabile și capace din sticlă termorezistentă;",
           "Constructie specială a oalei și capacului pentru scurgerea lichidelor."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "4 oale"
+            ],
+            [
+              "Volum",
+              "1,8 l, 2,5 l, 3,5 l, 6,3 l"
+            ],
+            [
+              "Tip",
+              "Set oale premium"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil premium"
+            ],
+            [
+              "Fund",
+              "Fund capsulat cu 5 straturi"
+            ],
+            [
+              "Capace",
+              "Sticlă termorezistentă"
+            ],
+            [
+              "Mânere",
+              "Ergonomice"
+            ]
+          ],
+          "highlights": [
+            [
+              "Scurgere ușoară a lichidelor",
+              "✓"
+            ],
+            [
+              "Construcție specială capac",
+              "✓"
+            ],
+            [
+              "Calitate premium",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Oală Smart Fry Krauff 6,6l cu capac din sticlă +CADOU: spatulă, polonic și pasator de cartofi",
@@ -193,7 +700,66 @@
           "Indicator de căldură în formă de flacără",
           "Mânere cu acoperire soft-touch",
           "Compatibil cu toate tipurile de aragaze, inclusiv inducție"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "4 piese (oală + 3 ustensile)"
+            ],
+            [
+              "Volum",
+              "6,6 l"
+            ],
+            [
+              "Diametru",
+              "⌀28 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile inkl. inducție"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Aluminiu forjat rezistent"
+            ],
+            [
+              "Acoperire",
+              "Greblon C2 antiaderentă"
+            ],
+            [
+              "Mânere",
+              "Acoperire soft-touch"
+            ],
+            [
+              "Capac",
+              "Sticlă"
+            ]
+          ],
+          "highlights": [
+            [
+              "Indicator de temperatură (flacără)",
+              "✓"
+            ],
+            [
+              "Compatibil inducție",
+              "✓"
+            ],
+            [
+              "Mânere soft-touch",
+              "✓"
+            ],
+            [
+              "Ustensile cadou inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Oale Krauff seria Winzig 1,2 l și 0,7 l",
@@ -203,7 +769,62 @@
           "Fund termoaccumulator cu 5 straturi,",
           "Oțel inoxidabil de înaltă calitate (18/10),",
           "Capac cu supapă de abur."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "2 oale"
+            ],
+            [
+              "Volum",
+              "0,7 l și 1,2 l"
+            ],
+            [
+              "Tip",
+              "Oale mici"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil (18/10)"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Capac",
+              "Cu supapă de abur"
+            ]
+          ],
+          "highlights": [
+            [
+              "Dimensiune compactă",
+              "✓"
+            ],
+            [
+              "Supapă de abur în capac",
+              "✓"
+            ],
+            [
+              "Oțel inoxidabil premium 18/10",
+              "✓"
+            ],
+            [
+              "Fund termoaccumulator",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale Elite Krauff 1,3l, 1,9l, 4,7l",
@@ -214,7 +835,66 @@
           "Mânere ergonomice cu acoperire soft-touch.",
           "Gradație de litraj termorezistentă.",
           "Sticlă termorezistentă cu orificiu pentru abur."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "4 oale"
+            ],
+            [
+              "Volum",
+              "1,3 l, 1,9 l, 4,7 l, 6,1 l"
+            ],
+            [
+              "Diametru",
+              "⌀14 cm – ⌀24 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Capace",
+              "Sticlă termorezistentă cu supapă de abur"
+            ],
+            [
+              "Mânere",
+              "Acoperire soft-touch"
+            ]
+          ],
+          "highlights": [
+            [
+              "Mânere soft-touch",
+              "✓"
+            ],
+            [
+              "Gradație litraj termorezistentă",
+              "✓"
+            ],
+            [
+              "Supapă de abur în capac",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale Cook&Joy 4,6l, 3,5l, 1,8l și tigăi Smart Fry Krauff + CADOURI: Tigaie pentru clătite Smart Fry",
@@ -224,7 +904,62 @@
           "Indicator de încălzire în formă de flacără interior",
           "Capac din sticlă termorezistentă – control fără deschidere.",
           "Oțel inoxidabil 18/10 – bază fiabilă pentru gătit."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "7+ piese (oale + tigăi)"
+            ],
+            [
+              "Volum oale",
+              "1,8 l, 3,5 l, 4,6 l"
+            ],
+            [
+              "Tip",
+              "Set complet de gătit"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil 18/10"
+            ],
+            [
+              "Capace",
+              "Sticlă termorezistentă"
+            ],
+            [
+              "Acoperire tigăi",
+              "Antiaderentă"
+            ]
+          ],
+          "highlights": [
+            [
+              "Indicator de temperatură (flacără)",
+              "✓"
+            ],
+            [
+              "Control fără deschidere",
+              "✓"
+            ],
+            [
+              "Tigăi incluse",
+              "✓"
+            ],
+            [
+              "Oțel inoxidabil 18/10",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Oală Krauff Moxie 6,5 l +CADOU: Suport Krauff Galaxy",
@@ -236,7 +971,66 @@
           "fund de inducție termoaccumulator cu 5 straturi;",
           "lustruire oglindă în exterior și interior;",
           "posibilitate de scurgere a lichidelor datorită construcției oalei (cioc), capac special cu orificii de scurgere."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "2 piese (oală + suport)"
+            ],
+            [
+              "Volum",
+              "6,5 l"
+            ],
+            [
+              "Diametru",
+              "⌀24 cm"
+            ],
+            [
+              "Grosime perete",
+              "0,5 mm"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil (lustruit oglindă)"
+            ],
+            [
+              "Fund",
+              "Fund de inducție cu 5 straturi"
+            ],
+            [
+              "Capac",
+              "Sticlă cu orificii de scurgere"
+            ],
+            [
+              "Mânere",
+              "Cu inserții de silicon"
+            ]
+          ],
+          "highlights": [
+            [
+              "Lustruire oglindă interior & exterior",
+              "✓"
+            ],
+            [
+              "Compatibil inducție",
+              "✓"
+            ],
+            [
+              "Inserții silicon în mânere",
+              "✓"
+            ],
+            [
+              "Cioc pentru scurgere",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Oală cu capac Smart Fry 2,3l, 6,6l",
@@ -246,7 +1040,58 @@
           "Fund capsulat cu 5 straturi;",
           "Compatibil cu toate tipurile de aragaze;",
           "Oțel inoxidabil 18/10 premium;"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "2 oale"
+            ],
+            [
+              "Volum",
+              "2,3 l și 6,6 l"
+            ],
+            [
+              "Tip",
+              "Set oale"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil 18/10 premium"
+            ],
+            [
+              "Fund",
+              "Fund capsulat cu 5 straturi"
+            ]
+          ],
+          "highlights": [
+            [
+              "Oțel inoxidabil premium 18/10",
+              "✓"
+            ],
+            [
+              "Fund capsulat cu 5 straturi",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ],
+            [
+              "Calitate durabilă",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set din 2 oale Prime Chef Krauff 3,6l, 6,1l + CADOU: Spatulă, polonic, pensulă",
@@ -259,7 +1104,66 @@
           "Mânere rabatabile din bachelită;",
           "Scară gradată integrată;",
           "Capace din sticlă."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "5 piese (2 oale + 3 ustensile)"
+            ],
+            [
+              "Volum",
+              "3,6 l și 6,1 l"
+            ],
+            [
+              "Tip",
+              "Set oale cu capace din sticlă"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil 18/10"
+            ],
+            [
+              "Fund",
+              "Fund capsulat cu 5 straturi"
+            ],
+            [
+              "Capace",
+              "Sticlă"
+            ],
+            [
+              "Mânere",
+              "Rabatabile din bachelită"
+            ]
+          ],
+          "highlights": [
+            [
+              "Mânere rabatabile",
+              "✓"
+            ],
+            [
+              "Scară gradată integrată",
+              "✓"
+            ],
+            [
+              "Ustensile cadou inkl.",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Oală cu capac 3,4 l Steil și Tigaie grill",
@@ -272,7 +1176,62 @@
           "Scară gradată;",
           "Poate fi spălat în mașina de spălat vase;",
           "Compatibil cu toate tipurile de aragaze"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "2 piese (oală + tigaie grill)"
+            ],
+            [
+              "Volum oală",
+              "3,4 l"
+            ],
+            [
+              "Diametru",
+              "⌀20 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil (18/10)"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Capac",
+              "Cu supapă de abur"
+            ]
+          ],
+          "highlights": [
+            [
+              "Scară gradată interioară",
+              "✓"
+            ],
+            [
+              "Supapă de abur în capac",
+              "✓"
+            ],
+            [
+              "Mașina de spălat vase",
+              "✓"
+            ],
+            [
+              "Tigaie grill inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale Steil și tigaie Hamburg",
@@ -284,7 +1243,62 @@
           "Scară gradată în oale",
           "Mânere termorezistente cu nituri",
           "Potrivit pentru toate tipurile de aragaze"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "3 piese (2 oale + tigaie ⌀20 cm)"
+            ],
+            [
+              "Volum oale",
+              "3,4 l și 4,5 l"
+            ],
+            [
+              "Tigaie",
+              "Hamburg ⌀20 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp oală",
+              "Oțel inoxidabil 18/10"
+            ],
+            [
+              "Acoperire tigaie",
+              "Antiaderentă"
+            ],
+            [
+              "Mânere",
+              "Termorezistente, nituri"
+            ]
+          ],
+          "highlights": [
+            [
+              "Scară gradată în oale",
+              "✓"
+            ],
+            [
+              "Tigaie antiaderentă inkl.",
+              "✓"
+            ],
+            [
+              "Mânere termorezistente",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale Fry Power",
@@ -296,7 +1310,66 @@
           "Acoperire exterioară marmurată;",
           "Capace din sticlă cu orificiu pentru abur;",
           "Compatibil cu toate tipurile de aragaze."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "3 oale"
+            ],
+            [
+              "Volum",
+              "2,3 l, 4,2 l, 6,4 l"
+            ],
+            [
+              "Tip",
+              "Set oale"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Aluminiu forjat"
+            ],
+            [
+              "Acoperire",
+              "PTFE antiaderentă"
+            ],
+            [
+              "Exterior",
+              "Aspect marmură"
+            ],
+            [
+              "Capace",
+              "Sticlă cu supapă de abur"
+            ]
+          ],
+          "highlights": [
+            [
+              "Acoperire PTFE antiaderentă",
+              "✓"
+            ],
+            [
+              "Exterior aspect marmură",
+              "✓"
+            ],
+            [
+              "Capace din sticlă cu supapă",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set din 2 oale Steil Krauff și Polonic 1,2 l Steil",
@@ -307,7 +1380,62 @@
           "Oțel inoxidabil de înaltă calitate (18/10);",
           "Capac cu supapă de abur; scară gradată;",
           "Poate fi spălat în mașina de spălat vase."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "3 piese (2 oale + polonic)"
+            ],
+            [
+              "Volum",
+              "1,2 l, 3,4 l, 4,5 l"
+            ],
+            [
+              "Diametru",
+              "⌀14 cm – ⌀22 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil (18/10)"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Capac",
+              "Sticlă cu supapă de abur"
+            ]
+          ],
+          "highlights": [
+            [
+              "Scară gradată interioară",
+              "✓"
+            ],
+            [
+              "Supapă de abur în capac",
+              "✓"
+            ],
+            [
+              "Mașina de spălat vase",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Oală cu capac 2,7l și polonic cu capac 2l Prime Chef Krauff",
@@ -319,7 +1447,66 @@
           "Mânere ergonomice",
           "Gradație de litraj termorezistentă",
           "Sticlă termorezistentă cu orificiu pentru abur"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "2 piese (oală + polonic)"
+            ],
+            [
+              "Volum",
+              "2,7 l (⌀18 cm) și 2,0 l (⌀16 cm)"
+            ],
+            [
+              "Tip",
+              "Oală + polonic"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Capac",
+              "Sticlă termorezistentă cu supapă de abur"
+            ],
+            [
+              "Mânere",
+              "Ergonomice"
+            ]
+          ],
+          "highlights": [
+            [
+              "Mânere ergonomice",
+              "✓"
+            ],
+            [
+              "Gradație litraj termorezistentă",
+              "✓"
+            ],
+            [
+              "Supapă de abur în capac",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale Prime Chef Krauff 8 piese",
@@ -330,7 +1517,66 @@
           "Mânere ergonomice.",
           "Gradație de litraj termorezistentă.",
           "Sticlă termorezistentă cu orificiu pentru abur."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "8 piese (oale + polonic + capace)"
+            ],
+            [
+              "Volum",
+              "2,0 l, 2,7 l, 4,7 l"
+            ],
+            [
+              "Diametru",
+              "⌀16 cm – ⌀22 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Capace",
+              "Sticlă termorezistentă cu supapă de abur"
+            ],
+            [
+              "Mânere",
+              "Ergonomice"
+            ]
+          ],
+          "highlights": [
+            [
+              "Mânere ergonomice",
+              "✓"
+            ],
+            [
+              "Gradație litraj termorezistentă",
+              "✓"
+            ],
+            [
+              "Supapă de abur în capac",
+              "✓"
+            ],
+            [
+              "Set complet 8 piese",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale cu polonic 10 piese Cook&Joy",
@@ -341,7 +1587,62 @@
           "Fund capsulat cu 5 straturi — căldură uniformă fără ardere",
           "Capace funcționale din sticlă călită",
           "Scară gradată interioară — precizie pentru rețetele zilnice"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "10 piese (5 oale + polonic + capace)"
+            ],
+            [
+              "Volum",
+              "1,8 l – 5,8 l"
+            ],
+            [
+              "Tip",
+              "Set oale complet"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil 18/10"
+            ],
+            [
+              "Fund",
+              "Fund capsulat cu 5 straturi"
+            ],
+            [
+              "Capace",
+              "Sticlă călită"
+            ]
+          ],
+          "highlights": [
+            [
+              "Încălzire uniformă",
+              "✓"
+            ],
+            [
+              "Scară gradată interioară",
+              "✓"
+            ],
+            [
+              "Fără ardere",
+              "✓"
+            ],
+            [
+              "Capace din sticlă călită",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale Elegance și polonic",
@@ -351,7 +1652,62 @@
           "Posibilitate de scurgere a lichidelor prin fixarea capacului cu mânere laterale mobile;",
           "Geometria mânerului de pe capac permite plasarea echipamentelor de bucătărie;",
           "Mânere cu acoperire soft-touch."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "4 piese (3 oale + tigaie ⌀26 cm)"
+            ],
+            [
+              "Volum",
+              "2,0 l, 3,7 l, 6,3 l"
+            ],
+            [
+              "Tigaie",
+              "⌀26 cm, mâner detașabil"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil"
+            ],
+            [
+              "Capace",
+              "Sticlă"
+            ],
+            [
+              "Mânere",
+              "Acoperire soft-touch"
+            ]
+          ],
+          "highlights": [
+            [
+              "Scurgere lichide cu capacul fixat",
+              "✓"
+            ],
+            [
+              "Mânere soft-touch",
+              "✓"
+            ],
+            [
+              "Mâner detașabil tigaie",
+              "✓"
+            ],
+            [
+              "Design elegant",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Oală 6,3 l Herzog Krauff",
@@ -361,7 +1717,62 @@
           "Capace cu orificii de scurgere.",
           "Fund termoaccumulator cu 5 straturi.",
           "Gradație de litraj"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "1 oală"
+            ],
+            [
+              "Volum",
+              "6,3 l"
+            ],
+            [
+              "Diametru",
+              "⌀24 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Capac",
+              "Sticlă cu orificii de scurgere"
+            ]
+          ],
+          "highlights": [
+            [
+              "Orificii de scurgere în capac",
+              "✓"
+            ],
+            [
+              "Scară gradată interioară",
+              "✓"
+            ],
+            [
+              "Fund termoaccumulator",
+              "✓"
+            ],
+            [
+              "Volum mare",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale cu capace Steil Krauff + CADOURI: Tocător",
@@ -373,7 +1784,66 @@
           "Capac cu supapă de abur,",
           "Scară gradată,",
           "Poate fi spălat în mașina de spălat vase."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "4 piese (3 oale + tocător)"
+            ],
+            [
+              "Volum",
+              "2,5 l, 3,4 l, 4,5 l"
+            ],
+            [
+              "Diametru",
+              "⌀18 cm – ⌀22 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil (18/10)"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Capac",
+              "Sticlă cu supapă de abur"
+            ],
+            [
+              "Tocător",
+              "Plastic"
+            ]
+          ],
+          "highlights": [
+            [
+              "Scară gradată interioară",
+              "✓"
+            ],
+            [
+              "Supapă de abur în capac",
+              "✓"
+            ],
+            [
+              "Mașina de spălat vase",
+              "✓"
+            ],
+            [
+              "Tocător cadou inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale 6 piese Steil Krauff",
@@ -385,7 +1855,62 @@
           "Capac cu supapă de abur;",
           "Scară gradată;",
           "Poate fi spălat în mașina de spălat vase."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "6 piese (3 oale + 3 capace)"
+            ],
+            [
+              "Volum",
+              "2,5 l, 3,4 l, 4,5 l"
+            ],
+            [
+              "Diametru",
+              "⌀18 cm – ⌀22 cm"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil (18/10)"
+            ],
+            [
+              "Fund",
+              "Fund termoaccumulator cu 5 straturi"
+            ],
+            [
+              "Capac",
+              "Sticlă cu supapă de abur"
+            ]
+          ],
+          "highlights": [
+            [
+              "Scară gradată interioară",
+              "✓"
+            ],
+            [
+              "Supapă de abur în capac",
+              "✓"
+            ],
+            [
+              "Mașina de spălat vase",
+              "✓"
+            ],
+            [
+              "Toate tipurile de aragaze",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set cuțite pe suport Prime Chef Krauff",
@@ -396,7 +1921,62 @@
           "Oțel inoxidabil de înaltă calitate",
           "Mânere ergonomice",
           "Design elegant"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "6 piese (5 cuțite + suport)"
+            ],
+            [
+              "Cuțit bucătar",
+              "20,5 cm"
+            ],
+            [
+              "Cuțit pâine",
+              "20,8 cm"
+            ],
+            [
+              "Cuțit universal",
+              "12,8 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Lamă",
+              "Oțel inoxidabil de înaltă calitate"
+            ],
+            [
+              "Construcție",
+              "Integral metalică"
+            ],
+            [
+              "Mâner",
+              "Ergonomic integrat"
+            ]
+          ],
+          "highlights": [
+            [
+              "Construcție integral metalică",
+              "✓"
+            ],
+            [
+              "Design elegant",
+              "✓"
+            ],
+            [
+              "Mânere ergonomice",
+              "✓"
+            ],
+            [
+              "Suport inclus",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set cuțite Luxus",
@@ -406,7 +1986,58 @@
           "Lame din oțel de înaltă calitate X30Cr14 — rezistente la coroziune, rămân ascuțite mult timp",
           "Mânere ergonomice din plastic ABS — rezistente, nu alunecă, plăcute la atingere",
           "Ideal pentru utilizare zilnică în orice bucătărie"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "5 cuțite + suport"
+            ],
+            [
+              "Tip cuțite",
+              "Cuțite speciale"
+            ],
+            [
+              "Oțel",
+              "X30Cr14"
+            ],
+            [
+              "Utilizare",
+              "Uz zilnic"
+            ]
+          ],
+          "materials": [
+            [
+              "Lamă",
+              "Oțel X30Cr14"
+            ],
+            [
+              "Mâner",
+              "Plastic ABS (ergonomic)"
+            ]
+          ],
+          "highlights": [
+            [
+              "Rezistent la coroziune",
+              "✓"
+            ],
+            [
+              "Ascuțime de lungă durată",
+              "✓"
+            ],
+            [
+              "Mânere antialunecare",
+              "✓"
+            ],
+            [
+              "Ideal pentru uz zilnic",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set din 5 cuțite pe suport Prime Chef Krauff",
@@ -417,7 +2048,62 @@
           "Mânere rezistente;",
           "Suport din lemn elegant;",
           "Îngrijire ușoară."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "6 piese (5 cuțite + suport lemn)"
+            ],
+            [
+              "Cuțit bucătar",
+              "20,5 cm"
+            ],
+            [
+              "Cuțit santoku",
+              "17,5 cm și 13,5 cm"
+            ],
+            [
+              "Cuțit universal",
+              "12,5 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Lamă",
+              "Oțel inoxidabil"
+            ],
+            [
+              "Mâner",
+              "Rezistent"
+            ],
+            [
+              "Suport",
+              "Lemn"
+            ]
+          ],
+          "highlights": [
+            [
+              "Suport din lemn elegant",
+              "✓"
+            ],
+            [
+              "Set complet de cuțite",
+              "✓"
+            ],
+            [
+              "Îngrijire ușoară",
+              "✓"
+            ],
+            [
+              "Lame ascuțite",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set din 5 cuțite Solvar Krauff",
@@ -428,7 +2114,58 @@
           "Lame continue;",
           "Set complet;",
           "Bloc elegant."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "6 piese (5 cuțite + bloc)"
+            ],
+            [
+              "Cuțit bucătar",
+              "20,5 cm"
+            ],
+            [
+              "Cuțit santoku",
+              "17,5 cm și 13,5 cm"
+            ],
+            [
+              "Cuțit legume",
+              "9 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Lamă",
+              "Oțel inoxidabil (continuă)"
+            ],
+            [
+              "Bloc",
+              "Elegant"
+            ]
+          ],
+          "highlights": [
+            [
+              "Ascuțime perfectă",
+              "✓"
+            ],
+            [
+              "Lame continue",
+              "✓"
+            ],
+            [
+              "Bloc elegant",
+              "✓"
+            ],
+            [
+              "Set complet",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set cuțite pe suport Prime Chef",
@@ -439,7 +2176,58 @@
           "Mânere ergonomice din plastic ABS",
           "Echilibru optim",
           "Design modern"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "6 piese (5 cuțite + bloc)"
+            ],
+            [
+              "Cuțit bucătar",
+              "20,5 cm"
+            ],
+            [
+              "Cuțit santoku",
+              "17,5 cm și 13,5 cm"
+            ],
+            [
+              "Cuțit legume",
+              "9 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Lamă",
+              "Oțel inoxidabil de înaltă calitate"
+            ],
+            [
+              "Mâner",
+              "Plastic ABS (ergonomic)"
+            ]
+          ],
+          "highlights": [
+            [
+              "Echilibru optim",
+              "✓"
+            ],
+            [
+              "Mânere ergonomice",
+              "✓"
+            ],
+            [
+              "Design modern",
+              "✓"
+            ],
+            [
+              "Mânere ABS antialunecare",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set containere din sticlă Locker + CADOURI: Cupe termice Komfort 380 ml 2 buc",
@@ -450,7 +2238,62 @@
           "Sticlă termorezistentă",
           "Rezistă la încălzire în microunde (fără capac)",
           "Versatilitate în depozitare"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "6 piese (4 recipiente + 2 cupe termice)"
+            ],
+            [
+              "Volume",
+              "380 ml, 640 ml, 1040 ml, 1500 ml"
+            ],
+            [
+              "Cupe termice",
+              "380 ml (×2)"
+            ],
+            [
+              "Tip",
+              "Recipiente alimentare"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Sticlă termorezistentă"
+            ],
+            [
+              "Capace",
+              "Cu garnituri din silicon"
+            ],
+            [
+              "Cupe termice",
+              "Material termoizolant"
+            ]
+          ],
+          "highlights": [
+            [
+              "Sigilare etanșă",
+              "✓"
+            ],
+            [
+              "Compatibil microunde (fără capac)",
+              "✓"
+            ],
+            [
+              "Cupe termice cadou",
+              "✓"
+            ],
+            [
+              "Depozitare versatilă",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set recipiente din sticlă pentru depozitare și Termos 600ml",
@@ -460,7 +2303,58 @@
           "Capace cu mecanism inovator de deschidere;",
           "Numărător de zile pe capace;",
           "Varietate de volume;"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "4 piese (3 recipiente + termos)"
+            ],
+            [
+              "Volume",
+              "0,58 l, 0,84 l, 1,7 l"
+            ],
+            [
+              "Termos",
+              "600 ml"
+            ],
+            [
+              "Înălțime",
+              "13 cm – 30 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Sticlă"
+            ],
+            [
+              "Capace",
+              "Mecanism inovator de deschidere"
+            ]
+          ],
+          "highlights": [
+            [
+              "Mecanism inovator de deschidere",
+              "✓"
+            ],
+            [
+              "Numărător de zile pe capace",
+              "✓"
+            ],
+            [
+              "Termos inclus",
+              "✓"
+            ],
+            [
+              "Varietate de volume",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Ceainic Krauff Nebion 3 l",
@@ -471,7 +2365,62 @@
           "Geometrie precisă a mânerului.",
           "Fund feromagnetic cu trei straturi",
           "Turnare sigură și controlată."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "1 ceainic"
+            ],
+            [
+              "Volum",
+              "3 l"
+            ],
+            [
+              "Tip",
+              "Ceainic"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile inkl. inducție"
+            ]
+          ],
+          "materials": [
+            [
+              "Corp",
+              "Oțel inoxidabil"
+            ],
+            [
+              "Fund",
+              "Fund feromagnetic cu trei straturi"
+            ],
+            [
+              "Mâner",
+              "Ergonomic"
+            ]
+          ],
+          "highlights": [
+            [
+              "Linii elegante",
+              "✓"
+            ],
+            [
+              "Turnare sigură și controlată",
+              "✓"
+            ],
+            [
+              "Fund feromagnetic",
+              "✓"
+            ],
+            [
+              "Compatibil inducție",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Seturi de veselă ceramică 15 buc. Set oale și tigăi cu acoperire antiaderentă (negru 15)",
@@ -483,7 +2432,62 @@
           "Vasele se curăță ușor",
           "Potrivit pentru toate tipurile de aragaze",
           "Mânere din bachelită care nu se încălzesc"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "15 piese"
+            ],
+            [
+              "Incl.",
+              "Friteuze, capac soteu, ustensile, huse protecție"
+            ],
+            [
+              "Tip",
+              "Veselă ceramică"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile de aragaze"
+            ]
+          ],
+          "materials": [
+            [
+              "Acoperire",
+              "Ceramică antiaderentă"
+            ],
+            [
+              "Mânere",
+              "Bachelită (nu se încălzesc)"
+            ],
+            [
+              "Culoare",
+              "Negru"
+            ]
+          ],
+          "highlights": [
+            [
+              "Sigur și netoxic",
+              "✓"
+            ],
+            [
+              "Rezistent la zgârieturi",
+              "✓"
+            ],
+            [
+              "Curățare ușoară",
+              "✓"
+            ],
+            [
+              "4 huse de protecție inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set oale și tigăi ceramice Kikcoin din 16 piese cu acoperire antiaderentă, include tigaie grill 9,5 inci, set vase inducție",
@@ -495,7 +2499,58 @@
           "Vasele se curăță ușor",
           "Potrivit pentru toate tipurile de aragaze",
           "Mânere din bachelită care nu se încălzesc"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Detalii produs",
+          "materialsLabel": "Materiale",
+          "highlightsLabel": "Caracteristici",
+          "details": [
+            [
+              "Număr",
+              "16 piese"
+            ],
+            [
+              "Incl.",
+              "Tigaie grill 9,5 inci"
+            ],
+            [
+              "Tip",
+              "Set vase inducție"
+            ],
+            [
+              "Compatibilitate",
+              "Toate tipurile inkl. inducție"
+            ]
+          ],
+          "materials": [
+            [
+              "Acoperire",
+              "Ceramică antiaderentă (minerale naturale)"
+            ],
+            [
+              "Mânere",
+              "Bachelită (nu se încălzesc)"
+            ]
+          ],
+          "highlights": [
+            [
+              "Fără vapori la supraîncălzire",
+              "✓"
+            ],
+            [
+              "Compatibil inducție",
+              "✓"
+            ],
+            [
+              "Minerale naturale",
+              "✓"
+            ],
+            [
+              "Curățare ușoară",
+              "✓"
+            ]
+          ]
+        }
       }
     ]
   },

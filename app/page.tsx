@@ -7,7 +7,6 @@ import CatalogSection from './sections/CatalogSection';
 import ReviewsSection from './sections/ReviewsSection';
 import GuaranteesSection from './sections/GuaranteesSection';
 import FaqSection from './sections/FaqSection';
-import LeadCaptureSection from './sections/LeadCaptureSection';
 import SiteHeader from './sections/SiteHeader';
 import SiteFooter from './sections/SiteFooter';
 import NavBar from "@/components/NavBar";
@@ -21,12 +20,11 @@ export default async function HomePage() {
          <NavBar t={common.nav} />
          <main className="flex-1">
             <HeroSection t={home.hero} />
-            <CatalogSection t={home.catalog} productImages={productImages} />
+            <CatalogSection t={home.catalog} productImages={productImages} products={PRODUCT_DATA} />
             <StatsSection t={home.stats} />
             <ReviewsSection t={home.reviews} />
             <GuaranteesSection t={home.guarantees} />
             <FaqSection t={home.faq} />
-            <LeadCaptureSection t={home.leadCapture} />
          </main>
          <SiteFooter t={home.footer} />
       </div>

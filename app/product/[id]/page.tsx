@@ -7,6 +7,7 @@ import SiteHeader from '@/app/sections/SiteHeader';
 import SiteFooter from '@/app/sections/SiteFooter';
 import AddToCartButton from './AddToCartButton';
 import ProductImageSlider from '@/components/ProductImageSlider';
+import ProductSpecsTables from './ProductSpecsTables';
 
 export async function generateStaticParams() {
   return PRODUCT_DATA.map(p => ({ id: String(p.id) }));
@@ -31,8 +32,13 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
   if (!data) notFound();
 
   const idx = data.id - 1;
+  type SpecRow = [string, string];
   const locale = home.catalog.products[idx] as {
     name: string; material: string; description?: string; features?: string[];
+    specs?: {
+      detailsLabel: string; materialsLabel: string; highlightsLabel: string;
+      details: SpecRow[]; materials: SpecRow[]; highlights: SpecRow[];
+    };
   };
   const name = locale?.name ?? '';
   const material = locale?.material ?? '';
@@ -133,6 +139,9 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               </div>
             </div>
           </div>
+
+          {/* Specs tables */}
+          {locale?.specs && <ProductSpecsTables specs={locale.specs} />}
 
           {/* Back */}
           <div className="mt-12">
