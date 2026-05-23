@@ -1,4 +1,17 @@
+name = "velmora"
 compatibility_date = "2024-09-23"
 
-[assets] 
+[assets]
 directory = "out"
+
+[env.no]
+name = "velmora-no"
+
+[env.ro]
+name = "velmora-ro"
+
+[env.de]
+name = "velmora-de"
+
+[env.ru]
+name = "velmora-ru"
