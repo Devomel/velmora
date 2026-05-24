@@ -14,7 +14,7 @@
     "cta": "Se katalogen",
     "ctaSecondary": "Våre garantier",
     "ratingText": "4,9 · 247 anmeldelser",
-    "saleBadge": "−20%",
+    "saleBadge": "−50%",
     "advantages": [
       {
         "title": "Kontrollert kvalitet",
@@ -32,7 +32,10 @@
         "title": "Over 500 kunder",
         "desc": "Vurdering 4,9 / 5 på Google og Trustpilot"
       }
-    ]
+    ],
+    "bannerTitle": "Eksklusivt tilbud",
+    "bannerSubtitle": "Høykvalitets servicesett med 50% rabatt – kun begrenset tid",
+    "bannerDiscountLabel": "på Velmora-servise"
   },
   "stats": [
     {

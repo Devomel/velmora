@@ -150,7 +150,7 @@ export default function CatalogSection({ t, productImages, products: productData
 
   return (
     <section id="catalog" className="py-20 md:py-24 bg-[#FDFAF7]">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-10">
           <span className="text-xs uppercase tracking-widest text-[#C4704F] mb-3 block">{t.badge}</span>
           <h2 className="text-3xl md:text-4xl font-light text-[#1A1410] mb-3">{t.title}</h2>

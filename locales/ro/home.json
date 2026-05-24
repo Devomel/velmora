@@ -14,7 +14,7 @@
     "cta": "Vezi catalogul",
     "ctaSecondary": "Garanțiile noastre",
     "ratingText": "4,9 · 247 recenzii",
-    "saleBadge": "−20%",
+    "saleBadge": "−50%",
     "advantages": [
       {
         "title": "Calitate verificată",
@@ -32,7 +32,10 @@
         "title": "Peste 500 de clienți",
         "desc": "Rating 4,9 / 5 pe Google și Trustpilot"
       }
-    ]
+    ],
+    "bannerTitle": "Ofertă exclusivă",
+    "bannerSubtitle": "Seturi de veselă de calitate cu 50% reducere – perioadă limitată",
+    "bannerDiscountLabel": "la vesela Velmora"
   },
   "stats": [
     {

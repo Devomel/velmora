@@ -14,7 +14,7 @@
     "cta": "Посмотреть каталог",
     "ctaSecondary": "Наши гарантии",
     "ratingText": "4,9 · 247 отзывов",
-    "saleBadge": "−20%",
+    "saleBadge": "−50%",
     "advantages": [
       {
         "title": "Проверенное качество",
@@ -32,7 +32,10 @@
         "title": "Более 500 клиентов",
         "desc": "Рейтинг 4,9 / 5 на Google и Trustpilot"
       }
-    ]
+    ],
+    "bannerTitle": "Эксклюзивное предложение",
+    "bannerSubtitle": "Качественные наборы посуды со скидкой 50% — только ограниченное время",
+    "bannerDiscountLabel": "на посуду Velmora"
   },
   "stats": [
     {

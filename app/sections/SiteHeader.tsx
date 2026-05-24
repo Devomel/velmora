@@ -25,7 +25,7 @@ export default function SiteHeader({ t }: Props) {
             </span>
          </div>
 
-         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4">
+         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4">
             <Link href="/" className="flex-shrink-0 flex items-center gap-2">
                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
                   <circle cx="16" cy="16" r="14" stroke="#C4704F" strokeWidth="1.5" />

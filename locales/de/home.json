@@ -14,7 +14,7 @@
     "cta": "Katalog ansehen",
     "ctaSecondary": "Unsere Garantien",
     "ratingText": "4,9 · 247 Bewertungen",
-    "saleBadge": "−20%",
+    "saleBadge": "−50%",
     "advantages": [
       {
         "title": "Geprüfte Qualität",
@@ -32,7 +32,10 @@
         "title": "Über 500 Kunden",
         "desc": "Bewertung 4,9 / 5 auf Google und Trustpilot"
       }
-    ]
+    ],
+    "bannerTitle": "Exklusives Angebot",
+    "bannerSubtitle": "Hochwertige Geschirr-Sets mit 50% Rabatt – nur für kurze Zeit",
+    "bannerDiscountLabel": "auf Velmora-Geschirr"
   },
   "stats": [
     {

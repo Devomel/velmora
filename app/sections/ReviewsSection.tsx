@@ -17,7 +17,7 @@ function Stars({ rating }: { rating: number }) {
 export default function ReviewsSection({ t }: Props) {
   return (
     <section className="py-20 md:py-24 bg-[#F5F0EB]">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-xs uppercase tracking-widest text-[#C4704F] mb-3 block">{t.badge}</span>
           <h2 className="text-3xl md:text-4xl font-light text-[#1A1410] mb-3">{t.title}</h2>
