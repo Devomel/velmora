@@ -19,5 +19,46 @@
       { "name": "Set șervețele", "price": 6 }
     ]
   },
-  "buttons": { "buy": "Cumpără", "more": "Află mai mult", "back": "Înapoi" }
+  "checkout": {
+    "title": "Finalizare comandă",
+    "backToCart": "Înapoi la coș",
+    "contact": "Date de contact",
+    "firstName": "Prenume",
+    "lastName": "Nume de familie",
+    "email": "Adresă de email",
+    "phone": "Număr de telefon",
+    "shipping": "Adresă de livrare",
+    "address": "Stradă și număr",
+    "city": "Oraș",
+    "postalCode": "Cod poștal",
+    "country": "Țară",
+    "delivery": "Metodă de livrare",
+    "standardDelivery": "Livrare standard",
+    "standardDeliveryDesc": "3–5 zile lucrătoare",
+    "expressDelivery": "Livrare express",
+    "expressDeliveryDesc": "1–2 zile lucrătoare",
+    "free": "Gratuit",
+    "payment": "Metodă de plată",
+    "payCard": "Card de credit",
+    "payPaypal": "PayPal",
+    "payKlarna": "Klarna",
+    "orderSummary": "Rezumat comandă",
+    "subtotal": "Subtotal",
+    "deliveryFee": "Cost livrare",
+    "total": "Total",
+    "placeOrder": "Plasează comanda",
+    "unavailableTitle": "Plata temporar indisponibilă",
+    "unavailableText": "În prezent nu acceptăm plăți online. Vă rugăm să ne contactați pentru a finaliza comanda.",
+    "unavailableClose": "Închide",
+    "contactUs": "Contactați-ne",
+    "secure": "Plată securizată",
+    "countries": ["România", "Germania", "Austria", "Franța", "Italia", "Spania"]
+  },
+  "buttons": { "buy": "Cumpără", "more": "Află mai mult", "back": "Înapoi" },
+  "reviews": {
+    "title": "Recenzii clienți",
+    "average": "Medie",
+    "basedOn": "bazat pe {count} recenzii",
+    "verifiedPurchase": "Cumpărătură verificată"
+  }
 }

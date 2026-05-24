@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import type { CommonT } from '@/lib/i18n';
 import { useCart } from './CartProvider';
 
@@ -9,6 +10,7 @@ const FREE_DELIVERY_THRESHOLD = 50;
 
 export default function CartPanel({ t }: Props) {
   const { items, isOpen, closeCart, removeItem, updateQty, addItem, total, count } = useCart();
+  const router = useRouter();
   const progress = Math.min((total / FREE_DELIVERY_THRESHOLD) * 100, 100);
   const remaining = FREE_DELIVERY_THRESHOLD - total;
 
@@ -160,7 +162,10 @@ export default function CartPanel({ t }: Props) {
               <span className="text-xl font-semibold text-[#1A1410]">€{total}</span>
             </div>
 
-            <button className="w-full bg-[#C4704F] hover:bg-[#A85A3A] text-white py-4 text-sm font-semibold uppercase tracking-wider transition-colors">
+            <button
+              onClick={() => { closeCart(); router.push('/checkout'); }}
+              className="w-full bg-[#C4704F] hover:bg-[#A85A3A] text-white py-4 text-sm font-semibold uppercase tracking-wider transition-colors"
+            >
               {t.checkout}
             </button>
 

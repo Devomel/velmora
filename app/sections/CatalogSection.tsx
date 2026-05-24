@@ -9,13 +9,36 @@ import { useCart } from '@/components/CartProvider';
 type Props = { t: HomeT['catalog']; productImages: Record<string, string>; products: ProductData[] };
 
 function Stars({ rating }: { rating: number }) {
+  const uid = `s${Math.round(rating * 10)}`;
   return (
     <span className="inline-flex gap-0.5">
-      {[1,2,3,4,5].map(i => (
-        <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill={i <= rating ? '#C8A86B' : '#E8DDD4'}>
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-        </svg>
-      ))}
+      {[1, 2, 3, 4, 5].map(i => {
+        const fill = Math.min(1, Math.max(0, rating - (i - 1)));
+        const partial = fill > 0 && fill < 1;
+        const clipId = `cp-${uid}-${i}`;
+        return (
+          <svg key={i} width="14" height="14" viewBox="0 0 24 24">
+            {partial && (
+              <defs>
+                <clipPath id={clipId}>
+                  <rect x="0" y="0" width={24 * fill} height="24" />
+                </clipPath>
+              </defs>
+            )}
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              fill="#E8DDD4"
+            />
+            {fill > 0 && (
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                fill="#C8A86B"
+                clipPath={partial ? `url(#${clipId})` : undefined}
+              />
+            )}
+          </svg>
+        );
+      })}
     </span>
   );
 }

@@ -80,9 +80,9 @@
     "rating5": "5 stjerner",
     "products": [
       {
-        "name": "Stekepannesett Berlin Krauff ⌀26cm og ⌀28cm",
+        "name": "Stekepannesett Berlin Velmora ⌀26cm og ⌀28cm",
         "material": "Smidd aluminium",
-        "description": "Stekepanne Berlin Krauff ⌀28 cm, Stekepanne Berlin Krauff ⌀26 cm",
+        "description": "Stekepanne Berlin Velmora ⌀28 cm, Stekepanne Berlin Velmora ⌀26 cm",
         "features": [
           "Smidd aluminium",
           "Jevn oppvarming og non-stick belegg",
@@ -147,7 +147,7 @@
         }
       },
       {
-        "name": "Dyp stekepanne 28 cm Krauff Fry Power",
+        "name": "Dyp stekepanne 28 cm Velmora Fry Power",
         "material": "Innovativt non-stick belegg av ny generasjon",
         "description": "Dyp stekepanne Fry Power med diameter 28 cm",
         "features": [
@@ -214,9 +214,9 @@
         }
       },
       {
-        "name": "Stekepannesett Transform Krauff",
+        "name": "Stekepannesett Transform Velmora",
         "material": "Avtakbart håndtak – kan stekes og bakes i ovn",
-        "description": "Pannekakepanne Transform Krauff 24 cm, Universalpanne Transform Krauff 26 cm, 24cm",
+        "description": "Pannekakepanne Transform Velmora 24 cm, Universalpanne Transform Velmora 26 cm, 24cm",
         "features": [
           "Avtakbart håndtak – kan stekes og bakes i ovn",
           "Smidd aluminium",
@@ -348,7 +348,7 @@
         }
       },
       {
-        "name": "Kokekar-sett 12 deler Krauff Saporis og stekepanner Berlin 26, 28 cm",
+        "name": "Kokekar-sett 12 deler Velmora Saporis og stekepanner Berlin 26, 28 cm",
         "material": "5-lags kapselbunnbunn;",
         "description": "Kasseroller med lokk: 1,5 l 2,0 l 3,0 l 5,0 l Stekegryte 3,0 l med lokk Øse 1,5 l med lokk Stekepanne Berlin 26 cm, 28 cm",
         "features": [
@@ -419,7 +419,7 @@
         }
       },
       {
-        "name": "Kasserolle-sett Steil Krauff med øse",
+        "name": "Kasserolle-sett Steil Velmora med øse",
         "material": "5-lags varmeholden bunn,",
         "description": "Øse 1,2l med lokk Steil ⌀14cm; Kasserolle 1,7l med glasslokk Steil ⌀16cm; Kasserolle 2,5l med glasslokk Steil ⌀18cm; Kasserolle 3,4l med glasslokk Steil ⌀20cm; Kasserolle 4,5l med glasslokk Steil ⌀22cm; Kasserolle 5,8l med glasslokk Steil ⌀24cm;",
         "features": [
@@ -485,7 +485,7 @@
         }
       },
       {
-        "name": "Kasserolle-sett Steil Krauff + GAVE: Pannekakepanne 24 cm Fry Power",
+        "name": "Kasserolle-sett Steil Velmora + GAVE: Pannekakepanne 24 cm Fry Power",
         "material": "Rustfritt stål",
         "description": "Kasserolle 5,8 l Kasserolle 4,5 l Kasserolle 3,4 l Kasserolle 2,5 l Kasserolle 1,7 l Øse 1,2 l Pannekakepanne 24 cm Fry Power",
         "features": [
@@ -552,9 +552,9 @@
         }
       },
       {
-        "name": "Kasserolle-sett Prime Chef Krauff med stekegryte",
+        "name": "Kasserolle-sett Prime Chef Velmora med stekegryte",
         "material": "5-lags varmeholden bunn,",
-        "description": "Øse Prime Chef Krauff 2,1 l, 16 cm med lokk; Kasserolle Prime Chef Krauff 3,8 l, 20 cm med lokk; Kasserolle Prime Chef Krauff 6,3 l, 24 cm med lokk; Stekepanne Prime Chef Krauff 24 cm med non-stick belegg;",
+        "description": "Øse Prime Chef Velmora 2,1 l, 16 cm med lokk; Kasserolle Prime Chef Velmora 3,8 l, 20 cm med lokk; Kasserolle Prime Chef Velmora 6,3 l, 24 cm med lokk; Stekepanne Prime Chef Velmora 24 cm med non-stick belegg;",
         "features": [
           "5-lags varmeholden bunn,",
           "Høykvalitets rustfritt stål (18/10),",
@@ -691,9 +691,9 @@
         }
       },
       {
-        "name": "Kasserolle Smart Fry Krauff 6,6l med glasslokk +GAVE: stekespade, suppeskje og potetstamper",
+        "name": "Kasserolle Smart Fry Velmora 6,6l med glasslokk +GAVE: stekespade, suppeskje og potetstamper",
         "material": "Robust smidd aluminium",
-        "description": "Kasserolle Krauff Smart Fry 6,6 l Ø28 cm med lokk Stekespade Krauff Suppeskje Krauff Potetstamper Krauff",
+        "description": "Kasserolle Velmora Smart Fry 6,6 l Ø28 cm med lokk Stekespade Velmora Suppeskje Velmora Potetstamper Velmora",
         "features": [
           "Robust smidd aluminium",
           "Non-stick belegg Greblon C2",
@@ -762,7 +762,7 @@
         }
       },
       {
-        "name": "Kasseroller Krauff serie Winzig 1,2 l og 0,7 l",
+        "name": "Kasseroller Velmora serie Winzig 1,2 l og 0,7 l",
         "material": "5-lags varmeholden bunn,",
         "description": "Kasserolle Winzig med lokk 1,2 l; Kasserolle Winzig med lokk 0,7 l;",
         "features": [
@@ -827,7 +827,7 @@
         }
       },
       {
-        "name": "Kasserolle-sett Elite Krauff 1,3l, 1,9l, 4,7l",
+        "name": "Kasserolle-sett Elite Velmora 1,3l, 1,9l, 4,7l",
         "material": "5-lags varmeholden bunn.",
         "description": "Kasserolle med lokk 1,9 l 16 cm, Kasserolle med lokk 1,3 l 14 cm, Kasserolle med lokk 4,7 l 22 cm, Kasserolle med lokk 6,1 l 24 cm",
         "features": [
@@ -897,7 +897,7 @@
         }
       },
       {
-        "name": "Kasserolle-sett Cook&Joy 4,6l, 3,5l, 1,8l og stekepanner Smart Fry Krauff + GAVER: Pannekakepanne Smart Fry",
+        "name": "Kasserolle-sett Cook&Joy 4,6l, 3,5l, 1,8l og stekepanner Smart Fry Velmora + GAVER: Pannekakepanne Smart Fry",
         "material": "Varmeindikator i form av flamme innvendig",
         "description": "",
         "features": [
@@ -962,9 +962,9 @@
         }
       },
       {
-        "name": "Kasserolle Krauff Moxie 6,5 l +GAVE: Underlag Krauff Galaxy",
+        "name": "Kasserolle Velmora Moxie 6,5 l +GAVE: Underlag Velmora Galaxy",
         "material": "veggtykkelse 0,5mm;",
-        "description": "Kasserolle Krauff Moxie med glasslokk 6,5 l ⌀24 cm; Varmunderlag Krauff Galaxy.",
+        "description": "Kasserolle Velmora Moxie med glasslokk 6,5 l ⌀24 cm; Varmunderlag Velmora Galaxy.",
         "features": [
           "veggtykkelse 0,5mm;",
           "håndtak med silikoninnlegg;",
@@ -1094,9 +1094,9 @@
         }
       },
       {
-        "name": "Sett med 2 kasseroller Prime Chef Krauff 3,6l, 6,1l + GAVE: Stekespade, suppeskje, pensel",
+        "name": "Sett med 2 kasseroller Prime Chef Velmora 3,6l, 6,1l + GAVE: Stekespade, suppeskje, pensel",
         "material": "Rustfritt stål 18/10;",
-        "description": "Kasserolle Prime Chef Krauff 6,1 l Glasslokk Kasserolle Prime Chef Krauff 3,6 l Glasslokk Stekespade Galaxy Suppeskje Galaxy Pensel Galaxy",
+        "description": "Kasserolle Prime Chef Velmora 6,1 l Glasslokk Kasserolle Prime Chef Velmora 3,6 l Glasslokk Stekespade Galaxy Suppeskje Galaxy Pensel Galaxy",
         "features": [
           "Rustfritt stål 18/10;",
           "5-lags kapselbunnbunn;",
@@ -1168,7 +1168,7 @@
       {
         "name": "Kasserolle med lokk 3,4 l Steil og Grillpanne",
         "material": "5-lags varmeholden bunn;",
-        "description": "Kasserolle i rustfritt stål 3,4 l Ø20 cm Krauff; Silikonmatskje Schoco.",
+        "description": "Kasserolle i rustfritt stål 3,4 l Ø20 cm Velmora; Silikonmatskje Schoco.",
         "features": [
           "5-lags varmeholden bunn;",
           "Høykvalitets rustfritt stål (18/10);",
@@ -1236,7 +1236,7 @@
       {
         "name": "Kasserolle-sett Steil og stekepanne Hamburg",
         "material": "Rustfritt stål 18/10",
-        "description": "Kasserolle Krauff Steil 4,5 l med lokk Kasserolle Krauff Steil 3,4 l med lokk Stekepanne Hamburg 20 cm",
+        "description": "Kasserolle Velmora Steil 4,5 l med lokk Kasserolle Velmora Steil 3,4 l med lokk Stekepanne Hamburg 20 cm",
         "features": [
           "Rustfritt stål 18/10",
           "Non-stick belegg",
@@ -1372,7 +1372,7 @@
         }
       },
       {
-        "name": "Sett med 2 kasseroller Steil Krauff og Øse 1,2 l Steil",
+        "name": "Sett med 2 kasseroller Steil Velmora og Øse 1,2 l Steil",
         "material": "5-lags varmeholden bunn;",
         "description": "Kasserolle 3,4l med glasslokk Steil 20cm; Kasserolle 4,5l med glasslokk Steil 22cm; Øse 1,2l med glasslokk diameter 14cm;",
         "features": [
@@ -1438,7 +1438,7 @@
         }
       },
       {
-        "name": "Kasserolle med lokk 2,7l og øse med lokk 2l Prime Chef Krauff",
+        "name": "Kasserolle med lokk 2,7l og øse med lokk 2l Prime Chef Velmora",
         "material": "Passer til alle komfyrtyper",
         "description": "Kasserolle med lokk 2,7 l ⌀18cm Prime Chef; Øse med lokk 2 l ⌀16cm Prime Chef;",
         "features": [
@@ -1509,7 +1509,7 @@
         }
       },
       {
-        "name": "Kasserolle-sett Prime Chef Krauff 8 deler",
+        "name": "Kasserolle-sett Prime Chef Velmora 8 deler",
         "material": "5-lags varmeholden bunn.",
         "description": "Øse med lokk 2l Ø 16cm; Kasserolle med lokk 2,7l Ø 18cm; Kasserolle med lokk 4,7l Ø 22cm; Kasserolle med lokk 2,0 l ⌀16 cm;",
         "features": [
@@ -1710,9 +1710,9 @@
         }
       },
       {
-        "name": "Kasserolle 6,3 l Herzog Krauff",
+        "name": "Kasserolle 6,3 l Herzog Velmora",
         "material": "Lokk med avrenningsåpninger.",
-        "description": "Kasserolle Krauff Herzog, med glasslokk, 24 cm, 6,3 l",
+        "description": "Kasserolle Velmora Herzog, med glasslokk, 24 cm, 6,3 l",
         "features": [
           "Lokk med avrenningsåpninger.",
           "5-lags varmeholden bunn.",
@@ -1775,7 +1775,7 @@
         }
       },
       {
-        "name": "Kasserolle-sett med lokk Steil Krauff + GAVER: Skjærebrett",
+        "name": "Kasserolle-sett med lokk Steil Velmora + GAVER: Skjærebrett",
         "material": "5-lags varmeholden bunn,",
         "description": "Kasserolle 3,4 l med glasslokk Steil Ø20cm; Kasserolle 2,5 l med glasslokk Steil Ø18cm; Kasserolle 4,5 l med glasslokk Steil Ø22 cm; Plastskjærebrett KuchenArt",
         "features": [
@@ -1846,7 +1846,7 @@
         }
       },
       {
-        "name": "Kasserolle-sett 6 deler Steil Krauff",
+        "name": "Kasserolle-sett 6 deler Steil Velmora",
         "material": "5-lags varmeholden bunn;",
         "description": "Kasserolle med lokk Steil ⌀18 cm — 2,5 l Kasserolle med lokk Steil ⌀20 cm — 3,4 l Kasserolle med lokk Steil ⌀22 cm — 4,5 l",
         "features": [
@@ -1913,7 +1913,7 @@
         }
       },
       {
-        "name": "Kniv-sett på holder Prime Chef Krauff",
+        "name": "Kniv-sett på holder Prime Chef Velmora",
         "material": "Helmetallikonstruksjon",
         "description": "Holder; kokniv 20,5 cm; skjærekniv 20,8 cm; brødkniv 20,8 cm; universalkniv 12,8 cm; grønnsakskniv 9,5 cm;",
         "features": [
@@ -2040,7 +2040,7 @@
         }
       },
       {
-        "name": "Sett med 5 kniver på holder Prime Chef Krauff",
+        "name": "Sett med 5 kniver på holder Prime Chef Velmora",
         "material": "Rustfritt stål;",
         "description": "Kokniv 20,5 cm; Santokukniv 17,5 cm; Santokukniv 13,5 cm; Universalkniv 12,5 cm; Grønnsakskniv 9 cm;",
         "features": [
@@ -2106,7 +2106,7 @@
         }
       },
       {
-        "name": "Sett med 5 kniver Solvar Krauff",
+        "name": "Sett med 5 kniver Solvar Velmora",
         "material": "Perfekt skarphet;",
         "description": "Kokniv 20,5 cm; Santokukniv 17,5 cm; Santokukniv 13,5 cm; Universalkniv 12,8 cm; Grønnsakskniv 9 cm; Knivblokk;",
         "features": [
@@ -2298,7 +2298,7 @@
       {
         "name": "Sett med glasbeholdere for oppbevaring og Termos 600ml",
         "material": "Lokk med innovativ åpningsmekanisme;",
-        "description": "Oppbevaringsbeholder Prime Chef Krauff 1,7 l med lokk høyde 30 cm; Oppbevaringsbeholder Prime Chef Krauff 0,84 l med lokk høyde 17 cm; Oppbevaringsbeholder Prime Chef Krauff 0,58 l med lokk høyde 13 cm; Termos 600 ml",
+        "description": "Oppbevaringsbeholder Prime Chef Velmora 1,7 l med lokk høyde 30 cm; Oppbevaringsbeholder Prime Chef Velmora 0,84 l med lokk høyde 17 cm; Oppbevaringsbeholder Prime Chef Velmora 0,58 l med lokk høyde 13 cm; Termos 600 ml",
         "features": [
           "Lokk med innovativ åpningsmekanisme;",
           "Dagteller på lokkene;",
@@ -2357,7 +2357,7 @@
         }
       },
       {
-        "name": "Kjele Krauff Nebion 3 l",
+        "name": "Kjele Velmora Nebion 3 l",
         "material": "Elegante kroppslinjer.",
         "description": "Trelagets ferromagnetisk bunn Sikker og kontrollert helling",
         "features": [

@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { loadAllReviewCounts, loadAverageRatings } from './reviews';
 
 export type ProductData = {
    id: number;
@@ -72,6 +73,8 @@ function loadCsvPrices(): Map<string, number> {
 }
 
 const csvPrices = loadCsvPrices();
+const reviewCounts = loadAllReviewCounts();
+const avgRatings = loadAverageRatings();
 
 export const PRODUCT_DATA: ProductData[] = STATIC_META.map(meta => {
    const price = csvPrices.get(meta.articleKey) ?? 0;
@@ -79,6 +82,8 @@ export const PRODUCT_DATA: ProductData[] = STATIC_META.map(meta => {
       ...meta,
       price,
       oldPrice: Math.round(price * 1.25),
+      reviews: reviewCounts.get(meta.articleKey) ?? meta.reviews,
+      rating: avgRatings.get(meta.articleKey) ?? meta.rating,
    };
 });
 

@@ -19,5 +19,46 @@
       { "name": "Набор салфеток", "price": 6 }
     ]
   },
-  "buttons": { "buy": "Купить", "more": "Узнать больше", "back": "Назад" }
+  "checkout": {
+    "title": "Оформление заказа",
+    "backToCart": "Вернуться в корзину",
+    "contact": "Контактные данные",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "email": "Электронная почта",
+    "phone": "Номер телефона",
+    "shipping": "Адрес доставки",
+    "address": "Улица и номер дома",
+    "city": "Город",
+    "postalCode": "Почтовый индекс",
+    "country": "Страна",
+    "delivery": "Способ доставки",
+    "standardDelivery": "Стандартная доставка",
+    "standardDeliveryDesc": "3–5 рабочих дней",
+    "expressDelivery": "Экспресс-доставка",
+    "expressDeliveryDesc": "1–2 рабочих дня",
+    "free": "Бесплатно",
+    "payment": "Способ оплаты",
+    "payCard": "Банковская карта",
+    "payPaypal": "PayPal",
+    "payKlarna": "Klarna",
+    "orderSummary": "Состав заказа",
+    "subtotal": "Сумма товаров",
+    "deliveryFee": "Доставка",
+    "total": "Итого",
+    "placeOrder": "Оформить заказ",
+    "unavailableTitle": "Оплата временно недоступна",
+    "unavailableText": "В данный момент мы не принимаем онлайн-платежи. Пожалуйста, свяжитесь с нами для завершения заказа.",
+    "unavailableClose": "Закрыть",
+    "contactUs": "Связаться с нами",
+    "secure": "Безопасная оплата",
+    "countries": ["Германия", "Австрия", "Швейцария", "Нидерланды", "Бельгия", "Люксембург"]
+  },
+  "buttons": { "buy": "Купить", "more": "Узнать больше", "back": "Назад" },
+  "reviews": {
+    "title": "Отзывы покупателей",
+    "average": "Средняя оценка",
+    "basedOn": "на основе {count} отзывов",
+    "verifiedPurchase": "Подтверждённая покупка"
+  }
 }

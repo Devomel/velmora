@@ -19,5 +19,46 @@
       { "name": "Servietten-Set", "price": 6 }
     ]
   },
-  "buttons": { "buy": "Kaufen", "more": "Mehr erfahren", "back": "Zurück" }
+  "checkout": {
+    "title": "Kasse",
+    "backToCart": "Zurück zum Warenkorb",
+    "contact": "Kontaktdaten",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "shipping": "Lieferadresse",
+    "address": "Straße und Hausnummer",
+    "city": "Stadt",
+    "postalCode": "Postleitzahl",
+    "country": "Land",
+    "delivery": "Versandart",
+    "standardDelivery": "Standardversand",
+    "standardDeliveryDesc": "3–5 Werktage",
+    "expressDelivery": "Expressversand",
+    "expressDeliveryDesc": "1–2 Werktage",
+    "free": "Kostenlos",
+    "payment": "Zahlungsmethode",
+    "payCard": "Kreditkarte",
+    "payPaypal": "PayPal",
+    "payKlarna": "Klarna",
+    "orderSummary": "Bestellübersicht",
+    "subtotal": "Zwischensumme",
+    "deliveryFee": "Versandkosten",
+    "total": "Gesamt",
+    "placeOrder": "Bestellung aufgeben",
+    "unavailableTitle": "Zahlung vorübergehend nicht möglich",
+    "unavailableText": "Wir nehmen derzeit keine Online-Zahlungen entgegen. Bitte kontaktieren Sie uns, um Ihre Bestellung abzuschließen.",
+    "unavailableClose": "Schließen",
+    "contactUs": "Kontakt aufnehmen",
+    "secure": "Sichere Zahlung",
+    "countries": ["Deutschland", "Österreich", "Schweiz", "Belgien", "Niederlande", "Luxemburg"]
+  },
+  "buttons": { "buy": "Kaufen", "more": "Mehr erfahren", "back": "Zurück" },
+  "reviews": {
+    "title": "Kundenbewertungen",
+    "average": "Durchschnitt",
+    "basedOn": "basierend auf {count} Bewertungen",
+    "verifiedPurchase": "Verifizierter Kauf"
+  }
 }

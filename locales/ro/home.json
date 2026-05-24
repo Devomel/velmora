@@ -80,9 +80,9 @@
     "rating5": "5 stele",
     "products": [
       {
-        "name": "Set tigăi Berlin Krauff ⌀26cm și ⌀28cm",
+        "name": "Set tigăi Berlin Velmora ⌀26cm și ⌀28cm",
         "material": "Aluminiu forjat",
-        "description": "Tigaie Berlin Krauff ⌀28 cm, Tigaie Berlin Krauff ⌀26 cm",
+        "description": "Tigaie Berlin Velmora ⌀28 cm, Tigaie Berlin Velmora ⌀26 cm",
         "features": [
           "Aluminiu forjat",
           "Încălzire uniformă și acoperire antiaderentă",
@@ -147,7 +147,7 @@
         }
       },
       {
-        "name": "Tigaie adâncă 28 cm Krauff Fry Power",
+        "name": "Tigaie adâncă 28 cm Velmora Fry Power",
         "material": "Acoperire antiaderentă inovatoare de nouă generație",
         "description": "Tigaie adâncă Fry Power cu diametrul de 28 cm",
         "features": [
@@ -214,9 +214,9 @@
         }
       },
       {
-        "name": "Set tigăi Transform Krauff",
+        "name": "Set tigăi Transform Velmora",
         "material": "Mâner detașabil – poate fi utilizat la cuptor",
-        "description": "Tigaie pentru clătite Transform Krauff 24 cm, Tigaie universală Transform Krauff 26 cm, 24cm",
+        "description": "Tigaie pentru clătite Transform Velmora 24 cm, Tigaie universală Transform Velmora 26 cm, 24cm",
         "features": [
           "Mâner detașabil – poate fi utilizat la cuptor",
           "Aluminiu forjat",
@@ -348,7 +348,7 @@
         }
       },
       {
-        "name": "Set de gătit 12 piese Krauff Saporis și tigăi Berlin 26, 28 cm",
+        "name": "Set de gătit 12 piese Velmora Saporis și tigăi Berlin 26, 28 cm",
         "material": "Fund capsulat cu 5 straturi;",
         "description": "Oale cu capace: 1,5 l 2,0 l 3,0 l 5,0 l Cratiță 3,0 l cu capac Polonic 1,5 l cu capac Tigaie Berlin 26 cm, 28 cm",
         "features": [
@@ -419,7 +419,7 @@
         }
       },
       {
-        "name": "Set oale Steil Krauff cu polonic",
+        "name": "Set oale Steil Velmora cu polonic",
         "material": "Fund termoaccumulator cu 5 straturi,",
         "description": "Polonic 1,2l cu capac Steil ⌀14cm; Oală 1,7l cu capac din sticlă Steil ⌀16cm; Oală 2,5l cu capac din sticlă Steil ⌀18cm; Oală 3,4l cu capac din sticlă Steil ⌀20cm; Oală 4,5l cu capac din sticlă Steil ⌀22cm; Oală 5,8l cu capac din sticlă Steil ⌀24cm;",
         "features": [
@@ -485,7 +485,7 @@
         }
       },
       {
-        "name": "Set oale Steil Krauff + CADOU: Tigaie pentru clătite 24 cm Fry Power",
+        "name": "Set oale Steil Velmora + CADOU: Tigaie pentru clătite 24 cm Fry Power",
         "material": "Oțel inoxidabil",
         "description": "Oală 5,8 l Oală 4,5 l Oală 3,4 l Oală 2,5 l Oală 1,7 l Polonic 1,2 l Tigaie pentru clătite 24 cm Fry Power",
         "features": [
@@ -552,9 +552,9 @@
         }
       },
       {
-        "name": "Set oale Prime Chef Krauff cu cratiță",
+        "name": "Set oale Prime Chef Velmora cu cratiță",
         "material": "Fund termoaccumulator cu 5 straturi,",
-        "description": "Polonic Prime Chef Krauff 2,1 l, 16 cm cu capac; Oală Prime Chef Krauff 3,8 l, 20 cm cu capac; Oală Prime Chef Krauff 6,3 l, 24 cm cu capac; Tigaie Prime Chef Krauff 24 cm cu acoperire antiaderentă;",
+        "description": "Polonic Prime Chef Velmora 2,1 l, 16 cm cu capac; Oală Prime Chef Velmora 3,8 l, 20 cm cu capac; Oală Prime Chef Velmora 6,3 l, 24 cm cu capac; Tigaie Prime Chef Velmora 24 cm cu acoperire antiaderentă;",
         "features": [
           "Fund termoaccumulator cu 5 straturi,",
           "Oțel inoxidabil de înaltă calitate (18/10),",
@@ -691,9 +691,9 @@
         }
       },
       {
-        "name": "Oală Smart Fry Krauff 6,6l cu capac din sticlă +CADOU: spatulă, polonic și pasator de cartofi",
+        "name": "Oală Smart Fry Velmora 6,6l cu capac din sticlă +CADOU: spatulă, polonic și pasator de cartofi",
         "material": "Aluminiu forjat rezistent",
-        "description": "Oală Krauff Smart Fry 6,6 l Ø28 cm cu capac Spatulă Krauff Polonic Krauff Pasator de cartofi Krauff",
+        "description": "Oală Velmora Smart Fry 6,6 l Ø28 cm cu capac Spatulă Velmora Polonic Velmora Pasator de cartofi Velmora",
         "features": [
           "Aluminiu forjat rezistent",
           "Acoperire antiaderentă Greblon C2",
@@ -762,7 +762,7 @@
         }
       },
       {
-        "name": "Oale Krauff seria Winzig 1,2 l și 0,7 l",
+        "name": "Oale Velmora seria Winzig 1,2 l și 0,7 l",
         "material": "Fund termoaccumulator cu 5 straturi,",
         "description": "Oală Winzig cu capac 1,2 l; Oală Winzig cu capac 0,7 l;",
         "features": [
@@ -827,7 +827,7 @@
         }
       },
       {
-        "name": "Set oale Elite Krauff 1,3l, 1,9l, 4,7l",
+        "name": "Set oale Elite Velmora 1,3l, 1,9l, 4,7l",
         "material": "Fund termoaccumulator cu 5 straturi.",
         "description": "Oală cu capac 1,9 l 16 cm, Oală cu capac 1,3 l 14 cm, Oală cu capac 4,7 l 22 cm, Oală cu capac 6,1 l 24 cm",
         "features": [
@@ -897,7 +897,7 @@
         }
       },
       {
-        "name": "Set oale Cook&Joy 4,6l, 3,5l, 1,8l și tigăi Smart Fry Krauff + CADOURI: Tigaie pentru clătite Smart Fry",
+        "name": "Set oale Cook&Joy 4,6l, 3,5l, 1,8l și tigăi Smart Fry Velmora + CADOURI: Tigaie pentru clătite Smart Fry",
         "material": "Indicator de încălzire în formă de flacără interior",
         "description": "",
         "features": [
@@ -962,9 +962,9 @@
         }
       },
       {
-        "name": "Oală Krauff Moxie 6,5 l +CADOU: Suport Krauff Galaxy",
+        "name": "Oală Velmora Moxie 6,5 l +CADOU: Suport Velmora Galaxy",
         "material": "grosimea peretelui 0,5mm;",
-        "description": "Oală Krauff Moxie cu capac din sticlă 6,5 l ⌀24 cm; Suport pentru vase fierbinți Krauff Galaxy.",
+        "description": "Oală Velmora Moxie cu capac din sticlă 6,5 l ⌀24 cm; Suport pentru vase fierbinți Velmora Galaxy.",
         "features": [
           "grosimea peretelui 0,5mm;",
           "mânere cu inserții de silicon;",
@@ -1094,9 +1094,9 @@
         }
       },
       {
-        "name": "Set din 2 oale Prime Chef Krauff 3,6l, 6,1l + CADOU: Spatulă, polonic, pensulă",
+        "name": "Set din 2 oale Prime Chef Velmora 3,6l, 6,1l + CADOU: Spatulă, polonic, pensulă",
         "material": "Oțel inoxidabil 18/10;",
-        "description": "Oală Prime Chef Krauff 6,1 l Capac din sticlă Oală Prime Chef Krauff 3,6 l Capac din sticlă Spatulă Galaxy Polonic Galaxy Pensulă Galaxy",
+        "description": "Oală Prime Chef Velmora 6,1 l Capac din sticlă Oală Prime Chef Velmora 3,6 l Capac din sticlă Spatulă Galaxy Polonic Galaxy Pensulă Galaxy",
         "features": [
           "Oțel inoxidabil 18/10;",
           "Fund capsulat cu 5 straturi;",
@@ -1168,7 +1168,7 @@
       {
         "name": "Oală cu capac 3,4 l Steil și Tigaie grill",
         "material": "Fund termoaccumulator cu 5 straturi;",
-        "description": "Oală din oțel inoxidabil 3,4 l Ø20 cm Krauff; Lingură culinară din silicon Schoco.",
+        "description": "Oală din oțel inoxidabil 3,4 l Ø20 cm Velmora; Lingură culinară din silicon Schoco.",
         "features": [
           "Fund termoaccumulator cu 5 straturi;",
           "Oțel inoxidabil de înaltă calitate (18/10);",
@@ -1236,7 +1236,7 @@
       {
         "name": "Set oale Steil și tigaie Hamburg",
         "material": "Oțel inoxidabil 18/10",
-        "description": "Oală Krauff Steil 4,5 l cu capac Oală Krauff Steil 3,4 l cu capac Tigaie Hamburg 20 cm",
+        "description": "Oală Velmora Steil 4,5 l cu capac Oală Velmora Steil 3,4 l cu capac Tigaie Hamburg 20 cm",
         "features": [
           "Oțel inoxidabil 18/10",
           "Acoperire antiaderentă",
@@ -1372,7 +1372,7 @@
         }
       },
       {
-        "name": "Set din 2 oale Steil Krauff și Polonic 1,2 l Steil",
+        "name": "Set din 2 oale Steil Velmora și Polonic 1,2 l Steil",
         "material": "Fund termoaccumulator cu 5 straturi;",
         "description": "Oală 3,4l cu capac din sticlă Steil 20cm; Oală 4,5l cu capac din sticlă Steil 22cm; Polonic 1,2l cu capac din sticlă diametru 14cm;",
         "features": [
@@ -1438,7 +1438,7 @@
         }
       },
       {
-        "name": "Oală cu capac 2,7l și polonic cu capac 2l Prime Chef Krauff",
+        "name": "Oală cu capac 2,7l și polonic cu capac 2l Prime Chef Velmora",
         "material": "Potrivit pentru toate tipurile de aragaze",
         "description": "Oală cu capac 2,7 l ⌀18cm Prime Chef; Polonic cu capac 2 l ⌀16cm Prime Chef;",
         "features": [
@@ -1509,7 +1509,7 @@
         }
       },
       {
-        "name": "Set oale Prime Chef Krauff 8 piese",
+        "name": "Set oale Prime Chef Velmora 8 piese",
         "material": "Fund termoaccumulator cu 5 straturi.",
         "description": "Polonic cu capac 2l Ø 16cm; Oală cu capac 2,7l Ø 18cm; Oală cu capac 4,7l Ø 22cm; Oală cu capac 2,0 l ⌀16 cm;",
         "features": [
@@ -1710,9 +1710,9 @@
         }
       },
       {
-        "name": "Oală 6,3 l Herzog Krauff",
+        "name": "Oală 6,3 l Herzog Velmora",
         "material": "Capace cu orificii de scurgere.",
-        "description": "Oală Krauff Herzog, cu capac din sticlă, 24 cm, 6,3 l",
+        "description": "Oală Velmora Herzog, cu capac din sticlă, 24 cm, 6,3 l",
         "features": [
           "Capace cu orificii de scurgere.",
           "Fund termoaccumulator cu 5 straturi.",
@@ -1775,7 +1775,7 @@
         }
       },
       {
-        "name": "Set oale cu capace Steil Krauff + CADOURI: Tocător",
+        "name": "Set oale cu capace Steil Velmora + CADOURI: Tocător",
         "material": "Fund termoaccumulator cu 5 straturi,",
         "description": "Oală 3,4 l cu capac din sticlă Steil Ø20cm; Oală 2,5 l cu capac din sticlă Steil Ø18cm; Oală 4,5 l cu capac din sticlă Steil Ø22 cm; Tocător din plastic KuchenArt",
         "features": [
@@ -1846,7 +1846,7 @@
         }
       },
       {
-        "name": "Set oale 6 piese Steil Krauff",
+        "name": "Set oale 6 piese Steil Velmora",
         "material": "Fund termoaccumulator cu 5 straturi;",
         "description": "Oală cu capac Steil ⌀18 cm — 2,5 l Oală cu capac Steil ⌀20 cm — 3,4 l Oală cu capac Steil ⌀22 cm — 4,5 l",
         "features": [
@@ -1913,7 +1913,7 @@
         }
       },
       {
-        "name": "Set cuțite pe suport Prime Chef Krauff",
+        "name": "Set cuțite pe suport Prime Chef Velmora",
         "material": "Construcție integral metalică",
         "description": "Suport; cuțit de bucătar 20,5 cm; cuțit de feliat 20,8 cm; cuțit pentru pâine 20,8 cm; cuțit universal 12,8 cm; cuțit pentru curățat legume 9,5 cm;",
         "features": [
@@ -2040,7 +2040,7 @@
         }
       },
       {
-        "name": "Set din 5 cuțite pe suport Prime Chef Krauff",
+        "name": "Set din 5 cuțite pe suport Prime Chef Velmora",
         "material": "Oțel inoxidabil;",
         "description": "Cuțit de bucătar 20,5 cm; Cuțit santoku 17,5 cm; Cuțit santoku 13,5 cm; Cuțit universal 12,5 cm; Cuțit pentru curățat legume 9 cm;",
         "features": [
@@ -2106,7 +2106,7 @@
         }
       },
       {
-        "name": "Set din 5 cuțite Solvar Krauff",
+        "name": "Set din 5 cuțite Solvar Velmora",
         "material": "Ascuțime perfectă;",
         "description": "Cuțit de bucătar 20,5 cm; Cuțit santoku 17,5 cm; Cuțit santoku 13,5 cm; Cuțit universal 12,8 cm; Cuțit pentru legume 9 cm; Suport pentru cuțite;",
         "features": [
@@ -2298,7 +2298,7 @@
       {
         "name": "Set recipiente din sticlă pentru depozitare și Termos 600ml",
         "material": "Capace cu mecanism inovator de deschidere;",
-        "description": "Recipient pentru depozitare Prime Chef Krauff 1,7 l cu capac înălțime 30 cm; Recipient pentru depozitare Prime Chef Krauff 0,84 l cu capac înălțime 17 cm; Recipient pentru depozitare Prime Chef Krauff 0,58 l cu capac înălțime 13 cm; Termos 600 ml",
+        "description": "Recipient pentru depozitare Prime Chef Velmora 1,7 l cu capac înălțime 30 cm; Recipient pentru depozitare Prime Chef Velmora 0,84 l cu capac înălțime 17 cm; Recipient pentru depozitare Prime Chef Velmora 0,58 l cu capac înălțime 13 cm; Termos 600 ml",
         "features": [
           "Capace cu mecanism inovator de deschidere;",
           "Numărător de zile pe capace;",
@@ -2357,7 +2357,7 @@
         }
       },
       {
-        "name": "Ceainic Krauff Nebion 3 l",
+        "name": "Ceainic Velmora Nebion 3 l",
         "material": "Linii elegante ale corpului.",
         "description": "Fund feromagnetic cu trei straturi Turnare sigură și controlată",
         "features": [

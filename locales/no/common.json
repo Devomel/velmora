@@ -19,5 +19,46 @@
       { "name": "Serviettesett", "price": 6 }
     ]
   },
-  "buttons": { "buy": "Kjøp", "more": "Les mer", "back": "Tilbake" }
+  "checkout": {
+    "title": "Kasse",
+    "backToCart": "Tilbake til handlekurven",
+    "contact": "Kontaktinformasjon",
+    "firstName": "Fornavn",
+    "lastName": "Etternavn",
+    "email": "E-postadresse",
+    "phone": "Telefonnummer",
+    "shipping": "Leveringsadresse",
+    "address": "Gate og husnummer",
+    "city": "By",
+    "postalCode": "Postnummer",
+    "country": "Land",
+    "delivery": "Leveringsmetode",
+    "standardDelivery": "Standardlevering",
+    "standardDeliveryDesc": "3–5 virkedager",
+    "expressDelivery": "Expresslevering",
+    "expressDeliveryDesc": "1–2 virkedager",
+    "free": "Gratis",
+    "payment": "Betalingsmetode",
+    "payCard": "Kredittkort",
+    "payPaypal": "PayPal",
+    "payKlarna": "Klarna",
+    "orderSummary": "Ordresammendrag",
+    "subtotal": "Delsum",
+    "deliveryFee": "Fraktkostnad",
+    "total": "Totalt",
+    "placeOrder": "Legg inn bestilling",
+    "unavailableTitle": "Betaling midlertidig utilgjengelig",
+    "unavailableText": "Vi tar for øyeblikket ikke imot nettbetalinger. Vennligst kontakt oss for å fullføre bestillingen.",
+    "unavailableClose": "Lukk",
+    "contactUs": "Kontakt oss",
+    "secure": "Sikker betaling",
+    "countries": ["Norge", "Sverige", "Danmark", "Finland", "Nederland", "Belgia"]
+  },
+  "buttons": { "buy": "Kjøp", "more": "Les mer", "back": "Tilbake" },
+  "reviews": {
+    "title": "Kundeomtaler",
+    "average": "Gjennomsnitt",
+    "basedOn": "basert på {count} omtaler",
+    "verifiedPurchase": "Bekreftet kjøp"
+  }
 }

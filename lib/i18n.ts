@@ -9,8 +9,22 @@ export const LOCALE_META: Record<Locale, { lang: string; dir: "ltr" | "rtl" }> =
   ru: { lang: "ru", dir: "ltr" },
 };
 
+type CheckoutT = {
+  title: string; backToCart: string; contact: string; firstName: string; lastName: string;
+  email: string; phone: string; shipping: string; address: string; city: string;
+  postalCode: string; country: string; delivery: string; standardDelivery: string;
+  standardDeliveryDesc: string; expressDelivery: string; expressDeliveryDesc: string;
+  free: string; payment: string; payCard: string; payPaypal: string; payKlarna: string;
+  orderSummary: string; subtotal: string; deliveryFee: string; total: string;
+  placeOrder: string; unavailableTitle: string; unavailableText: string;
+  unavailableClose: string; contactUs: string; secure: string; countries: string[];
+};
+
 type Messages = {
-  common: typeof import("../locales/de/common.json");
+  common: typeof import("../locales/de/common.json") & {
+    reviews: { title: string; average: string; basedOn: string; verifiedPurchase: string };
+    checkout: CheckoutT;
+  };
   home: typeof import("../locales/de/home.json");
   about: typeof import("../locales/de/about.json");
   delivery: typeof import("../locales/de/delivery.json");
