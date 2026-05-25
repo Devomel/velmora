@@ -7,134 +7,134 @@ import type { HomeT } from '@/lib/i18n';
 type Props = { t: HomeT['hero'] };
 
 const ADVANTAGE_ICONS = [
-  <svg key="shield" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-  </svg>,
-  <svg key="truck" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <rect x="1" y="3" width="15" height="13" rx="1" />
-    <path d="M16 8h4l3 3v5h-7V8z" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
-  </svg>,
-  <svg key="home" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /><polyline points="9 22 9 12 15 12 15 22" />
-  </svg>,
-  <svg key="heart" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
-  </svg>,
+   <svg key="shield" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+   </svg>,
+   <svg key="truck" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <rect x="1" y="3" width="15" height="13" rx="1" />
+      <path d="M16 8h4l3 3v5h-7V8z" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
+   </svg>,
+   <svg key="home" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /><polyline points="9 22 9 12 15 12 15 22" />
+   </svg>,
+   <svg key="heart" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+   </svg>,
 ];
 
 function useCountdown(seconds: number) {
-  const [time, setTime] = useState(seconds);
-  useEffect(() => {
-    const id = setInterval(() => setTime(t => (t > 0 ? t - 1 : 0)), 1000);
-    return () => clearInterval(id);
-  }, []);
-  const hh = Math.floor(time / 3600).toString().padStart(2, '0');
-  const mm = Math.floor((time % 3600) / 60).toString().padStart(2, '0');
-  const ss = (time % 60).toString().padStart(2, '0');
-  return `${hh}:${mm}:${ss}`;
+   const [time, setTime] = useState(seconds);
+   useEffect(() => {
+      const id = setInterval(() => setTime(t => (t > 0 ? t - 1 : 0)), 1000);
+      return () => clearInterval(id);
+   }, []);
+   const hh = Math.floor(time / 3600).toString().padStart(2, '0');
+   const mm = Math.floor((time % 3600) / 60).toString().padStart(2, '0');
+   const ss = (time % 60).toString().padStart(2, '0');
+   return `${hh}:${mm}:${ss}`;
 }
 
 export default function HeroSection({ t }: Props) {
-  const timer = useCountdown(3 * 3600 + 47 * 60);
+   const timer = useCountdown(3 * 3600 + 47 * 60);
 
-  return (
-    <section className="relative bg-[#eadcd4] overflow-hidden lg:flex-1 lg:flex lg:flex-col">
-      <div className="absolute inset-0 opacity-[0.035]" aria-hidden>
-        <svg width="100%" height="100%">
-          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <circle cx="20" cy="20" r="1" fill="#7A5540" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-        </svg>
-      </div>
+   return (
+      <section className="relative bg-[#eadcd4] overflow-hidden lg:flex-1 lg:flex lg:flex-col">
+         <div className="absolute inset-0 opacity-[0.035]" aria-hidden>
+            <svg width="100%" height="100%">
+               <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <circle cx="20" cy="20" r="1" fill="#7A5540" />
+               </pattern>
+               <rect width="100%" height="100%" fill="url(#grid)" />
+            </svg>
+         </div>
 
-      {/* Full-width 2-col grid on desktop; stacked on mobile */}
-      <div className="relative lg:grid lg:grid-cols-2 lg:flex-1">
+         {/* Full-width 2-col grid on desktop; stacked on mobile */}
+         <div className="relative lg:grid lg:grid-cols-2 lg:flex-1">
 
-        {/* BANNER — first in DOM (top on mobile) → right column on desktop */}
-        <div className="relative lg:col-start-2 lg:row-start-1">
-          {/* Image: edge-to-edge on mobile, fills column height on desktop */}
-          <div className="relative w-full aspect-square lg:absolute lg:inset-0 lg:w-auto lg:aspect-auto">
-            <Image
-              src="/hero-banner.png"
-              alt={t.bannerTitle}
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="lg:hidden absolute top-0 left-0 w-[70%] h-[40%] flex flex-col justify-end px-5 pb-3 pointer-events-none">
-              <span className="text-[17vw] font-bold text-[#1A1410] leading-none tracking-tight whitespace-nowrap">-50%</span>
-              <span className="text-[5.8vw] text-[#4A3020] mt-[1.5vw] font-medium leading-snug whitespace-nowrap">{t.bannerDiscountLabel}</span>
-            </div>
-          </div>
+            {/* BANNER — first in DOM (top on mobile) → right column on desktop */}
+            <div className="relative lg:col-start-2 lg:row-start-1">
+               {/* Image: edge-to-edge on mobile, fills column height on desktop */}
+               <div className="relative w-full aspect-square lg:absolute lg:inset-0 lg:w-auto lg:aspect-auto">
+                  <Image
+                     src="/hero-banner.png"
+                     alt={t.bannerTitle}
+                     fill
+                     className="object-cover"
+                     priority
+                  />
+                  <div className="lg:hidden absolute top-0 left-0 w-[70%] h-[40%] flex flex-col justify-end px-5 pb-3 pointer-events-none">
+                     <span className="text-[20vw] font-bold leading-none tracking-tight whitespace-nowrap" style={{ color: 'transparent', WebkitTextStroke: '2px #5f402fff' }}>-50%</span>
+                     <span className="text-[5.8vw] text-[#4A3020] mt-[1.5vw] font-medium leading-snug whitespace-nowrap">{t.bannerDiscountLabel}</span>
+                  </div>
+               </div>
 
-          {/* Card body — mobile only */}
-          <div className="lg:hidden bg-white px-5 pt-4 pb-5">
-            <p className="text-sm font-semibold text-[#1A1410] text-center tracking-tight mb-0.5">{t.bannerTitle}</p>
-            <p className="text-xs text-[#8A7060] leading-relaxed text-center mb-4">{t.bannerSubtitle}</p>
-            <a
-              href="#catalog"
-              className="flex items-center justify-center w-full bg-[#C4704F] hover:bg-[#A85A3A] text-white py-3.5 text-sm font-semibold tracking-wide rounded-full transition-all duration-200"
-            >
-              {t.cta}
-            </a>
-          </div>
-        </div>
-
-        {/* TEXT — second in DOM (bottom on mobile) → left column on desktop */}
-        <div className="lg:col-start-1 lg:row-start-1 flex items-center px-5 lg:pl-36 lg:pr-8 py-12 lg:py-0">
-          <div className="w-full text-center lg:text-left">
-            <div className="inline-flex items-center gap-2.5 bg-white/60 backdrop-blur-md rounded-full text-[#A85A3A] text-sm lg:text-base px-5 lg:px-6 py-2.5 lg:py-3 mb-8 lg:mb-10 border border-white/80">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
-              </svg>
-              <span>{t.timerLabel}</span>
-              <span className="font-mono font-semibold tracking-tight">{timer}</span>
+               {/* Card body — mobile only */}
+               <div className="lg:hidden bg-white px-5 pt-4 pb-5">
+                  <p className="text-sm font-semibold text-[#1A1410] text-center tracking-tight mb-0.5">{t.bannerTitle}</p>
+                  <p className="text-xs text-[#8A7060] leading-relaxed text-center mb-4">{t.bannerSubtitle}</p>
+                  <a
+                     href="#catalog"
+                     className="flex items-center justify-center w-full bg-[#C4704F] hover:bg-[#A85A3A] text-white py-3.5 text-sm font-semibold tracking-wide rounded-full transition-all duration-200"
+                  >
+                     {t.cta}
+                  </a>
+               </div>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-[5.5rem] font-light text-[#1A1410] tracking-tight mb-5 lg:mb-7 leading-[1.06]">
-              {t.title}<br />
-              <span className="text-[#C4704F]">{t.titleHighlight}</span>
-            </h1>
+            {/* TEXT — second in DOM (bottom on mobile) → left column on desktop */}
+            <div className="lg:col-start-1 lg:row-start-1 flex items-center px-5 lg:pl-36 lg:pr-8 py-12 lg:py-0">
+               <div className="w-full text-center lg:text-left">
+                  <div className="inline-flex items-center gap-2.5 bg-white/60 backdrop-blur-md rounded-full text-[#A85A3A] text-sm lg:text-base px-5 lg:px-6 py-2.5 lg:py-3 mb-8 lg:mb-10 border border-white/80">
+                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
+                     </svg>
+                     <span>{t.timerLabel}</span>
+                     <span className="font-mono font-semibold tracking-tight">{timer}</span>
+                  </div>
 
-            <p className="text-base lg:text-xl text-[#6B5B4E] mb-9 lg:mb-11 max-w-md mx-auto lg:mx-0 leading-relaxed">{t.subtitle}</p>
+                  <h1 className="text-4xl md:text-5xl lg:text-[5.5rem] font-light text-[#1A1410] tracking-tight mb-5 lg:mb-7 leading-[1.06]">
+                     {t.title}<br />
+                     <span className="text-[#C4704F]">{t.titleHighlight}</span>
+                  </h1>
 
-            <div className="hidden lg:flex gap-4">
-              <a
-                href="#catalog"
-                className="inline-flex items-center justify-center bg-[#C4704F] hover:bg-[#A85A3A] text-white px-10 py-4 text-base font-semibold tracking-wide rounded-full transition-all duration-200 shadow-[0_4px_16px_rgba(196,112,79,0.4)] hover:shadow-[0_6px_22px_rgba(196,112,79,0.5)]"
-              >
-                {t.cta}
-              </a>
-              <a
-                href="#guarantees"
-                className="inline-flex items-center justify-center border border-[#C4704F]/50 text-[#C4704F] hover:bg-[#C4704F] hover:text-white px-10 py-4 text-base font-semibold tracking-wide rounded-full transition-all duration-200"
-              >
-                {t.ctaSecondary}
-              </a>
+                  <p className="text-base lg:text-xl text-[#6B5B4E] mb-9 lg:mb-11 max-w-md mx-auto lg:mx-0 leading-relaxed">{t.subtitle}</p>
+
+                  <div className="hidden lg:flex gap-4">
+                     <a
+                        href="#catalog"
+                        className="inline-flex items-center justify-center bg-[#C4704F] hover:bg-[#A85A3A] text-white px-10 py-4 text-base font-semibold tracking-wide rounded-full transition-all duration-200 shadow-[0_4px_16px_rgba(196,112,79,0.4)] hover:shadow-[0_6px_22px_rgba(196,112,79,0.5)]"
+                     >
+                        {t.cta}
+                     </a>
+                     <a
+                        href="#guarantees"
+                        className="inline-flex items-center justify-center border border-[#C4704F]/50 text-[#C4704F] hover:bg-[#C4704F] hover:text-white px-10 py-4 text-base font-semibold tracking-wide rounded-full transition-all duration-200"
+                     >
+                        {t.ctaSecondary}
+                     </a>
+                  </div>
+
+               </div>
             </div>
 
-          </div>
-        </div>
+         </div>
 
-      </div>
-
-    </section>
-  );
+      </section>
+   );
 }
 
 export function HeroAdvantages({ t }: Props) {
-  return (
-    <div className="relative bg-white/75 backdrop-blur-md border-t border-[#D9CCBF]">
-      <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
-        {t.advantages.map(({ title, desc }, i) => (
-          <div key={title} className="flex flex-col items-center text-center gap-2">
-            <span className="text-[#C4704F]">{ADVANTAGE_ICONS[i]}</span>
-            <h3 className="text-sm font-semibold text-[#1A1410] tracking-tight">{title}</h3>
-            <p className="text-xs text-[#9C8A7E] leading-relaxed">{desc}</p>
-          </div>
-        ))}
+   return (
+      <div className="relative bg-white/75 backdrop-blur-md border-t border-[#D9CCBF]">
+         <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {t.advantages.map(({ title, desc }, i) => (
+               <div key={title} className="flex flex-col items-center text-center gap-2">
+                  <span className="text-[#C4704F]">{ADVANTAGE_ICONS[i]}</span>
+                  <h3 className="text-sm font-semibold text-[#1A1410] tracking-tight">{title}</h3>
+                  <p className="text-xs text-[#9C8A7E] leading-relaxed">{desc}</p>
+               </div>
+            ))}
+         </div>
       </div>
-    </div>
-  );
+   );
 }
