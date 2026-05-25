@@ -81,6 +81,9 @@
     "ratingAll": "Alle vurderinger",
     "ratingFrom4": "fra 4 stjerner",
     "rating5": "5 stjerner",
+    "sortDefault": "Standard",
+    "sortAsc": "Pris ↑",
+    "sortDesc": "Pris ↓",
     "products": [
       {
         "name": "Stekepannesett Berlin Velmora ⌀26cm og ⌀28cm",
@@ -2610,7 +2613,7 @@
     "badge": "Trygg handel",
     "title": "Kjøp uten risiko",
     "subtitle": "Vi har gjort alt for å gjøre handelen din så komfortabel som mulig",
-    "phone": "+47 22 12 34 56",
+    "phone": "+47 22 86 43 20",
     "workingHours": "Man–fre 9:00–18:00 · Lør 10:00–15:00",
     "items": [
       {

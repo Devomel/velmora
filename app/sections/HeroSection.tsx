@@ -21,7 +21,7 @@ const ADVANTAGE_ICONS = [
 
 export default function HeroSection({ t }: Props) {
    return (
-      <section className="relative bg-[#eadcd4] overflow-hidden lg:flex-1 lg:flex lg:flex-col">
+      <section className="relative bg-[#eadcd4] overflow-hidden landscape:lg:flex-1 landscape:lg:flex landscape:lg:flex-col">
          <div className="absolute inset-0 opacity-[0.035]" aria-hidden>
             <svg width="100%" height="100%">
                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -31,36 +31,36 @@ export default function HeroSection({ t }: Props) {
             </svg>
          </div>
 
-         {/* Mobile: flex-col (image top, text bottom); Desktop: 2-col grid */}
-         <div className="relative flex flex-col lg:grid lg:grid-cols-2 lg:flex-1">
-            {/* TEXT — bottom on mobile (flex-1), left column on desktop */}
-            <div className="lg:col-start-1 lg:row-start-1 flex items-center justify-center lg:justify-start px-5 lg:pl-36 lg:pr-8 py-8 lg:py-0">
-               <div className="w-full text-center lg:text-left">
-                  <h1 className="text-4xl md:text-5xl lg:text-[5.5rem] font-light text-[#1A1410] tracking-tight mb-4 lg:mb-7 leading-[1.06]">
+         {/* Portrait/mobile: flex-col (image top, text bottom); Landscape desktop: 2-col grid */}
+         <div className="relative flex flex-col landscape:lg:grid landscape:lg:grid-cols-2 landscape:lg:flex-1">
+            {/* TEXT — bottom on portrait, left column on landscape desktop */}
+            <div className="landscape:lg:col-start-1 landscape:lg:row-start-1 flex items-center justify-center landscape:lg:justify-start px-5 landscape:lg:pl-36 landscape:lg:pr-8 py-8 landscape:lg:py-0">
+               <div className="w-full text-center landscape:lg:text-left">
+                  <h1 className="text-4xl md:text-5xl landscape:lg:text-[5.5rem] font-light text-[#1A1410] tracking-tight mb-4 landscape:lg:mb-7 leading-[1.06]">
                      {t.title}<br />
                      <span className="text-[#C4704F]">{t.titleHighlight}</span>
                   </h1>
 
-                  <p className="text-base lg:text-xl text-[#6B5B4E] mb-6 lg:mb-11 max-w-md mx-auto lg:mx-0 leading-relaxed">{t.subtitle}</p>
+                  <p className="text-base landscape:lg:text-xl text-[#6B5B4E] mb-6 landscape:lg:mb-11 max-w-md mx-auto landscape:lg:mx-0 leading-relaxed">{t.subtitle}</p>
 
-                  <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center lg:justify-start">
+                  <div className="flex flex-col sm:flex-row gap-3 landscape:lg:gap-4 justify-center landscape:lg:justify-start">
                      <a
                         href="#catalog"
-                        className="inline-flex items-center justify-center bg-[#C4704F] hover:bg-[#A85A3A] text-white px-10 py-3.5 lg:py-4 text-sm lg:text-base font-semibold tracking-wide rounded-full transition-all duration-200 shadow-[0_4px_16px_rgba(196,112,79,0.4)] hover:shadow-[0_6px_22px_rgba(196,112,79,0.5)]"
+                        className="inline-flex items-center justify-center bg-[#C4704F] hover:bg-[#A85A3A] text-white px-10 py-3.5 landscape:lg:py-4 text-sm landscape:lg:text-base font-semibold tracking-wide rounded-full transition-all duration-200 shadow-[0_4px_16px_rgba(196,112,79,0.4)] hover:shadow-[0_6px_22px_rgba(196,112,79,0.5)]"
                      >
                         {t.cta}
                      </a>
                      <a
                         href="#guarantees"
-                        className="hidden lg:inline-flex items-center justify-center border border-[#C4704F]/50 text-[#C4704F] hover:bg-[#C4704F] hover:text-white px-10 py-4 text-base font-semibold tracking-wide rounded-full transition-all duration-200"
+                        className="hidden landscape:lg:inline-flex items-center justify-center border border-[#C4704F]/50 text-[#C4704F] hover:bg-[#C4704F] hover:text-white px-10 py-4 text-base font-semibold tracking-wide rounded-full transition-all duration-200"
                      >
                         {t.ctaSecondary}
                      </a>
                   </div>
                </div>
             </div>
-            {/* BANNER — top on mobile, right column on desktop */}
-            <div className="relative aspect-square lg:aspect-auto lg:col-start-2 lg:row-start-1">
+            {/* BANNER — top on portrait, right column on landscape desktop */}
+            <div className="relative aspect-square landscape:lg:aspect-auto landscape:lg:col-start-2 landscape:lg:row-start-1">
                <div className="absolute inset-0">
                   <Image
                      src="/hero-banner.png"
@@ -69,7 +69,7 @@ export default function HeroSection({ t }: Props) {
                      className="object-cover"
                      priority
                   />
-                  <div className="lg:hidden absolute top-0 left-0 w-[70%] h-[40%] flex flex-col justify-end px-5 pb-3 pointer-events-none">
+                  <div className="landscape:lg:hidden absolute top-0 left-0 w-[70%] h-[40%] flex flex-col justify-end px-5 pb-3 pointer-events-none">
                      <span
                         className="text-[20vw] font-bold leading-none tracking-tight whitespace-nowrap"
                         style={{ color: 'transparent', WebkitTextStroke: '2px #5f402f' }}

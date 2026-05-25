@@ -95,7 +95,7 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc }: {
 
             <button
                onClick={e => { e.preventDefault(); addItem({ id: product.id, name: product.name, price: product.price, image: '' }); }}
-               className="mt-2 w-full flex items-center justify-center bg-[#1A1410] hover:bg-[#C4704F] text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors duration-200"
+               className="mt-auto w-full flex items-center justify-center bg-[#1A1410] hover:bg-[#C4704F] text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors duration-200"
             >
                {addToCartLabel}
             </button>
@@ -108,6 +108,7 @@ export default function CatalogSection({ t, productImages, products: productData
    const [activeCategoryKey, setActiveCategoryKey] = useState('all');
    const [priceIdx, setPriceIdx] = useState(0);
    const [minRating, setMinRating] = useState(0);
+   const [sortOrder, setSortOrder] = useState<'default' | 'asc' | 'desc'>('default');
 
    const sortedPrices = productData.map(p => p.price).sort((a, b) => a - b);
    const p33 = sortedPrices[Math.floor(sortedPrices.length / 3)];
@@ -129,11 +130,16 @@ export default function CatalogSection({ t, productImages, products: productData
       description: (t.products[i] as { description?: string }).description ?? '',
    }));
 
-   const filtered = products.filter(p =>
-      (activeCategoryKey === 'all' || p.categoryKey === activeCategoryKey) &&
-      p.price >= min && p.price <= max &&
-      p.rating >= minRating
-   );
+   const filtered = products
+      .filter(p =>
+         (activeCategoryKey === 'all' || p.categoryKey === activeCategoryKey) &&
+         p.price >= min && p.price <= max &&
+         p.rating >= minRating
+      )
+      .sort((a, b) =>
+         sortOrder === 'asc' ? a.price - b.price :
+         sortOrder === 'desc' ? b.price - a.price : 0
+      );
 
    const categoryEntries = Object.entries(t.categoryMap) as [string, string][];
    const ratingOptions = [
@@ -143,7 +149,7 @@ export default function CatalogSection({ t, productImages, products: productData
    ];
 
    return (
-      <section id="catalog" className="py-20 md:py-24 bg-[#FDFAF7]">
+      <section id="catalog" className="pt-8 pb-20 md:py-24 bg-[#FDFAF7]">
          <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-10">
                <span className="text-xs uppercase tracking-widest text-[#C4704F] mb-3 block">{t.badge}</span>
@@ -151,7 +157,7 @@ export default function CatalogSection({ t, productImages, products: productData
                <p className="text-[#6B5B4E] max-w-md mx-auto">{t.subtitle}</p>
             </div>
 
-            <div className="flex flex-wrap gap-3 mb-6 items-center">
+            <div className="flex flex-wrap gap-3 mb-6 items-center justify-between">
                <div className="flex flex-wrap gap-2">
                   {categoryEntries.map(([key, label]) => (
                      <button
@@ -167,7 +173,20 @@ export default function CatalogSection({ t, productImages, products: productData
                   ))}
                </div>
 
-
+               <div className="flex gap-2">
+                  {(['default', 'asc', 'desc'] as const).map(order => (
+                     <button
+                        key={order}
+                        onClick={() => setSortOrder(order)}
+                        className={`px-3 py-1.5 text-xs font-medium border transition-colors ${sortOrder === order
+                           ? 'bg-[#1A1410] border-[#1A1410] text-white'
+                           : 'border-[#E8DDD4] text-[#6B5B4E] hover:border-[#1A1410] hover:text-[#1A1410]'
+                           }`}
+                     >
+                        {order === 'default' ? t.sortDefault : order === 'asc' ? t.sortAsc : t.sortDesc}
+                     </button>
+                  ))}
+               </div>
             </div>
 
             {filtered.length > 0 ? (

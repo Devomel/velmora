@@ -9,7 +9,7 @@
     "methods": [
       { "title": "PostNord", "desc": "Standardfrakt til Norge", "price": "5,90 €", "time": "2–4 virkedager" },
       { "title": "Posten Ekspress", "desc": "Ekspressfrakt til Norge", "price": "12,90 €", "time": "1–2 virkedager" },
-      { "title": "EU-levering", "desc": "Levering til alle EU-land", "price": "fra 8,90 €", "time": "3–7 virkedager" }
+      { "title": "Internasjonal levering", "desc": "Levering til EU/EØS-land og Norden", "price": "fra 8,90 €", "time": "3–7 virkedager" }
     ]
   },
   "payment": {
@@ -23,11 +23,11 @@
   },
   "returns": {
     "title": "Retur & refusjon",
-    "desc": "Du har 14 dagers angrerett fra mottak, i henhold til norsk forbrukerlov og EU-direktiver. Skriv til oss via chat eller e-post, så ordner vi alt raskt og enkelt. Refusjonen skjer innen 3 virkedager etter at vi har mottatt varene."
+    "desc": "Du har 14 dagers angrerett fra mottak, i henhold til den norske Angrerettloven (angrerettlov av 2014). Skriv til oss via chat eller e-post, så ordner vi alt raskt og enkelt. Refusjonen skjer innen 3 virkedager etter at vi har mottatt varene."
   },
   "faq": [
     { "q": "Når er frakten gratis?", "a": "Bestillinger fra 50 € sendes gratis med PostNord." },
     { "q": "Kan jeg spore pakken?", "a": "Ja, etter avsendelse mottar du en e-post med sporingslink." },
-    { "q": "Leverer dere til mitt land?", "a": "Vi leverer til alle EU-land og Norge. Kontakt oss for andre regioner." }
+    { "q": "Leverer dere til mitt land?", "a": "Vi leverer til Norge og resten av Europa. Kontakt oss for andre regioner." }
   ]
 }

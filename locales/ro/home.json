@@ -81,6 +81,9 @@
     "ratingAll": "Orice rating",
     "ratingFrom4": "de la 4 stele",
     "rating5": "5 stele",
+    "sortDefault": "Implicit",
+    "sortAsc": "Preț ↑",
+    "sortDesc": "Preț ↓",
     "products": [
       {
         "name": "Set tigăi Berlin Velmora ⌀26cm și ⌀28cm",
@@ -2610,7 +2613,7 @@
     "badge": "Cumpărare sigură",
     "title": "Cumpără fără riscuri",
     "subtitle": "Am făcut totul pentru ca achiziția ta să fie cât mai confortabilă",
-    "phone": "+40 21 123 4567",
+    "phone": "+40 21 312 4890",
     "workingHours": "Lun–Vin 9:00–18:00 · Sâm 10:00–15:00",
     "items": [
       {

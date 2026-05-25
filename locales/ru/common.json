@@ -13,7 +13,7 @@
     "upsellAdd": "+ Добавить",
     "promoPlaceholder": "Промокод",
     "promoApply": "Применить",
-    "paymentNote": "Оплата картой, PayPal или банковским переводом",
+    "paymentNote": "Оплата картой, PayPal или Klarna",
     "upsellItems": [
       { "name": "Подставка под горячее", "price": 5 },
       { "name": "Набор салфеток", "price": 6 }
@@ -33,9 +33,9 @@
     "postalCode": "Почтовый индекс",
     "country": "Страна",
     "delivery": "Способ доставки",
-    "standardDelivery": "Стандартная доставка",
-    "standardDeliveryDesc": "3–5 рабочих дней",
-    "expressDelivery": "Экспресс-доставка",
+    "standardDelivery": "DHL Paket",
+    "standardDeliveryDesc": "2–5 рабочих дней",
+    "expressDelivery": "DPD Express",
     "expressDeliveryDesc": "1–2 рабочих дня",
     "free": "Бесплатно",
     "payment": "Способ оплаты",
@@ -52,7 +52,7 @@
     "unavailableClose": "Закрыть",
     "contactUs": "Связаться с нами",
     "secure": "Безопасная оплата",
-    "countries": ["Германия", "Австрия", "Швейцария", "Нидерланды", "Бельгия", "Люксембург"]
+    "countries": ["Германия", "Австрия", "Швейцария", "Бельгия", "Нидерланды", "Люксембург"]
   },
   "buttons": { "buy": "Купить", "more": "Узнать больше", "back": "Назад" },
   "reviews": {

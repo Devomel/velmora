@@ -81,6 +81,9 @@
     "ratingAll": "Alle Bewertungen",
     "ratingFrom4": "ab 4 Sterne",
     "rating5": "5 Sterne",
+    "sortDefault": "Standard",
+    "sortAsc": "Preis ↑",
+    "sortDesc": "Preis ↓",
     "products": [
       {
         "name": "Pfannen-Set Berlin Velmora ⌀26cm und ⌀28cm",
@@ -2610,7 +2613,7 @@
     "badge": "Kaufsicherheit",
     "title": "Kaufen Sie ohne Risiko",
     "subtitle": "Wir haben alles getan, damit Ihr Einkauf so komfortabel wie möglich ist",
-    "phone": "+49 30 1234 5678",
+    "phone": "+49 69 4005 7800",
     "workingHours": "Mo–Fr 9:00–18:00 · Sa 10:00–15:00",
     "items": [
       {
