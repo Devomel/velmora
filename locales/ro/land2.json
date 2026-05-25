@@ -624,5 +624,11 @@
     "freeDeliveryRemaining": "Doar €{amount} până la livrare gratuită",
     "freeDeliveryAchieved": "Livrare gratuită inclusă!",
     "remove": "Elimină"
+  },
+  "nav": {
+    "catalog": "Catalog",
+    "reviews": "Recenzii",
+    "guarantees": "Garanții",
+    "faq": "FAQ"
   }
 }

@@ -624,5 +624,11 @@
     "freeDeliveryRemaining": "Ещё €{amount} до бесплатной доставки",
     "freeDeliveryAchieved": "Бесплатная доставка включена!",
     "remove": "Удалить"
+  },
+  "nav": {
+    "catalog": "Каталог",
+    "reviews": "Отзывы",
+    "guarantees": "Гарантии",
+    "faq": "FAQ"
   }
 }

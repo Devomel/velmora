@@ -9,7 +9,7 @@ export default function FaqSection({ t }: Props) {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="py-20 md:py-24 bg-[#FDFAF7]">
+    <section id="faq" className="py-20 md:py-24 bg-[#FDFAF7]">
       <div className="max-w-3xl mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-xs uppercase tracking-widest text-[#C4704F] mb-3 block">{t.badge}</span>

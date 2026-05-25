@@ -624,5 +624,11 @@
     "freeDeliveryRemaining": "Bare €{amount} igjen til gratis levering",
     "freeDeliveryAchieved": "Gratis levering inkludert!",
     "remove": "Fjern"
+  },
+  "nav": {
+    "catalog": "Katalog",
+    "reviews": "Anmeldelser",
+    "guarantees": "Garantier",
+    "faq": "FAQ"
   }
 }

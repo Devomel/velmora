@@ -2,9 +2,17 @@
 
 import { useL1Cart } from './L1CartProvider';
 
-type Props = { logoText: string; cartLabel: string };
+type NavT = { catalog: string; reviews: string; guarantees: string; faq: string };
+type Props = { logoText: string; cartLabel: string; nav: NavT };
 
-export default function L1Header({ logoText, cartLabel }: Props) {
+const NAV_LINKS = [
+  { href: '#catalog', key: 'catalog' },
+  { href: '#reviews', key: 'reviews' },
+  { href: '#guarantees', key: 'guarantees' },
+  { href: '#faq', key: 'faq' },
+] as const;
+
+export default function L1Header({ logoText, cartLabel, nav }: Props) {
   const { openCart, count } = useL1Cart();
 
   return (
@@ -19,6 +27,14 @@ export default function L1Header({ logoText, cartLabel }: Props) {
           </div>
           <span className="text-[#111827] font-medium text-lg tracking-tight">{logoText}</span>
         </div>
+
+        <nav className="hidden md:flex items-center gap-6">
+          {NAV_LINKS.map(({ href, key }) => (
+            <a key={key} href={href} className="text-sm text-[#374151] hover:text-[#DC2626] transition-colors">
+              {nav[key]}
+            </a>
+          ))}
+        </nav>
 
         <button
           onClick={openCart}

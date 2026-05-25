@@ -624,5 +624,11 @@
     "freeDeliveryRemaining": "Noch €{amount} bis zur kostenlosen Lieferung",
     "freeDeliveryAchieved": "Kostenlose Lieferung inklusive!",
     "remove": "Entfernen"
+  },
+  "nav": {
+    "catalog": "Katalog",
+    "reviews": "Bewertungen",
+    "guarantees": "Garantien",
+    "faq": "FAQ"
   }
 }

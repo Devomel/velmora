@@ -6,7 +6,7 @@ import type { HomeT } from '@/lib/i18n';
 import type { ProductData } from '@/lib/products';
 import { useCart } from '@/components/CartProvider';
 
-type Props = { t: HomeT['catalog']; productImages: Record<string, string>; products: ProductData[] };
+type Props = { t: HomeT['catalog']; productImages: Record<string, string>; products: ProductData[]; productLinkPrefix?: string; priceOnly?: boolean };
 
 function Stars({ rating }: { rating: number }) {
    const uid = `s${Math.round(rating * 10)}`;
@@ -45,17 +45,18 @@ function Stars({ rating }: { rating: number }) {
 
 type Product = ProductData & { name: string; material: string; volume?: string; description: string };
 
-function ProductCard({ product, addToCartLabel, badges, imageSrc }: {
+function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPrefix }: {
    product: Product;
    addToCartLabel: string;
    badges: { sale: string; new: string };
    imageSrc: string;
+   productLinkPrefix: string;
 }) {
    const { addItem } = useCart();
 
    return (
       <Link
-         href={`/product/${product.id}`}
+         href={`${productLinkPrefix}${product.id}`}
          className="bg-white border border-[#E8DDD4] flex flex-col group hover:shadow-md transition-shadow duration-200"
       >
          <div className="relative bg-white overflow-hidden aspect-square">
@@ -104,7 +105,7 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc }: {
    );
 }
 
-export default function CatalogSection({ t, productImages, products: productData }: Props) {
+export default function CatalogSection({ t, productImages, products: productData, productLinkPrefix = '/product/', priceOnly = false }: Props) {
    const [activeCategoryKey, setActiveCategoryKey] = useState('all');
    const [priceIdx, setPriceIdx] = useState(0);
    const [minRating, setMinRating] = useState(0);
@@ -122,12 +123,12 @@ export default function CatalogSection({ t, productImages, products: productData
 
    const { min, max } = PRICE_RANGES[priceIdx];
 
-   const products: Product[] = productData.map((data, i) => ({
+   const products: Product[] = productData.map((data) => ({
       ...data,
-      name: t.products[i].name,
-      material: t.products[i].material,
-      volume: (t.products[i] as { volume?: string }).volume,
-      description: (t.products[i] as { description?: string }).description ?? '',
+      name: t.products[data.id - 1].name,
+      material: t.products[data.id - 1].material,
+      volume: (t.products[data.id - 1] as { volume?: string }).volume,
+      description: (t.products[data.id - 1] as { description?: string }).description ?? '',
    }));
 
    const filtered = products
@@ -149,7 +150,7 @@ export default function CatalogSection({ t, productImages, products: productData
    ];
 
    return (
-      <section id="catalog" className="pt-8 pb-20 md:py-24 bg-[#FDFAF7]">
+      <section id="catalog" className="pt-8 pb-20 md:pt-10 md:pb-24 bg-[#FDFAF7]">
          <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-10">
                <span className="text-xs uppercase tracking-widest text-[#C4704F] mb-3 block">{t.badge}</span>
@@ -157,42 +158,57 @@ export default function CatalogSection({ t, productImages, products: productData
                <p className="text-[#6B5B4E] max-w-md mx-auto">{t.subtitle}</p>
             </div>
 
-            <div className="flex flex-wrap gap-3 mb-6 items-center justify-between">
-               <div className="flex flex-wrap gap-2">
-                  {categoryEntries.map(([key, label]) => (
-                     <button
-                        key={key}
-                        onClick={() => setActiveCategoryKey(key)}
-                        className={`px-3 py-1.5 text-xs font-medium border transition-colors ${activeCategoryKey === key
-                           ? 'bg-[#C4704F] border-[#C4704F] text-white'
-                           : 'border-[#E8DDD4] text-[#6B5B4E] hover:border-[#C4704F] hover:text-[#C4704F]'
-                           }`}
-                     >
-                        {label}
-                     </button>
-                  ))}
-               </div>
-
-               <div className="flex gap-2">
-                  {(['default', 'asc', 'desc'] as const).map(order => (
-                     <button
-                        key={order}
-                        onClick={() => setSortOrder(order)}
-                        className={`px-3 py-1.5 text-xs font-medium border transition-colors ${sortOrder === order
-                           ? 'bg-[#1A1410] border-[#1A1410] text-white'
-                           : 'border-[#E8DDD4] text-[#6B5B4E] hover:border-[#1A1410] hover:text-[#1A1410]'
-                           }`}
-                     >
-                        {order === 'default' ? t.sortDefault : order === 'asc' ? t.sortAsc : t.sortDesc}
-                     </button>
-                  ))}
-               </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+               {priceOnly
+                  ? t.priceFilters.map((label, i) => (
+                       <button
+                          key={i}
+                          onClick={() => setPriceIdx(i)}
+                          className={`px-3 py-1.5 text-xs font-medium border transition-colors ${priceIdx === i
+                             ? 'bg-[#C4704F] border-[#C4704F] text-white'
+                             : 'border-[#E8DDD4] text-[#6B5B4E] hover:border-[#C4704F] hover:text-[#C4704F]'
+                             }`}
+                       >
+                          {label}
+                       </button>
+                    ))
+                  : <>
+                       <div className="flex flex-wrap gap-2 flex-1">
+                          {categoryEntries.map(([key, label]) => (
+                             <button
+                                key={key}
+                                onClick={() => setActiveCategoryKey(key)}
+                                className={`px-3 py-1.5 text-xs font-medium border transition-colors ${activeCategoryKey === key
+                                   ? 'bg-[#C4704F] border-[#C4704F] text-white'
+                                   : 'border-[#E8DDD4] text-[#6B5B4E] hover:border-[#C4704F] hover:text-[#C4704F]'
+                                   }`}
+                             >
+                                {label}
+                             </button>
+                          ))}
+                       </div>
+                       <div className="flex gap-2">
+                          {(['default', 'asc', 'desc'] as const).map(order => (
+                             <button
+                                key={order}
+                                onClick={() => setSortOrder(order)}
+                                className={`px-3 py-1.5 text-xs font-medium border transition-colors ${sortOrder === order
+                                   ? 'bg-[#1A1410] border-[#1A1410] text-white'
+                                   : 'border-[#E8DDD4] text-[#6B5B4E] hover:border-[#1A1410] hover:text-[#1A1410]'
+                                   }`}
+                             >
+                                {order === 'default' ? t.sortDefault : order === 'asc' ? t.sortAsc : t.sortDesc}
+                             </button>
+                          ))}
+                       </div>
+                    </>
+               }
             </div>
 
             {filtered.length > 0 ? (
                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                   {filtered.map(p => (
-                     <ProductCard key={p.id} product={p} addToCartLabel={t.addToCart} badges={t.badges} imageSrc={productImages[p.articleKey]} />
+                     <ProductCard key={p.id} product={p} addToCartLabel={t.addToCart} badges={t.badges} imageSrc={productImages[p.articleKey]} productLinkPrefix={productLinkPrefix} />
                   ))}
                </div>
             ) : (
