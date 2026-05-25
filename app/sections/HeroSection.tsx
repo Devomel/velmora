@@ -1,6 +1,3 @@
-'use client';
-
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import type { HomeT } from '@/lib/i18n';
 
@@ -22,21 +19,7 @@ const ADVANTAGE_ICONS = [
    </svg>,
 ];
 
-function useCountdown(seconds: number) {
-   const [time, setTime] = useState(seconds);
-   useEffect(() => {
-      const id = setInterval(() => setTime(t => (t > 0 ? t - 1 : 0)), 1000);
-      return () => clearInterval(id);
-   }, []);
-   const hh = Math.floor(time / 3600).toString().padStart(2, '0');
-   const mm = Math.floor((time % 3600) / 60).toString().padStart(2, '0');
-   const ss = (time % 60).toString().padStart(2, '0');
-   return `${hh}:${mm}:${ss}`;
-}
-
 export default function HeroSection({ t }: Props) {
-   const timer = useCountdown(3 * 3600 + 47 * 60);
-
    return (
       <section className="relative bg-[#eadcd4] overflow-hidden lg:flex-1 lg:flex lg:flex-col">
          <div className="absolute inset-0 opacity-[0.035]" aria-hidden>
@@ -48,13 +31,37 @@ export default function HeroSection({ t }: Props) {
             </svg>
          </div>
 
-         {/* Full-width 2-col grid on desktop; stacked on mobile */}
-         <div className="relative lg:grid lg:grid-cols-2 lg:flex-1">
+         {/* Mobile: flex-col (image top, text bottom); Desktop: 2-col grid */}
+         <div className="relative flex flex-col lg:grid lg:grid-cols-2 lg:flex-1">
+            {/* TEXT — bottom on mobile (flex-1), left column on desktop */}
+            <div className="lg:col-start-1 lg:row-start-1 flex items-center justify-center lg:justify-start px-5 lg:pl-36 lg:pr-8 py-8 lg:py-0">
+               <div className="w-full text-center lg:text-left">
+                  <h1 className="text-4xl md:text-5xl lg:text-[5.5rem] font-light text-[#1A1410] tracking-tight mb-4 lg:mb-7 leading-[1.06]">
+                     {t.title}<br />
+                     <span className="text-[#C4704F]">{t.titleHighlight}</span>
+                  </h1>
 
-            {/* BANNER — first in DOM (top on mobile) → right column on desktop */}
-            <div className="relative lg:col-start-2 lg:row-start-1">
-               {/* Image: edge-to-edge on mobile, fills column height on desktop */}
-               <div className="relative w-full aspect-square lg:absolute lg:inset-0 lg:w-auto lg:aspect-auto">
+                  <p className="text-base lg:text-xl text-[#6B5B4E] mb-6 lg:mb-11 max-w-md mx-auto lg:mx-0 leading-relaxed">{t.subtitle}</p>
+
+                  <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center lg:justify-start">
+                     <a
+                        href="#catalog"
+                        className="inline-flex items-center justify-center bg-[#C4704F] hover:bg-[#A85A3A] text-white px-10 py-3.5 lg:py-4 text-sm lg:text-base font-semibold tracking-wide rounded-full transition-all duration-200 shadow-[0_4px_16px_rgba(196,112,79,0.4)] hover:shadow-[0_6px_22px_rgba(196,112,79,0.5)]"
+                     >
+                        {t.cta}
+                     </a>
+                     <a
+                        href="#guarantees"
+                        className="hidden lg:inline-flex items-center justify-center border border-[#C4704F]/50 text-[#C4704F] hover:bg-[#C4704F] hover:text-white px-10 py-4 text-base font-semibold tracking-wide rounded-full transition-all duration-200"
+                     >
+                        {t.ctaSecondary}
+                     </a>
+                  </div>
+               </div>
+            </div>
+            {/* BANNER — top on mobile, right column on desktop */}
+            <div className="relative aspect-square lg:aspect-auto lg:col-start-2 lg:row-start-1">
+               <div className="absolute inset-0">
                   <Image
                      src="/hero-banner.png"
                      alt={t.bannerTitle}
@@ -63,59 +70,16 @@ export default function HeroSection({ t }: Props) {
                      priority
                   />
                   <div className="lg:hidden absolute top-0 left-0 w-[70%] h-[40%] flex flex-col justify-end px-5 pb-3 pointer-events-none">
-                     <span className="text-[20vw] font-bold leading-none tracking-tight whitespace-nowrap" style={{ color: 'transparent', WebkitTextStroke: '2px #5f402fff' }}>-50%</span>
+                     <span
+                        className="text-[20vw] font-bold leading-none tracking-tight whitespace-nowrap"
+                        style={{ color: 'transparent', WebkitTextStroke: '2px #5f402f' }}
+                     >-50%</span>
                      <span className="text-[5.8vw] text-[#4A3020] mt-[1.5vw] font-medium leading-snug whitespace-nowrap">{t.bannerDiscountLabel}</span>
                   </div>
                </div>
-
-               {/* Card body — mobile only */}
-               <div className="lg:hidden bg-white px-5 pt-4 pb-5">
-                  <p className="text-sm font-semibold text-[#1A1410] text-center tracking-tight mb-0.5">{t.bannerTitle}</p>
-                  <p className="text-xs text-[#8A7060] leading-relaxed text-center mb-4">{t.bannerSubtitle}</p>
-                  <a
-                     href="#catalog"
-                     className="flex items-center justify-center w-full bg-[#C4704F] hover:bg-[#A85A3A] text-white py-3.5 text-sm font-semibold tracking-wide rounded-full transition-all duration-200"
-                  >
-                     {t.cta}
-                  </a>
-               </div>
             </div>
 
-            {/* TEXT — second in DOM (bottom on mobile) → left column on desktop */}
-            <div className="lg:col-start-1 lg:row-start-1 flex items-center px-5 lg:pl-36 lg:pr-8 py-12 lg:py-0">
-               <div className="w-full text-center lg:text-left">
-                  <div className="inline-flex items-center gap-2.5 bg-white/60 backdrop-blur-md rounded-full text-[#A85A3A] text-sm lg:text-base px-5 lg:px-6 py-2.5 lg:py-3 mb-8 lg:mb-10 border border-white/80">
-                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
-                     </svg>
-                     <span>{t.timerLabel}</span>
-                     <span className="font-mono font-semibold tracking-tight">{timer}</span>
-                  </div>
 
-                  <h1 className="text-4xl md:text-5xl lg:text-[5.5rem] font-light text-[#1A1410] tracking-tight mb-5 lg:mb-7 leading-[1.06]">
-                     {t.title}<br />
-                     <span className="text-[#C4704F]">{t.titleHighlight}</span>
-                  </h1>
-
-                  <p className="text-base lg:text-xl text-[#6B5B4E] mb-9 lg:mb-11 max-w-md mx-auto lg:mx-0 leading-relaxed">{t.subtitle}</p>
-
-                  <div className="hidden lg:flex gap-4">
-                     <a
-                        href="#catalog"
-                        className="inline-flex items-center justify-center bg-[#C4704F] hover:bg-[#A85A3A] text-white px-10 py-4 text-base font-semibold tracking-wide rounded-full transition-all duration-200 shadow-[0_4px_16px_rgba(196,112,79,0.4)] hover:shadow-[0_6px_22px_rgba(196,112,79,0.5)]"
-                     >
-                        {t.cta}
-                     </a>
-                     <a
-                        href="#guarantees"
-                        className="inline-flex items-center justify-center border border-[#C4704F]/50 text-[#C4704F] hover:bg-[#C4704F] hover:text-white px-10 py-4 text-base font-semibold tracking-wide rounded-full transition-all duration-200"
-                     >
-                        {t.ctaSecondary}
-                     </a>
-                  </div>
-
-               </div>
-            </div>
 
          </div>
 
