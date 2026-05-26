@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useL1Cart } from './L1CartProvider';
 
 type CartT = {
@@ -74,10 +75,8 @@ export default function L1CartPanel({ t }: { t: CartT }) {
             <div className="space-y-4">
               {items.map(item => (
                 <div key={item.id} className="flex gap-3 py-3 border-b border-[#FECACA] last:border-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#991B1B] to-[#DC2626] flex-shrink-0 flex items-center justify-center">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(254,202,202,0.8)" strokeWidth="1.5">
-                      <circle cx="12" cy="8" r="5" /><path d="M3 21c0-4 4-7 9-7s9 3 9 7" />
-                    </svg>
+                  <div className="w-16 h-16 flex-shrink-0 relative overflow-hidden bg-[#FEF2F2]">
+                    <Image src={item.image} alt={item.name} fill className="object-cover" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-medium text-[#111827] leading-tight">{item.name}</p>

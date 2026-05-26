@@ -2692,10 +2692,10 @@
     ],
     "sectionsTitle": "På denne siden",
     "sectionLinks": [
-      { "label": "Katalog", "href": "#catalog" },
-      { "label": "Anmeldelser", "href": "#reviews" },
-      { "label": "Garantier", "href": "#guarantees" },
-      { "label": "FAQ", "href": "#faq" }
+      { "label": "Katalog", "href": "/#catalog" },
+      { "label": "Anmeldelser", "href": "/#reviews" },
+      { "label": "Garantier", "href": "/#guarantees" },
+      { "label": "FAQ", "href": "/#faq" }
     ],
     "contactTitle": "Kontakt",
     "phoneLabel": "Telefon",

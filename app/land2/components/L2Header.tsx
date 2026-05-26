@@ -6,10 +6,10 @@ type NavT = { catalog: string; reviews: string; guarantees: string; faq: string 
 type Props = { logoText: string; cartLabel: string; nav: NavT };
 
 const NAV_LINKS = [
-  { href: '#catalog', key: 'catalog' },
-  { href: '#reviews', key: 'reviews' },
-  { href: '#guarantees', key: 'guarantees' },
-  { href: '#faq', key: 'faq' },
+  { href: '/land2/#catalog', key: 'catalog' },
+  { href: '/land2/#reviews', key: 'reviews' },
+  { href: '/land2/#guarantees', key: 'guarantees' },
+  { href: '/land2/#faq', key: 'faq' },
 ] as const;
 
 export default function L2Header({ logoText, cartLabel, nav }: Props) {

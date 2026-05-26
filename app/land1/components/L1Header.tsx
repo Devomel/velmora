@@ -6,10 +6,10 @@ type NavT = { catalog: string; reviews: string; guarantees: string; faq: string 
 type Props = { logoText: string; cartLabel: string; nav: NavT };
 
 const NAV_LINKS = [
-  { href: '#catalog', key: 'catalog' },
-  { href: '#reviews', key: 'reviews' },
-  { href: '#guarantees', key: 'guarantees' },
-  { href: '#faq', key: 'faq' },
+  { href: '/land1/#catalog', key: 'catalog' },
+  { href: '/land1/#reviews', key: 'reviews' },
+  { href: '/land1/#guarantees', key: 'guarantees' },
+  { href: '/land1/#faq', key: 'faq' },
 ] as const;
 
 export default function L1Header({ logoText, cartLabel, nav }: Props) {

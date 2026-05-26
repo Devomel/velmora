@@ -2692,10 +2692,10 @@
     ],
     "sectionsTitle": "Pe această pagină",
     "sectionLinks": [
-      { "label": "Catalog", "href": "#catalog" },
-      { "label": "Recenzii", "href": "#reviews" },
-      { "label": "Garanții", "href": "#guarantees" },
-      { "label": "FAQ", "href": "#faq" }
+      { "label": "Catalog", "href": "/#catalog" },
+      { "label": "Recenzii", "href": "/#reviews" },
+      { "label": "Garanții", "href": "/#guarantees" },
+      { "label": "FAQ", "href": "/#faq" }
     ],
     "contactTitle": "Contact",
     "phoneLabel": "Telefon",

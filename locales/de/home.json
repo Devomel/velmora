@@ -2692,10 +2692,10 @@
     ],
     "sectionsTitle": "Auf dieser Seite",
     "sectionLinks": [
-      { "label": "Katalog", "href": "#catalog" },
-      { "label": "Bewertungen", "href": "#reviews" },
-      { "label": "Garantien", "href": "#guarantees" },
-      { "label": "FAQ", "href": "#faq" }
+      { "label": "Katalog", "href": "/#catalog" },
+      { "label": "Bewertungen", "href": "/#reviews" },
+      { "label": "Garantien", "href": "/#guarantees" },
+      { "label": "FAQ", "href": "/#faq" }
     ],
     "contactTitle": "Kontakt",
     "phoneLabel": "Telefon",

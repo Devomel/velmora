@@ -5,9 +5,9 @@ import type { HomeT } from '@/lib/i18n';
 import { useCart } from '@/components/CartProvider';
 import Link from 'next/link';
 
-type Props = { t: HomeT['header'] };
+type Props = { t: HomeT['header']; nav: { about: string; delivery: string; contacts: string } };
 
-export default function SiteHeader({ t }: Props) {
+export default function SiteHeader({ t, nav }: Props) {
    const { openCart, count } = useCart();
    const [scrolled, setScrolled] = useState(false);
 
@@ -42,9 +42,9 @@ export default function SiteHeader({ t }: Props) {
                </Link>
 
                <nav className="hidden md:flex items-center gap-5 text-sm text-[#5C4A3D]">
-                  <Link href="/about" className="hover:text-[#C4704F] transition-colors">About</Link>
-                  <Link href="/delivery" className="hover:text-[#C4704F] transition-colors">Delivery</Link>
-                  <Link href="/contacts" className="hover:text-[#C4704F] transition-colors">Contacts</Link>
+                  <Link href="/about" className="hover:text-[#C4704F] transition-colors">{nav.about}</Link>
+                  <Link href="/delivery" className="hover:text-[#C4704F] transition-colors">{nav.delivery}</Link>
+                  <Link href="/contacts" className="hover:text-[#C4704F] transition-colors">{nav.contacts}</Link>
                </nav>
 
                <div className="flex-1 max-w-md mx-auto relative" />

@@ -2692,10 +2692,10 @@
     ],
     "sectionsTitle": "На этой странице",
     "sectionLinks": [
-      { "label": "Каталог", "href": "#catalog" },
-      { "label": "Отзывы", "href": "#reviews" },
-      { "label": "Гарантии", "href": "#guarantees" },
-      { "label": "FAQ", "href": "#faq" }
+      { "label": "Каталог", "href": "/#catalog" },
+      { "label": "Отзывы", "href": "/#reviews" },
+      { "label": "Гарантии", "href": "/#guarantees" },
+      { "label": "FAQ", "href": "/#faq" }
     ],
     "contactTitle": "Контакты",
     "phoneLabel": "Телефон",

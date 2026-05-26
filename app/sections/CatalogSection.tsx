@@ -107,7 +107,7 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPre
                </div>
 
                <button
-                  onClick={e => { e.preventDefault(); addItem({ id: product.id, name: product.name, price: product.price, image: '' }); }}
+                  onClick={e => { e.preventDefault(); addItem({ id: product.id, name: product.name, price: product.price, image: imageSrc }); }}
                   className="w-full flex items-center justify-center bg-[#C4704F] hover:bg-[#B5633F] text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer"
                >
                   {addToCartLabel}
