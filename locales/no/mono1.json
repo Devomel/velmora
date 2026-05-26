@@ -61,5 +61,29 @@
     "ctaSubtitle": "Levering over hele Norge · Betaling ved levering",
     "ctaBtn": "Bestill nå"
   },
+  "header": {
+    "delivery": "Gratis levering",
+    "guarantee": "14 dagers garanti",
+    "discount": "rabatt"
+  },
+  "specs": {
+    "table1Title": "Materialinformasjon",
+    "table1": [
+      { "key": "Materiale", "value": "Borosilikatglass" },
+      { "key": "Lokk", "value": "Mathygienisk plast (PP)" },
+      { "key": "Tetning", "value": "Silikon" },
+      { "key": "Temperatur", "value": "−20 °C til +120 °C" },
+      { "key": "BPA-fri", "value": "Ja" }
+    ],
+    "table2Title": "Egenskaper",
+    "table2": [
+      { "key": "Volumer", "value": "380 / 640 / 1040 ml" },
+      { "key": "Mikrobølgeovn", "value": "Ja (uten lokk)" },
+      { "key": "Oppvaskmaskin", "value": "Ja" },
+      { "key": "Fryser", "value": "Ja" },
+      { "key": "Stablebar", "value": "Ja" },
+      { "key": "Tett", "value": "Ja" }
+    ]
+  },
   "footer": { "rights": "Alle rettigheter forbeholdt." }
 }

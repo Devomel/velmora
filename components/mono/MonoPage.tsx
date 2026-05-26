@@ -2,6 +2,7 @@ import type { MonoT } from '@/lib/i18n';
 import OrderForm from './OrderForm';
 import MonoFaq from './MonoFaq';
 import ProductDescription from './ProductDescription';
+import ProductSpecs from './ProductSpecs';
 
 type Props = {
   t: MonoT;
@@ -44,9 +45,36 @@ export default function MonoPage({ t, newPrice, oldPrice, image }: Props) {
   return (
     <div className="min-h-screen bg-white" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
 
+      {/* ─── UTP HEADER STRIP ─── */}
+      <div className="bg-[#1A1410] text-white py-2.5 px-4">
+        <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-1.5 text-xs font-medium">
+          <span className="flex items-center gap-1.5">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <rect x="1" y="3" width="15" height="13" rx="1" /><path d="M16 8h4l3 3v5h-7V8z" />
+              <circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
+            </svg>
+            {t.header.delivery}
+          </span>
+          <span className="text-[#C4704F]">•</span>
+          <span className="flex items-center gap-1.5">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11 14 15 10" />
+            </svg>
+            {t.header.guarantee}
+          </span>
+          <span className="text-[#C4704F]">•</span>
+          <span className="flex items-center gap-1.5 font-bold text-[#C8A86B]">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <line x1="19" y1="5" x2="5" y2="19" /><circle cx="6.5" cy="6.5" r="2.5" /><circle cx="17.5" cy="17.5" r="2.5" />
+            </svg>
+            −{discount}% {t.header.discount}
+          </span>
+        </div>
+      </div>
+
       {/* ─── HERO IMAGE ─── */}
       <section className="bg-[#FDFAF7] border-b border-[#E8DDD4]">
-        <div className="max-w-4xl mx-auto px-4 py-6 md:py-10">
+        <div className="max-w-4xl mx-auto md:px-4 md:py-10">
           <img
             src={image}
             alt={t.product.name}
@@ -90,10 +118,13 @@ export default function MonoPage({ t, newPrice, oldPrice, image }: Props) {
           <p className="text-lg text-[#6B5B4E] mb-8 font-medium">{t.product.tagline}</p>
 
           {/* full description */}
-          <ProductDescription
-            text={t.product.fullDesc}
-            readMore={t.product.readMore}
-            readLess={t.product.readLess}
+          <ProductDescription text={t.product.fullDesc} />
+
+          <ProductSpecs
+            table1Title={t.specs.table1Title}
+            table1={t.specs.table1}
+            table2Title={t.specs.table2Title}
+            table2={t.specs.table2}
           />
 
           {/* scroll to order */}

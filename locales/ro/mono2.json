@@ -61,5 +61,29 @@
     "ctaSubtitle": "Livrare în toată România · Plată la livrare",
     "ctaBtn": "Comandați acum"
   },
+  "header": {
+    "delivery": "Livrare gratuită",
+    "guarantee": "Garanție 14 zile",
+    "discount": "reducere"
+  },
+  "specs": {
+    "table1Title": "Informații material",
+    "table1": [
+      { "key": "Material corp", "value": "Aliaj de aluminiu" },
+      { "key": "Acoperire", "value": "Marmură antiaderentă (fără PFOA)" },
+      { "key": "Mâner", "value": "Bachelită, până la 180 °C" },
+      { "key": "Capac", "value": "Sticlă călită" },
+      { "key": "Grosimea peretelui", "value": "3 mm" }
+    ],
+    "table2Title": "Caracteristici",
+    "table2": [
+      { "key": "Diametre", "value": "⌀26 / ⌀28 / ⌀28 cm (adâncă)" },
+      { "key": "Compatibil cu", "value": "Gaz, electric, ceramic" },
+      { "key": "Inducție", "value": "Nu" },
+      { "key": "Mașina de vase", "value": "Da" },
+      { "key": "Gătit fără ulei", "value": "Da" },
+      { "key": "Distribuție uniformă", "value": "Da" }
+    ]
+  },
   "footer": { "rights": "Toate drepturile rezervate." }
 }

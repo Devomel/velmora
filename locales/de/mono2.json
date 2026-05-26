@@ -61,5 +61,29 @@
     "ctaSubtitle": "Lieferung deutschlandweit · Zahlung bei Lieferung",
     "ctaBtn": "Jetzt bestellen"
   },
+  "header": {
+    "delivery": "Kostenlose Lieferung",
+    "guarantee": "14 Tage Garantie",
+    "discount": "Rabatt"
+  },
+  "specs": {
+    "table1Title": "Materialangaben",
+    "table1": [
+      { "key": "Korpusmaterial", "value": "Aluminiumlegierung" },
+      { "key": "Beschichtung", "value": "Marmor-Antihaft (PFOA-frei)" },
+      { "key": "Griff", "value": "Bakelit, bis 180 °C" },
+      { "key": "Deckel", "value": "Gehärtetes Glas" },
+      { "key": "Wandstärke", "value": "3 mm" }
+    ],
+    "table2Title": "Eigenschaften",
+    "table2": [
+      { "key": "Durchmesser", "value": "⌀26 / ⌀28 / ⌀28 cm (tief)" },
+      { "key": "Herdarten", "value": "Gas, Elektro, Keramik" },
+      { "key": "Induktion", "value": "Nein" },
+      { "key": "Spülmaschinenfest", "value": "Ja" },
+      { "key": "Kochen ohne Öl", "value": "Ja" },
+      { "key": "Gleichm. Erhitzung", "value": "Ja" }
+    ]
+  },
   "footer": { "rights": "Alle Rechte vorbehalten." }
 }

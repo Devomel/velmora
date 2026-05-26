@@ -61,5 +61,29 @@
     "ctaSubtitle": "Livrare în toată România · Plată la livrare",
     "ctaBtn": "Comandați acum"
   },
+  "header": {
+    "delivery": "Livrare gratuită",
+    "guarantee": "Garanție 14 zile",
+    "discount": "reducere"
+  },
+  "specs": {
+    "table1Title": "Informații material",
+    "table1": [
+      { "key": "Material", "value": "Sticlă borosilicată" },
+      { "key": "Capac", "value": "Plastic alimentar (PP)" },
+      { "key": "Garnitură", "value": "Silicon" },
+      { "key": "Temperatură", "value": "−20 °C până la +120 °C" },
+      { "key": "Fără BPA", "value": "Da" }
+    ],
+    "table2Title": "Caracteristici",
+    "table2": [
+      { "key": "Volume", "value": "380 / 640 / 1040 ml" },
+      { "key": "Microunde", "value": "Da (fără capac)" },
+      { "key": "Mașina de vase", "value": "Da" },
+      { "key": "Congelator", "value": "Da" },
+      { "key": "Se stivuiesc", "value": "Da" },
+      { "key": "Etanș", "value": "Da" }
+    ]
+  },
   "footer": { "rights": "Toate drepturile rezervate." }
 }

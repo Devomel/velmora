@@ -61,5 +61,29 @@
     "ctaSubtitle": "Lieferung deutschlandweit · Zahlung bei Lieferung",
     "ctaBtn": "Jetzt bestellen"
   },
+  "header": {
+    "delivery": "Kostenlose Lieferung",
+    "guarantee": "14 Tage Garantie",
+    "discount": "Rabatt"
+  },
+  "specs": {
+    "table1Title": "Materialangaben",
+    "table1": [
+      { "key": "Material", "value": "Borosilikatglas" },
+      { "key": "Deckel", "value": "Lebensmittelechter Kunststoff (PP)" },
+      { "key": "Dichtung", "value": "Silikon" },
+      { "key": "Temperatur", "value": "−20 °C bis +120 °C" },
+      { "key": "BPA-frei", "value": "Ja" }
+    ],
+    "table2Title": "Eigenschaften",
+    "table2": [
+      { "key": "Volumina", "value": "380 / 640 / 1040 ml" },
+      { "key": "Mikrowellengeeignet", "value": "Ja (ohne Deckel)" },
+      { "key": "Spülmaschinenfest", "value": "Ja" },
+      { "key": "Gefriergeeignet", "value": "Ja" },
+      { "key": "Stapelbar", "value": "Ja" },
+      { "key": "Auslaufsicher", "value": "Ja" }
+    ]
+  },
   "footer": { "rights": "Alle Rechte vorbehalten." }
 }

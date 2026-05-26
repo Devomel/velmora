@@ -61,5 +61,29 @@
     "ctaSubtitle": "Levering over hele Norge · Betaling ved levering",
     "ctaBtn": "Bestill nå"
   },
+  "header": {
+    "delivery": "Gratis levering",
+    "guarantee": "14 dagers garanti",
+    "discount": "rabatt"
+  },
+  "specs": {
+    "table1Title": "Materialinformasjon",
+    "table1": [
+      { "key": "Korpusmateriale", "value": "Aluminiumslegering" },
+      { "key": "Belegg", "value": "Marmor non-stick (PFOA-fri)" },
+      { "key": "Håndtak", "value": "Bakelit, til 180 °C" },
+      { "key": "Lokk", "value": "Herdet glass" },
+      { "key": "Veggtykkelse", "value": "3 mm" }
+    ],
+    "table2Title": "Egenskaper",
+    "table2": [
+      { "key": "Diametre", "value": "⌀26 / ⌀28 / ⌀28 cm (dyp)" },
+      { "key": "Komfyrtyper", "value": "Gass, elektrisk, keramisk" },
+      { "key": "Induksjon", "value": "Nei" },
+      { "key": "Oppvaskmaskin", "value": "Ja" },
+      { "key": "Matlaging uten olje", "value": "Ja" },
+      { "key": "Jevn varme", "value": "Ja" }
+    ]
+  },
   "footer": { "rights": "Alle rettigheter forbeholdt." }
 }
