@@ -3,8 +3,8 @@
 /* Square/near-square screens: landscape, ≥1024px wide, aspect ratio ≤ 4:3 */
 @custom-variant sq (@media (min-width: 801px) and (max-width: 1224px) and (max-aspect-ratio: 7/4));
 :root {
-   --header-h: 3.875rem;
-   /* NavBar: py-3 container + button height + 1px border */
+   --header-h: 3.25rem;
+   /* NavBar: py-3 (12px×2) + 28px icon = 52px */
    --brand-primary: #C4704F;
    --brand-primary-dark: #A85A3A;
    --brand-primary-light: #E8A98A;

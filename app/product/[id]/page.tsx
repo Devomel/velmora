@@ -117,7 +117,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
     <div className="min-h-screen flex flex-col bg-[#FDFAF7]">
       <SiteHeader t={home.header} />
 
-      <main className="flex-1">
+      <main className="flex-1 pt-[var(--header-h)]">
         {/* Breadcrumb */}
         <div className="max-w-6xl mx-auto px-4 py-4">
           <nav className="text-xs text-[#9C8A7E] flex items-center gap-2">

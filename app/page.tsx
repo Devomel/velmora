@@ -16,7 +16,7 @@ export default async function HomePage() {
 
    return (
       <div className="min-h-screen flex flex-col bg-[#FDFAF7]">
-         <div className="h-svh flex flex-col sq:h-auto">
+         <div className="h-svh flex flex-col sq:h-auto pt-[var(--header-h)]">
             <NavBar t={common.nav} />
             <HeroSection t={home.hero} />
          </div>

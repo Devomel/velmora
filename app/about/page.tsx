@@ -9,7 +9,7 @@ export default async function AboutPage() {
     <div className="min-h-screen flex flex-col bg-[#FDFAF7]">
       <NavBar t={common.nav} />
 
-      <main className="flex-1">
+      <main className="flex-1 pt-[var(--header-h)]">
         {/* Hero */}
         <section className="py-20 md:py-24 bg-white">
           <div className="max-w-4xl mx-auto px-4 text-center">

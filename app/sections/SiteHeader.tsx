@@ -19,28 +19,16 @@ export default function SiteHeader({ t }: Props) {
    }, []);
 
    return (
-      <header className={`fixed left-0 right-0 z-30 transition-all duration-500 pointer-events-none ${
+      <header className={`fixed left-0 right-0 z-30 transition-all duration-500 pointer-events-none border-b ${
          scrolled
             ? 'top-2 px-4 bg-white/0 border-transparent'
-            : 'top-0 px-0 bg-white border-b border-[#E8DDD4]'
+            : 'top-0 px-0 bg-white border-[#E8DDD4]'
       }`}>
          <div className={`max-w-7xl mx-auto overflow-hidden border transition-all duration-500 pointer-events-auto ${
             scrolled
                ? 'bg-white/80 backdrop-blur-md rounded-2xl border-[#E8DDD4]/60 shadow-sm'
                : 'border-transparent'
          }`}>
-            <div className={`text-white text-xs py-2 px-4 text-center transition-colors duration-500 ${
-               scrolled ? 'bg-[#1A1410]/90' : 'bg-[#1A1410]'
-            }`}>
-               <span className="inline-flex items-center gap-4 flex-wrap justify-center">
-                  <span>🚚 {t.benefit1}</span>
-                  <span className="hidden sm:inline">·</span>
-                  <span>✅ {t.benefit2}</span>
-                  <span className="hidden sm:inline">·</span>
-                  <span>💳 {t.benefit3}</span>
-               </span>
-            </div>
-
             <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-4">
                <Link href="/" className="flex-shrink-0 flex items-center gap-2">
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none">

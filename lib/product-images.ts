@@ -31,12 +31,10 @@ export function getProductImages(articleKey: string): string[] {
          const suffixOf = (f: string) => f.slice(0, -5).slice(slug.length);
          const order = (s: string) => {
             if (s === '') return 0;
-            if (s === '_pod' && !hasMain) return 0;
-            if (s === '_2') return 1;
-            if (s === '_3') return 2;
-            if (s === '_4') return 3;
-            if (s === '_pod') return 4;
-            return 5;
+            if (s === '_под' && !hasMain) return 0;
+            const num = s.match(/^_(\d+)$/);
+            if (num) return parseInt(num[1], 10);
+            return 999;
          };
          return order(suffixOf(a)) - order(suffixOf(b));
       })

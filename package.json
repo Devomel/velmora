@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "sync-photos": "node scripts/download-photos.mjs",
     "dev": "next dev",
     "prebuild": "node scripts/optimize-images.mjs",
     "build": "next build",
@@ -21,6 +22,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.5",
+    "googleapis": "^172.0.0",
     "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
