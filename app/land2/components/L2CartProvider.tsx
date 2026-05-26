@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback, ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from 'react';
 
 export type L2CartItem = {
   id: number;
@@ -22,11 +22,29 @@ type L2CartContextType = {
   count: number;
 };
 
+const STORAGE_KEY = 'cart-land2';
+
 const L2CartContext = createContext<L2CartContextType | null>(null);
 
 export function L2CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<L2CartItem[]>([]);
   const [isOpen, setIsOpen] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) setItems(JSON.parse(saved));
+    } catch {}
+    setLoaded(true);
+  }, []);
+
+  useEffect(() => {
+    if (!loaded) return;
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    } catch {}
+  }, [items, loaded]);
 
   const openCart = useCallback(() => setIsOpen(true), []);
   const closeCart = useCallback(() => setIsOpen(false), []);

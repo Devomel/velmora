@@ -6,7 +6,8 @@ import type { HomeT } from '@/lib/i18n';
 import type { ProductData } from '@/lib/products';
 import { useCart } from '@/components/CartProvider';
 
-type Props = { t: HomeT['catalog']; productImages: Record<string, string>; products: ProductData[]; productLinkPrefix?: string; priceOnly?: boolean };
+type AddItemFn = (item: { id: number; name: string; price: number; image: string }) => void;
+type Props = { t: HomeT['catalog']; productImages: Record<string, string>; products: ProductData[]; productLinkPrefix?: string; priceOnly?: boolean; onAddItem?: AddItemFn };
 
 function Stars({ rating }: { rating: number }) {
    const uid = `s${Math.round(rating * 10)}`;
@@ -55,14 +56,14 @@ function Chevron({ active }: { active: boolean }) {
 
 type Product = ProductData & { name: string; material: string; volume?: string; description: string };
 
-function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPrefix }: {
+function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPrefix, addItem }: {
    product: Product;
    addToCartLabel: string;
    badges: { sale: string; new: string };
    imageSrc: string;
    productLinkPrefix: string;
+   addItem: AddItemFn;
 }) {
-   const { addItem } = useCart();
 
    return (
       <Link
@@ -117,7 +118,9 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPre
    );
 }
 
-export default function CatalogSection({ t, productImages, products: productData, productLinkPrefix = '/product/', priceOnly = false }: Props) {
+export default function CatalogSection({ t, productImages, products: productData, productLinkPrefix = '/product/', priceOnly = false, onAddItem }: Props) {
+   const { addItem: defaultAddItem } = useCart();
+   const addItem = onAddItem ?? defaultAddItem;
    const [activeCategoryKey, setActiveCategoryKey] = useState('all');
    const [priceIdx, setPriceIdx] = useState(0);
    const [minRating, setMinRating] = useState(0);
@@ -265,7 +268,7 @@ export default function CatalogSection({ t, productImages, products: productData
             {filtered.length > 0 ? (
                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                   {filtered.map(p => (
-                     <ProductCard key={p.id} product={p} addToCartLabel={t.addToCart} badges={t.badges} imageSrc={productImages[p.articleKey]} productLinkPrefix={productLinkPrefix} />
+                     <ProductCard key={p.id} product={p} addToCartLabel={t.addToCart} badges={t.badges} imageSrc={productImages[p.articleKey]} productLinkPrefix={productLinkPrefix} addItem={addItem} />
                   ))}
                </div>
             ) : (

@@ -1,54 +1,63 @@
 @import "tailwindcss";
 
+/* Square/near-square screens: landscape, ≥1024px wide, aspect ratio ≤ 4:3 */
+@custom-variant sq (@media (min-width: 801px) and (max-width: 1224px) and (max-aspect-ratio: 7/4));
 :root {
-  --brand-primary: #C4704F;
-  --brand-primary-dark: #A85A3A;
-  --brand-primary-light: #E8A98A;
-  --brand-secondary: #6B8F71;
-  --brand-accent: #C8A86B;
+   --header-h: 3.875rem;
+   /* NavBar: py-3 container + button height + 1px border */
+   --brand-primary: #C4704F;
+   --brand-primary-dark: #A85A3A;
+   --brand-primary-light: #E8A98A;
+   --brand-secondary: #6B8F71;
+   --brand-accent: #C8A86B;
 
-  --bg-base: #FDFAF7;
-  --bg-surface: #F5F0EB;
-  --border: #E8DDD4;
+   --bg-base: #FDFAF7;
+   --bg-surface: #F5F0EB;
+   --border: #E8DDD4;
 
-  --text-primary: #1A1410;
-  --text-secondary: #6B5B4E;
-  --text-muted: #9C8A7E;
+   --text-primary: #1A1410;
+   --text-secondary: #6B5B4E;
+   --text-muted: #9C8A7E;
 
-  --background: var(--bg-base);
-  --foreground: var(--text-primary);
+   --background: var(--bg-base);
+   --foreground: var(--text-primary);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-brand: var(--brand-primary);
-  --color-brand-dark: var(--brand-primary-dark);
-  --color-brand-light: var(--brand-primary-light);
-  --color-sage: var(--brand-secondary);
-  --color-gold: var(--brand-accent);
-  --color-surface: var(--bg-surface);
-  --color-border: var(--border);
-  --color-text-sec: var(--text-secondary);
-  --color-text-muted: var(--text-muted);
+   --color-background: var(--background);
+   --color-foreground: var(--foreground);
+   --color-brand: var(--brand-primary);
+   --color-brand-dark: var(--brand-primary-dark);
+   --color-brand-light: var(--brand-primary-light);
+   --color-sage: var(--brand-secondary);
+   --color-gold: var(--brand-accent);
+   --color-surface: var(--bg-surface);
+   --color-border: var(--border);
+   --color-text-sec: var(--text-secondary);
+   --color-text-muted: var(--text-muted);
 }
 
 * {
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Inter, system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+   background: var(--background);
+   color: var(--foreground);
+   font-family: Inter, system-ui, -apple-system, sans-serif;
+   line-height: 1.6;
+   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   line-height: 1.2;
 }

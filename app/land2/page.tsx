@@ -4,7 +4,7 @@ import { getProductImages } from '@/lib/product-images';
 import { PAN_ARTICLE_KEYS } from '@/lib/categories';
 import HeroSection, { HeroAdvantages } from '../sections/HeroSection';
 import StatsSection from '../sections/StatsSection';
-import CatalogSection from '../sections/CatalogSection';
+import L2CatalogSection from './components/L2CatalogSection';
 import ReviewsSection from '../sections/ReviewsSection';
 import GuaranteesSection from '../sections/GuaranteesSection';
 import FaqSection from '../sections/FaqSection';
@@ -22,7 +22,7 @@ export default async function Land2Page() {
          </div>
          <HeroAdvantages t={home.hero} />
          <main className="flex-1">
-            <CatalogSection t={home.catalog} productImages={productImages} products={panData} productLinkPrefix="/land2/product/" priceOnly />
+            <L2CatalogSection t={home.catalog} productImages={productImages} products={panData} priceOnly />
             <StatsSection t={home.stats} />
             <ReviewsSection t={home.reviews} />
             <GuaranteesSection t={home.guarantees} />
