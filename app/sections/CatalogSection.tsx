@@ -106,7 +106,7 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPre
 
             <button
                onClick={e => { e.preventDefault(); addItem({ id: product.id, name: product.name, price: product.price, image: '' }); }}
-               className="mt-auto w-full flex items-center justify-center bg-[#1A1410] hover:bg-[#C4704F] text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors duration-200"
+               className="mt-auto w-full flex items-center justify-center bg-[#C4704F] hover:bg-[#B5633F] text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors duration-200"
             >
                {addToCartLabel}
             </button>
