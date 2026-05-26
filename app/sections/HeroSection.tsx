@@ -38,7 +38,7 @@ export default function HeroSection({ t }: Props) {
                <div className="w-full flex-1 min-h-0 flex flex-col justify-evenly text-center landscape:lg:flex-none landscape:lg:block landscape:lg:text-left sq:!flex sq:!flex-row sq:!items-center sq:!justify-between sq:!gap-6 sq:!text-left">
                   {/* h1+p wrapper: invisible in mobile/desktop layout, becomes flex-col on sq */}
                   <div className="[display:contents] sq:flex sq:flex-col sq:flex-1 sq:min-w-0 sq:gap-3">
-                     <h1 className="text-[clamp(1.25rem,5svh,2.25rem)] md:text-5xl landscape:lg:text-[clamp(2rem,3.5vw,4.5rem)] sq:!text-[clamp(1.75rem,4svh,3rem)] font-light text-[#1A1410] tracking-tight mb-0 landscape:lg:mb-[clamp(0.25rem,2vh,1.75rem)] sq:!mb-0 leading-[1.06]">
+                     <h1 className="text-[clamp(1.25rem,5svh,2.25rem)] md:text-5xl landscape:lg:text-[clamp(2.5rem,4vw,5.5rem)] sq:!text-[clamp(1.75rem,4svh,3rem)] font-light text-[#1A1410] tracking-tight mb-0 landscape:lg:mb-[clamp(0.25rem,2vh,1.75rem)] sq:!mb-0 leading-[1.06]">
                         {t.title}<br />
                         <span className="text-[#C4704F]">{t.titleHighlight}</span>
                      </h1>
