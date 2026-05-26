@@ -80,6 +80,8 @@
     "ratingAll": "Любой рейтинг",
     "ratingFrom4": "от 4 звёзд",
     "rating5": "5 звёзд",
+    "categoryLabel": "Категория",
+    "sortLabel": "Сортировка",
     "sortDefault": "По умолч.",
     "sortAsc": "Цена ↑",
     "sortDesc": "Цена ↓",

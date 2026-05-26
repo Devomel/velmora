@@ -21,7 +21,7 @@ const ADVANTAGE_ICONS = [
 
 export default function HeroSection({ t }: Props) {
    return (
-      <section className="relative bg-[#eadcd4] overflow-hidden landscape:lg:flex-1 landscape:lg:flex landscape:lg:flex-col">
+      <section className="relative bg-[#eadcd4] overflow-hidden flex-1 flex flex-col landscape:lg:flex landscape:lg:flex-col">
          <div className="absolute inset-0 opacity-[0.035]" aria-hidden>
             <svg width="100%" height="100%">
                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -31,17 +31,17 @@ export default function HeroSection({ t }: Props) {
             </svg>
          </div>
 
-         {/* Portrait/mobile: flex-col (image top, text bottom); Landscape desktop: 2-col grid */}
-         <div className="relative flex flex-col landscape:lg:grid landscape:lg:grid-cols-2 landscape:lg:flex-1">
-            {/* TEXT — bottom on portrait, left column on landscape desktop */}
-            <div className="landscape:lg:col-start-1 landscape:lg:row-start-1 flex items-center justify-center landscape:lg:justify-start px-5 landscape:lg:pl-36 landscape:lg:pr-8 py-8 landscape:lg:py-0">
-               <div className="w-full text-center landscape:lg:text-left">
-                  <h1 className="text-4xl md:text-5xl landscape:lg:text-[5.5rem] font-light text-[#1A1410] tracking-tight mb-4 landscape:lg:mb-7 leading-[1.06]">
+         {/* Portrait/mobile: flex-col (text top, image bottom); Landscape desktop: 2-col grid */}
+         <div className="relative h-full flex flex-col landscape:lg:grid landscape:lg:grid-cols-2 landscape:lg:flex-1">
+            {/* TEXT — top on portrait, left column on landscape desktop */}
+            <div className="flex-1 min-h-0 landscape:lg:col-start-1 landscape:lg:row-start-1 flex flex-col landscape:lg:flex-row landscape:lg:items-center landscape:lg:justify-start px-5 landscape:lg:pl-36 landscape:lg:pr-8 py-[clamp(0.5rem,2svh,1rem)] landscape:lg:py-0">
+               <div className="w-full flex-1 min-h-0 flex flex-col justify-evenly text-center landscape:lg:flex-none landscape:lg:block landscape:lg:text-left">
+                  <h1 className="text-[clamp(1.25rem,5svh,2.25rem)] md:text-5xl landscape:lg:text-[5.5rem] font-light text-[#1A1410] tracking-tight mb-0 landscape:lg:mb-7 leading-[1.06]">
                      {t.title}<br />
                      <span className="text-[#C4704F]">{t.titleHighlight}</span>
                   </h1>
 
-                  <p className="text-base landscape:lg:text-xl text-[#6B5B4E] mb-6 landscape:lg:mb-11 max-w-md mx-auto landscape:lg:mx-0 leading-relaxed">{t.subtitle}</p>
+                  <p className="text-[clamp(0.8rem,1.8svh,1rem)] landscape:lg:text-xl text-[#6B5B4E] mb-0 landscape:lg:mb-11 max-w-md mx-auto landscape:lg:mx-0 leading-relaxed">{t.subtitle}</p>
 
                   <div className="flex flex-col sm:flex-row gap-3 landscape:lg:gap-4 justify-center landscape:lg:justify-start">
                      <a
@@ -59,8 +59,8 @@ export default function HeroSection({ t }: Props) {
                   </div>
                </div>
             </div>
-            {/* BANNER — top on portrait, right column on landscape desktop */}
-            <div className="relative aspect-square landscape:lg:aspect-auto landscape:lg:col-start-2 landscape:lg:row-start-1">
+            {/* BANNER — bottom on portrait, right column on landscape desktop */}
+            <div className="relative flex-none h-[min(100vw,60svh)] landscape:h-auto landscape:lg:aspect-auto landscape:lg:col-start-2 landscape:lg:row-start-1">
                <div className="absolute inset-0">
                   <Image
                      src="/hero-banner.png"

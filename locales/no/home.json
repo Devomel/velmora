@@ -80,6 +80,8 @@
     "ratingAll": "Alle vurderinger",
     "ratingFrom4": "fra 4 stjerner",
     "rating5": "5 stjerner",
+    "categoryLabel": "Kategori",
+    "sortLabel": "Sorter",
     "sortDefault": "Standard",
     "sortAsc": "Pris ↑",
     "sortDesc": "Pris ↓",

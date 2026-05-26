@@ -80,6 +80,8 @@
     "ratingAll": "Alle Bewertungen",
     "ratingFrom4": "ab 4 Sterne",
     "rating5": "5 Sterne",
+    "categoryLabel": "Kategorie",
+    "sortLabel": "Sortieren",
     "sortDefault": "Standard",
     "sortAsc": "Preis ↑",
     "sortDesc": "Preis ↓",

@@ -80,6 +80,8 @@
     "ratingAll": "Orice rating",
     "ratingFrom4": "de la 4 stele",
     "rating5": "5 stele",
+    "categoryLabel": "Categorie",
+    "sortLabel": "Sortare",
     "sortDefault": "Implicit",
     "sortAsc": "Preț ↑",
     "sortDesc": "Preț ↓",

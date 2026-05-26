@@ -43,6 +43,16 @@ function Stars({ rating }: { rating: number }) {
    );
 }
 
+function Chevron({ active }: { active: boolean }) {
+   return (
+      <div className="pointer-events-none absolute inset-y-0 right-2.5 flex items-center">
+         <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1L5 5L9 1" stroke={active ? '#C4704F' : '#9C8A7E'} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+         </svg>
+      </div>
+   );
+}
+
 type Product = ProductData & { name: string; material: string; volume?: string; description: string };
 
 function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPrefix }: {
@@ -158,7 +168,52 @@ export default function CatalogSection({ t, productImages, products: productData
                <p className="text-[#6B5B4E] max-w-md mx-auto">{t.subtitle}</p>
             </div>
 
-            <div className="flex flex-wrap gap-2 mb-6">
+            {/* Mobile dropdowns */}
+            <div className="flex gap-3 mb-6 md:hidden">
+               {priceOnly
+                  ? <div className="relative flex-1">
+                       <select
+                          value={priceIdx}
+                          onChange={e => setPriceIdx(Number(e.target.value))}
+                          className={`w-full appearance-none pl-3 pr-8 py-2.5 text-xs font-medium border bg-[#FDFAF7] text-[#1A1410] cursor-pointer focus:outline-none transition-colors ${priceIdx !== 0 ? 'border-[#C4704F]' : 'border-[#E8DDD4]'}`}
+                       >
+                          {t.priceFilters.map((label, i) => (
+                             <option key={i} value={i}>{label}</option>
+                          ))}
+                       </select>
+                       <Chevron active={priceIdx !== 0} />
+                    </div>
+                  : <>
+                       <div className="relative flex-1">
+                          <select
+                             value={activeCategoryKey}
+                             onChange={e => setActiveCategoryKey(e.target.value)}
+                             className={`w-full appearance-none pl-3 pr-8 py-2.5 text-xs font-medium border bg-[#FDFAF7] text-[#1A1410] cursor-pointer focus:outline-none transition-colors ${activeCategoryKey !== 'all' ? 'border-[#C4704F]' : 'border-[#E8DDD4]'}`}
+                          >
+                             {categoryEntries.map(([key, label]) => (
+                                <option key={key} value={key}>{label}</option>
+                             ))}
+                          </select>
+                          <Chevron active={activeCategoryKey !== 'all'} />
+                       </div>
+                       <div className="relative">
+                          <select
+                             value={sortOrder}
+                             onChange={e => setSortOrder(e.target.value as 'default' | 'asc' | 'desc')}
+                             className={`w-full appearance-none pl-3 pr-8 py-2.5 text-xs font-medium border bg-[#FDFAF7] text-[#1A1410] cursor-pointer focus:outline-none transition-colors ${sortOrder !== 'default' ? 'border-[#C4704F]' : 'border-[#E8DDD4]'}`}
+                          >
+                             <option value="default">{t.sortDefault}</option>
+                             <option value="asc">{t.sortAsc}</option>
+                             <option value="desc">{t.sortDesc}</option>
+                          </select>
+                          <Chevron active={sortOrder !== 'default'} />
+                       </div>
+                    </>
+               }
+            </div>
+
+            {/* Desktop buttons */}
+            <div className="hidden md:flex flex-wrap gap-2 mb-6">
                {priceOnly
                   ? t.priceFilters.map((label, i) => (
                        <button
