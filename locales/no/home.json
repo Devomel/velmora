@@ -2682,21 +2682,18 @@
   },
   "footer": {
     "tagline": "Servise for spesielle øyeblikk. Kvalitet du kjenner ved første berøring.",
-    "customersTitle": "Kunder",
-    "customerLinks": [
-      "Katalog",
-      "Frakt og betaling",
-      "Retur",
-      "Garanti",
-      "Ordresporing"
+    "navTitle": "Navigasjon",
+    "navLinks": [
+      { "label": "Om oss", "href": "/about" },
+      { "label": "Frakt og betaling", "href": "/delivery" },
+      { "label": "Kontakt", "href": "/contacts" }
     ],
-    "companyTitle": "Selskap",
-    "companyLinks": [
-      "Om oss",
-      "Blogg",
-      "For partnere",
-      "Vilkår",
-      "Personvernerklæring"
+    "sectionsTitle": "På denne siden",
+    "sectionLinks": [
+      { "label": "Katalog", "href": "#catalog" },
+      { "label": "Anmeldelser", "href": "#reviews" },
+      { "label": "Garantier", "href": "#guarantees" },
+      { "label": "FAQ", "href": "#faq" }
     ],
     "contactTitle": "Kontakt",
     "phoneLabel": "Telefon",

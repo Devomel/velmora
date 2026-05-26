@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { HomeT } from '@/lib/i18n';
 
 type Props = { t: HomeT['footer'] };
@@ -20,22 +21,22 @@ export default function SiteFooter({ t }: Props) {
             <p className="text-sm leading-relaxed">{t.tagline}</p>
           </div>
 
-          {/* Customers */}
+          {/* Navigation */}
           <div>
-            <h4 className="text-white text-sm font-medium uppercase tracking-widest mb-4">{t.customersTitle}</h4>
+            <h4 className="text-white text-sm font-medium uppercase tracking-widest mb-4">{t.navTitle}</h4>
             <ul className="space-y-2 text-sm">
-              {t.customerLinks.map(item => (
-                <li key={item}><a href="#" className="hover:text-[#C4704F] transition-colors">{item}</a></li>
+              {t.navLinks.map(item => (
+                <li key={item.href}><Link href={item.href} className="hover:text-[#C4704F] transition-colors">{item.label}</Link></li>
               ))}
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Sections */}
           <div>
-            <h4 className="text-white text-sm font-medium uppercase tracking-widest mb-4">{t.companyTitle}</h4>
+            <h4 className="text-white text-sm font-medium uppercase tracking-widest mb-4">{t.sectionsTitle}</h4>
             <ul className="space-y-2 text-sm">
-              {t.companyLinks.map(item => (
-                <li key={item}><a href="#" className="hover:text-[#C4704F] transition-colors">{item}</a></li>
+              {t.sectionLinks.map(item => (
+                <li key={item.href}><Link href={item.href} className="hover:text-[#C4704F] transition-colors">{item.label}</Link></li>
               ))}
             </ul>
           </div>

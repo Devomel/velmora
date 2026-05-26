@@ -2682,21 +2682,18 @@
   },
   "footer": {
     "tagline": "Посуда для особых моментов. Качество, которое ощущается с первого прикосновения.",
-    "customersTitle": "Покупателям",
-    "customerLinks": [
-      "Каталог",
-      "Доставка и оплата",
-      "Возврат",
-      "Гарантия",
-      "Отслеживание заказа"
+    "navTitle": "Навигация",
+    "navLinks": [
+      { "label": "О нас", "href": "/about" },
+      { "label": "Доставка и оплата", "href": "/delivery" },
+      { "label": "Контакты", "href": "/contacts" }
     ],
-    "companyTitle": "Компания",
-    "companyLinks": [
-      "О нас",
-      "Блог",
-      "Партнёрам",
-      "Условия и положения",
-      "Политика конфиденциальности"
+    "sectionsTitle": "На этой странице",
+    "sectionLinks": [
+      { "label": "Каталог", "href": "#catalog" },
+      { "label": "Отзывы", "href": "#reviews" },
+      { "label": "Гарантии", "href": "#guarantees" },
+      { "label": "FAQ", "href": "#faq" }
     ],
     "contactTitle": "Контакты",
     "phoneLabel": "Телефон",

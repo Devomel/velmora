@@ -2682,21 +2682,18 @@
   },
   "footer": {
     "tagline": "Veselă pentru momente speciale. Calitate care se simte la prima atingere.",
-    "customersTitle": "Cumpărători",
-    "customerLinks": [
-      "Catalog",
-      "Livrare și plată",
-      "Returnare",
-      "Garanție",
-      "Urmărire comandă"
+    "navTitle": "Navigare",
+    "navLinks": [
+      { "label": "Despre noi", "href": "/about" },
+      { "label": "Livrare & plată", "href": "/delivery" },
+      { "label": "Contact", "href": "/contacts" }
     ],
-    "companyTitle": "Companie",
-    "companyLinks": [
-      "Despre noi",
-      "Blog",
-      "Pentru parteneri",
-      "Termeni și condiții",
-      "Politica de confidențialitate"
+    "sectionsTitle": "Pe această pagină",
+    "sectionLinks": [
+      { "label": "Catalog", "href": "#catalog" },
+      { "label": "Recenzii", "href": "#reviews" },
+      { "label": "Garanții", "href": "#guarantees" },
+      { "label": "FAQ", "href": "#faq" }
     ],
     "contactTitle": "Contact",
     "phoneLabel": "Telefon",

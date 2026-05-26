@@ -2682,20 +2682,18 @@
   },
   "footer": {
     "tagline": "Geschirr für besondere Momente. Qualität, die man beim ersten Berühren spürt.",
-    "customersTitle": "Käufer",
-    "customerLinks": [
-      "Katalog",
-      "Versand & Zahlung",
-      "Rückgabe",
-      "Garantie",
-      "Bestellverfolgung"
+    "navTitle": "Navigation",
+    "navLinks": [
+      { "label": "Über uns", "href": "/about" },
+      { "label": "Versand & Zahlung", "href": "/delivery" },
+      { "label": "Kontakt", "href": "/contacts" }
     ],
-    "companyTitle": "Unternehmen",
-    "companyLinks": [
-      "Über uns",
-      "Für Partner",
-      "AGB",
-      "Datenschutzerklärung"
+    "sectionsTitle": "Auf dieser Seite",
+    "sectionLinks": [
+      { "label": "Katalog", "href": "#catalog" },
+      { "label": "Bewertungen", "href": "#reviews" },
+      { "label": "Garantien", "href": "#guarantees" },
+      { "label": "FAQ", "href": "#faq" }
     ],
     "contactTitle": "Kontakt",
     "phoneLabel": "Telefon",
