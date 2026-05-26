@@ -93,7 +93,7 @@ export default async function L2ProductPage({ params }: { params: Promise<{ id: 
     ? Math.round(reviews.reduce((s, r) => s + r.rating, 0) / reviews.length * 10) / 10
     : data.rating;
 
-  const images = getProductImages(data.articleKey);
+  const images = getProductImages(data.articleKey, data.categoryKey);
   const discountPct = data.oldPrice ? Math.round((1 - data.price / data.oldPrice) * 100) : null;
 
   const related = PRODUCT_DATA

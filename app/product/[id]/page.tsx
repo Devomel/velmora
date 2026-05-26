@@ -90,7 +90,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
   const description = locale?.description ?? '';
   const features = locale?.features ?? [];
 
-  const images = getProductImages(data.articleKey);
+  const images = getProductImages(data.articleKey, data.categoryKey);
   const discountPct = data.oldPrice ? Math.round((1 - data.price / data.oldPrice) * 100) : null;
 
   const reviews = getProductReviews(data.articleKey);

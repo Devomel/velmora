@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { LOCALE } from './i18n';
 
 function toSlug(articleKey: string): string {
    return articleKey
@@ -7,7 +8,7 @@ function toSlug(articleKey: string): string {
       .replace('кераміка_2', 'keramika_2');
 }
 
-export function getProductImages(articleKey: string): string[] {
+export function getProductImages(articleKey: string, categoryKey?: string): string[] {
    const slug = toSlug(articleKey);
    const dir = path.join(process.cwd(), 'public', 'products');
 
@@ -31,7 +32,7 @@ export function getProductImages(articleKey: string): string[] {
          const suffixOf = (f: string) => f.slice(0, -5).slice(slug.length);
          const order = (s: string) => {
             if (s === '') return 0;
-            if (s === '_под' && !hasMain) return 0;
+            if (s === '_під' && !hasMain) return 0;
             const num = s.match(/^_(\d+)$/);
             if (num) return parseInt(num[1], 10);
             return 999;
@@ -40,5 +41,26 @@ export function getProductImages(articleKey: string): string[] {
       })
       .map(f => `/products/${f}`);
 
-   return sorted.length > 0 ? sorted : [`/products/${slug}.webp`];
+   const result = sorted.length > 0 ? sorted : [`/products/${slug}.webp`];
+
+   if (categoryKey === 'pans') {
+      const pansDir = path.join(process.cwd(), 'public', 'products', 'pans-main');
+      let pansFiles: string[];
+      try {
+         pansFiles = fs.readdirSync(pansDir);
+      } catch {
+         pansFiles = [];
+      }
+      const localeImages = pansFiles
+         .filter(f => f.endsWith('.webp') && f.replace(/_\d+\.webp$/, '.webp') === `${LOCALE}.webp`)
+         .sort((a, b) => {
+            const numA = a.match(/_(\d+)\.webp$/)?.[1];
+            const numB = b.match(/_(\d+)\.webp$/)?.[1];
+            return (numA ? parseInt(numA) : 0) - (numB ? parseInt(numB) : 0);
+         })
+         .map(f => `/products/pans-main/${f}`);
+      result.push(...localeImages);
+   }
+
+   return result;
 }
