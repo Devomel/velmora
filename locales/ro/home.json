@@ -67,10 +67,9 @@
     },
     "categoryMap": {
       "all": "Toate",
-      "pans": "Tigăi",
       "pots": "Oale",
-      "accessories": "Accesorii",
-      "sets": "Seturi"
+      "pans": "Tigăi",
+      "other": "Altele"
     },
     "priceFilters": [
       "Orice preț",

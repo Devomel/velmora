@@ -67,10 +67,9 @@
     },
     "categoryMap": {
       "all": "Alle",
-      "pans": "Stekepanner",
       "pots": "Gryter",
-      "accessories": "Tilbehør",
-      "sets": "Sett"
+      "pans": "Stekepanner",
+      "other": "Annet"
     },
     "priceFilters": [
       "Alle priser",

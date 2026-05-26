@@ -121,7 +121,62 @@
           "Bequemer und ergonomischer Griff",
           "Geeignet für intensiven Einsatz",
           "Verzerrungsresistente Pfanne"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "2 Pfannen"
+            ],
+            [
+              "Durchmesser",
+              "⌀26 cm und ⌀28 cm"
+            ],
+            [
+              "Typ",
+              "Bratpfannen-Set"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Geschmiedetes Aluminium"
+            ],
+            [
+              "Beschichtung",
+              "Antihaftbeschichtung"
+            ],
+            [
+              "Griff",
+              "Ergonomisch, hitzebeständig"
+            ]
+          ],
+          "highlights": [
+            [
+              "Gleichmäßige Erwärmung",
+              "✓"
+            ],
+            [
+              "Deformationsbeständig",
+              "✓"
+            ],
+            [
+              "Für intensiven Einsatz",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Tiefe Pfanne 28 cm Velmora Fry Power",
@@ -133,7 +188,62 @@
           "Bequemer ergonomischer Griff",
           "Geeignet für alle Herdarten",
           "Verzerrungsresistente Pfanne"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "1 Pfanne"
+            ],
+            [
+              "Durchmesser",
+              "⌀28 cm"
+            ],
+            [
+              "Typ",
+              "Tiefe Bratpfanne"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Geschmiedetes Aluminium"
+            ],
+            [
+              "Beschichtung",
+              "Innovative Antihaftbeschichtung (neue Gen.)"
+            ],
+            [
+              "Griff",
+              "Ergonomisch"
+            ]
+          ],
+          "highlights": [
+            [
+              "Gleichmäßige Erwärmung",
+              "✓"
+            ],
+            [
+              "Neue Beschichtungsgeneration",
+              "✓"
+            ],
+            [
+              "Deformationsbeständig",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Pfannen-Set Transform Velmora",
@@ -146,7 +256,62 @@
           "Bequemer und ergonomischer Griff",
           "Geeignet für intensiven Einsatz",
           "Verzerrungsresistente Pfanne"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "2 Pfannen"
+            ],
+            [
+              "Durchmesser",
+              "⌀24 cm und ⌀26 cm"
+            ],
+            [
+              "Typ",
+              "Pfannkuchen- + Universalpfanne"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Geschmiedetes Aluminium"
+            ],
+            [
+              "Beschichtung",
+              "Antihaftbeschichtung"
+            ],
+            [
+              "Griff",
+              "Abnehmbar, ergonomisch"
+            ]
+          ],
+          "highlights": [
+            [
+              "Abnehmbarer Griff",
+              "✓"
+            ],
+            [
+              "Ofengeeignet",
+              "✓"
+            ],
+            [
+              "Gleichmäßige Erwärmung",
+              "✓"
+            ],
+            [
+              "Deformationsbeständig",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset mit Schöpfkelle Steil + GESCHENKE: Pfannenwender, Schöpflöffel, Kartoffelstampfer",
@@ -157,7 +322,62 @@
           "5-lagiger Kapselböden",
           "Sechs Elemente für jede Aufgabe",
           "Geeignet für alle Herdarten"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "9 Teile (6 Töpfe + 3 Utensilien)"
+            ],
+            [
+              "Volumen",
+              "1,2 l – 5,8 l"
+            ],
+            [
+              "Typ",
+              "Topfset mit Schöpfkelle"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl"
+            ],
+            [
+              "Boden",
+              "5-lagiger Kapselboden"
+            ],
+            [
+              "Griff",
+              "Ergonomisch"
+            ]
+          ],
+          "highlights": [
+            [
+              "Gleichmäßige Wärmeverteilung",
+              "✓"
+            ],
+            [
+              "Utensilien inkl.",
+              "✓"
+            ],
+            [
+              "6 Elemente für alle Aufgaben",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Kochgeschirr-Set 12-teilig Velmora Saporis und Pfannen Berlin 26, 28 cm",
@@ -169,7 +389,66 @@
           "Glasdeckel ermöglichen die Kontrolle des Gerichts ohne Wärmeverlust;",
           "Griffe erhitzen sich nicht;",
           "Vielseitigkeit: Set kompatibel mit allen Herdarten, einschließlich Induktion."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "12 Teile"
+            ],
+            [
+              "Volumen Töpfe",
+              "1,5 l – 5,0 l"
+            ],
+            [
+              "Pfannen",
+              "⌀26 cm und ⌀28 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten inkl. Induktion"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl Premium"
+            ],
+            [
+              "Boden",
+              "5-lagiger Kapselboden"
+            ],
+            [
+              "Deckel",
+              "Glas"
+            ],
+            [
+              "Griffe",
+              "Hitzebeständig"
+            ]
+          ],
+          "highlights": [
+            [
+              "Griffe erhitzen nicht",
+              "✓"
+            ],
+            [
+              "Induktionsgeeignet",
+              "✓"
+            ],
+            [
+              "Glasdeckel zur Kontrolle",
+              "✓"
+            ],
+            [
+              "Vollständiges Kochset",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset Steil Velmora mit Schöpfkelle",
@@ -180,7 +459,62 @@
           "hochwertiger Edelstahl (18/10),",
           "Deckel mit Dampfventil, Maßskala,",
           "spülmaschinenfest."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "6 Teile (5 Töpfe + Schöpfkelle)"
+            ],
+            [
+              "Volumen",
+              "1,2 l – 5,8 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀14 cm – ⌀24 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl (18/10)"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Deckel",
+              "Glas mit Dampfventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Maßskala innen",
+              "✓"
+            ],
+            [
+              "Dampfventil im Deckel",
+              "✓"
+            ],
+            [
+              "Spülmaschinenfest",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset Steil Velmora + GESCHENK: Pfannkuchenpfanne 24 cm Fry Power",
@@ -192,7 +526,62 @@
           "Gleichmäßige Erwärmung",
           "Geeignet für alle Herdarten",
           "Deckel aus gehärtetem Glas"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "7 Teile (6 Töpfe + Pfannkuchenpfanne)"
+            ],
+            [
+              "Volumen Töpfe",
+              "1,2 l – 5,8 l"
+            ],
+            [
+              "Pfannkuchenpfanne",
+              "⌀24 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl"
+            ],
+            [
+              "Boden",
+              "5-lagiger Kapselboden"
+            ],
+            [
+              "Deckel",
+              "Gehärtetes Glas"
+            ]
+          ],
+          "highlights": [
+            [
+              "Gleichmäßige Erwärmung",
+              "✓"
+            ],
+            [
+              "Pfannkuchenpfanne als Geschenk",
+              "✓"
+            ],
+            [
+              "Gehärtete Glasdeckel",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset Prime Chef Velmora mit Bratentopf",
@@ -202,7 +591,66 @@
           "5-lagiger wärmespeichernder Boden,",
           "Hochwertiger Edelstahl (18/10),",
           "Deckel mit Dampfventil."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "4 Teile (3 Töpfe + Pfanne ⌀24 cm)"
+            ],
+            [
+              "Volumen",
+              "2,1 l, 3,8 l, 6,3 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀16 cm, ⌀20 cm, ⌀24 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl (18/10)"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Pfannenbeschichtung",
+              "Antihaftbeschichtung"
+            ],
+            [
+              "Deckel",
+              "Mit Dampfventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Dampfventil im Deckel",
+              "✓"
+            ],
+            [
+              "Antihaft-Pfanne inkl.",
+              "✓"
+            ],
+            [
+              "Wärmespeichernder Boden",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Küchen-Set \"Premium\"",
@@ -213,7 +661,66 @@
           "Edelstahl der Premiumklasse;",
           "Bequeme Griffe und hitzebeständige Glasdeckel;",
           "Spezielle Konstruktion von Topf und Deckel zum Abgießen von Flüssigkeiten."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "4 Töpfe"
+            ],
+            [
+              "Volumen",
+              "1,8 l, 2,5 l, 3,5 l, 6,3 l"
+            ],
+            [
+              "Typ",
+              "Premium-Topfset"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl Premium"
+            ],
+            [
+              "Boden",
+              "5-lagiger Kapselboden"
+            ],
+            [
+              "Deckel",
+              "Hitzebeständiges Glas"
+            ],
+            [
+              "Griffe",
+              "Ergonomisch"
+            ]
+          ],
+          "highlights": [
+            [
+              "Flüssigkeit leicht abgießen",
+              "✓"
+            ],
+            [
+              "Spezielle Deckelkonstruktion",
+              "✓"
+            ],
+            [
+              "Premium-Qualität",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topf Smart Fry Velmora 6,6l mit Glasdeckel +GESCHENK: Pfannenwender, Schöpflöffel und Kartoffelstampfer",
@@ -225,7 +732,66 @@
           "Temperaturanzeige in Form einer Flamme",
           "Griffe mit Soft-Touch-Beschichtung",
           "Kompatibel mit allen Herdarten, einschließlich Induktion"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "4 Teile (Topf + 3 Utensilien)"
+            ],
+            [
+              "Volumen",
+              "6,6 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀28 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten inkl. Induktion"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Robustes geschmiedetes Aluminium"
+            ],
+            [
+              "Beschichtung",
+              "Greblon C2 Antihaftbeschichtung"
+            ],
+            [
+              "Griffe",
+              "Soft-Touch-Beschichtung"
+            ],
+            [
+              "Deckel",
+              "Glas"
+            ]
+          ],
+          "highlights": [
+            [
+              "Flammentemperaturanzeige",
+              "✓"
+            ],
+            [
+              "Induktionsgeeignet",
+              "✓"
+            ],
+            [
+              "Soft-Touch-Griffe",
+              "✓"
+            ],
+            [
+              "Utensilien als Geschenk",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Töpfe Velmora Serie Winzig 1,2 l und 0,7 l",
@@ -235,7 +801,62 @@
           "5-lagiger wärmespeichernder Boden,",
           "Hochwertiger Edelstahl (18/10),",
           "Deckel mit Dampfventil."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "2 Töpfe"
+            ],
+            [
+              "Volumen",
+              "0,7 l und 1,2 l"
+            ],
+            [
+              "Typ",
+              "Kleine Töpfe"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl (18/10)"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Deckel",
+              "Mit Dampfventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Kompaktgröße",
+              "✓"
+            ],
+            [
+              "Dampfventil im Deckel",
+              "✓"
+            ],
+            [
+              "Premium-Edelstahl 18/10",
+              "✓"
+            ],
+            [
+              "Wärmespeichernder Boden",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset Elite Velmora 1,3l, 1,9l, 4,7l",
@@ -246,7 +867,66 @@
           "Ergonomische Griffe mit Soft-Touch-Beschichtung.",
           "Hitzebeständige Litermarkierung.",
           "Hitzebeständiges Glas mit Dampfventil."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "4 Töpfe"
+            ],
+            [
+              "Volumen",
+              "1,3 l, 1,9 l, 4,7 l, 6,1 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀14 cm – ⌀24 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Deckel",
+              "Hitzebeständiges Glas mit Dampfventil"
+            ],
+            [
+              "Griffe",
+              "Soft-Touch-Beschichtung"
+            ]
+          ],
+          "highlights": [
+            [
+              "Soft-Touch-Griffe",
+              "✓"
+            ],
+            [
+              "Hitzebeständige Litermarkierung",
+              "✓"
+            ],
+            [
+              "Dampfventil im Deckel",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset Cook&Joy 4,6l, 3,5l, 1,8l und Pfannen Smart Fry Velmora + GESCHENKE: Pfannkuchenpfanne Smart Fry",
@@ -256,7 +936,62 @@
           "Heizungsanzeige in Form einer Flamme innen",
           "Hitzebeständiger Glasdeckel – Kontrolle ohne Öffnen.",
           "Edelstahl 18/10 – zuverlässige Basis zum Kochen."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "7+ Teile (Töpfe + Pfannen)"
+            ],
+            [
+              "Volumen Töpfe",
+              "1,8 l, 3,5 l, 4,6 l"
+            ],
+            [
+              "Typ",
+              "Komplettes Koch-Set"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl 18/10"
+            ],
+            [
+              "Deckel",
+              "Hitzebeständiges Glas"
+            ],
+            [
+              "Pfannenbeschichtung",
+              "Antihaftbeschichtung"
+            ]
+          ],
+          "highlights": [
+            [
+              "Flammentemperaturanzeige",
+              "✓"
+            ],
+            [
+              "Kontrolle ohne Öffnen",
+              "✓"
+            ],
+            [
+              "Pfannen inkl.",
+              "✓"
+            ],
+            [
+              "Edelstahl 18/10",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topf Velmora Moxie 6,5 l +GESCHENK: Untersetzer Velmora Galaxy",
@@ -268,7 +1003,66 @@
           "5-lagiger wärmespeichernder Induktionsboden;",
           "Spiegelpolierung innen und außen;",
           "Möglichkeit zum Abgießen von Flüssigkeiten dank der Topfkonstruktion (Ausguss), spezieller Deckel mit Abflussöffnungen."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "2 Teile (Topf + Untersetzer)"
+            ],
+            [
+              "Volumen",
+              "6,5 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀24 cm"
+            ],
+            [
+              "Wandstärke",
+              "0,5 mm"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl (Spiegelpolierung)"
+            ],
+            [
+              "Boden",
+              "5-lagiger Induktionsboden"
+            ],
+            [
+              "Deckel",
+              "Glas mit Abflussöffnungen"
+            ],
+            [
+              "Griffe",
+              "Mit Silikoneinlagen"
+            ]
+          ],
+          "highlights": [
+            [
+              "Spiegelpolierung innen & außen",
+              "✓"
+            ],
+            [
+              "Induktionsgeeignet",
+              "✓"
+            ],
+            [
+              "Silikon-Griffeinlagen",
+              "✓"
+            ],
+            [
+              "Ausguss zum Abgießen",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topf mit Deckel Smart Fry 2,3l, 6,6l",
@@ -278,7 +1072,58 @@
           "5-lagiger Kapselboden;",
           "Kompatibel mit allen Herdarten;",
           "Edelstahl 18/10 der Premiumklasse;"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "2 Töpfe"
+            ],
+            [
+              "Volumen",
+              "2,3 l und 6,6 l"
+            ],
+            [
+              "Typ",
+              "Topfset"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl 18/10 Premium"
+            ],
+            [
+              "Boden",
+              "5-lagiger Kapselboden"
+            ]
+          ],
+          "highlights": [
+            [
+              "Premium-Edelstahl 18/10",
+              "✓"
+            ],
+            [
+              "5-lagiger Kapselboden",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ],
+            [
+              "Langlebige Qualität",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set aus 2 Töpfen Prime Chef Velmora 3,6l, 6,1l + GESCHENK: Pfannenwender, Schöpflöffel, Pinsel",
@@ -291,7 +1136,66 @@
           "Klappbare Bakelit-Griffe;",
           "Integrierte Maßskala;",
           "Glasdeckel."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "5 Teile (2 Töpfe + 3 Utensilien)"
+            ],
+            [
+              "Volumen",
+              "3,6 l und 6,1 l"
+            ],
+            [
+              "Typ",
+              "Topfset mit Glasdeckeln"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl 18/10"
+            ],
+            [
+              "Boden",
+              "5-lagiger Kapselboden"
+            ],
+            [
+              "Deckel",
+              "Glas"
+            ],
+            [
+              "Griffe",
+              "Klappbare Bakelit-Griffe"
+            ]
+          ],
+          "highlights": [
+            [
+              "Klappbare Griffe",
+              "✓"
+            ],
+            [
+              "Eingebaute Maßskala",
+              "✓"
+            ],
+            [
+              "Utensilien als Geschenk",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topf mit Deckel 3,4 l Steil und Grillpfanne",
@@ -304,7 +1208,62 @@
           "Maßskala;",
           "Spülmaschinenfest;",
           "Kompatibel mit allen Herdarten"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "2 Teile (Topf + Grillpfanne)"
+            ],
+            [
+              "Volumen Topf",
+              "3,4 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀20 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl (18/10)"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Deckel",
+              "Mit Dampfventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Maßskala innen",
+              "✓"
+            ],
+            [
+              "Dampfventil im Deckel",
+              "✓"
+            ],
+            [
+              "Spülmaschinenfest",
+              "✓"
+            ],
+            [
+              "Grillpfanne inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset Steil und Pfanne Hamburg",
@@ -316,7 +1275,62 @@
           "Maßskala in den Töpfen",
           "Hitzebeständige Griffe mit Nieten",
           "Geeignet für alle Herdarten"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "3 Teile (2 Töpfe + Pfanne ⌀20 cm)"
+            ],
+            [
+              "Volumen Töpfe",
+              "3,4 l und 4,5 l"
+            ],
+            [
+              "Pfanne",
+              "Hamburg ⌀20 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Topfkörper",
+              "Edelstahl 18/10"
+            ],
+            [
+              "Pfannenbeschichtung",
+              "Antihaftbeschichtung"
+            ],
+            [
+              "Griffe",
+              "Hitzebeständig, Nieten"
+            ]
+          ],
+          "highlights": [
+            [
+              "Maßskala in Töpfen",
+              "✓"
+            ],
+            [
+              "Antihaft-Pfanne inkl.",
+              "✓"
+            ],
+            [
+              "Hitzebeständige Griffe",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset Fry Power",
@@ -328,7 +1342,66 @@
           "Äußere Marmorierung;",
           "Glasdeckel mit Dampfventil;",
           "Kompatibel mit allen Herdarten."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "3 Töpfe"
+            ],
+            [
+              "Volumen",
+              "2,3 l, 4,2 l, 6,4 l"
+            ],
+            [
+              "Typ",
+              "Topfset"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Geschmiedetes Aluminium"
+            ],
+            [
+              "Beschichtung",
+              "PTFE Antihaftbeschichtung"
+            ],
+            [
+              "Außenseite",
+              "Marmoroptik"
+            ],
+            [
+              "Deckel",
+              "Glas mit Dampfventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "PTFE-Antihaftbeschichtung",
+              "✓"
+            ],
+            [
+              "Marmoroptik außen",
+              "✓"
+            ],
+            [
+              "Glasdeckel mit Dampfventil",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set aus 2 Töpfen Steil Velmora und Schöpfkelle 1,2 l Steil",
@@ -339,7 +1412,62 @@
           "Hochwertiger Edelstahl (18/10);",
           "Deckel mit Dampfventil; Maßskala;",
           "Spülmaschinenfest."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "3 Teile (2 Töpfe + Schöpfkelle)"
+            ],
+            [
+              "Volumen",
+              "1,2 l, 3,4 l, 4,5 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀14 cm – ⌀22 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl (18/10)"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Deckel",
+              "Glas mit Dampfventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Maßskala innen",
+              "✓"
+            ],
+            [
+              "Dampfventil im Deckel",
+              "✓"
+            ],
+            [
+              "Spülmaschinenfest",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topf mit Deckel 2,7l und Schöpfkelle mit Deckel 2l Prime Chef Velmora",
@@ -351,7 +1479,66 @@
           "Ergonomische Griffe",
           "Hitzebeständige Litermarkierung",
           "Hitzebeständiges Glas mit Dampfventil"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "2 Teile (Topf + Schöpfkelle)"
+            ],
+            [
+              "Volumen",
+              "2,7 l (⌀18 cm) und 2,0 l (⌀16 cm)"
+            ],
+            [
+              "Typ",
+              "Topf + Schöpfkelle"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Deckel",
+              "Hitzebeständiges Glas mit Dampfventil"
+            ],
+            [
+              "Griffe",
+              "Ergonomisch"
+            ]
+          ],
+          "highlights": [
+            [
+              "Ergonomische Griffe",
+              "✓"
+            ],
+            [
+              "Hitzebeständige Litermarkierung",
+              "✓"
+            ],
+            [
+              "Dampfventil im Deckel",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset Prime Chef Velmora 8-teilig",
@@ -362,7 +1549,66 @@
           "Ergonomische Griffe.",
           "Hitzebeständige Litermarkierung.",
           "Hitzebeständiges Glas mit Dampfventil."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "8 Teile (Töpfe + Schöpfkelle + Deckel)"
+            ],
+            [
+              "Volumen",
+              "2,0 l, 2,7 l, 4,7 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀16 cm – ⌀22 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Deckel",
+              "Hitzebeständiges Glas mit Dampfventil"
+            ],
+            [
+              "Griffe",
+              "Ergonomisch"
+            ]
+          ],
+          "highlights": [
+            [
+              "Ergonomische Griffe",
+              "✓"
+            ],
+            [
+              "Hitzebeständige Litermarkierung",
+              "✓"
+            ],
+            [
+              "Dampfventil im Deckel",
+              "✓"
+            ],
+            [
+              "Vollständiges 8-teiliges Set",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset mit Schöpfkelle 10-teilig Cook&Joy",
@@ -373,7 +1619,62 @@
           "5-lagiger Kapselboden — gleichmäßige Wärme ohne Anbrennen",
           "Funktionale Deckel aus gehärtetem Glas",
           "Innere Maßskala — Präzision für tägliche Rezepte"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "10 Teile (5 Töpfe + Schöpfkelle + Deckel)"
+            ],
+            [
+              "Volumen",
+              "1,8 l – 5,8 l"
+            ],
+            [
+              "Typ",
+              "Komplettes Topfset"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl 18/10"
+            ],
+            [
+              "Boden",
+              "5-lagiger Kapselboden"
+            ],
+            [
+              "Deckel",
+              "Gehärtetes Glas"
+            ]
+          ],
+          "highlights": [
+            [
+              "Gleichmäßige Erwärmung",
+              "✓"
+            ],
+            [
+              "Interne Maßskala",
+              "✓"
+            ],
+            [
+              "Kein Anbrennen",
+              "✓"
+            ],
+            [
+              "Gehärtete Glasdeckel",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset Elegance und Schöpfkelle",
@@ -383,7 +1684,62 @@
           "Möglichkeit zum Abgießen von Flüssigkeiten beim Fixieren des Deckels mit beweglichen Seitengriffen;",
           "Deckelgriff-Geometrie ermöglicht die Aufnahme von Küchengeräten;",
           "Griffe mit Soft-Touch-Beschichtung."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "4 Teile (3 Töpfe + Pfanne ⌀26 cm)"
+            ],
+            [
+              "Volumen",
+              "2,0 l, 3,7 l, 6,3 l"
+            ],
+            [
+              "Pfanne",
+              "⌀26 cm, abnehmbarer Griff"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl"
+            ],
+            [
+              "Deckel",
+              "Glas"
+            ],
+            [
+              "Griffe",
+              "Soft-Touch-Beschichtung"
+            ]
+          ],
+          "highlights": [
+            [
+              "Flüssigkeit mit Deckel abgießen",
+              "✓"
+            ],
+            [
+              "Soft-Touch-Griffe",
+              "✓"
+            ],
+            [
+              "Abnehmbarer Pfannengriff",
+              "✓"
+            ],
+            [
+              "Elegantes Design",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topf 6,3 l Herzog Velmora",
@@ -393,7 +1749,62 @@
           "Deckel mit Abflussöffnungen.",
           "5-lagiger wärmespeichernder Boden.",
           "Litermarkierung"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "1 Topf"
+            ],
+            [
+              "Volumen",
+              "6,3 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀24 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Deckel",
+              "Glas mit Abflussöffnungen"
+            ]
+          ],
+          "highlights": [
+            [
+              "Abflussöffnungen im Deckel",
+              "✓"
+            ],
+            [
+              "Interne Litermarkierung",
+              "✓"
+            ],
+            [
+              "Wärmespeichernder Boden",
+              "✓"
+            ],
+            [
+              "Großes Fassungsvermögen",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset mit Deckeln Steil Velmora + GESCHENKE: Schneidebrett",
@@ -405,7 +1816,66 @@
           "Deckel mit Dampfventil,",
           "Maßskala,",
           "Spülmaschinenfest."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "4 Teile (3 Töpfe + Schneidebrett)"
+            ],
+            [
+              "Volumen",
+              "2,5 l, 3,4 l, 4,5 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀18 cm – ⌀22 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl (18/10)"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Deckel",
+              "Glas mit Dampfventil"
+            ],
+            [
+              "Schneidebrett",
+              "Kunststoff"
+            ]
+          ],
+          "highlights": [
+            [
+              "Maßskala innen",
+              "✓"
+            ],
+            [
+              "Dampfventil im Deckel",
+              "✓"
+            ],
+            [
+              "Spülmaschinenfest",
+              "✓"
+            ],
+            [
+              "Schneidebrett als Geschenk",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Topfset 6-teilig Steil Velmora",
@@ -417,7 +1887,62 @@
           "Deckel mit Dampfventil;",
           "Maßskala;",
           "Spülmaschinenfest."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "6 Teile (3 Töpfe + 3 Deckel)"
+            ],
+            [
+              "Volumen",
+              "2,5 l, 3,4 l, 4,5 l"
+            ],
+            [
+              "Durchmesser",
+              "⌀18 cm – ⌀22 cm"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl (18/10)"
+            ],
+            [
+              "Boden",
+              "5-lagiger wärmespeichernder Boden"
+            ],
+            [
+              "Deckel",
+              "Glas mit Dampfventil"
+            ]
+          ],
+          "highlights": [
+            [
+              "Maßskala innen",
+              "✓"
+            ],
+            [
+              "Dampfventil im Deckel",
+              "✓"
+            ],
+            [
+              "Spülmaschinenfest",
+              "✓"
+            ],
+            [
+              "Alle Herdarten",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Messer-Set auf Halter Prime Chef Velmora",
@@ -428,7 +1953,62 @@
           "Hochwertiger Edelstahl",
           "Ergonomische Griffe",
           "Stilvolles Design"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "6 Teile (5 Messer + Halter)"
+            ],
+            [
+              "Kochmesser",
+              "20,5 cm"
+            ],
+            [
+              "Brotmesser",
+              "20,8 cm"
+            ],
+            [
+              "Universalmesser",
+              "12,8 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Klinge",
+              "Hochwertiger Edelstahl"
+            ],
+            [
+              "Konstruktion",
+              "Vollmetall"
+            ],
+            [
+              "Griff",
+              "Ergonomisch integriert"
+            ]
+          ],
+          "highlights": [
+            [
+              "Vollmetallkonstruktion",
+              "✓"
+            ],
+            [
+              "Stilvolles Design",
+              "✓"
+            ],
+            [
+              "Ergonomische Griffe",
+              "✓"
+            ],
+            [
+              "Inkl. Halter",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Messer-Set Luxus",
@@ -438,7 +2018,58 @@
           "Klingen aus hochwertigem Stahl X30Cr14 — korrosionsbeständig, langanhaltend scharf",
           "Ergonomische Griffe aus ABS-Kunststoff — robust, rutschfest, angenehm zu greifen",
           "Ideal für den täglichen Einsatz in jeder Küche"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "5 Messer + Halter"
+            ],
+            [
+              "Klingentyp",
+              "Spezialmesser"
+            ],
+            [
+              "Stahl",
+              "X30Cr14"
+            ],
+            [
+              "Verwendung",
+              "Täglicher Gebrauch"
+            ]
+          ],
+          "materials": [
+            [
+              "Klinge",
+              "Stahl X30Cr14"
+            ],
+            [
+              "Griff",
+              "ABS-Kunststoff (ergonomisch)"
+            ]
+          ],
+          "highlights": [
+            [
+              "Korrosionsbeständig",
+              "✓"
+            ],
+            [
+              "Lange Schärfe",
+              "✓"
+            ],
+            [
+              "Rutschfeste Griffe",
+              "✓"
+            ],
+            [
+              "Ideal für Alltag",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set aus 5 Messern auf Halter Prime Chef Velmora",
@@ -449,7 +2080,62 @@
           "Robuste Griffe;",
           "Stilvoller Holzhalter;",
           "Einfache Pflege."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "6 Teile (5 Messer + Holzhalter)"
+            ],
+            [
+              "Kochmesser",
+              "20,5 cm"
+            ],
+            [
+              "Santokumesser",
+              "17,5 cm und 13,5 cm"
+            ],
+            [
+              "Universalmesser",
+              "12,5 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Klinge",
+              "Edelstahl"
+            ],
+            [
+              "Griff",
+              "Robust"
+            ],
+            [
+              "Halter",
+              "Holz"
+            ]
+          ],
+          "highlights": [
+            [
+              "Stilvoller Holzhalter",
+              "✓"
+            ],
+            [
+              "Vollständiges Messerset",
+              "✓"
+            ],
+            [
+              "Einfache Pflege",
+              "✓"
+            ],
+            [
+              "Scharfe Klingen",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set aus 5 Messern Solvar Velmora",
@@ -460,7 +2146,58 @@
           "Durchgehende Klingen;",
           "Vollständiges Set;",
           "Stilvoller Block."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "6 Teile (5 Messer + Block)"
+            ],
+            [
+              "Kochmesser",
+              "20,5 cm"
+            ],
+            [
+              "Santokumesser",
+              "17,5 cm und 13,5 cm"
+            ],
+            [
+              "Gemüsemesser",
+              "9 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Klinge",
+              "Edelstahl (durchgehend)"
+            ],
+            [
+              "Block",
+              "Stilvoll"
+            ]
+          ],
+          "highlights": [
+            [
+              "Perfekte Schärfe",
+              "✓"
+            ],
+            [
+              "Durchgehende Klingen",
+              "✓"
+            ],
+            [
+              "Stilvoller Block",
+              "✓"
+            ],
+            [
+              "Vollständiges Set",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Messer-Set auf Halter Prime Chef",
@@ -471,7 +2208,58 @@
           "Ergonomische Griffe aus ABS-Kunststoff",
           "Optimale Balance",
           "Modernes Design"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "6 Teile (5 Messer + Block)"
+            ],
+            [
+              "Kochmesser",
+              "20,5 cm"
+            ],
+            [
+              "Santokumesser",
+              "17,5 cm und 13,5 cm"
+            ],
+            [
+              "Gemüsemesser",
+              "9 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Klinge",
+              "Hochwertiger Edelstahl"
+            ],
+            [
+              "Griff",
+              "ABS-Kunststoff (ergonomisch)"
+            ]
+          ],
+          "highlights": [
+            [
+              "Optimale Balance",
+              "✓"
+            ],
+            [
+              "Ergonomische Griffe",
+              "✓"
+            ],
+            [
+              "Modernes Design",
+              "✓"
+            ],
+            [
+              "ABS-Griffe rutschfest",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Glasbehälter-Set Locker + GESCHENKE: Thermobecher Komfort 380 ml 2 Stk",
@@ -482,7 +2270,62 @@
           "Hitzebeständiges Glas",
           "Für die Mikrowelle geeignet (ohne Deckel)",
           "Universelle Aufbewahrungsmöglichkeiten"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "6 Teile (4 Behälter + 2 Thermobecher)"
+            ],
+            [
+              "Volumina",
+              "380 ml, 640 ml, 1040 ml, 1500 ml"
+            ],
+            [
+              "Thermobecher",
+              "380 ml (×2)"
+            ],
+            [
+              "Typ",
+              "Lebensmittelbehälter"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Hitzebeständiges Glas"
+            ],
+            [
+              "Deckel",
+              "Mit Silikon-Dichtungen"
+            ],
+            [
+              "Thermobecher",
+              "Isoliermaterial"
+            ]
+          ],
+          "highlights": [
+            [
+              "Luftdichte Versiegelung",
+              "✓"
+            ],
+            [
+              "Mikrowellengeeignet (ohne Deckel)",
+              "✓"
+            ],
+            [
+              "Thermobecher als Geschenk",
+              "✓"
+            ],
+            [
+              "Universelle Aufbewahrung",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Set Glasbehälter zur Aufbewahrung und Thermosflasche 600ml",
@@ -492,7 +2335,58 @@
           "Deckel mit innovativem Öffnungsmechanismus;",
           "Tagesanzahl auf den Deckeln;",
           "Verschiedene Größen;"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "4 Teile (3 Behälter + Thermosflasche)"
+            ],
+            [
+              "Volumina",
+              "0,58 l, 0,84 l, 1,7 l"
+            ],
+            [
+              "Thermosflasche",
+              "600 ml"
+            ],
+            [
+              "Höhe",
+              "13 cm – 30 cm"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Glas"
+            ],
+            [
+              "Deckel",
+              "Innovativer Öffnungsmechanismus"
+            ]
+          ],
+          "highlights": [
+            [
+              "Innovativer Deckelöffner",
+              "✓"
+            ],
+            [
+              "Tagesanzahl auf Deckeln",
+              "✓"
+            ],
+            [
+              "Thermosflasche inkl.",
+              "✓"
+            ],
+            [
+              "Verschiedene Größen",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Wasserkocher Velmora Nebion 3 l",
@@ -503,7 +2397,62 @@
           "Präzise Griffgeometrie.",
           "Dreilagiger ferromagnetischer Boden",
           "Sicheres und kontrolliertes Einschenken."
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "1 Wasserkocher"
+            ],
+            [
+              "Volumen",
+              "3 l"
+            ],
+            [
+              "Typ",
+              "Wasserkocher"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten inkl. Induktion"
+            ]
+          ],
+          "materials": [
+            [
+              "Körper",
+              "Edelstahl"
+            ],
+            [
+              "Boden",
+              "Dreilagiger ferromagnetischer Boden"
+            ],
+            [
+              "Griff",
+              "Ergonomisch"
+            ]
+          ],
+          "highlights": [
+            [
+              "Elegante Linienführung",
+              "✓"
+            ],
+            [
+              "Sicheres Einschenken",
+              "✓"
+            ],
+            [
+              "Ferromagnetischer Boden",
+              "✓"
+            ],
+            [
+              "Induktionsgeeignet",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Keramik-Kochgeschirr-Sets 15-teilig. Topf- und Pfannen-Set mit Antihaftbeschichtung (schwarz 15)",
@@ -515,7 +2464,62 @@
           "Geschirr leicht zu reinigen",
           "Geeignet für alle Herdarten",
           "Nicht erhitzende Bakelit-Griffe"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "15 Teile"
+            ],
+            [
+              "Inkl.",
+              "Frittierformen, Schmordeckel, Utensilien, Schutzhüllen"
+            ],
+            [
+              "Typ",
+              "Keramik-Kochgeschirr"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten"
+            ]
+          ],
+          "materials": [
+            [
+              "Beschichtung",
+              "Keramische Antihaftbeschichtung"
+            ],
+            [
+              "Griffe",
+              "Bakelit (nicht erhitzend)"
+            ],
+            [
+              "Farbe",
+              "Schwarz"
+            ]
+          ],
+          "highlights": [
+            [
+              "Sicher & ungiftig",
+              "✓"
+            ],
+            [
+              "Kratzfest",
+              "✓"
+            ],
+            [
+              "Leicht zu reinigen",
+              "✓"
+            ],
+            [
+              "4 Schutzhüllen inkl.",
+              "✓"
+            ]
+          ]
+        }
       },
       {
         "name": "Keramik-Topf- und Pfannen-Set Kikcoin 16-teilig mit Antihaftbeschichtung, inklusive 9,5-Zoll-Grillpfanne, Induktions-Kochgeschirr-Set",
@@ -527,7 +2531,58 @@
           "Geschirr leicht zu reinigen",
           "Geeignet für alle Herdarten",
           "Nicht erhitzende Bakelit-Griffe"
-        ]
+        ],
+        "specs": {
+          "detailsLabel": "Produktdetails",
+          "materialsLabel": "Materialien",
+          "highlightsLabel": "Besonderheiten",
+          "details": [
+            [
+              "Anzahl",
+              "16 Teile"
+            ],
+            [
+              "Inkl.",
+              "Grillpfanne 9,5 Zoll"
+            ],
+            [
+              "Typ",
+              "Induktions-Kochgeschirr-Set"
+            ],
+            [
+              "Kompatibilität",
+              "Alle Herdarten inkl. Induktion"
+            ]
+          ],
+          "materials": [
+            [
+              "Beschichtung",
+              "Keramische Antihaftbeschichtung (natürliche Mineralien)"
+            ],
+            [
+              "Griffe",
+              "Bakelit (nicht erhitzend)"
+            ]
+          ],
+          "highlights": [
+            [
+              "Keine Dämpfe bei Überhitzung",
+              "✓"
+            ],
+            [
+              "Induktionsgeeignet",
+              "✓"
+            ],
+            [
+              "Natürliche Mineralien",
+              "✓"
+            ],
+            [
+              "Leicht zu reinigen",
+              "✓"
+            ]
+          ]
+        }
       }
     ]
   },

@@ -3,9 +3,11 @@ import Link from 'next/link';
 import { getMessages } from '@/lib/i18n';
 import { getProductById, PRODUCT_DATA } from '@/lib/products';
 import { getProductImages } from '@/lib/product-images';
+import { getProductReviews, type Review } from '@/lib/reviews';
 import L1AddToCartButton from './L1AddToCartButton';
 import L1Footer from '../../components/L1Footer';
 import ProductImageSlider from '@/components/ProductImageSlider';
+import ProductSpecsTables from '@/app/product/[id]/ProductSpecsTables';
 
 const LOGO_TEXT = 'Emerald Craft';
 
@@ -13,32 +15,83 @@ export async function generateStaticParams() {
   return PRODUCT_DATA.map(p => ({ id: String(p.id) }));
 }
 
-function Stars({ rating }: { rating: number }) {
+function Stars({ rating, size = 18 }: { rating: number; size?: number }) {
+  const uid = `s${Math.round(rating * 10)}`;
   return (
-    <span className="inline-flex gap-1">
-      {[1,2,3,4,5].map(i => (
-        <svg key={i} width="18" height="18" viewBox="0 0 24 24" fill={i <= rating ? '#D97706' : 'none'} stroke="#D97706" strokeWidth="1.5">
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-        </svg>
-      ))}
+    <span className="inline-flex gap-0.5">
+      {[1, 2, 3, 4, 5].map(i => {
+        const fill = Math.min(1, Math.max(0, rating - (i - 1)));
+        const partial = fill > 0 && fill < 1;
+        const clipId = `cp-${uid}-${i}`;
+        return (
+          <svg key={i} width={size} height={size} viewBox="0 0 24 24">
+            {partial && (
+              <defs>
+                <clipPath id={clipId}>
+                  <rect x="0" y="0" width={24 * fill} height="24" />
+                </clipPath>
+              </defs>
+            )}
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="#FEE2E2" />
+            {fill > 0 && (
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                fill="#DC2626"
+                clipPath={partial ? `url(#${clipId})` : undefined}
+              />
+            )}
+          </svg>
+        );
+      })}
     </span>
+  );
+}
+
+function ReviewCard({ review }: { review: Review }) {
+  const initials = review.author.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  return (
+    <div className="bg-white border border-[#FECACA] p-5 flex flex-col gap-3">
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-full bg-[#FEE2E2] flex items-center justify-center flex-shrink-0">
+            <span className="text-xs font-semibold text-[#DC2626]">{initials}</span>
+          </div>
+          <div>
+            <p className="text-sm font-medium text-[#111827]">{review.author}</p>
+            <Stars rating={review.rating} size={12} />
+          </div>
+        </div>
+        <span className="text-xs text-[#6B7280] whitespace-nowrap">{review.date}</span>
+      </div>
+      <p className="text-sm text-[#374151] leading-relaxed">{review.text}</p>
+    </div>
   );
 }
 
 export default async function L1ProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const { land1 } = await getMessages();
+  const { land1, common } = await getMessages();
   const data = getProductById(Number(id));
   if (!data) notFound();
 
   const idx = data.id - 1;
+  type SpecRow = [string, string];
   const locale = land1.catalog.products[idx] as {
     name: string; material: string; desc?: string; features?: string[];
+    specs?: {
+      detailsLabel: string; materialsLabel: string; highlightsLabel: string;
+      details: SpecRow[]; materials: SpecRow[]; highlights: SpecRow[];
+    };
   };
   const name = locale?.name ?? '';
   const material = locale?.material ?? '';
   const desc = locale?.desc ?? '';
   const features = locale?.features ?? [];
+
+  const reviews = getProductReviews(data.articleKey);
+  const avgRating = reviews.length
+    ? Math.round(reviews.reduce((s, r) => s + r.rating, 0) / reviews.length * 10) / 10
+    : data.rating;
 
   const images = getProductImages(data.articleKey);
   const discountPct = data.oldPrice ? Math.round((1 - data.price / data.oldPrice) * 100) : null;
@@ -88,7 +141,8 @@ export default async function L1ProductPage({ params }: { params: Promise<{ id: 
             <h1 className="text-2xl md:text-3xl font-light text-[#111827] mb-5 leading-snug">{name}</h1>
 
             <div className="flex items-center gap-3 mb-6">
-              <Stars rating={data.rating} />
+              <Stars rating={avgRating} />
+              <span className="text-base font-semibold text-[#111827]">{avgRating.toFixed(1)}</span>
               <span className="text-sm text-[#6B7280]">({data.reviews})</span>
             </div>
 
@@ -131,6 +185,35 @@ export default async function L1ProductPage({ params }: { params: Promise<{ id: 
             </div>
           </div>
         </div>
+
+        {/* Specs tables */}
+        {locale?.specs && <ProductSpecsTables specs={locale.specs} />}
+
+        {/* Reviews */}
+        {reviews.length > 0 && (
+          <section className="mt-16">
+            <div className="flex items-end gap-4 mb-8">
+              <h2 className="text-xl font-light text-[#111827]">{common.reviews.title}</h2>
+              <span className="text-sm text-[#6B7280] mb-0.5">
+                {common.reviews.basedOn.replace('{count}', String(reviews.length))}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-4 mb-8 p-5 bg-white border border-[#FECACA] w-fit">
+              <span className="text-4xl font-light text-[#111827]">{avgRating.toFixed(1)}</span>
+              <div>
+                <Stars rating={avgRating} size={20} />
+                <p className="text-xs text-[#6B7280] mt-1">{common.reviews.average}</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {reviews.map((review, i) => (
+                <ReviewCard key={i} review={review} />
+              ))}
+            </div>
+          </section>
+        )}
 
         {related.length > 0 && (
           <section className="border-t border-[#FECACA] pt-14">

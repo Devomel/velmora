@@ -67,10 +67,9 @@
     },
     "categoryMap": {
       "all": "Alle",
-      "pans": "Pfannen",
       "pots": "Töpfe",
-      "accessories": "Zubehör",
-      "sets": "Sets"
+      "pans": "Pfannen",
+      "other": "Sonstiges"
     },
     "priceFilters": [
       "Alle Preise",

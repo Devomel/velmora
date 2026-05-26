@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { loadAllReviewCounts, loadAverageRatings } from './reviews';
+import { POT_ARTICLE_KEYS, PAN_ARTICLE_KEYS } from './categories';
 
 export type ProductData = {
    id: number;
@@ -13,46 +14,55 @@ export type ProductData = {
    categoryKey: string;
 };
 
-type Meta = Omit<ProductData, 'price' | 'oldPrice'>;
+type Meta = Omit<ProductData, 'price' | 'oldPrice' | 'categoryKey'>;
+
+const potSet = new Set(POT_ARTICLE_KEYS);
+const panSet = new Set(PAN_ARTICLE_KEYS);
+
+function categoryKeyFor(articleKey: string): string {
+   if (panSet.has(articleKey)) return 'pans';
+   if (potSet.has(articleKey)) return 'pots';
+   return 'other';
+}
 
 const STATIC_META: Meta[] = [
-   { id: 1,  articleKey: '55-333-477', rating: 5, reviews: 55,  badge: 'sale', categoryKey: 'pans' },
-   { id: 2,  articleKey: '55-333-527', rating: 5, reviews: 78,  badge: 'sale', categoryKey: 'pans' },
-   { id: 3,  articleKey: '28546',      rating: 4, reviews: 101, badge: 'sale', categoryKey: 'pans' },
-   { id: 4,  articleKey: '55-333-675', rating: 5, reviews: 124, badge: 'sale', categoryKey: 'pots' },
-   { id: 5,  articleKey: '55-333-644', rating: 5, reviews: 27,  badge: 'sale', categoryKey: 'pots' },
-   { id: 6,  articleKey: '28473',      rating: 4, reviews: 50,  badge: 'sale', categoryKey: 'pots' },
-   { id: 7,  articleKey: '28567',      rating: 5, reviews: 73,  badge: 'sale', categoryKey: 'pots' },
-   { id: 8,  articleKey: '55-333-554', rating: 5, reviews: 96,  badge: 'sale', categoryKey: 'pots' },
-   { id: 9,  articleKey: '28460',      rating: 4, reviews: 119, badge: 'sale', categoryKey: 'pots' },
-   { id: 10, articleKey: '55-333-535', rating: 5, reviews: 22,  badge: 'sale', categoryKey: 'pots' },
-   { id: 11, articleKey: '28480',      rating: 5, reviews: 45,  badge: 'sale', categoryKey: 'pots' },
-   { id: 12, articleKey: '55-333-419', rating: 4, reviews: 68,  badge: 'sale', categoryKey: 'pots' },
-   { id: 13, articleKey: '55-333-462', rating: 5, reviews: 91,  badge: 'sale', categoryKey: 'pots' },
-   { id: 14, articleKey: '28827',      rating: 5, reviews: 114, badge: 'sale', categoryKey: 'pots' },
-   { id: 15, articleKey: '55-333-641', rating: 4, reviews: 17,  badge: 'sale', categoryKey: 'pots' },
-   { id: 16, articleKey: '55-333-571', rating: 5, reviews: 40,  badge: 'sale', categoryKey: 'pots' },
-   { id: 17, articleKey: '55-333-387', rating: 5, reviews: 63,  badge: 'sale', categoryKey: 'pots' },
-   { id: 18, articleKey: '28483',      rating: 4, reviews: 86,  badge: 'sale', categoryKey: 'pots' },
-   { id: 19, articleKey: '55-333-621', rating: 5, reviews: 109, badge: 'sale', categoryKey: 'pots' },
-   { id: 20, articleKey: '28471',      rating: 5, reviews: 132, badge: 'sale', categoryKey: 'pots' },
-   { id: 21, articleKey: '28528',      rating: 4, reviews: 35,  badge: 'sale', categoryKey: 'pots' },
-   { id: 22, articleKey: '55-333-464', rating: 5, reviews: 58,  badge: 'sale', categoryKey: 'pots' },
-   { id: 23, articleKey: '28718',      rating: 5, reviews: 81,  badge: 'sale', categoryKey: 'pots' },
-   { id: 24, articleKey: '28719',      rating: 4, reviews: 104, badge: 'sale', categoryKey: 'pots' },
-   { id: 25, articleKey: '28729',      rating: 5, reviews: 127, badge: 'sale', categoryKey: 'pots' },
-   { id: 26, articleKey: '55-333-374', rating: 5, reviews: 30,  badge: 'sale', categoryKey: 'pots' },
-   { id: 27, articleKey: '55-333-400', rating: 4, reviews: 53,  badge: 'sale', categoryKey: 'pots' },
-   { id: 28, articleKey: '55-333-410', rating: 5, reviews: 76,  badge: 'sale', categoryKey: 'accessories' },
-   { id: 29, articleKey: '55-333-418', rating: 5, reviews: 99,  badge: 'sale', categoryKey: 'accessories' },
-   { id: 30, articleKey: '55-333-635', rating: 4, reviews: 122, badge: 'sale', categoryKey: 'accessories' },
-   { id: 31, articleKey: '55-333-562', rating: 5, reviews: 25,  badge: 'sale', categoryKey: 'accessories' },
-   { id: 32, articleKey: '28252',      rating: 5, reviews: 48,  badge: 'sale', categoryKey: 'accessories' },
-   { id: 33, articleKey: '55-333-676', rating: 4, reviews: 71,  badge: 'sale', categoryKey: 'accessories' },
-   { id: 34, articleKey: '55-333-351', rating: 5, reviews: 94,  badge: 'sale', categoryKey: 'accessories' },
-   { id: 35, articleKey: '55-333-524', rating: 5, reviews: 117, badge: 'sale', categoryKey: 'accessories' },
-   { id: 36, articleKey: 'кераміка_1', rating: 4, reviews: 20,  badge: 'sale', categoryKey: 'sets' },
-   { id: 37, articleKey: 'кераміка_2', rating: 5, reviews: 43,  badge: 'sale', categoryKey: 'sets' },
+   { id: 1,  articleKey: '55-333-477', rating: 5, reviews: 55,  badge: 'sale' },
+   { id: 2,  articleKey: '55-333-527', rating: 5, reviews: 78,  badge: 'sale' },
+   { id: 3,  articleKey: '28546',      rating: 4, reviews: 101, badge: 'sale' },
+   { id: 4,  articleKey: '55-333-675', rating: 5, reviews: 124, badge: 'sale' },
+   { id: 5,  articleKey: '55-333-644', rating: 5, reviews: 27,  badge: 'sale' },
+   { id: 6,  articleKey: '28473',      rating: 4, reviews: 50,  badge: 'sale' },
+   { id: 7,  articleKey: '28567',      rating: 5, reviews: 73,  badge: 'sale' },
+   { id: 8,  articleKey: '55-333-554', rating: 5, reviews: 96,  badge: 'sale' },
+   { id: 9,  articleKey: '28460',      rating: 4, reviews: 119, badge: 'sale' },
+   { id: 10, articleKey: '55-333-535', rating: 5, reviews: 22,  badge: 'sale' },
+   { id: 11, articleKey: '28480',      rating: 5, reviews: 45,  badge: 'sale' },
+   { id: 12, articleKey: '55-333-419', rating: 4, reviews: 68,  badge: 'sale' },
+   { id: 13, articleKey: '55-333-462', rating: 5, reviews: 91,  badge: 'sale' },
+   { id: 14, articleKey: '28827',      rating: 5, reviews: 114, badge: 'sale' },
+   { id: 15, articleKey: '55-333-641', rating: 4, reviews: 17,  badge: 'sale' },
+   { id: 16, articleKey: '55-333-571', rating: 5, reviews: 40,  badge: 'sale' },
+   { id: 17, articleKey: '55-333-387', rating: 5, reviews: 63,  badge: 'sale' },
+   { id: 18, articleKey: '28483',      rating: 4, reviews: 86,  badge: 'sale' },
+   { id: 19, articleKey: '55-333-621', rating: 5, reviews: 109, badge: 'sale' },
+   { id: 20, articleKey: '28471',      rating: 5, reviews: 132, badge: 'sale' },
+   { id: 21, articleKey: '28528',      rating: 4, reviews: 35,  badge: 'sale' },
+   { id: 22, articleKey: '55-333-464', rating: 5, reviews: 58,  badge: 'sale' },
+   { id: 23, articleKey: '28718',      rating: 5, reviews: 81,  badge: 'sale' },
+   { id: 24, articleKey: '28719',      rating: 4, reviews: 104, badge: 'sale' },
+   { id: 25, articleKey: '28729',      rating: 5, reviews: 127, badge: 'sale' },
+   { id: 26, articleKey: '55-333-374', rating: 5, reviews: 30,  badge: 'sale' },
+   { id: 27, articleKey: '55-333-400', rating: 4, reviews: 53,  badge: 'sale' },
+   { id: 28, articleKey: '55-333-410', rating: 5, reviews: 76,  badge: 'sale' },
+   { id: 29, articleKey: '55-333-418', rating: 5, reviews: 99,  badge: 'sale' },
+   { id: 30, articleKey: '55-333-635', rating: 4, reviews: 122, badge: 'sale' },
+   { id: 31, articleKey: '55-333-562', rating: 5, reviews: 25,  badge: 'sale' },
+   { id: 32, articleKey: '28252',      rating: 5, reviews: 48,  badge: 'sale' },
+   { id: 33, articleKey: '55-333-676', rating: 4, reviews: 71,  badge: 'sale' },
+   { id: 34, articleKey: '55-333-351', rating: 5, reviews: 94,  badge: 'sale' },
+   { id: 35, articleKey: '55-333-524', rating: 5, reviews: 117, badge: 'sale' },
+   { id: 36, articleKey: 'кераміка_1', rating: 4, reviews: 20,  badge: 'sale' },
+   { id: 37, articleKey: 'кераміка_2', rating: 5, reviews: 43,  badge: 'sale' },
 ];
 
 function loadCsvPrices(): Map<string, number> {
@@ -80,6 +90,7 @@ export const PRODUCT_DATA: ProductData[] = STATIC_META.map(meta => {
    const price = csvPrices.get(meta.articleKey) ?? 0;
    return {
       ...meta,
+      categoryKey: categoryKeyFor(meta.articleKey),
       price,
       oldPrice: Math.round(price * 1.25),
       reviews: reviewCounts.get(meta.articleKey) ?? meta.reviews,
