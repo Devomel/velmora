@@ -47,7 +47,7 @@ export default function MonoPage({ t, newPrice, oldPrice, image }: Props) {
 
       {/* ─── UTP HEADER STRIP ─── */}
       <div className="bg-[#1A1410] text-white py-2.5 px-4">
-        <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-1.5 text-xs font-medium">
+        <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-x-8 md:gap-x-24 gap-y-1.5 text-xs md:text-base font-medium">
           <span className="flex items-center gap-1.5">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11 14 15 10" />
