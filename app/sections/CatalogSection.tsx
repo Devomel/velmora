@@ -92,24 +92,26 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPre
          <div className="p-4 flex flex-col flex-1">
             <h3 className="text-sm font-medium text-[#1A1410] mb-2 leading-snug line-clamp-2">{product.name}</h3>
 
-            <div className="flex items-center gap-2 mb-3">
-               <Stars rating={product.rating} />
-               <span className="text-xs text-[#9C8A7E]">({product.reviews})</span>
-            </div>
+            <div className="mt-auto">
+               <div className="flex items-center gap-2 mb-3">
+                  <Stars rating={product.rating} />
+                  <span className="text-xs text-[#9C8A7E]">({product.reviews})</span>
+               </div>
 
-            <div className="flex items-center gap-2 mb-1">
-               <span className="text-lg font-semibold text-[#1A1410]">€{product.price}</span>
-               {product.oldPrice && (
-                  <span className="text-xs text-[#9C8A7E] line-through">€{product.oldPrice}</span>
-               )}
-            </div>
+               <div className="flex items-center gap-2 mb-1">
+                  <span className="text-lg font-semibold text-[#1A1410]">€{product.price}</span>
+                  {product.oldPrice && (
+                     <span className="text-xs text-[#9C8A7E] line-through">€{product.oldPrice}</span>
+                  )}
+               </div>
 
-            <button
-               onClick={e => { e.preventDefault(); addItem({ id: product.id, name: product.name, price: product.price, image: '' }); }}
-               className="mt-auto w-full flex items-center justify-center bg-[#C4704F] hover:bg-[#B5633F] text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors duration-200"
-            >
-               {addToCartLabel}
-            </button>
+               <button
+                  onClick={e => { e.preventDefault(); addItem({ id: product.id, name: product.name, price: product.price, image: '' }); }}
+                  className="w-full flex items-center justify-center bg-[#C4704F] hover:bg-[#B5633F] text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors duration-200"
+               >
+                  {addToCartLabel}
+               </button>
+            </div>
          </div>
       </Link>
    );
