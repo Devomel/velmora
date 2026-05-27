@@ -102,17 +102,19 @@ export default function MonoPage({ t, newPrice, oldPrice, image }: Props) {
           </div>
 
           {/* price */}
-          <div className="flex flex-wrap items-center gap-4 mb-8 pb-8 border-b border-[#E8DDD4]">
-            <span className="text-5xl md:text-6xl font-bold text-[#1A1410]">{newPrice} €</span>
-            <div className="flex flex-col gap-1">
-              <span className="text-xl text-[#9C8A7E] line-through">{oldPrice} €</span>
-              <span className="text-sm font-semibold text-white bg-[#C4704F] px-2 py-0.5 inline-block w-fit">
-                −{discount}%
-              </span>
+          <div className="grid grid-cols-[1fr_auto] items-center gap-x-3 mb-8 pb-8 border-b border-[#E8DDD4]">
+            <div>
+              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A1410] block">{newPrice} €</span>
+              <div className="flex items-center gap-3 mt-1.5">
+                <span className="text-lg text-[#9C8A7E] line-through">{oldPrice} €</span>
+                <span className="text-sm font-semibold text-white bg-[#C4704F] px-2 py-0.5">
+                  −{discount}%
+                </span>
+              </div>
             </div>
             <a
               href="#order"
-              className="ml-auto inline-flex items-center gap-2 bg-[#C4704F] text-white px-6 py-3 font-semibold hover:bg-[#B05F40] transition-colors text-sm uppercase tracking-wide"
+              className="inline-flex items-center gap-2 bg-[#C4704F] text-white px-4 md:px-6 py-3 font-semibold hover:bg-[#B05F40] transition-colors text-sm uppercase tracking-wide"
             >
               {t.heroBtn}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
