@@ -34,28 +34,28 @@ export default function HeroSection({ t }: Props) {
          {/* Portrait/mobile: flex-col (text top, image bottom); Landscape desktop: 2-col grid; Square: flex-col (banner top, text bottom) */}
          <div className="relative h-full flex flex-col landscape:lg:grid landscape:lg:grid-cols-[1fr_calc(100svh_-_var(--header-h))] landscape:lg:flex-1 sq:!flex sq:flex-col sq:!h-auto">
             {/* TEXT — top on portrait, left column on landscape desktop, bottom on square */}
-            <div className="flex-1 min-h-0 min-w-0 landscape:lg:col-start-1 landscape:lg:row-start-1 flex flex-col landscape:lg:flex-row landscape:lg:items-center landscape:lg:justify-start px-5 landscape:lg:pl-[clamp(1rem,4vw,4.5rem)] landscape:lg:pr-0 py-[clamp(0.5rem,2svh,1rem)] landscape:lg:py-0 sq:order-last sq:!flex-col sq:!pl-5 sq:!pr-5 sq:!py-[clamp(0.75rem,2.5svh,1.5rem)] sq:!items-stretch">
+            <div className="flex-1 min-h-0 min-w-0 landscape:lg:col-start-1 landscape:lg:row-start-1 flex flex-col landscape:lg:flex-row landscape:lg:items-center landscape:lg:justify-start px-5 landscape:lg:pl-[clamp(1rem,4vw,4.5rem)] landscape:lg:pr-0 py-[clamp(0.5rem,2svh,1rem)] landscape:lg:py-0 sq:!static sq:!pl-5 sq:!pr-5 sq:!py-5">
                <div className="w-full flex-1 min-h-0 flex flex-col justify-evenly text-center landscape:lg:flex-none landscape:lg:block landscape:lg:text-left sq:!flex sq:!flex-row sq:!items-center sq:!justify-between sq:!gap-6 sq:!text-left">
                   {/* h1+p wrapper: invisible in mobile/desktop layout, becomes flex-col on sq */}
                   <div className="[display:contents] sq:flex sq:flex-col sq:flex-1 sq:min-w-0 sq:gap-3">
-                     <h1 className="text-[clamp(1.25rem,5svh,2.25rem)] md:text-5xl landscape:lg:text-[clamp(2.5rem,4vw,5.5rem)] sq:!text-[clamp(1.75rem,4svh,3rem)] font-light text-[#1A1410] tracking-tight mb-0 landscape:lg:mb-[clamp(0.25rem,2vh,1.75rem)] sq:!mb-0 leading-[1.06]">
+                     <h1 className="text-[clamp(1.25rem,5svh,2.25rem)] md:text-5xl landscape:lg:text-[clamp(2.5rem,4vw,5.5rem)] min-[1920px]:text-[clamp(5rem,5.5vw,9rem)] min-[2560px]:text-[clamp(8rem,7vw,13rem)] sq:!text-[clamp(1.75rem,4svh,3rem)] font-light text-[#1A1410] tracking-tight mb-0 landscape:lg:mb-[clamp(0.25rem,2vh,1.75rem)] min-[1920px]:mb-[clamp(1rem,2.5vh,3rem)] min-[2560px]:mb-[clamp(1.5rem,3vh,4rem)] sq:!mb-0 leading-[1.06]">
                         {t.title}<br />
                         <span className="text-[#C4704F]">{t.titleHighlight}</span>
                      </h1>
 
-                     <p className="text-[clamp(0.8rem,1.8svh,1rem)] landscape:lg:text-[clamp(0.875rem,1.3vw,1.25rem)] sq:!text-[clamp(1rem,2svh,1.4rem)] text-[#6B5B4E] mb-0 landscape:lg:mb-[clamp(0.5rem,3vh,2.75rem)] sq:!mb-0 max-w-md mx-auto landscape:lg:mx-0 sq:!mx-0 sq:!max-w-none leading-relaxed">{t.subtitle}</p>
+                     <p className="text-[clamp(0.8rem,1.8svh,1rem)] landscape:lg:text-[clamp(0.875rem,1.3vw,1.25rem)] min-[1920px]:text-[clamp(1.25rem,1.5vw,2rem)] min-[2560px]:text-[clamp(2rem,2vw,3rem)] sq:!text-[clamp(1rem,2svh,1.4rem)] text-[#6B5B4E] mb-0 landscape:lg:mb-[clamp(0.5rem,3vh,2.75rem)] min-[1920px]:mb-[clamp(1.5rem,4vh,4rem)] min-[2560px]:mb-[clamp(2rem,5vh,5rem)] sq:!mb-0 max-w-md mx-auto landscape:lg:mx-0 min-[1920px]:max-w-xl min-[2560px]:max-w-3xl sq:!mx-0 sq:!max-w-none leading-relaxed">{t.subtitle}</p>
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-3 landscape:lg:gap-4 justify-center landscape:lg:justify-start sq:!flex-col sq:!flex-shrink-0 sq:!items-stretch sq:!gap-4 sq:!justify-start">
                      <a
                         href="#catalog"
-                        className="inline-flex items-center justify-center bg-[#C4704F] hover:bg-[#A85A3A] text-white px-10 py-3.5 landscape:lg:py-4 sq:py-3.5 text-sm landscape:lg:text-base sq:!text-sm font-semibold tracking-wide rounded-full transition-all duration-200 shadow-[0_4px_16px_rgba(196,112,79,0.4)] hover:shadow-[0_6px_22px_rgba(196,112,79,0.5)]"
+                        className="inline-flex items-center justify-center bg-[#C4704F] hover:bg-[#A85A3A] text-white px-10 py-3.5 landscape:lg:py-4 min-[1920px]:py-5 min-[1920px]:px-14 min-[1920px]:text-lg min-[2560px]:py-7 min-[2560px]:px-20 min-[2560px]:text-2xl sq:py-3.5 text-sm landscape:lg:text-base sq:!text-sm font-semibold tracking-wide rounded-full transition-all duration-200 shadow-[0_4px_16px_rgba(196,112,79,0.4)] hover:shadow-[0_6px_22px_rgba(196,112,79,0.5)]"
                      >
                         {t.cta}
                      </a>
                      <a
                         href="#guarantees"
-                        className="hidden landscape:lg:inline-flex sq:!inline-flex items-center justify-center border border-[#C4704F]/50 text-[#C4704F] hover:bg-[#C4704F] hover:text-white px-10 py-3.5 text-sm font-semibold tracking-wide rounded-full transition-all duration-200"
+                        className="hidden landscape:lg:inline-flex sq:!inline-flex items-center justify-center border border-[#C4704F]/50 text-[#C4704F] hover:bg-[#C4704F] hover:text-white px-10 py-3.5 min-[1920px]:py-5 min-[1920px]:px-14 min-[1920px]:text-lg min-[2560px]:py-7 min-[2560px]:px-20 min-[2560px]:text-2xl text-sm font-semibold tracking-wide rounded-full transition-all duration-200"
                      >
                         {t.ctaSecondary}
                      </a>
@@ -63,13 +63,13 @@ export default function HeroSection({ t }: Props) {
                </div>
             </div>
             {/* BANNER — bottom on portrait, right column on landscape desktop, top on square */}
-            <div className="relative flex-none h-[min(100vw,60svh)] landscape:h-auto landscape:lg:aspect-auto landscape:lg:col-start-2 landscape:lg:row-start-1 sq:order-first sq:!h-[calc(100svh_-_var(--header-h))] sq:w-full">
+            <div className="relative flex-none h-[min(100vw,60svh)] landscape:h-auto landscape:lg:aspect-auto landscape:lg:col-start-2 landscape:lg:row-start-1 sq:order-first sq:!h-[calc(100svh-var(--header-h))] sq:w-full">
                <div className="absolute inset-0">
                   <Image
                      src="/hero-banner.png"
                      alt={t.bannerTitle}
                      fill
-                     className="object-cover"
+                     className="object-cover sq:object-contain sq:object-right"
                      priority
                   />
                   <div className="landscape:lg:hidden sq:!flex absolute top-0 left-0 w-[70%] h-[40%] flex flex-col justify-end px-5 pb-3 pointer-events-none">
@@ -93,12 +93,12 @@ export default function HeroSection({ t }: Props) {
 export function HeroAdvantages({ t }: Props) {
    return (
       <div className="relative bg-white/75 backdrop-blur-md border-t border-[#D9CCBF]">
-         <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
+         <div className="max-w-7xl mx-auto px-4 py-8 min-[1920px]:py-12 min-[1920px]:max-w-[110rem] min-[2560px]:py-16 min-[2560px]:max-w-none min-[2560px]:px-24 grid grid-cols-2 lg:grid-cols-4 gap-6 min-[1920px]:gap-10 min-[2560px]:gap-16">
             {t.advantages.map(({ title, desc }, i) => (
-               <div key={title} className="flex flex-col items-center text-center gap-2">
-                  <span className="text-[#C4704F]">{ADVANTAGE_ICONS[i]}</span>
-                  <h3 className="text-sm font-semibold text-[#1A1410] tracking-tight">{title}</h3>
-                  <p className="text-xs text-[#9C8A7E] leading-relaxed">{desc}</p>
+               <div key={title} className="flex flex-col items-center text-center gap-2 min-[1920px]:gap-3 min-[2560px]:gap-5">
+                  <span className="text-[#C4704F] min-[1920px]:[&>svg]:w-10 min-[1920px]:[&>svg]:h-10 min-[2560px]:[&>svg]:w-14 min-[2560px]:[&>svg]:h-14">{ADVANTAGE_ICONS[i]}</span>
+                  <h3 className="text-sm min-[1920px]:text-base min-[2560px]:text-xl font-semibold text-[#1A1410] tracking-tight">{title}</h3>
+                  <p className="text-xs min-[1920px]:text-sm min-[2560px]:text-base text-[#9C8A7E] leading-relaxed">{desc}</p>
                </div>
             ))}
          </div>
