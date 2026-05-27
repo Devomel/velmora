@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { useL1Cart } from './L1CartProvider';
 import type { ProductData } from '@/lib/products';
+import { fmtPrice, IS_RO } from '@/lib/i18n';
 
 type ProductLocale = { name: string; material: string; desc: string };
 
@@ -57,7 +58,7 @@ export default function L1Catalog({ t, data, productImages }: Props) {
   const hasMore = visible.length < filtered.length;
 
   const handleAdd = (p: typeof filtered[0]) => {
-    addItem({ id: p.id, name: p.locale.name, price: p.price, image: '' });
+    addItem({ id: p.id, name: p.locale.name, price: IS_RO ? p.priceLei : p.price, image: '' });
     setAdded(p.id);
     setTimeout(() => setAdded(null), 1500);
   };
@@ -141,8 +142,8 @@ export default function L1Catalog({ t, data, productImages }: Props) {
                     </div>
                     <div className="flex items-center justify-between">
                       <div>
-                        <span className="text-lg font-semibold text-[#111827]">€{p.price}</span>
-                        {p.oldPrice && <span className="text-xs text-[#6B7280] line-through ml-1.5">€{p.oldPrice}</span>}
+                        <span className="text-lg font-semibold text-[#111827]">{fmtPrice(p.price, p.priceLei)}</span>
+                        {p.oldPrice && <span className="text-xs text-[#6B7280] line-through ml-1.5">{fmtPrice(p.oldPrice, p.oldPriceLei)}</span>}
                       </div>
                       <button
                         onClick={() => handleAdd(p)}

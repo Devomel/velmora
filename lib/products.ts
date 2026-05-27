@@ -7,14 +7,16 @@ export type ProductData = {
    id: number;
    articleKey: string;
    price: number;
-   oldPrice?: number;
+   oldPrice: number;
+   priceLei: number;
+   oldPriceLei: number;
    rating: number;
    reviews: number;
    badge?: 'sale' | 'new';
    categoryKey: string;
 };
 
-type Meta = Omit<ProductData, 'price' | 'oldPrice' | 'categoryKey'>;
+type Meta = Omit<ProductData, 'price' | 'oldPrice' | 'priceLei' | 'oldPriceLei' | 'categoryKey'>;
 
 const potSet = new Set(POT_ARTICLE_KEYS);
 const panSet = new Set(PAN_ARTICLE_KEYS);
@@ -65,18 +67,23 @@ const STATIC_META: Meta[] = [
    { id: 37, articleKey: 'кераміка_2', rating: 5, reviews: 43,  badge: 'sale' },
 ];
 
-function loadCsvPrices(): Map<string, number> {
+type PriceRow = { price: number; oldPrice: number; priceLei: number; oldPriceLei: number };
+
+function loadCsvPrices(): Map<string, PriceRow> {
    const csvPath = path.join(process.cwd(), 'products', 'Text_content_translated.csv');
    const content = fs.readFileSync(csvPath, 'utf-8').replace(/^﻿/, '');
-   const prices = new Map<string, number>();
+   const prices = new Map<string, PriceRow>();
    for (const line of content.split('\n').slice(1)) {
       if (!line.trim()) continue;
       const parts = line.split(',');
       const lang = parts[0]?.trim();
       const article = parts[2]?.trim();
-      const price = parseInt(parts[3]?.trim() ?? '', 10);
+      const price    = parseInt(parts[3]?.trim() ?? '', 10);
+      const oldPrice = parseInt(parts[4]?.trim() ?? '', 10);
+      const priceLei    = parseInt(parts[5]?.trim() ?? '', 10);
+      const oldPriceLei = parseInt(parts[6]?.trim() ?? '', 10);
       if (lang === 'uk' && article && !isNaN(price) && price > 0) {
-         prices.set(article, price);
+         prices.set(article, { price, oldPrice, priceLei, oldPriceLei });
       }
    }
    return prices;
@@ -87,14 +94,16 @@ const reviewCounts = loadAllReviewCounts();
 const avgRatings = loadAverageRatings();
 
 export const PRODUCT_DATA: ProductData[] = STATIC_META.map(meta => {
-   const price = csvPrices.get(meta.articleKey) ?? 0;
+   const row = csvPrices.get(meta.articleKey);
    return {
       ...meta,
       categoryKey: categoryKeyFor(meta.articleKey),
-      price,
-      oldPrice: Math.round(price * 1.25),
+      price:       row?.price       ?? 0,
+      oldPrice:    row?.oldPrice    ?? 0,
+      priceLei:    row?.priceLei    ?? 0,
+      oldPriceLei: row?.oldPriceLei ?? 0,
       reviews: reviewCounts.get(meta.articleKey) ?? meta.reviews,
-      rating: avgRatings.get(meta.articleKey) ?? meta.rating,
+      rating:  avgRatings.get(meta.articleKey)   ?? meta.rating,
    };
 });
 

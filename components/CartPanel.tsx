@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import type { CommonT } from '@/lib/i18n';
+import { IS_RO } from '@/lib/i18n';
 import { useCart } from './CartProvider';
 
 type Props = { t: CommonT['cart'] };
@@ -86,7 +87,7 @@ export default function CartPanel({ t }: Props) {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-medium text-[#1A1410] truncate">{item.name}</p>
-                    <p className="text-sm text-[#C4704F] font-semibold mt-0.5">€{item.price}</p>
+                    <p className="text-sm text-[#C4704F] font-semibold mt-0.5">{IS_RO ? `${item.price} lei` : `€${item.price}`}</p>
                     <div className="flex items-center gap-2 mt-2">
                       <button
                         onClick={() => updateQty(item.id, item.qty - 1)}
@@ -116,31 +117,6 @@ export default function CartPanel({ t }: Props) {
             </div>
           )}
 
-          {/* Upsell */}
-          {items.length > 0 && (
-            <div className="mt-6 pt-4 border-t border-[#E8DDD4]">
-              <p className="text-xs uppercase tracking-widest text-[#9C8A7E] mb-3">{t.upsellTitle}</p>
-              <div className="space-y-2">
-                {t.upsellItems.map((u, i) => {
-                  const id = 100 + i + 1;
-                  return (
-                    <div key={id} className="flex items-center justify-between bg-[#FDFAF7] px-3 py-2.5 rounded-sm">
-                      <span className="text-sm text-[#1A1410]">{u.name}</span>
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm font-medium text-[#C4704F]">€{u.price}</span>
-                        <button
-                          onClick={() => addItem({ id, name: u.name, price: u.price, image: '' })}
-                          className="text-xs bg-[#C4704F] text-white px-2 py-1 hover:bg-[#A85A3A] transition-colors"
-                        >
-                          {t.upsellAdd}
-                        </button>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
         </div>
 
         {/* Footer */}
@@ -159,7 +135,7 @@ export default function CartPanel({ t }: Props) {
 
             <div className="flex justify-between items-center mb-4">
               <span className="text-[#6B5B4E]">{t.total}:</span>
-              <span className="text-xl font-semibold text-[#1A1410]">€{total}</span>
+              <span className="text-xl font-semibold text-[#1A1410]">{IS_RO ? `${total} lei` : `€${total}`}</span>
             </div>
 
             <button

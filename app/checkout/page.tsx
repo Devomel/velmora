@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useCart } from '@/components/CartProvider';
+import { IS_RO } from '@/lib/i18n';
 
 type CheckoutT = {
   title: string;
@@ -197,6 +198,7 @@ export default function CheckoutPage() {
   const [showPopup, setShowPopup] = useState(false);
 
   const deliveryFee = total >= FREE_DELIVERY_THRESHOLD ? 0 : deliveryMethod === 'express' ? EXPRESS_PRICE : 4.99;
+  const fmt = (n: number) => IS_RO ? `${n.toFixed(2)} lei` : `€${n.toFixed(2)}`;
   const orderTotal = total + deliveryFee;
 
   const inputClass =
@@ -347,8 +349,8 @@ export default function CheckoutPage() {
                     const label = method === 'standard' ? t.standardDelivery : t.expressDelivery;
                     const desc = method === 'standard' ? t.standardDeliveryDesc : t.expressDeliveryDesc;
                     const price = method === 'standard'
-                      ? (total >= FREE_DELIVERY_THRESHOLD ? t.free : '€4.99')
-                      : `€${EXPRESS_PRICE.toFixed(2)}`;
+                      ? (total >= FREE_DELIVERY_THRESHOLD ? t.free : fmt(4.99))
+                      : fmt(EXPRESS_PRICE);
 
                     return (
                       <label
@@ -500,7 +502,7 @@ export default function CheckoutPage() {
                           <p className="text-xs text-[#9C8A7E]">x{item.qty}</p>
                         </div>
                         <p className="text-sm font-medium text-[#1A1410] flex-shrink-0">
-                          €{(item.price * item.qty).toFixed(2)}
+                          {fmt(item.price * item.qty)}
                         </p>
                       </div>
                     ))
@@ -510,17 +512,17 @@ export default function CheckoutPage() {
                 <div className="border-t border-[#E8DDD4] pt-4 space-y-2">
                   <div className="flex justify-between text-sm text-[#6B5B4E]">
                     <span>{t.subtotal}</span>
-                    <span>€{total.toFixed(2)}</span>
+                    <span>{fmt(total)}</span>
                   </div>
                   <div className="flex justify-between text-sm text-[#6B5B4E]">
                     <span>{t.deliveryFee}</span>
                     <span className={deliveryFee === 0 ? 'text-[#6B8F71] font-medium' : ''}>
-                      {deliveryFee === 0 ? t.free : `€${deliveryFee.toFixed(2)}`}
+                      {deliveryFee === 0 ? t.free : fmt(deliveryFee)}
                     </span>
                   </div>
                   <div className="flex justify-between text-base font-semibold text-[#1A1410] pt-2 border-t border-[#E8DDD4]">
                     <span>{t.total}</span>
-                    <span>€{orderTotal.toFixed(2)}</span>
+                    <span>{fmt(orderTotal)}</span>
                   </div>
                 </div>
 

@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useL1Cart } from './L1CartProvider';
+import { IS_RO } from '@/lib/i18n';
 
 type CartT = {
   title: string;
@@ -80,7 +81,7 @@ export default function L1CartPanel({ t }: { t: CartT }) {
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-medium text-[#111827] leading-tight">{item.name}</p>
-                    <p className="text-sm text-[#DC2626] font-semibold mt-0.5">€{item.price}</p>
+                    <p className="text-sm text-[#DC2626] font-semibold mt-0.5">{IS_RO ? `${item.price} lei` : `€${item.price}`}</p>
                     <div className="flex items-center gap-2 mt-2">
                       <button onClick={() => updateQty(item.id, item.qty - 1)} className="w-7 h-7 border border-[#FECACA] flex items-center justify-center text-[#374151] hover:border-[#DC2626] hover:text-[#DC2626] transition-colors text-base">−</button>
                       <span className="text-sm w-6 text-center font-medium">{item.qty}</span>
@@ -101,7 +102,7 @@ export default function L1CartPanel({ t }: { t: CartT }) {
           <div className="px-6 py-5 border-t border-[#FECACA]">
             <div className="flex justify-between items-center mb-4">
               <span className="text-[#6B7280]">{t.total}:</span>
-              <span className="text-xl font-semibold text-[#111827]">€{total.toFixed(2)}</span>
+              <span className="text-xl font-semibold text-[#111827]">{IS_RO ? `${total.toFixed(2)} lei` : `€${total.toFixed(2)}`}</span>
             </div>
             <button className="w-full bg-[#DC2626] hover:bg-[#B91C1C] text-white py-4 text-sm font-semibold uppercase tracking-wider transition-colors">
               {t.checkout}

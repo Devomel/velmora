@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getMessages } from '@/lib/i18n';
+import { getMessages, fmtPrice, IS_RO } from '@/lib/i18n';
 import { getProductById, PRODUCT_DATA } from '@/lib/products';
 import { getProductImages } from '@/lib/product-images';
 import { getProductReviews, type Review } from '@/lib/reviews';
@@ -150,10 +150,10 @@ export default async function L2ProductPage({ params }: { params: Promise<{ id: 
             </div>
 
             <div className="flex items-baseline gap-3 mb-6 pb-6 border-b border-[#FECACA]">
-              <span className="text-4xl font-light text-[#111827]">€{data.price}</span>
+              <span className="text-4xl font-light text-[#111827]">{fmtPrice(data.price, data.priceLei)}</span>
               {data.oldPrice && (
                 <>
-                  <span className="text-lg text-[#6B7280] line-through">€{data.oldPrice}</span>
+                  <span className="text-lg text-[#6B7280] line-through">{fmtPrice(data.oldPrice, data.oldPriceLei)}</span>
                   <span className="text-sm font-bold text-[#DC2626]">−{discountPct}%</span>
                 </>
               )}
@@ -175,7 +175,7 @@ export default async function L2ProductPage({ params }: { params: Promise<{ id: 
               </ul>
             )}
 
-            <L2AddToCartButton item={{ id: data.id, name, price: data.price, image: images[0] ?? '' }} label={land2.catalog.addToCart} />
+            <L2AddToCartButton item={{ id: data.id, name, price: IS_RO ? data.priceLei : data.price, image: images[0] ?? '' }} label={land2.catalog.addToCart} />
 
             {/* USP strip */}
             <div className="mt-8 grid grid-cols-2 gap-3">
@@ -240,8 +240,8 @@ export default async function L2ProductPage({ params }: { params: Promise<{ id: 
                     <p className="text-[10px] text-[#6B7280] uppercase tracking-wider mb-1">{p.locale?.material}</p>
                     <p className="text-sm font-medium text-[#111827] mb-2 leading-tight">{p.locale?.name}</p>
                     <div className="flex items-baseline gap-2">
-                      <span className="text-base font-semibold text-[#111827]">€{p.price}</span>
-                      {p.oldPrice && <span className="text-xs text-[#6B7280] line-through">€{p.oldPrice}</span>}
+                      <span className="text-base font-semibold text-[#111827]">{fmtPrice(p.price, p.priceLei)}</span>
+                      {p.oldPrice && <span className="text-xs text-[#6B7280] line-through">{fmtPrice(p.oldPrice, p.oldPriceLei)}</span>}
                     </div>
                   </div>
                 </Link>

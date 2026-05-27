@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getMessages } from '@/lib/i18n';
+import { getMessages, fmtPrice, IS_RO } from '@/lib/i18n';
 import { getProductById, PRODUCT_DATA } from '@/lib/products';
 import { getProductImages } from '@/lib/product-images';
 import { getProductReviews, type Review } from '@/lib/reviews';
@@ -148,9 +148,9 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               </div>
 
               <div className="flex items-baseline gap-3 mb-6">
-                <span className="text-3xl font-semibold text-[#1A1410]">€{data.price}</span>
+                <span className="text-3xl font-semibold text-[#1A1410]">{fmtPrice(data.price, data.priceLei)}</span>
                 {data.oldPrice && (
-                  <span className="text-lg text-[#9C8A7E] line-through">€{data.oldPrice}</span>
+                  <span className="text-lg text-[#9C8A7E] line-through">{fmtPrice(data.oldPrice, data.oldPriceLei)}</span>
                 )}
               </div>
 
@@ -173,7 +173,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               )}
 
               <AddToCartButton
-                item={{ id: data.id, name, price: data.price, image: images[0] ?? '' }}
+                item={{ id: data.id, name, price: IS_RO ? data.priceLei : data.price, image: images[0] ?? '' }}
                 label={home.catalog.addToCart}
               />
 

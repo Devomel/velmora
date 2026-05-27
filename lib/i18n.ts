@@ -2,6 +2,13 @@ export type Locale = "de" | "no" | "ro" | "ru";
 
 export const LOCALE = (process.env.NEXT_PUBLIC_LOCALE ?? "de") as Locale;
 
+export const IS_RO = LOCALE === 'ro';
+
+/** Format a price with the correct currency for the current locale. */
+export function fmtPrice(eur: number, lei: number): string {
+  return IS_RO ? `${lei} lei` : `€${eur}`;
+}
+
 export const LOCALE_META: Record<Locale, { lang: string; dir: "ltr" | "rtl" }> = {
   de: { lang: "de", dir: "ltr" },
   no: { lang: "no", dir: "ltr" },
