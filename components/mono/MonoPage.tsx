@@ -102,7 +102,7 @@ export default function MonoPage({ t, newPrice, oldPrice, image }: Props) {
           </div>
 
           {/* price */}
-          <div className="flex flex-wrap items-baseline gap-4 mb-8 pb-8 border-b border-[#E8DDD4]">
+          <div className="flex flex-wrap items-center gap-4 mb-8 pb-8 border-b border-[#E8DDD4]">
             <span className="text-5xl md:text-6xl font-bold text-[#1A1410]">{newPrice} €</span>
             <div className="flex flex-col gap-1">
               <span className="text-xl text-[#9C8A7E] line-through">{oldPrice} €</span>
@@ -110,6 +110,15 @@ export default function MonoPage({ t, newPrice, oldPrice, image }: Props) {
                 −{discount}%
               </span>
             </div>
+            <a
+              href="#order"
+              className="ml-auto inline-flex items-center gap-2 bg-[#C4704F] text-white px-6 py-3 font-semibold hover:bg-[#B05F40] transition-colors text-sm uppercase tracking-wide"
+            >
+              {t.heroBtn}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 5v14M5 12l7 7 7-7" />
+              </svg>
+            </a>
           </div>
 
           {/* tagline */}
