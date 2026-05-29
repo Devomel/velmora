@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useCart } from '@/components/CartProvider';
+import { useL1Cart } from '../components/L1CartProvider';
 import { IS_RO } from '@/lib/i18n';
 
 type CheckoutT = {
@@ -41,7 +41,6 @@ type CheckoutT = {
   countries: string[];
 };
 
-// Inline translations keyed by locale env var
 const TRANSLATIONS: Record<string, CheckoutT> = {
   de: {
     title: 'Kasse',
@@ -188,8 +187,8 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
 const FREE_DELIVERY_THRESHOLD = 50;
 const EXPRESS_PRICE = 9.99;
 
-export default function CheckoutPage() {
-  const { items, total } = useCart();
+export default function L1CheckoutPage() {
+  const { items, total } = useL1Cart();
   const locale = (process.env.NEXT_PUBLIC_LOCALE ?? 'de') as string;
   const t = TRANSLATIONS[locale] ?? TRANSLATIONS.de;
 
@@ -202,14 +201,13 @@ export default function CheckoutPage() {
   const orderTotal = total + deliveryFee;
 
   const inputClass =
-    'w-full border border-[#E8DDD4] px-3 py-2.5 text-sm focus:border-[#C4704F] outline-none bg-white transition-colors placeholder:text-[#C4B8AE]';
-  const labelClass = 'block text-xs font-medium text-[#6B5B4E] uppercase tracking-wider mb-1';
+    'w-full border border-[#FECACA] px-3 py-2.5 text-sm focus:border-[#DC2626] outline-none bg-white transition-colors placeholder:text-[#D1A0A0]';
+  const labelClass = 'block text-xs font-medium text-[#6B7280] uppercase tracking-wider mb-1';
   const sectionClass = 'mb-8';
-  const sectionTitleClass = 'text-base font-semibold text-[#1A1410] mb-4 pb-2 border-b border-[#E8DDD4]';
+  const sectionTitleClass = 'text-base font-semibold text-[#111827] mb-4 pb-2 border-b border-[#FECACA]';
 
   return (
     <>
-      {/* Payment unavailable popup */}
       {showPopup && (
         <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
           <div
@@ -217,25 +215,24 @@ export default function CheckoutPage() {
             onClick={() => setShowPopup(false)}
           />
           <div className="relative bg-white rounded-sm shadow-2xl max-w-sm w-full p-8 text-center">
-            {/* Icon */}
-            <div className="w-16 h-16 bg-[#FFF5F0] rounded-full flex items-center justify-center mx-auto mb-5">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C4704F" strokeWidth="1.5">
+            <div className="w-16 h-16 bg-[#FEF2F2] rounded-full flex items-center justify-center mx-auto mb-5">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#DC2626" strokeWidth="1.5">
                 <circle cx="12" cy="12" r="10" />
                 <path d="M12 8v4M12 16h.01" strokeLinecap="round" />
               </svg>
             </div>
-            <h3 className="text-lg font-semibold text-[#1A1410] mb-3">{t.unavailableTitle}</h3>
-            <p className="text-sm text-[#6B5B4E] leading-relaxed mb-6">{t.unavailableText}</p>
+            <h3 className="text-lg font-semibold text-[#111827] mb-3">{t.unavailableTitle}</h3>
+            <p className="text-sm text-[#6B7280] leading-relaxed mb-6">{t.unavailableText}</p>
             <div className="flex flex-col gap-2">
               <Link
                 href="/contacts"
-                className="w-full bg-[#C4704F] hover:bg-[#A85A3A] text-white py-3 text-sm font-semibold uppercase tracking-wider transition-colors text-center"
+                className="w-full bg-[#DC2626] hover:bg-[#B91C1C] text-white py-3 text-sm font-semibold uppercase tracking-wider transition-colors text-center"
               >
                 {t.contactUs}
               </Link>
               <button
                 onClick={() => setShowPopup(false)}
-                className="w-full border border-[#E8DDD4] text-[#6B5B4E] py-3 text-sm hover:border-[#C4704F] hover:text-[#C4704F] transition-colors"
+                className="w-full border border-[#FECACA] text-[#6B7280] py-3 text-sm hover:border-[#DC2626] hover:text-[#DC2626] transition-colors"
               >
                 {t.unavailableClose}
               </button>
@@ -244,14 +241,13 @@ export default function CheckoutPage() {
         </div>
       )}
 
-      <div className="min-h-screen bg-[#FDFAF7]">
-        {/* Minimal header */}
-        <header className="bg-white border-b border-[#E8DDD4]">
+      <div className="min-h-screen bg-[#FEF2F2]">
+        <header className="bg-white border-b border-[#FECACA]">
           <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-            <Link href="/" className="text-lg font-semibold tracking-tight text-[#1A1410]">
+            <Link href="/land1" className="text-lg font-semibold tracking-tight text-[#111827]">
               Velmora
             </Link>
-            <div className="flex items-center gap-1.5 text-xs text-[#6B8F71]">
+            <div className="flex items-center gap-1.5 text-xs text-[#6B7280]">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
                 <path d="M7 11V7a5 5 0 0110 0v4" />
@@ -262,10 +258,9 @@ export default function CheckoutPage() {
         </header>
 
         <div className="max-w-6xl mx-auto px-4 py-10">
-          {/* Back link */}
           <Link
-            href="/"
-            className="inline-flex items-center gap-1.5 text-sm text-[#9C8A7E] hover:text-[#C4704F] transition-colors mb-8"
+            href="/land1"
+            className="inline-flex items-center gap-1.5 text-sm text-[#6B7280] hover:text-[#DC2626] transition-colors mb-8"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M19 12H5M12 19l-7-7 7-7" />
@@ -273,15 +268,14 @@ export default function CheckoutPage() {
             {t.backToCart}
           </Link>
 
-          <h1 className="text-2xl font-light text-[#1A1410] mb-8">{t.title}</h1>
+          <h1 className="text-2xl font-light text-[#111827] mb-8">{t.title}</h1>
 
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-8">
             {/* Left: Form */}
             <div>
-              {/* Contact */}
               <section className={sectionClass}>
                 <h2 className={sectionTitleClass}>
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#C4704F] text-white text-xs font-bold mr-2">1</span>
+                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#DC2626] text-white text-xs font-bold mr-2">1</span>
                   {t.contact}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -304,10 +298,9 @@ export default function CheckoutPage() {
                 </div>
               </section>
 
-              {/* Shipping */}
               <section className={sectionClass}>
                 <h2 className={sectionTitleClass}>
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#C4704F] text-white text-xs font-bold mr-2">2</span>
+                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#DC2626] text-white text-xs font-bold mr-2">2</span>
                   {t.shipping}
                 </h2>
                 <div className="grid grid-cols-1 gap-4">
@@ -337,10 +330,9 @@ export default function CheckoutPage() {
                 </div>
               </section>
 
-              {/* Delivery method */}
               <section className={sectionClass}>
                 <h2 className={sectionTitleClass}>
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#C4704F] text-white text-xs font-bold mr-2">3</span>
+                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#DC2626] text-white text-xs font-bold mr-2">3</span>
                   {t.delivery}
                 </h2>
                 <div className="space-y-3">
@@ -355,18 +347,18 @@ export default function CheckoutPage() {
                     return (
                       <label
                         key={method}
-                        className={`flex items-center justify-between px-4 py-4 border cursor-pointer transition-colors ${isSelected ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
+                        className={`flex items-center justify-between px-4 py-4 border cursor-pointer transition-colors ${isSelected ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
                       >
                         <div className="flex items-center gap-3">
-                          <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${isSelected ? 'border-[#C4704F]' : 'border-[#C4B8AE]'}`}>
-                            {isSelected && <div className="w-2 h-2 rounded-full bg-[#C4704F]" />}
+                          <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${isSelected ? 'border-[#DC2626]' : 'border-[#FCA5A5]'}`}>
+                            {isSelected && <div className="w-2 h-2 rounded-full bg-[#DC2626]" />}
                           </div>
                           <div>
-                            <p className="text-sm font-medium text-[#1A1410]">{label}</p>
-                            <p className="text-xs text-[#9C8A7E]">{desc}</p>
+                            <p className="text-sm font-medium text-[#111827]">{label}</p>
+                            <p className="text-xs text-[#6B7280]">{desc}</p>
                           </div>
                         </div>
-                        <span className={`text-sm font-semibold ${total >= FREE_DELIVERY_THRESHOLD && method === 'standard' ? 'text-[#6B8F71]' : 'text-[#1A1410]'}`}>
+                        <span className={`text-sm font-semibold ${total >= FREE_DELIVERY_THRESHOLD && method === 'standard' ? 'text-green-600' : 'text-[#111827]'}`}>
                           {price}
                         </span>
                         <input
@@ -383,55 +375,50 @@ export default function CheckoutPage() {
                 </div>
               </section>
 
-              {/* Payment */}
               <section className={sectionClass}>
                 <h2 className={sectionTitleClass}>
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#C4704F] text-white text-xs font-bold mr-2">4</span>
+                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#DC2626] text-white text-xs font-bold mr-2">4</span>
                   {t.payment}
                 </h2>
                 <div className="flex gap-3 mb-4">
-                  {/* Card */}
                   <button
                     onClick={() => setPaymentMethod('card')}
-                    className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'card' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
+                    className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'card' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
                   >
                     <svg width="28" height="20" viewBox="0 0 28 20" fill="none">
-                      <rect width="28" height="20" rx="3" fill="#F5F0EB" />
-                      <rect y="5" width="28" height="5" fill="#C4704F" opacity="0.4" />
-                      <rect x="3" y="13" width="8" height="3" rx="1" fill="#C4704F" opacity="0.6" />
+                      <rect width="28" height="20" rx="3" fill="#FEF2F2" />
+                      <rect y="5" width="28" height="5" fill="#DC2626" opacity="0.4" />
+                      <rect x="3" y="13" width="8" height="3" rx="1" fill="#DC2626" opacity="0.6" />
                     </svg>
-                    <span className="text-xs text-[#1A1410] font-medium">{t.payCard}</span>
+                    <span className="text-xs text-[#111827] font-medium">{t.payCard}</span>
                   </button>
 
-                  {/* PayPal */}
                   <button
                     onClick={() => setPaymentMethod('paypal')}
-                    className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'paypal' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
+                    className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'paypal' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
                   >
                     <svg width="28" height="20" viewBox="0 0 28 20" fill="none">
-                      <rect width="28" height="20" rx="3" fill="#F5F0EB" />
+                      <rect width="28" height="20" rx="3" fill="#FEF2F2" />
                       <text x="5" y="14" fontSize="9" fontWeight="700" fill="#003087" fontFamily="Arial">Pay</text>
                       <text x="14" y="14" fontSize="9" fontWeight="700" fill="#009CDE" fontFamily="Arial">Pal</text>
                     </svg>
-                    <span className="text-xs text-[#1A1410] font-medium">{t.payPaypal}</span>
+                    <span className="text-xs text-[#111827] font-medium">{t.payPaypal}</span>
                   </button>
 
-                  {/* Klarna */}
                   <button
                     onClick={() => setPaymentMethod('klarna')}
-                    className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'klarna' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
+                    className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'klarna' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
                   >
                     <svg width="28" height="20" viewBox="0 0 28 20" fill="none">
                       <rect width="28" height="20" rx="3" fill="#FFB3C7" />
                       <text x="4" y="14" fontSize="8" fontWeight="700" fill="#17120E" fontFamily="Arial">Klarna</text>
                     </svg>
-                    <span className="text-xs text-[#1A1410] font-medium">{t.payKlarna}</span>
+                    <span className="text-xs text-[#111827] font-medium">{t.payKlarna}</span>
                   </button>
                 </div>
 
-                {/* Card fields (shown only when card is selected) */}
                 {paymentMethod === 'card' && (
-                  <div className="space-y-3 mt-4 p-4 bg-white border border-[#E8DDD4]">
+                  <div className="space-y-3 mt-4 p-4 bg-white border border-[#FECACA]">
                     <div>
                       <label className={labelClass}>Kartennummer</label>
                       <input
@@ -445,23 +432,11 @@ export default function CheckoutPage() {
                     <div className="grid grid-cols-2 gap-3">
                       <div>
                         <label className={labelClass}>MM / JJ</label>
-                        <input
-                          type="text"
-                          placeholder="MM / JJ"
-                          maxLength={7}
-                          className={inputClass}
-                          autoComplete="cc-exp"
-                        />
+                        <input type="text" placeholder="MM / JJ" maxLength={7} className={inputClass} autoComplete="cc-exp" />
                       </div>
                       <div>
                         <label className={labelClass}>CVV</label>
-                        <input
-                          type="text"
-                          placeholder="123"
-                          maxLength={4}
-                          className={inputClass}
-                          autoComplete="cc-csc"
-                        />
+                        <input type="text" placeholder="123" maxLength={4} className={inputClass} autoComplete="cc-csc" />
                       </div>
                     </div>
                   </div>
@@ -471,37 +446,28 @@ export default function CheckoutPage() {
 
             {/* Right: Order summary */}
             <div className="lg:sticky lg:top-6 h-fit">
-              <div className="bg-white border border-[#E8DDD4] p-6">
-                <h2 className="text-base font-semibold text-[#1A1410] mb-5">{t.orderSummary}</h2>
+              <div className="bg-white border border-[#FECACA] p-6">
+                <h2 className="text-base font-semibold text-[#111827] mb-5">{t.orderSummary}</h2>
 
-                {/* Items */}
                 <div className="space-y-4 mb-5">
                   {items.length === 0 ? (
-                    <p className="text-sm text-[#9C8A7E]">{t.backToCart}</p>
+                    <p className="text-sm text-[#6B7280]">{t.backToCart}</p>
                   ) : (
                     items.map(item => (
                       <div key={item.id} className="flex gap-3">
-                        <Link href={`/product/${item.id}`} className="relative w-14 h-14 bg-[#F5F0EB] flex-shrink-0 overflow-hidden block">
-                          {item.image ? (
-                            <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
-                          ) : (
-                            <div className="w-full h-full flex items-center justify-center">
-                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4B8AE" strokeWidth="1.5">
-                                <circle cx="12" cy="12" r="9" />
-                              </svg>
-                            </div>
-                          )}
+                        <Link href={`/land1/product/${item.id}`} className="relative w-14 h-14 bg-[#FEF2F2] flex-shrink-0 overflow-hidden block">
+                          <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                           {item.qty > 1 && (
-                            <span className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-[#C4704F] text-white text-[10px] rounded-full flex items-center justify-center font-bold">
+                            <span className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-[#DC2626] text-white text-[10px] rounded-full flex items-center justify-center font-bold">
                               {item.qty}
                             </span>
                           )}
                         </Link>
                         <div className="flex-1 min-w-0">
-                          <Link href={`/product/${item.id}`} className="text-sm text-[#1A1410] truncate hover:text-[#C4704F] transition-colors block">{item.name}</Link>
-                          <p className="text-xs text-[#9C8A7E]">x{item.qty}</p>
+                          <Link href={`/land1/product/${item.id}`} className="text-sm text-[#111827] truncate hover:text-[#DC2626] transition-colors block">{item.name}</Link>
+                          <p className="text-xs text-[#6B7280]">x{item.qty}</p>
                         </div>
-                        <p className="text-sm font-medium text-[#1A1410] flex-shrink-0">
+                        <p className="text-sm font-medium text-[#111827] flex-shrink-0">
                           {fmt(item.price * item.qty)}
                         </p>
                       </div>
@@ -509,18 +475,18 @@ export default function CheckoutPage() {
                   )}
                 </div>
 
-                <div className="border-t border-[#E8DDD4] pt-4 space-y-2">
-                  <div className="flex justify-between text-sm text-[#6B5B4E]">
+                <div className="border-t border-[#FECACA] pt-4 space-y-2">
+                  <div className="flex justify-between text-sm text-[#6B7280]">
                     <span>{t.subtotal}</span>
                     <span>{fmt(total)}</span>
                   </div>
-                  <div className="flex justify-between text-sm text-[#6B5B4E]">
+                  <div className="flex justify-between text-sm text-[#6B7280]">
                     <span>{t.deliveryFee}</span>
-                    <span className={deliveryFee === 0 ? 'text-[#6B8F71] font-medium' : ''}>
+                    <span className={deliveryFee === 0 ? 'text-green-600 font-medium' : ''}>
                       {deliveryFee === 0 ? t.free : fmt(deliveryFee)}
                     </span>
                   </div>
-                  <div className="flex justify-between text-base font-semibold text-[#1A1410] pt-2 border-t border-[#E8DDD4]">
+                  <div className="flex justify-between text-base font-semibold text-[#111827] pt-2 border-t border-[#FECACA]">
                     <span>{t.total}</span>
                     <span>{fmt(orderTotal)}</span>
                   </div>
@@ -528,22 +494,21 @@ export default function CheckoutPage() {
 
                 <button
                   onClick={() => setShowPopup(true)}
-                  className="w-full mt-6 bg-[#C4704F] hover:bg-[#A85A3A] text-white py-4 text-sm font-semibold uppercase tracking-wider transition-colors"
+                  className="w-full mt-6 bg-[#DC2626] hover:bg-[#B91C1C] text-white py-4 text-sm font-semibold uppercase tracking-wider transition-colors"
                 >
                   {t.placeOrder}
                 </button>
 
-                {/* Trust badges */}
                 <div className="flex items-center justify-center gap-4 mt-4">
-                  <div className="flex items-center gap-1 text-[10px] text-[#9C8A7E]">
+                  <div className="flex items-center gap-1 text-[10px] text-[#6B7280]">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <rect x="3" y="11" width="18" height="11" rx="2" />
                       <path d="M7 11V7a5 5 0 0110 0v4" />
                     </svg>
                     SSL
                   </div>
-                  <div className="w-px h-3 bg-[#E8DDD4]" />
-                  <div className="flex items-center gap-1 text-[10px] text-[#9C8A7E]">
+                  <div className="w-px h-3 bg-[#FECACA]" />
+                  <div className="flex items-center gap-1 text-[10px] text-[#6B7280]">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                     </svg>

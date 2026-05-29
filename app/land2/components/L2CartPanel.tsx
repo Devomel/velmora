@@ -1,6 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useL2Cart } from './L2CartProvider';
 import { IS_RO } from '@/lib/i18n';
 
@@ -19,6 +21,7 @@ const FREE_DELIVERY = 50;
 
 export default function L2CartPanel({ t }: { t: CartT }) {
   const { items, isOpen, closeCart, removeItem, updateQty, total, count } = useL2Cart();
+  const router = useRouter();
   const progress = Math.min((total / FREE_DELIVERY) * 100, 100);
   const remaining = Math.max(FREE_DELIVERY - total, 0);
 
@@ -76,11 +79,11 @@ export default function L2CartPanel({ t }: { t: CartT }) {
             <div className="space-y-4">
               {items.map(item => (
                 <div key={item.id} className="flex gap-3 py-3 border-b border-[#FECACA] last:border-0">
-                  <div className="w-16 h-16 flex-shrink-0 relative overflow-hidden bg-[#FEF2F2]">
+                  <Link href={`/land2/product/${item.id}`} onClick={closeCart} className="w-16 h-16 flex-shrink-0 relative overflow-hidden bg-[#FEF2F2] block">
                     <Image src={item.image} alt={item.name} fill className="object-cover" />
-                  </div>
+                  </Link>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-[#111827] leading-tight">{item.name}</p>
+                    <Link href={`/land2/product/${item.id}`} onClick={closeCart} className="text-sm font-medium text-[#111827] leading-tight hover:text-[#DC2626] transition-colors block">{item.name}</Link>
                     <p className="text-sm text-[#DC2626] font-semibold mt-0.5">{IS_RO ? `${item.price} lei` : `€${item.price}`}</p>
                     <div className="flex items-center gap-2 mt-2">
                       <button onClick={() => updateQty(item.id, item.qty - 1)} className="w-7 h-7 border border-[#FECACA] flex items-center justify-center text-[#374151] hover:border-[#DC2626] hover:text-[#DC2626] transition-colors text-base">−</button>
@@ -104,7 +107,10 @@ export default function L2CartPanel({ t }: { t: CartT }) {
               <span className="text-[#6B7280]">{t.total}:</span>
               <span className="text-xl font-semibold text-[#111827]">{IS_RO ? `${total.toFixed(2)} lei` : `€${total.toFixed(2)}`}</span>
             </div>
-            <button className="w-full bg-[#DC2626] hover:bg-[#B91C1C] text-white py-4 text-sm font-semibold uppercase tracking-wider transition-colors">
+            <button
+              onClick={() => { closeCart(); router.push('/land2/checkout'); }}
+              className="w-full bg-[#DC2626] hover:bg-[#B91C1C] text-white py-4 text-sm font-semibold uppercase tracking-wider transition-colors"
+            >
               {t.checkout}
             </button>
           </div>

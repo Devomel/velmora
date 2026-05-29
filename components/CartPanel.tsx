@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import type { CommonT } from '@/lib/i18n';
 import { IS_RO } from '@/lib/i18n';
@@ -74,7 +75,7 @@ export default function CartPanel({ t }: Props) {
             <div className="space-y-4">
               {items.map(item => (
                 <div key={item.id} className="flex gap-3">
-                  <div className="w-16 h-16 bg-[#F5F0EB] rounded-sm flex-shrink-0 overflow-hidden">
+                  <Link href={`/product/${item.id}`} onClick={closeCart} className="w-16 h-16 bg-[#F5F0EB] rounded-sm flex-shrink-0 overflow-hidden block">
                     {item.image ? (
                       <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                     ) : (
@@ -84,9 +85,9 @@ export default function CartPanel({ t }: Props) {
                         </svg>
                       </div>
                     )}
-                  </div>
+                  </Link>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-[#1A1410] truncate">{item.name}</p>
+                    <Link href={`/product/${item.id}`} onClick={closeCart} className="text-sm font-medium text-[#1A1410] truncate hover:text-[#C4704F] transition-colors block">{item.name}</Link>
                     <p className="text-sm text-[#C4704F] font-semibold mt-0.5">{IS_RO ? `${item.price} lei` : `€${item.price}`}</p>
                     <div className="flex items-center gap-2 mt-2">
                       <button
