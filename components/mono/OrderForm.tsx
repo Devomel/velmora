@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { MonoT } from '@/lib/i18n';
+import { pushEvent, pushConversionEvent } from '@/lib/analytics';
 
 type Props = { t: MonoT['order']; price: number };
 
@@ -12,10 +13,18 @@ export default function OrderForm({ t, price }: Props) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => { pushEvent('view_item', { currency: 'EUR', value: price, items: [{ item_name: 'mono_product', price }] }); }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     await new Promise(r => setTimeout(r, 900));
+    pushConversionEvent(
+      'generate_lead',
+      { currency: 'EUR', value: price * qty },
+      { name, phone },
+    );
     setLoading(false);
     setSubmitted(true);
   };

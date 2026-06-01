@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useL1Cart } from '../components/L1CartProvider';
 import { IS_RO } from '@/lib/i18n';
+import { pushEvent, pushConversionEvent } from '@/lib/analytics';
 
 type CheckoutT = {
   title: string;
@@ -195,6 +196,13 @@ export default function L1CheckoutPage() {
   const [deliveryMethod, setDeliveryMethod] = useState<'standard' | 'express'>('standard');
   const [paymentMethod, setPaymentMethod] = useState<'card' | 'paypal' | 'klarna'>('card');
   const [showPopup, setShowPopup] = useState(false);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const phoneRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    pushEvent('begin_checkout', { currency: 'EUR', value: total });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const deliveryFee = total >= FREE_DELIVERY_THRESHOLD ? 0 : deliveryMethod === 'express' ? EXPRESS_PRICE : 4.99;
   const fmt = (n: number) => IS_RO ? `${n.toFixed(2)} lei` : `€${n.toFixed(2)}`;
@@ -205,6 +213,21 @@ export default function L1CheckoutPage() {
   const labelClass = 'block text-xs font-medium text-[#6B7280] uppercase tracking-wider mb-1';
   const sectionClass = 'mb-8';
   const sectionTitleClass = 'text-base font-semibold text-[#111827] mb-4 pb-2 border-b border-[#FECACA]';
+
+  const handlePlaceOrder = (e: React.FormEvent) => {
+    e.preventDefault();
+    pushConversionEvent(
+      'purchase',
+      {
+        transaction_id: Date.now().toString(),
+        currency: 'EUR',
+        value: orderTotal,
+        items: items.map(i => ({ item_id: String(i.id), item_name: i.name, price: i.price, quantity: i.qty })),
+      },
+      { email: emailRef.current?.value ?? '', phone: phoneRef.current?.value ?? '' },
+    );
+    setShowPopup(true);
+  };
 
   return (
     <>
@@ -270,7 +293,7 @@ export default function L1CheckoutPage() {
 
           <h1 className="text-2xl font-light text-[#111827] mb-8">{t.title}</h1>
 
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-8">
+          <form onSubmit={handlePlaceOrder} className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-8">
             {/* Left: Form */}
             <div>
               <section className={sectionClass}>
@@ -281,19 +304,19 @@ export default function L1CheckoutPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className={labelClass}>{t.firstName}</label>
-                    <input type="text" className={inputClass} autoComplete="given-name" />
+                    <input type="text" required className={inputClass} autoComplete="given-name" />
                   </div>
                   <div>
                     <label className={labelClass}>{t.lastName}</label>
-                    <input type="text" className={inputClass} autoComplete="family-name" />
+                    <input type="text" required className={inputClass} autoComplete="family-name" />
                   </div>
                   <div>
                     <label className={labelClass}>{t.email}</label>
-                    <input type="email" className={inputClass} autoComplete="email" />
+                    <input type="email" required ref={emailRef} className={inputClass} autoComplete="email" />
                   </div>
                   <div>
                     <label className={labelClass}>{t.phone}</label>
-                    <input type="tel" className={inputClass} autoComplete="tel" />
+                    <input type="tel" required ref={phoneRef} className={inputClass} autoComplete="tel" />
                   </div>
                 </div>
               </section>
@@ -306,21 +329,21 @@ export default function L1CheckoutPage() {
                 <div className="grid grid-cols-1 gap-4">
                   <div>
                     <label className={labelClass}>{t.address}</label>
-                    <input type="text" className={inputClass} autoComplete="street-address" />
+                    <input type="text" required className={inputClass} autoComplete="street-address" />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className={labelClass}>{t.postalCode}</label>
-                      <input type="text" className={inputClass} autoComplete="postal-code" />
+                      <input type="text" required className={inputClass} autoComplete="postal-code" />
                     </div>
                     <div>
                       <label className={labelClass}>{t.city}</label>
-                      <input type="text" className={inputClass} autoComplete="address-level2" />
+                      <input type="text" required className={inputClass} autoComplete="address-level2" />
                     </div>
                   </div>
                   <div>
                     <label className={labelClass}>{t.country}</label>
-                    <select className={inputClass + ' cursor-pointer'} autoComplete="country-name" defaultValue="">
+                    <select required className={inputClass + ' cursor-pointer'} autoComplete="country-name" defaultValue="">
                       <option value="" disabled />
                       {t.countries.map(c => (
                         <option key={c} value={c}>{c}</option>
@@ -493,7 +516,7 @@ export default function L1CheckoutPage() {
                 </div>
 
                 <button
-                  onClick={() => setShowPopup(true)}
+                  type="submit"
                   className="w-full mt-6 bg-[#DC2626] hover:bg-[#B91C1C] text-white py-4 text-sm font-semibold uppercase tracking-wider transition-colors"
                 >
                   {t.placeOrder}
@@ -517,7 +540,7 @@ export default function L1CheckoutPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </>

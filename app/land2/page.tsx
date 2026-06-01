@@ -9,6 +9,7 @@ import ReviewsSection from '../sections/ReviewsSection';
 import GuaranteesSection from '../sections/GuaranteesSection';
 import FaqSection from '../sections/FaqSection';
 import L2Footer from './components/L2Footer';
+import GaTracker from '@/components/GaTracker';
 
 export default async function Land2Page() {
    const { home, land2 } = await getMessages();
@@ -29,6 +30,7 @@ export default async function Land2Page() {
             <FaqSection t={home.faq} />
          </main>
          <L2Footer t={land2.footer} logoText="Velmora" />
+         <GaTracker event="view_item_list" params={{ item_list_name: 'land2' }} />
       </div>
    );
 }

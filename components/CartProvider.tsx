@@ -1,6 +1,7 @@
 'use client';
 
 import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from 'react';
+import { pushEvent } from '@/lib/analytics';
 
 export type CartItem = {
   id: number;
@@ -56,6 +57,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
         return prev.map(i => i.id === item.id ? { ...i, qty: i.qty + 1 } : i);
       }
       return [...prev, { ...item, qty: 1 }];
+    });
+    pushEvent('add_to_cart', {
+      currency: 'EUR',
+      value: item.price,
+      items: [{ item_id: String(item.id), item_name: item.name, price: item.price, quantity: 1 }],
     });
     setIsOpen(true);
   }, []);

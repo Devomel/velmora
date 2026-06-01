@@ -9,6 +9,7 @@ import GuaranteesSection from './sections/GuaranteesSection';
 import FaqSection from './sections/FaqSection';
 import SiteFooter from './sections/SiteFooter';
 import NavBar from "@/components/NavBar";
+import GaTracker from "@/components/GaTracker";
 
 export default async function HomePage() {
    const { home, common } = await getMessages();
@@ -29,6 +30,7 @@ export default async function HomePage() {
             <FaqSection t={home.faq} />
          </main>
          <SiteFooter t={home.footer} />
+         <GaTracker event="view_item_list" params={{ item_list_name: 'home' }} />
       </div>
    );
 }
