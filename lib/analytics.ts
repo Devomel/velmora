@@ -2,7 +2,28 @@ declare global {
   interface Window {
     gtag: (...args: unknown[]) => void;
     dataLayer: unknown[];
+    fbq: (...args: unknown[]) => void;
   }
+}
+
+type GaParams = Record<string, unknown>;
+
+const GA_TO_PIXEL: Record<string, (p: GaParams) => [string, Record<string, unknown>?]> = {
+  view_item: (p) => ['ViewContent', { content_type: 'product', value: p.value, currency: p.currency }],
+  add_to_cart: (p) => ['AddToCart', { value: p.value, currency: p.currency }],
+  begin_checkout: (p) => ['InitiateCheckout', { value: p.value, currency: p.currency }],
+  purchase: (p) => ['Purchase', { value: p.value, currency: p.currency }],
+  generate_lead: (p) => ['Lead', { value: p.value, currency: p.currency }],
+};
+
+function pushPixel(gaEvent: string, params?: GaParams): void {
+  try {
+    if (typeof window === 'undefined' || typeof window.fbq !== 'function') return;
+    const mapper = GA_TO_PIXEL[gaEvent];
+    if (!mapper) return;
+    const [pixelEvent, pixelParams] = mapper(params ?? {});
+    window.fbq('track', pixelEvent, pixelParams);
+  } catch {}
 }
 
 const KEY = 'ga_conv';
@@ -40,6 +61,7 @@ export function pushEvent(name: string, params?: Record<string, unknown>): void 
   try {
     window.gtag('event', name, params);
   } catch {}
+  pushPixel(name, params);
 }
 
 export function pushConversionEvent(
@@ -51,5 +73,6 @@ export function pushConversionEvent(
   try {
     window.gtag('event', name, params);
   } catch {}
+  pushPixel(name, params);
   markConverted(formData);
 }
