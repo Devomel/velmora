@@ -17,13 +17,15 @@ const GA_TO_PIXEL: Record<string, (p: GaParams) => [string, Record<string, unkno
 };
 
 function pushPixel(gaEvent: string, params?: GaParams): void {
-  try {
-    if (typeof window === 'undefined' || typeof window.fbq !== 'function') return;
-    const mapper = GA_TO_PIXEL[gaEvent];
-    if (!mapper) return;
-    const [pixelEvent, pixelParams] = mapper(params ?? {});
-    window.fbq('track', pixelEvent, pixelParams);
-  } catch {}
+  const mapper = GA_TO_PIXEL[gaEvent];
+  if (!mapper) return;
+  const [pixelEvent, pixelParams] = mapper(params ?? {});
+  !(function(f: typeof window, t: string, e: string, p: Record<string, unknown> | undefined) {
+    try {
+      if (typeof f.fbq !== 'function') return;
+      f.fbq(t, e, p);
+    } catch {}
+  }(window, 'track', pixelEvent, pixelParams));
 }
 
 const KEY = 'ga_conv';
