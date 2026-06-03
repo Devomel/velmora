@@ -201,7 +201,7 @@ export default function CheckoutPage() {
   const phoneRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    pushEvent('begin_checkout', { currency: 'EUR', value: total });
+    pushEvent('begin_checkout', { currency: 'EUR', value: total, items: items.map(i => ({ item_id: String(i.id), item_name: i.name, price: i.price, quantity: i.qty })) });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

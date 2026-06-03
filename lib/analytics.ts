@@ -8,11 +8,33 @@ declare global {
 
 type GaParams = Record<string, unknown>;
 
+type GaItem = { item_id?: string; item_name?: string; price?: number; quantity?: number };
+
+function toPixelContents(items: GaItem[]) {
+  return items.map(i => ({ id: i.item_id ?? i.item_name ?? '', quantity: i.quantity ?? 1, item_price: i.price ?? 0 }));
+}
+
+function toContentIds(items: GaItem[]) {
+  return items.map(i => i.item_id ?? i.item_name ?? '');
+}
+
 const GA_TO_PIXEL: Record<string, (p: GaParams) => [string, Record<string, unknown>?]> = {
-  view_item: (p) => ['ViewContent', { content_type: 'product', value: p.value, currency: p.currency }],
-  add_to_cart: (p) => ['AddToCart', { value: p.value, currency: p.currency }],
-  begin_checkout: (p) => ['InitiateCheckout', { value: p.value, currency: p.currency }],
-  purchase: (p) => ['Purchase', { value: p.value, currency: p.currency }],
+  view_item: (p) => {
+    const items = (p.items as GaItem[] | undefined) ?? [];
+    return ['ViewContent', { content_type: 'product', content_ids: toContentIds(items), contents: toPixelContents(items), value: p.value, currency: p.currency }];
+  },
+  add_to_cart: (p) => {
+    const items = (p.items as GaItem[] | undefined) ?? [];
+    return ['AddToCart', { content_type: 'product', content_ids: toContentIds(items), contents: toPixelContents(items), value: p.value, currency: p.currency }];
+  },
+  begin_checkout: (p) => {
+    const items = (p.items as GaItem[] | undefined) ?? [];
+    return ['InitiateCheckout', { content_type: 'product', content_ids: toContentIds(items), contents: toPixelContents(items), value: p.value, currency: p.currency }];
+  },
+  purchase: (p) => {
+    const items = (p.items as GaItem[] | undefined) ?? [];
+    return ['Purchase', { content_type: 'product', content_ids: toContentIds(items), contents: toPixelContents(items), value: p.value, currency: p.currency }];
+  },
   generate_lead: (p) => ['Lead', { value: p.value, currency: p.currency }],
 };
 
