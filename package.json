@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "sync-photos": "node scripts/download-photos.mjs",
+    "gen-feeds": "node scripts/generate-feeds.mjs",
     "dev": "next dev",
     "prebuild": "node scripts/optimize-images.mjs",
     "build": "next build",
