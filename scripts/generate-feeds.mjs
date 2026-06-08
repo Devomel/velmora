@@ -14,12 +14,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const require = createRequire(import.meta.url);
 
-// ── Locale → subdomain config ─────────────────────────────────────────────
-const LOCALES = {
-  de: { domain: 'https://de.cookware-market.com',  lang: 'de', currency: 'EUR', useLei: false },
-  no: { domain: 'https://no.cookware-market.com',  lang: 'no', currency: 'NOK', useLei: false },
-  ro: { domain: 'https://ro.cookware-market.com',  lang: 'ro', currency: 'RON', useLei: true  },
-  ru: { domain: 'https://eu.cookware-market.com',  lang: 'ru', currency: 'EUR', useLei: false },
+// ── Subdomain → locale + domain config ───────────────────────────────────
+// `locale` refers to the locales/{locale}/home.json translation file
+const FEEDS = {
+  de: { domain: 'https://de.cookware-market.com', locale: 'de', currency: 'EUR', useLei: false },
+  at: { domain: 'https://at.cookware-market.com', locale: 'de', currency: 'EUR', useLei: false },
+  no: { domain: 'https://no.cookware-market.com', locale: 'no', currency: 'EUR', useLei: false },
+  ro: { domain: 'https://ro.cookware-market.com', locale: 'ro', currency: 'RON', useLei: true  },
+  eu: { domain: 'https://eu.cookware-market.com', locale: 'ru', currency: 'EUR', useLei: false },
 };
 
 // ── Product article keys in order (matches home.json catalog.products[]) ──
@@ -73,8 +75,8 @@ function esc(str) {
 }
 
 // ── Generate one feed ─────────────────────────────────────────────────────
-function generateFeed(locale, config, prices) {
-  const home = require(path.join(ROOT, 'locales', locale, 'home.json'));
+function generateFeed(subdomain, config, prices) {
+  const home = require(path.join(ROOT, 'locales', config.locale, 'home.json'));
   const products = home.catalog.products; // array of 37, same order as ARTICLE_KEYS
 
   const items = ARTICLE_KEYS.map((articleKey, i) => {
@@ -121,7 +123,7 @@ function generateFeed(locale, config, prices) {
     `<?xml version="1.0" encoding="UTF-8"?>`,
     `<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">`,
     `  <channel>`,
-    `    <title>Velmora Cookware – ${locale.toUpperCase()}</title>`,
+    `    <title>Velmora Cookware – ${subdomain.toUpperCase()}</title>`,
     `    <link>${config.domain}/</link>`,
     `    <description>Velmora cookware catalog</description>`,
     ...items,
@@ -136,9 +138,9 @@ fs.mkdirSync(outDir, { recursive: true });
 
 const prices = loadPrices();
 
-for (const [locale, config] of Object.entries(LOCALES)) {
-  const xml = generateFeed(locale, config, prices);
-  const outPath = path.join(outDir, `${locale}.xml`);
+for (const [subdomain, config] of Object.entries(FEEDS)) {
+  const xml = generateFeed(subdomain, config, prices);
+  const outPath = path.join(outDir, `${subdomain}.xml`);
   fs.writeFileSync(outPath, xml, 'utf-8');
-  console.log(`✓  ${locale}  →  public/feeds/${locale}.xml  (${xml.length} bytes)`);
+  console.log(`✓  ${subdomain}  →  public/feeds/${subdomain}.xml  (locale: ${config.locale}, ${xml.length} bytes)`);
 }
