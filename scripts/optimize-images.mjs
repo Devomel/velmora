@@ -6,6 +6,8 @@ const SRC = 'products/photos';
 const DEST = 'public/products';
 
 const RENAMES = [
+  [/^кераміка_1_[а-яіїєА-ЯІЇЄ]+/, 'keramika_1'],
+  [/^кераміка_2_[а-яіїєА-ЯІЇЄ]+/, 'keramika_2'],
   [/^кераміка_1/, 'keramika_1'],
   [/^кераміка_2/, 'keramika_2'],
 ];
@@ -17,6 +19,8 @@ function toSlug(stem) {
   }
   return s;
 }
+
+const FORCE = process.argv.includes('--force');
 
 fs.mkdirSync(DEST, { recursive: true });
 
@@ -34,7 +38,7 @@ for (const entry of images) {
   const srcStat = fs.statSync(srcPath);
   const destStat = fs.existsSync(destPath) ? fs.statSync(destPath) : null;
 
-  if (destStat && destStat.mtimeMs > srcStat.mtimeMs) {
+  if (!FORCE && destStat && destStat.mtimeMs > srcStat.mtimeMs) {
     skipped++;
     continue;
   }
@@ -87,7 +91,7 @@ if (fs.existsSync(CSV_PATH)) {
       const destPath = path.join(DEST, `${key}_4.webp`);
       const destStat = fs.existsSync(destPath) ? fs.statSync(destPath) : null;
 
-      if (destStat && destStat.mtimeMs > srcMtime) { catSkipped++; continue; }
+      if (!FORCE && destStat && destStat.mtimeMs > srcMtime) { catSkipped++; continue; }
 
       await sharp(srcPath)
         .resize(1200, 1200, { fit: 'inside', withoutEnlargement: true })

@@ -42,7 +42,7 @@ function pushPixel(gaEvent: string, params?: GaParams): void {
   const mapper = GA_TO_PIXEL[gaEvent];
   if (!mapper) return;
   const [pixelEvent, pixelParams] = mapper(params ?? {});
-  !(function(f: typeof window, t: string, e: string, p: Record<string, unknown> | undefined) {
+  (function(f: typeof window, t: string, e: string, p: Record<string, unknown> | undefined) {
     try {
       if (typeof f.fbq !== 'function') return;
       f.fbq(t, e, p);

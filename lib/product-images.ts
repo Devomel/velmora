@@ -21,6 +21,7 @@ export function getProductImages(articleKey: string, categoryKey?: string): stri
 
    const matched = files.filter(f => {
       if (!f.toLowerCase().endsWith('.webp')) return false;
+      if (!/^[\x00-\x7F]+$/.test(f)) return false;
       const stem = f.slice(0, -5);
       return stem === slug || stem.startsWith(slug + '_');
    });

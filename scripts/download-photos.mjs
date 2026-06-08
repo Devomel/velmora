@@ -104,6 +104,16 @@ async function downloadFile(fileId, destPath) {
    await pipeline(res.data, fs.createWriteStream(destPath));
 }
 
+function resolveExt(file) {
+   const ext = path.extname(file.name).toLowerCase();
+   if (ext) return ext;
+   const mime = file.mimeType ?? '';
+   if (mime === 'image/png') return '.png';
+   if (mime.includes('jpeg') || mime.includes('jpg')) return '.jpg';
+   if (mime === 'image/webp') return '.webp';
+   return '.png';
+}
+
 // ── Core logic ────────────────────────────────────────────────────────────────
 function deleteExistingArticleFiles(article) {
    const entries = fs.readdirSync(DEST_DIR, { withFileTypes: true });
@@ -147,14 +157,14 @@ async function processProductFolder(folder, cache) {
 
    for (const photo of mainPhotos) {
       const stem = photo.name.replace(/\.[^.]+$/, '');
-      const ext = path.extname(photo.name);
+      const ext = resolveExt(photo);
       await downloadFile(photo.id, path.join(DEST_DIR, stem + ext));
       downloaded++;
    }
 
    let num = 2;
    for (const photo of otherPhotos) {
-      const ext = path.extname(photo.name);
+      const ext = resolveExt(photo);
       await downloadFile(photo.id, path.join(DEST_DIR, `${article}_${num}${ext}`));
       downloaded++;
       num++;
