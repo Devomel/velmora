@@ -58,11 +58,33 @@ function loadPrices() {
   return prices;
 }
 
-// ── Resolve image filename (Cyrillic → Latin) ─────────────────────────────
-function imageSlug(articleKey) {
-  return articleKey
+// ── Resolve first available product image filename ────────────────────────
+const PRODUCTS_DIR = path.join(ROOT, 'public', 'products');
+const ALL_PRODUCT_FILES = fs.readdirSync(PRODUCTS_DIR);
+
+function firstImageFile(articleKey) {
+  const slug = articleKey
     .replace('кераміка_1', 'keramika_1')
     .replace('кераміка_2', 'keramika_2');
+
+  const matched = ALL_PRODUCT_FILES
+    .filter(f => {
+      if (!f.toLowerCase().endsWith('.webp')) return false;
+      if (!/^[\x00-\x7F]+$/.test(f)) return false; // skip Cyrillic filenames
+      const stem = f.slice(0, -5);
+      return stem === slug || stem.startsWith(slug + '_');
+    })
+    .sort((a, b) => {
+      const stem = (f) => f.slice(0, -5).slice(slug.length);
+      const order = (s) => {
+        if (s === '') return 0;
+        const num = s.match(/^_(\d+)$/);
+        return num ? parseInt(num[1], 10) : 999;
+      };
+      return order(stem(a)) - order(stem(b));
+    });
+
+  return matched.length > 0 ? matched[0] : `${slug}.webp`;
 }
 
 // ── XML escape ────────────────────────────────────────────────────────────
@@ -88,8 +110,7 @@ function generateFeed(subdomain, config, prices) {
     const currency = config.currency;
     const productId = i + 1; // matches route /product/[id]/
 
-    const slug   = imageSlug(articleKey);
-    const imgUrl = `${config.domain}/products/${slug}.webp`;
+    const imgUrl = `${config.domain}/products/${firstImageFile(articleKey)}`;
     const link   = `${config.domain}/product/${productId}/`;
 
     const description = [product.description, ...(product.features ?? [])].join('. ');
