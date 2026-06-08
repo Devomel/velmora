@@ -113,7 +113,6 @@ function generateFeed(subdomain, config, prices) {
 
     lines.push(`      <g:brand>Velmora</g:brand>`);
     lines.push(`      <g:mpn>${esc(articleKey)}</g:mpn>`);
-    lines.push(`      <g:google_product_category>638</g:google_product_category>`); // Cookware
     lines.push(`    </item>`);
 
     return lines.join('\n');
