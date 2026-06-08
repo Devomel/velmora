@@ -103,12 +103,11 @@ function generateFeed(subdomain, config, prices) {
       `      <g:image_link>${esc(imgUrl)}</g:image_link>`,
       `      <g:condition>new</g:condition>`,
       `      <g:availability>in stock</g:availability>`,
-      `      <g:price>${currentPrice}.00 ${currency}</g:price>`,
+      `      <g:price>${originalPrice > currentPrice ? originalPrice : currentPrice}.00 ${currency}</g:price>`,
     ];
 
     if (originalPrice > currentPrice) {
       lines.push(`      <g:sale_price>${currentPrice}.00 ${currency}</g:sale_price>`);
-      lines.push(`      <g:original_price>${originalPrice}.00 ${currency}</g:original_price>`);
     }
 
     lines.push(`      <g:brand>Velmora</g:brand>`);
