@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useCart } from '@/components/CartProvider';
 import { IS_RO } from '@/lib/i18n';
-import { pushEvent, pushConversionEvent } from '@/lib/analytics';
+import { pushEvent, pushEventOnce, pushConversionEvent } from '@/lib/analytics';
 
 type CheckoutT = {
   title: string;
@@ -201,7 +201,7 @@ export default function CheckoutPage() {
   const phoneRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    pushEvent('begin_checkout', { currency: 'EUR', value: total, items: items.map(i => ({ item_id: String(i.id), item_name: i.name, price: i.price, quantity: i.qty })) });
+    pushEventOnce('begin_checkout', { currency: 'EUR', value: total, items: items.map(i => ({ item_id: String(i.id), item_name: i.name, price: i.price, quantity: i.qty })) });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

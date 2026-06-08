@@ -80,6 +80,14 @@ export function markConverted(formData?: Record<string, string>): void {
   } catch {}
 }
 
+const _firedOnce = new Set<string>();
+
+export function pushEventOnce(name: string, params?: Record<string, unknown>): void {
+  if (_firedOnce.has(name)) return;
+  _firedOnce.add(name);
+  pushEvent(name, params);
+}
+
 export function pushEvent(name: string, params?: Record<string, unknown>): void {
   if (typeof window === 'undefined' || isBlocked()) return;
   try {
