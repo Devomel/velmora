@@ -1,3 +1,5 @@
+import { LOCALE } from '@/lib/i18n';
+
 declare global {
   interface Window {
     gtag: (...args: unknown[]) => void;
@@ -5,6 +7,14 @@ declare global {
     fbq: (...args: unknown[]) => void;
   }
 }
+
+const ADS_PURCHASE_LABELS: Record<string, string> = {
+  ro: 'AW-18199942441/fkymCO_AgbwcEKmqtOZD',
+  de: 'AW-18199942441/aYBgCLW-7LscEKmqtOZD',
+  no: 'AW-18199942441/LRSjCMTvgbwcEKmqtOZD',
+  at: 'AW-18199942441/SyXFCJ-VgrwcEKmqtOZD',
+  ru: 'AW-18199942441/OEjqCMP2grwcEKmqtOZD',
+};
 
 type GaParams = Record<string, unknown>;
 
@@ -104,6 +114,17 @@ export function pushConversionEvent(
   if (typeof window === 'undefined' || isBlocked(formData)) return;
   try {
     window.gtag('event', name, params);
+    if (name === 'purchase') {
+      const sendTo = ADS_PURCHASE_LABELS[LOCALE];
+      if (sendTo) {
+        window.gtag('event', 'conversion', {
+          send_to: sendTo,
+          value: params?.value,
+          currency: params?.currency,
+          transaction_id: params?.transaction_id,
+        });
+      }
+    }
   } catch {}
   pushPixel(name, params);
   markConverted(formData);

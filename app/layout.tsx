@@ -46,6 +46,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${gaId}', { send_page_view: false });
+              gtag('config', 'AW-18199942441');
             `}</Script>
           </>
         )}
