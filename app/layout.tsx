@@ -14,6 +14,15 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const { common } = await getMessages();
   const { lang, dir } = LOCALE_META[LOCALE];
 
+  const CLARITY_IDS: Record<string, string> = {
+    ro: 'x4dgqs8yru',
+    ru: 'x4dht7vqti',
+    no: 'x4dh3hhh1h',
+    de: 'x4df9wpo1m',
+    at: 'x4dhctqi0e',
+  };
+  const clarityId = CLARITY_IDS[LOCALE];
+
   const GA_IDS: Record<string, string> = {
     ro: 'G-CDPCQJPWMZ', // ro.cookware-market.com
     ru: 'G-E47PEJ9WWJ', // eu.cookware-market.com (Russian-language DE market)
@@ -39,6 +48,15 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               gtag('config', '${gaId}', { send_page_view: false });
             `}</Script>
           </>
+        )}
+        {clarityId && (
+          <Script id="clarity" strategy="afterInteractive">{`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window,document,"clarity","script","${clarityId}");
+          `}</Script>
         )}
         <Script id="meta-pixel" strategy="afterInteractive">{`
           !function(f,b,e,v,n,t,s)

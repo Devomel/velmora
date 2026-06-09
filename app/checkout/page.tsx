@@ -415,6 +415,7 @@ export default function CheckoutPage() {
                 <div className="flex gap-3 mb-4">
                   {/* Card */}
                   <button
+                    type="button"
                     onClick={() => setPaymentMethod('card')}
                     className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'card' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
                   >
@@ -428,6 +429,7 @@ export default function CheckoutPage() {
 
                   {/* PayPal */}
                   <button
+                    type="button"
                     onClick={() => setPaymentMethod('paypal')}
                     className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'paypal' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
                   >
@@ -441,6 +443,7 @@ export default function CheckoutPage() {
 
                   {/* Klarna */}
                   <button
+                    type="button"
                     onClick={() => setPaymentMethod('klarna')}
                     className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'klarna' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
                   >

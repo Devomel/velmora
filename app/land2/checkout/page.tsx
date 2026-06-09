@@ -405,6 +405,7 @@ export default function L2CheckoutPage() {
                 </h2>
                 <div className="flex gap-3 mb-4">
                   <button
+                    type="button"
                     onClick={() => setPaymentMethod('card')}
                     className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'card' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
                   >
@@ -417,6 +418,7 @@ export default function L2CheckoutPage() {
                   </button>
 
                   <button
+                    type="button"
                     onClick={() => setPaymentMethod('paypal')}
                     className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'paypal' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
                   >
@@ -429,6 +431,7 @@ export default function L2CheckoutPage() {
                   </button>
 
                   <button
+                    type="button"
                     onClick={() => setPaymentMethod('klarna')}
                     className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'klarna' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
                   >
