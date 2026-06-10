@@ -1,4 +1,4 @@
-import type { MonoT } from '@/lib/i18n';
+import { IS_RO, type MonoT } from '@/lib/i18n';
 import OrderForm from './OrderForm';
 import MonoFaq from './MonoFaq';
 import ProductDescription from './ProductDescription';
@@ -8,6 +8,8 @@ type Props = {
   t: MonoT;
   newPrice: number;
   oldPrice: number;
+  newPriceLei: number;
+  oldPriceLei: number;
   image: string;
 };
 
@@ -39,7 +41,9 @@ const UTP_ICONS = [
   </svg>,
 ];
 
-export default function MonoPage({ t, newPrice, oldPrice, image }: Props) {
+export default function MonoPage({ t, newPrice, oldPrice, newPriceLei, oldPriceLei, image }: Props) {
+  const displayNew = IS_RO ? `${newPriceLei} lei` : `${newPrice} €`;
+  const displayOld = IS_RO ? `${oldPriceLei} lei` : `${oldPrice} €`;
   const discount = Math.round((1 - newPrice / oldPrice) * 100);
 
   return (
@@ -104,9 +108,9 @@ export default function MonoPage({ t, newPrice, oldPrice, image }: Props) {
           {/* price */}
           <div className="grid grid-cols-[1fr_auto] items-center gap-x-3 mb-8 pb-8 border-b border-[#E8DDD4]">
             <div>
-              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A1410] block">{newPrice} €</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#1A1410] block">{displayNew}</span>
               <div className="flex items-center gap-3 mt-1.5">
-                <span className="text-lg text-[#9C8A7E] line-through">{oldPrice} €</span>
+                <span className="text-lg text-[#9C8A7E] line-through">{displayOld}</span>
                 <span className="text-sm font-semibold text-white bg-[#C4704F] px-2 py-0.5">
                   −{discount}%
                 </span>
@@ -163,11 +167,11 @@ export default function MonoPage({ t, newPrice, oldPrice, image }: Props) {
             <div className="flex items-center justify-between mb-8 pb-6 border-b border-[#E8DDD4]">
               <span className="text-sm text-[#6B5B4E] max-w-[60%]">{t.product.name}</span>
               <div className="text-right">
-                <div className="font-bold text-[#1A1410] text-xl">{newPrice} €</div>
-                <div className="text-xs text-[#9C8A7E] line-through">{oldPrice} €</div>
+                <div className="font-bold text-[#1A1410] text-xl">{displayNew}</div>
+                <div className="text-xs text-[#9C8A7E] line-through">{displayOld}</div>
               </div>
             </div>
-            <OrderForm t={t.order} price={newPrice} />
+            <OrderForm t={t.order} price={newPrice} priceLei={newPriceLei} />
           </div>
         </div>
       </section>

@@ -3,5 +3,5 @@ import MonoPage from '@/components/mono/MonoPage';
 
 export default async function Mono1Page() {
   const { mono1 } = await getMessages();
-  return <MonoPage t={mono1} newPrice={89} oldPrice={183} image="/mono-products/1.jpg" />;
+  return <MonoPage t={mono1} newPrice={89} oldPrice={183} newPriceLei={449} oldPriceLei={919} image="/mono-products/1.jpg" />;
 }

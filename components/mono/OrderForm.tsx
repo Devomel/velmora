@@ -1,12 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import type { MonoT } from '@/lib/i18n';
+import { IS_RO, type MonoT } from '@/lib/i18n';
 import { pushEvent, pushConversionEvent } from '@/lib/analytics';
 
-type Props = { t: MonoT['order']; price: number };
+type Props = { t: MonoT['order']; price: number; priceLei: number };
 
-export default function OrderForm({ t, price }: Props) {
+export default function OrderForm({ t, price, priceLei }: Props) {
+  const activePrice = IS_RO ? priceLei : price;
+  const currency = IS_RO ? 'RON' : 'EUR';
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [qty, setQty] = useState(1);
@@ -14,7 +16,7 @@ export default function OrderForm({ t, price }: Props) {
   const [loading, setLoading] = useState(false);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => { pushEvent('view_item', { currency: 'EUR', value: price, items: [{ item_name: 'mono_product', price }] }); }, []);
+  useEffect(() => { pushEvent('view_item', { currency, value: activePrice, items: [{ item_name: 'mono_product', price: activePrice }] }); }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,7 +24,7 @@ export default function OrderForm({ t, price }: Props) {
     await new Promise(r => setTimeout(r, 900));
     pushConversionEvent(
       'generate_lead',
-      { currency: 'EUR', value: price * qty },
+      { currency, value: activePrice * qty },
       { name, phone },
     );
     setLoading(false);
@@ -79,7 +81,7 @@ export default function OrderForm({ t, price }: Props) {
             className="w-10 h-10 flex items-center justify-center text-[#C4704F] hover:bg-[#C4704F]/5 transition-colors text-lg">+</button>
         </div>
         <span className="text-sm text-[#6B5B4E]">
-          {t.totalLabel}: <strong className="text-[#1A1410]">{price * qty} €</strong>
+          {t.totalLabel}: <strong className="text-[#1A1410]">{activePrice * qty} {IS_RO ? 'lei' : '€'}</strong>
         </span>
       </div>
 
