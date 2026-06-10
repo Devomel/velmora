@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Набір скляних контейнерів Locker, 3 шт | cookware market',
-  description: 'Скляні контейнери з герметичними кришками. Зберігайте продукти свіжими довше. Ціна 14 €. Доставка по Україні.',
+  title: 'Великий набір каструль 12 предметів, нержавіюча сталь, індукція | cookware market',
+  description: 'Набір каструль з нержавіючої сталі зі скляними кришками. Підходить для індукції. Ціна 89 €. Доставка по Україні.',
 };
 
 export default function Mono1Layout({ children }: { children: React.ReactNode }) {
