@@ -34,22 +34,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang={lang} dir={dir}>
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18199942441" />
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18199942441');${gaId ? `gtag('config','${gaId}',{send_page_view:false});` : ''}` }} />
+      </head>
       <body>
-        {gaId && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-              strategy="afterInteractive"
-            />
-            <Script id="ga-init" strategy="afterInteractive">{`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${gaId}', { send_page_view: false });
-              gtag('config', 'AW-18199942441');
-            `}</Script>
-          </>
-        )}
         {clarityId && (
           <Script id="clarity" strategy="afterInteractive">{`
             (function(c,l,a,r,i,t,y){

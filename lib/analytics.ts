@@ -16,6 +16,23 @@ const ADS_PURCHASE_LABELS: Record<string, string> = {
   ru: 'AW-18199942441/OEjqCMP2grwcEKmqtOZD',
 };
 
+// Subdomain → ADS_PURCHASE_LABELS key mapping.
+// eu.cookware-market.com is the Russian-language DE market (ru label).
+const SUBDOMAIN_TO_LABEL_KEY: Record<string, string> = {
+  ro: 'ro',
+  eu: 'ru',
+  no: 'no',
+  de: 'de',
+  at: 'at',
+};
+
+function getAdsPurchaseLabel(): string | undefined {
+  if (typeof window === 'undefined') return undefined;
+  const subdomain = window.location.hostname.split('.')[0];
+  const key = SUBDOMAIN_TO_LABEL_KEY[subdomain] ?? LOCALE;
+  return ADS_PURCHASE_LABELS[key];
+}
+
 type GaParams = Record<string, unknown>;
 
 type GaItem = { item_id?: string; item_name?: string; price?: number; quantity?: number };
@@ -115,7 +132,7 @@ export function pushConversionEvent(
   try {
     window.gtag('event', name, params);
     if (name === 'purchase') {
-      const sendTo = ADS_PURCHASE_LABELS[LOCALE];
+      const sendTo = getAdsPurchaseLabel();
       if (sendTo) {
         window.gtag('event', 'conversion', {
           send_to: sendTo,
