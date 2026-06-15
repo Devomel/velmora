@@ -28,20 +28,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18199942441" />
         <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18199942441');${gaId ? `gtag('config','${gaId}',{send_page_view:false});` : ''}` }} />
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var ids={ro:'x4dgqs8yru',eu:'x4dht7vqti',no:'x4dh3hhh1h',de:'x4df9wpo1m',at:'x4dhctqi0e'};var id=ids[location.hostname.slice(0,2)];if(!id)return;(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,'clarity','script',id)})();` }} />
       </head>
       <body>
-        <Script id="clarity" strategy="afterInteractive">{`
-          (function(){
-            var ids={ro:'x4dgqs8yru',eu:'x4dht7vqti',no:'x4dh3hhh1h',de:'x4df9wpo1m',at:'x4dhctqi0e'};
-            var id=ids[location.hostname.slice(0,2)];
-            if(!id)return;
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window,document,"clarity","script",id);
-          })();
-        `}</Script>
         <Script id="meta-pixel" strategy="afterInteractive">{`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
