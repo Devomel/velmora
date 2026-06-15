@@ -326,15 +326,6 @@ export default function L1CheckoutPage() {
                       <input type="text" required className={inputClass} autoComplete="address-level2" />
                     </div>
                   </div>
-                  <div>
-                    <label className={labelClass}>{t.country}</label>
-                    <select required className={inputClass + ' cursor-pointer'} autoComplete="country-name" defaultValue="">
-                      <option value="" disabled />
-                      {t.countries.map(c => (
-                        <option key={c} value={c}>{c}</option>
-                      ))}
-                    </select>
-                  </div>
                 </div>
               </section>
 
@@ -388,7 +379,7 @@ export default function L1CheckoutPage() {
                   <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#DC2626] text-white text-xs font-bold mr-2">4</span>
                   {t.payment}
                 </h2>
-                <div className="flex gap-3 mb-4">
+                <div className="flex gap-3">
                   <button
                     type="button"
                     onClick={() => setPaymentMethod('card')}
@@ -427,31 +418,6 @@ export default function L1CheckoutPage() {
                     <span className="text-xs text-[#111827] font-medium">{t.payKlarna}</span>
                   </button>
                 </div>
-
-                {paymentMethod === 'card' && (
-                  <div className="space-y-3 mt-4 p-4 bg-white border border-[#FECACA]">
-                    <div>
-                      <label className={labelClass}>Kartennummer</label>
-                      <input
-                        type="text"
-                        placeholder="1234 5678 9012 3456"
-                        maxLength={19}
-                        className={inputClass}
-                        autoComplete="cc-number"
-                      />
-                    </div>
-                    <div className="grid grid-cols-2 gap-3">
-                      <div>
-                        <label className={labelClass}>MM / JJ</label>
-                        <input type="text" placeholder="MM / JJ" maxLength={7} className={inputClass} autoComplete="cc-exp" />
-                      </div>
-                      <div>
-                        <label className={labelClass}>CVV</label>
-                        <input type="text" placeholder="123" maxLength={4} className={inputClass} autoComplete="cc-csc" />
-                      </div>
-                    </div>
-                  </div>
-                )}
               </section>
             </div>
 
