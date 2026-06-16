@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import { getMessages } from "@/lib/i18n";
 import { PRODUCT_DATA } from '@/lib/products';
 import { getProductImages } from '@/lib/product-images';
@@ -12,9 +11,13 @@ import SiteFooter from './sections/SiteFooter';
 import NavBar from "@/components/NavBar";
 import GaTracker from "@/components/GaTracker";
 
-export default async function HomePage() {
+const VALID_CATEGORY_KEYS = ['all', 'pots', 'pans', 'other'];
+
+export default async function HomePage({ searchParams }: { searchParams: Promise<{ category?: string }> }) {
    const { home, common } = await getMessages();
    const productImages = Object.fromEntries(PRODUCT_DATA.map(p => [p.articleKey, getProductImages(p.articleKey)[0]]));
+   const { category } = await searchParams;
+   const initialCategory = category && VALID_CATEGORY_KEYS.includes(category) ? category : 'all';
 
    return (
       <div className="min-h-screen flex flex-col bg-[#FDFAF7]">
@@ -24,9 +27,7 @@ export default async function HomePage() {
          </div>
          <HeroAdvantages t={home.hero} />
          <main className="flex-1">
-            <Suspense>
-               <CatalogSection t={home.catalog} productImages={productImages} products={PRODUCT_DATA} />
-            </Suspense>
+            <CatalogSection t={home.catalog} productImages={productImages} products={PRODUCT_DATA} initialCategory={initialCategory} />
             <StatsSection t={home.stats} />
             <ReviewsSection t={home.reviews} />
             <GuaranteesSection t={home.guarantees} />
