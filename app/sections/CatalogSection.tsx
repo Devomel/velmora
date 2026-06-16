@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import type { HomeT } from '@/lib/i18n';
 import { fmtPrice, IS_RO } from '@/lib/i18n';
@@ -119,13 +120,29 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPre
    );
 }
 
+const VALID_CATEGORY_KEYS = ['all', 'pots', 'pans', 'other'] as const;
+
 export default function CatalogSection({ t, productImages, products: productData, productLinkPrefix = '/product/', priceOnly = false, onAddItem }: Props) {
    const { addItem: defaultAddItem } = useCart();
    const addItem = onAddItem ?? defaultAddItem;
-   const [activeCategoryKey, setActiveCategoryKey] = useState('all');
+   const searchParams = useSearchParams();
+   const rawCategory = searchParams.get('category');
+   const initialCategory = rawCategory && (VALID_CATEGORY_KEYS as readonly string[]).includes(rawCategory) ? rawCategory : 'all';
+   const [activeCategoryKey, setActiveCategoryKey] = useState(initialCategory);
    const [priceIdx, setPriceIdx] = useState(0);
    const [minRating, setMinRating] = useState(0);
    const [sortOrder, setSortOrder] = useState<'default' | 'asc' | 'desc'>('default');
+
+   useEffect(() => {
+      const params = new URLSearchParams(window.location.search);
+      if (activeCategoryKey === 'all') {
+         params.delete('category');
+      } else {
+         params.set('category', activeCategoryKey);
+      }
+      const qs = params.toString();
+      window.history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname);
+   }, [activeCategoryKey]);
 
    const sortedPrices = productData.map(p => p.price).sort((a, b) => a - b);
    const p33 = sortedPrices[Math.floor(sortedPrices.length / 3)];
