@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import type { HomeT } from '@/lib/i18n';
 import { fmtPrice, IS_RO } from '@/lib/i18n';
@@ -8,7 +9,7 @@ import type { ProductData } from '@/lib/products';
 import { useCart } from '@/components/CartProvider';
 
 type AddItemFn = (item: { id: number; name: string; price: number; image: string }) => void;
-type Props = { t: HomeT['catalog']; productImages: Record<string, string>; products: ProductData[]; productLinkPrefix?: string; priceOnly?: boolean; onAddItem?: AddItemFn; initialCategory?: string };
+type Props = { t: HomeT['catalog']; productImages: Record<string, string>; products: ProductData[]; productLinkPrefix?: string; priceOnly?: boolean; onAddItem?: AddItemFn };
 
 function Stars({ rating }: { rating: number }) {
    const uid = `s${Math.round(rating * 10)}`;
@@ -119,13 +120,26 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPre
    );
 }
 
-export default function CatalogSection({ t, productImages, products: productData, productLinkPrefix = '/product/', priceOnly = false, onAddItem, initialCategory = 'all' }: Props) {
+const VALID_CATEGORY_KEYS = ['all', 'pots', 'pans', 'other'];
+
+export default function CatalogSection({ t, productImages, products: productData, productLinkPrefix = '/product/', priceOnly = false, onAddItem }: Props) {
    const { addItem: defaultAddItem } = useCart();
    const addItem = onAddItem ?? defaultAddItem;
+   const searchParams = useSearchParams();
+   const rawCategory = searchParams.get('category');
+   const initialCategory = rawCategory && VALID_CATEGORY_KEYS.includes(rawCategory) ? rawCategory : 'all';
    const [activeCategoryKey, setActiveCategoryKey] = useState(initialCategory);
    const [priceIdx, setPriceIdx] = useState(0);
    const [minRating, setMinRating] = useState(0);
    const [sortOrder, setSortOrder] = useState<'default' | 'asc' | 'desc'>('default');
+
+   // After mount, scroll to hash if present (Suspense delays render so browser misses it)
+   useEffect(() => {
+      const hash = window.location.hash;
+      if (!hash) return;
+      const el = document.getElementById(hash.slice(1));
+      if (el) el.scrollIntoView({ behavior: 'instant' });
+   }, []);
 
    useEffect(() => {
       const params = new URLSearchParams(window.location.search);

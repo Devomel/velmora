@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { getMessages } from "@/lib/i18n";
 import { PRODUCT_DATA } from '@/lib/products';
 import { getProductImages } from '@/lib/product-images';
@@ -23,7 +24,9 @@ export default async function Land1Page() {
          </div>
          <HeroAdvantages t={home.hero} />
          <main className="flex-1">
-            <L1CatalogSection t={home.catalog} productImages={productImages} products={potData} priceOnly />
+            <Suspense>
+               <L1CatalogSection t={home.catalog} productImages={productImages} products={potData} priceOnly />
+            </Suspense>
             <StatsSection t={home.stats} />
             <ReviewsSection t={home.reviews} />
             <GuaranteesSection t={home.guarantees} />
