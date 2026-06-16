@@ -141,7 +141,8 @@ export default function CatalogSection({ t, productImages, products: productData
          params.set('category', activeCategoryKey);
       }
       const qs = params.toString();
-      window.history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname);
+      const hash = window.location.hash;
+      window.history.replaceState(null, '', (qs ? `?${qs}` : window.location.pathname) + hash);
    }, [activeCategoryKey]);
 
    const sortedPrices = productData.map(p => p.price).sort((a, b) => a - b);
