@@ -4,6 +4,7 @@ import { createContext, useContext, useState, useCallback, useEffect, ReactNode 
 
 export type L1CartItem = {
   id: number;
+  articleKey: string;
   name: string;
   price: number;
   image: string;

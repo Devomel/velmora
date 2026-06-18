@@ -5,6 +5,7 @@ import { pushEvent } from '@/lib/analytics';
 
 export type CartItem = {
   id: number;
+  articleKey: string;
   name: string;
   price: number;
   image: string;
@@ -61,7 +62,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     pushEvent('add_to_cart', {
       currency: 'EUR',
       value: item.price,
-      items: [{ item_id: String(item.id), item_name: item.name, price: item.price, quantity: 1 }],
+      items: [{ item_id: item.articleKey, item_name: item.name, price: item.price, quantity: 1 }],
     });
     setIsOpen(true);
   }, []);

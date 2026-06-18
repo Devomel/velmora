@@ -9,6 +9,7 @@ import SiteFooter from '@/app/sections/SiteFooter';
 import AddToCartButton from './AddToCartButton';
 import ProductImageSlider from '@/components/ProductImageSlider';
 import ProductSpecsTables from './ProductSpecsTables';
+import ViewItemTracker from '@/components/ViewItemTracker';
 
 export async function generateStaticParams() {
   return PRODUCT_DATA.map(p => ({ id: String(p.id) }));
@@ -172,8 +173,9 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
                 </ul>
               )}
 
+              <ViewItemTracker articleKey={data.articleKey} name={name} price={IS_RO ? data.priceLei : data.price} />
               <AddToCartButton
-                item={{ id: data.id, name, price: IS_RO ? data.priceLei : data.price, image: images[0] ?? '' }}
+                item={{ id: data.id, articleKey: data.articleKey, name, price: IS_RO ? data.priceLei : data.price, image: images[0] ?? '' }}
                 label={home.catalog.addToCart}
               />
 

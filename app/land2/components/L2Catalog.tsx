@@ -58,7 +58,7 @@ export default function L2Catalog({ t, data, productImages }: Props) {
   const hasMore = visible.length < filtered.length;
 
   const handleAdd = (p: typeof filtered[0]) => {
-    addItem({ id: p.id, name: p.locale.name, price: IS_RO ? p.priceLei : p.price, image: '' });
+    addItem({ id: p.id, articleKey: p.articleKey, name: p.locale.name, price: IS_RO ? p.priceLei : p.price, image: '' });
     setAdded(p.id);
     setTimeout(() => setAdded(null), 1500);
   };

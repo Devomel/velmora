@@ -200,7 +200,7 @@ export default function L2CheckoutPage() {
   const phoneRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    pushEventOnce('begin_checkout', { currency: 'EUR', value: total, items: items.map(i => ({ item_id: String(i.id), item_name: i.name, price: i.price, quantity: i.qty })) });
+    pushEventOnce('begin_checkout', { currency: 'EUR', value: total, items: items.map(i => ({ item_id: i.articleKey, item_name: i.name, price: i.price, quantity: i.qty })) });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -222,7 +222,7 @@ export default function L2CheckoutPage() {
         transaction_id: Date.now().toString(),
         currency: 'EUR',
         value: orderTotal,
-        items: items.map(i => ({ item_id: String(i.id), item_name: i.name, price: i.price, quantity: i.qty })),
+        items: items.map(i => ({ item_id: i.articleKey, item_name: i.name, price: i.price, quantity: i.qty })),
       },
       { email: emailRef.current?.value ?? '', phone: phoneRef.current?.value ?? '' },
     );

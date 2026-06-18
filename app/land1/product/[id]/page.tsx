@@ -8,6 +8,7 @@ import L1AddToCartButton from './L1AddToCartButton';
 import L1Footer from '../../components/L1Footer';
 import ProductImageSlider from '@/components/ProductImageSlider';
 import ProductSpecsTables from '@/app/product/[id]/ProductSpecsTables';
+import ViewItemTracker from '@/components/ViewItemTracker';
 
 const LOGO_TEXT = 'Emerald Craft';
 
@@ -171,7 +172,8 @@ export default async function L1ProductPage({ params }: { params: Promise<{ id: 
               </ul>
             )}
 
-            <L1AddToCartButton item={{ id: data.id, name, price: IS_RO ? data.priceLei : data.price, image: images[0] ?? '' }} label={land1.catalog.addToCart} />
+            <ViewItemTracker articleKey={data.articleKey} name={name} price={IS_RO ? data.priceLei : data.price} />
+            <L1AddToCartButton item={{ id: data.id, articleKey: data.articleKey, name, price: IS_RO ? data.priceLei : data.price, image: images[0] ?? '' }} label={land1.catalog.addToCart} />
 
             <div className="mt-8 grid grid-cols-2 gap-3">
               {land1.usp.items.slice(0, 4).map((item, i) => (

@@ -197,11 +197,12 @@ export default function CheckoutPage() {
   const [deliveryMethod, setDeliveryMethod] = useState<'standard' | 'express'>('standard');
   const [paymentMethod, setPaymentMethod] = useState<'card' | 'paypal' | 'klarna'>('card');
   const [showPopup, setShowPopup] = useState(false);
+  const firstNameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const phoneRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    pushEventOnce('begin_checkout', { currency: 'EUR', value: total, items: items.map(i => ({ item_id: String(i.id), item_name: i.name, price: i.price, quantity: i.qty })) });
+    pushEventOnce('begin_checkout', { currency: 'EUR', value: total, items: items.map(i => ({ item_id: i.articleKey, item_name: i.name, price: i.price, quantity: i.qty })) });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -217,13 +218,27 @@ export default function CheckoutPage() {
 
   const handlePlaceOrder = (e: React.FormEvent) => {
     e.preventDefault();
+    fetch('/api/order', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        source: 'checkout',
+        name: firstNameRef.current?.value ?? null,
+        email: emailRef.current?.value ?? null,
+        phone: phoneRef.current?.value ?? null,
+        product: items.map(i => `${i.name} ×${i.qty}`).join(', '),
+        qty: items.reduce((s, i) => s + i.qty, 0),
+        total: orderTotal,
+        currency: IS_RO ? 'RON' : 'EUR',
+      }),
+    }).catch(() => {});
     pushConversionEvent(
       'purchase',
       {
         transaction_id: Date.now().toString(),
         currency: 'EUR',
         value: orderTotal,
-        items: items.map(i => ({ item_id: String(i.id), item_name: i.name, price: i.price, quantity: i.qty })),
+        items: items.map(i => ({ item_id: i.articleKey, item_name: i.name, price: i.price, quantity: i.qty })),
       },
       { email: emailRef.current?.value ?? '', phone: phoneRef.current?.value ?? '' },
     );
@@ -310,7 +325,7 @@ export default function CheckoutPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className={labelClass}>{t.firstName}</label>
-                    <input type="text" required className={inputClass} autoComplete="given-name" />
+                    <input type="text" required ref={firstNameRef} className={inputClass} autoComplete="given-name" />
                   </div>
                   <div>
                     <label className={labelClass}>{t.lastName}</label>

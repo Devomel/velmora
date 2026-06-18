@@ -8,7 +8,7 @@ import { fmtPrice, IS_RO } from '@/lib/i18n';
 import type { ProductData } from '@/lib/products';
 import { useCart } from '@/components/CartProvider';
 
-type AddItemFn = (item: { id: number; name: string; price: number; image: string }) => void;
+type AddItemFn = (item: { id: number; articleKey: string; name: string; price: number; image: string }) => void;
 type Props = { t: HomeT['catalog']; productImages: Record<string, string>; products: ProductData[]; productLinkPrefix?: string; priceOnly?: boolean; onAddItem?: AddItemFn };
 
 function Stars({ rating }: { rating: number }) {
@@ -109,7 +109,7 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPre
                </div>
 
                <button
-                  onClick={e => { e.preventDefault(); addItem({ id: product.id, name: product.name, price: IS_RO ? product.priceLei : product.price, image: imageSrc }); }}
+                  onClick={e => { e.preventDefault(); addItem({ id: product.id, articleKey: product.articleKey, name: product.name, price: IS_RO ? product.priceLei : product.price, image: imageSrc }); }}
                   className="w-full flex items-center justify-center bg-[#C4704F] hover:bg-[#B5633F] text-white py-2.5 text-xs font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer"
                >
                   {addToCartLabel}

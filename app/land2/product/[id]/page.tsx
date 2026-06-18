@@ -8,6 +8,7 @@ import L2AddToCartButton from './L2AddToCartButton';
 import L2Footer from '../../components/L2Footer';
 import ProductImageSlider from '@/components/ProductImageSlider';
 import ProductSpecsTables from '@/app/product/[id]/ProductSpecsTables';
+import ViewItemTracker from '@/components/ViewItemTracker';
 
 const LOGO_TEXT = 'Scarlet Table';
 
@@ -175,7 +176,8 @@ export default async function L2ProductPage({ params }: { params: Promise<{ id: 
               </ul>
             )}
 
-            <L2AddToCartButton item={{ id: data.id, name, price: IS_RO ? data.priceLei : data.price, image: images[0] ?? '' }} label={land2.catalog.addToCart} />
+            <ViewItemTracker articleKey={data.articleKey} name={name} price={IS_RO ? data.priceLei : data.price} />
+            <L2AddToCartButton item={{ id: data.id, articleKey: data.articleKey, name, price: IS_RO ? data.priceLei : data.price, image: images[0] ?? '' }} label={land2.catalog.addToCart} />
 
             {/* USP strip */}
             <div className="mt-8 grid grid-cols-2 gap-3">
