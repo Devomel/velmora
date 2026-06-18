@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { loadAllReviewCounts, loadAverageRatings } from './reviews';
-import { POT_ARTICLE_KEYS, PAN_ARTICLE_KEYS } from './categories';
+import { POT_ARTICLE_KEYS, PAN_ARTICLE_KEYS, KNIFE_ARTICLE_KEYS } from './categories';
 
 export type ProductData = {
    id: number;
@@ -20,10 +20,12 @@ type Meta = Omit<ProductData, 'price' | 'oldPrice' | 'priceLei' | 'oldPriceLei' 
 
 const potSet = new Set(POT_ARTICLE_KEYS);
 const panSet = new Set(PAN_ARTICLE_KEYS);
+const knifeSet = new Set(KNIFE_ARTICLE_KEYS);
 
 function categoryKeyFor(articleKey: string): string {
    if (panSet.has(articleKey)) return 'pans';
    if (potSet.has(articleKey)) return 'pots';
+   if (knifeSet.has(articleKey)) return 'knives';
    return 'other';
 }
 

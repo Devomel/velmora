@@ -8,7 +8,7 @@ function articleKeyFromFilename(filename: string): string {
   return stem.replace(SUFFIX_RE, '');
 }
 
-function parseCategories(): { pots: string[]; pans: string[]; other: string[] } {
+function parseCategories(): { pots: string[]; pans: string[]; other: string[]; knives: string[] } {
   const csvPath = path.join(process.cwd(), 'products/velmora_categories.csv');
   const text = fs.readFileSync(csvPath, 'utf-8');
   const rows = text.trim().split('\n').slice(1);
@@ -16,15 +16,17 @@ function parseCategories(): { pots: string[]; pans: string[]; other: string[] } 
   const pots = new Set<string>();
   const pans = new Set<string>();
   const other = new Set<string>();
+  const knives = new Set<string>();
 
   for (const row of rows) {
     const cells = row.split(',');
     if (cells[0]?.trim()) pots.add(articleKeyFromFilename(cells[0].trim()));
     if (cells[1]?.trim()) pans.add(articleKeyFromFilename(cells[1].trim()));
     if (cells[2]?.trim()) other.add(articleKeyFromFilename(cells[2].trim()));
+    if (cells[3]?.trim()) knives.add(articleKeyFromFilename(cells[3].trim()));
   }
 
-  return { pots: [...pots], pans: [...pans], other: [...other] };
+  return { pots: [...pots], pans: [...pans], other: [...other], knives: [...knives] };
 }
 
-export const { pots: POT_ARTICLE_KEYS, pans: PAN_ARTICLE_KEYS, other: OTHER_ARTICLE_KEYS } = parseCategories();
+export const { pots: POT_ARTICLE_KEYS, pans: PAN_ARTICLE_KEYS, other: OTHER_ARTICLE_KEYS, knives: KNIFE_ARTICLE_KEYS } = parseCategories();

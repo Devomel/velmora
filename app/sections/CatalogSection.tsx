@@ -120,7 +120,7 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPre
    );
 }
 
-const VALID_CATEGORY_KEYS = ['all', 'pots', 'pans', 'other'];
+const VALID_CATEGORY_KEYS = ['all', 'pots', 'pans', 'knives', 'other'];
 
 export default function CatalogSection({ t, productImages, products: productData, productLinkPrefix = '/product/', priceOnly = false, onAddItem }: Props) {
    const { addItem: defaultAddItem } = useCart();
