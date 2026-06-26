@@ -2707,5 +2707,11 @@
     "legalId": "CUI: 12345678",
     "legalVat": "Nr. înreg. Reg. Com.: J40/1234/2019",
     "rights": "Toate drepturile rezervate."
+  },
+  "promoTimer": {
+    "label": "Oferta expiră în:",
+    "hours": "ore",
+    "minutes": "min",
+    "seconds": "sec"
   }
 }

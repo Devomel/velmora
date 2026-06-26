@@ -10,6 +10,7 @@ import AddToCartButton from './AddToCartButton';
 import ProductImageSlider from '@/components/ProductImageSlider';
 import ProductSpecsTables from './ProductSpecsTables';
 import ViewItemTracker from '@/components/ViewItemTracker';
+import CountdownTimer from '@/components/CountdownTimer';
 
 export async function generateStaticParams() {
   return PRODUCT_DATA.map(p => ({ id: String(p.id) }));
@@ -171,6 +172,15 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
                     </li>
                   ))}
                 </ul>
+              )}
+
+              {data.oldPrice && (
+                <CountdownTimer
+                  label={home.promoTimer.label}
+                  hours={home.promoTimer.hours}
+                  minutes={home.promoTimer.minutes}
+                  seconds={home.promoTimer.seconds}
+                />
               )}
 
               <ViewItemTracker articleKey={data.articleKey} name={name} price={IS_RO ? data.priceLei : data.price} />

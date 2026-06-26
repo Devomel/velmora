@@ -2707,5 +2707,11 @@
     "legalId": "HRB 123456 · AG Frankfurt",
     "legalVat": "USt-IdNr.: DE123456789",
     "rights": "Alle Rechte vorbehalten."
+  },
+  "promoTimer": {
+    "label": "Angebot endet in:",
+    "hours": "Std",
+    "minutes": "Min",
+    "seconds": "Sek"
   }
 }

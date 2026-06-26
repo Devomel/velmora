@@ -2707,5 +2707,11 @@
     "legalId": "Org.nr.: 123 456 789",
     "legalVat": "MVA-reg. nr. 123456789MVA",
     "rights": "Alle rettigheter forbeholdt."
+  },
+  "promoTimer": {
+    "label": "Tilbudet utløper om:",
+    "hours": "t",
+    "minutes": "min",
+    "seconds": "sek"
   }
 }
