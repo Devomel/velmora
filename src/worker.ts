@@ -26,7 +26,7 @@ const json = (data: unknown, status = 200, extra: Record<string, string> = {}) =
 
 async function authed(req: Request, env: Env): Promise<boolean> {
   const token = getSessionToken(req);
-  return !!token && await verifyToken(token, env.ADMIN_PASSWORD);
+  return !!token && await verifyToken(token, env.ADMIN_PASSWORD.trim());
 }
 
 // POST /api/order — public, called from store pages
@@ -58,10 +58,10 @@ async function createOrder(req: Request, env: Env): Promise<Response> {
 async function login(req: Request, env: Env): Promise<Response> {
   let body: { password?: string };
   try { body = await req.json(); } catch { return json({ error: 'bad json' }, 400); }
-  if (!env.ADMIN_PASSWORD || body.password !== env.ADMIN_PASSWORD) {
+  if (!env.ADMIN_PASSWORD || body.password?.trim() !== env.ADMIN_PASSWORD.trim()) {
     return json({ error: 'wrong password' }, 401);
   }
-  const token = await makeToken(env.ADMIN_PASSWORD);
+  const token = await makeToken(env.ADMIN_PASSWORD.trim());
   return json({ ok: true }, 200, { 'Set-Cookie': setCookieHeader(token) });
 }
 
