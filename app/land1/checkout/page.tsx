@@ -216,6 +216,19 @@ export default function L1CheckoutPage() {
 
   const handlePlaceOrder = (e: React.FormEvent) => {
     e.preventDefault();
+    fetch('/api/order', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        source: 'land1',
+        email: emailRef.current?.value ?? null,
+        phone: phoneRef.current?.value ?? null,
+        product: items.map(i => `${i.name} ×${i.qty}`).join(', '),
+        qty: items.reduce((s, i) => s + i.qty, 0),
+        total: orderTotal,
+        currency: IS_RO ? 'RON' : 'EUR',
+      }),
+    }).catch(() => {});
     pushConversionEvent(
       'purchase',
       {
