@@ -130,6 +130,18 @@ export default {
     const p = url.pathname;
     const m = req.method;
 
+    // Temporary debug — remove after fixing login
+    if (p === '/api/debug-auth' && m === 'GET') {
+      const pw = env.ADMIN_PASSWORD;
+      return json({
+        defined: pw !== undefined,
+        length: pw?.length ?? 0,
+        trimmedLength: pw?.trim().length ?? 0,
+        firstChar: pw ? pw.charCodeAt(0) : null,
+        lastChar: pw ? pw.charCodeAt(pw.length - 1) : null,
+      });
+    }
+
     // Public order submission
     if (p === '/api/order' && m === 'POST') return createOrder(req, env);
 
