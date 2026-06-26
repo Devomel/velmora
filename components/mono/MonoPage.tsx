@@ -11,6 +11,7 @@ type Props = {
   newPriceLei: number;
   oldPriceLei: number;
   image: string;
+  source: string;
 };
 
 function Stars({ n }: { n: number }) {
@@ -41,7 +42,7 @@ const UTP_ICONS = [
   </svg>,
 ];
 
-export default function MonoPage({ t, newPrice, oldPrice, newPriceLei, oldPriceLei, image }: Props) {
+export default function MonoPage({ t, newPrice, oldPrice, newPriceLei, oldPriceLei, image, source }: Props) {
   const displayNew = IS_RO ? `${newPriceLei} lei` : `${newPrice} €`;
   const displayOld = IS_RO ? `${oldPriceLei} lei` : `${oldPrice} €`;
   const discount = Math.round((1 - newPrice / oldPrice) * 100);
@@ -171,7 +172,7 @@ export default function MonoPage({ t, newPrice, oldPrice, newPriceLei, oldPriceL
                 <div className="text-xs text-[#9C8A7E] line-through">{displayOld}</div>
               </div>
             </div>
-            <OrderForm t={t.order} price={newPrice} priceLei={newPriceLei} />
+            <OrderForm t={t.order} price={newPrice} priceLei={newPriceLei} source={source} product={t.product.name} />
           </div>
         </div>
       </section>

@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react';
 import { IS_RO, type MonoT } from '@/lib/i18n';
 import { pushEvent, pushConversionEvent } from '@/lib/analytics';
 
-type Props = { t: MonoT['order']; price: number; priceLei: number };
+type Props = { t: MonoT['order']; price: number; priceLei: number; source: string; product: string };
 
-export default function OrderForm({ t, price, priceLei }: Props) {
+export default function OrderForm({ t, price, priceLei, source, product }: Props) {
   const activePrice = IS_RO ? priceLei : price;
   const currency = IS_RO ? 'RON' : 'EUR';
   const [name, setName] = useState('');
@@ -21,6 +21,11 @@ export default function OrderForm({ t, price, priceLei }: Props) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    fetch('/api/order', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ source, name, phone, product, qty, total: activePrice * qty, currency }),
+    }).catch(() => {});
     await new Promise(r => setTimeout(r, 900));
     pushConversionEvent(
       'generate_lead',
