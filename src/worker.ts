@@ -58,10 +58,16 @@ async function createOrder(req: Request, env: Env): Promise<Response> {
 async function login(req: Request, env: Env): Promise<Response> {
   let body: { password?: string };
   try { body = await req.json(); } catch { return json({ error: 'bad json' }, 400); }
-  if (!env.ADMIN_PASSWORD || body.password?.trim() !== env.ADMIN_PASSWORD.trim()) {
+  const envPw = env.ADMIN_PASSWORD;
+  const bodyPw = body.password ?? '';
+  console.log('[login] envPw defined:', envPw !== undefined);
+  console.log('[login] envPw length:', envPw?.length, 'trimmed:', envPw?.trim().length);
+  console.log('[login] bodyPw length:', bodyPw.length, 'trimmed:', bodyPw.trim().length);
+  console.log('[login] match:', bodyPw.trim() === envPw?.trim());
+  if (!envPw || bodyPw.trim() !== envPw.trim()) {
     return json({ error: 'wrong password' }, 401);
   }
-  const token = await makeToken(env.ADMIN_PASSWORD.trim());
+  const token = await makeToken(envPw.trim());
   return json({ ok: true }, 200, { 'Set-Cookie': setCookieHeader(token) });
 }
 
