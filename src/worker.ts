@@ -13,7 +13,14 @@ interface D1Database {
 interface Env {
   ASSETS: { fetch(req: Request): Promise<Response> };
   DB: D1Database;
-  ADMIN_PASSWORD: string;
+}
+
+// SHA-256("123") — to change password: echo -n "newpass" | openssl dgst -sha256 -binary | openssl base64
+const PASSWORD_HASH = 'pmWkWSBCL51Bfkhn79xPuKBKHz//H6B+mY6G9/eieuM=';
+
+async function sha256b64(s: string): Promise<string> {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+  return btoa(String.fromCharCode(...new Uint8Array(buf)));
 }
 
 const VALID_STATUSES = new Set(['new', 'called', 'done', 'declined']);
@@ -24,9 +31,9 @@ const json = (data: unknown, status = 200, extra: Record<string, string> = {}) =
     headers: { 'Content-Type': 'application/json', ...extra },
   });
 
-async function authed(req: Request, env: Env): Promise<boolean> {
+async function authed(req: Request): Promise<boolean> {
   const token = getSessionToken(req);
-  return !!token && await verifyToken(token, env.ADMIN_PASSWORD.trim());
+  return !!token && await verifyToken(token, PASSWORD_HASH);
 }
 
 // POST /api/order — public, called from store pages
@@ -55,19 +62,12 @@ async function createOrder(req: Request, env: Env): Promise<Response> {
 }
 
 // POST /api/admin/login
-async function login(req: Request, env: Env): Promise<Response> {
+async function login(req: Request): Promise<Response> {
   let body: { password?: string };
   try { body = await req.json(); } catch { return json({ error: 'bad json' }, 400); }
-  const envPw = env.ADMIN_PASSWORD;
-  const bodyPw = body.password ?? '';
-  console.log('[login] envPw defined:', envPw !== undefined);
-  console.log('[login] envPw length:', envPw?.length, 'trimmed:', envPw?.trim().length);
-  console.log('[login] bodyPw length:', bodyPw.length, 'trimmed:', bodyPw.trim().length);
-  console.log('[login] match:', bodyPw.trim() === envPw?.trim());
-  if (!envPw || bodyPw.trim() !== envPw.trim()) {
-    return json({ error: 'wrong password' }, 401);
-  }
-  const token = await makeToken(envPw.trim());
+  const inputHash = await sha256b64((body.password ?? '').trim());
+  if (inputHash !== PASSWORD_HASH) return json({ error: 'wrong password' }, 401);
+  const token = await makeToken(PASSWORD_HASH);
   return json({ ok: true }, 200, { 'Set-Cookie': setCookieHeader(token) });
 }
 
@@ -136,43 +136,31 @@ export default {
     const p = url.pathname;
     const m = req.method;
 
-    // Temporary debug — remove after fixing login
-    if (p === '/api/debug-auth' && m === 'GET') {
-      const pw = env.ADMIN_PASSWORD;
-      return json({
-        defined: pw !== undefined,
-        length: pw?.length ?? 0,
-        trimmedLength: pw?.trim().length ?? 0,
-        firstChar: pw ? pw.charCodeAt(0) : null,
-        lastChar: pw ? pw.charCodeAt(pw.length - 1) : null,
-      });
-    }
-
     // Public order submission
     if (p === '/api/order' && m === 'POST') return createOrder(req, env);
 
     // Auth
-    if (p === '/api/admin/login' && m === 'POST') return login(req, env);
+    if (p === '/api/admin/login' && m === 'POST') return login(req);
     if (p === '/api/admin/logout') return logout();
 
     // Protected API
     if (p === '/api/admin/stats' && m === 'GET') {
-      if (!await authed(req, env)) return json({ error: 'unauthorized' }, 401);
+      if (!await authed(req)) return json({ error: 'unauthorized' }, 401);
       return getStats(env);
     }
     if (p === '/api/admin/orders' && m === 'GET') {
-      if (!await authed(req, env)) return json({ error: 'unauthorized' }, 401);
+      if (!await authed(req)) return json({ error: 'unauthorized' }, 401);
       return listOrders(req, env);
     }
     const orderMatch = p.match(/^\/api\/admin\/orders\/(\d+)$/);
     if (orderMatch && m === 'PATCH') {
-      if (!await authed(req, env)) return json({ error: 'unauthorized' }, 401);
+      if (!await authed(req)) return json({ error: 'unauthorized' }, 401);
       return updateOrder(req, env, orderMatch[1]);
     }
 
     // Guard admin pages — redirect to login if no valid session
     if (p.startsWith('/admin') && !p.startsWith('/admin/login')) {
-      if (!await authed(req, env)) {
+      if (!await authed(req)) {
         return Response.redirect(new URL('/admin/login/', url).toString(), 302);
       }
     }
