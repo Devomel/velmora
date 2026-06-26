@@ -5,6 +5,7 @@ import { useEffect, useState, Fragment } from 'react';
 type Order = {
   id: number;
   created_at: string;
+  subdomain: string;
   source: string;
   name: string | null;
   phone: string | null;
@@ -15,6 +16,15 @@ type Order = {
   currency: string | null;
   status: 'new' | 'called' | 'done' | 'declined';
   notes: string | null;
+};
+
+type SubdomainStat = {
+  subdomain: string;
+  total: number;
+  new_count: number;
+  called_count: number;
+  done_count: number;
+  declined_count: number;
 };
 
 const STATUS_LABELS: Record<string, string> = {
@@ -44,31 +54,44 @@ function fmtDate(dt: string): string {
   return d.toLocaleString('uk-UA', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 }
 
+function shortHost(host: string): string {
+  // velmora-no.pages.dev → NO, no.velmora.com → NO, etc.
+  const m = host.match(/[^a-z](no|ro|de|ru|en)[^a-z]/i) ?? host.match(/^(no|ro|de|ru|en)\./i);
+  if (m) return m[1].toUpperCase();
+  return host.split('.')[0].toUpperCase();
+}
+
 export default function AdminPage() {
   const [orders, setOrders] = useState<Order[]>([]);
-  const [filter, setFilter] = useState('');
+  const [stats, setStats] = useState<SubdomainStat[]>([]);
+  const [statusFilter, setStatusFilter] = useState('');
+  const [subdomainFilter, setSubdomainFilter] = useState('');
   const [loading, setLoading] = useState(true);
   const [expanded, setExpanded] = useState<number | null>(null);
   const [editStatus, setEditStatus] = useState('');
   const [editNotes, setEditNotes] = useState('');
   const [saving, setSaving] = useState(false);
 
-  const load = async (f: string) => {
+  const loadStats = async () => {
+    const res = await fetch('/api/admin/stats');
+    if (res.ok) setStats(await res.json());
+  };
+
+  const load = async (status: string, subdomain: string) => {
     setLoading(true);
-    const res = await fetch(f ? `/api/admin/orders?status=${f}` : '/api/admin/orders');
+    const p = new URLSearchParams();
+    if (status) p.set('status', status);
+    if (subdomain) p.set('subdomain', subdomain);
+    const res = await fetch(`/api/admin/orders${p.size ? '?' + p : ''}`);
     if (res.status === 401) { window.location.href = '/admin/login/'; return; }
     if (res.ok) setOrders(await res.json());
     setLoading(false);
   };
 
-  useEffect(() => { load(filter); }, [filter]);
+  useEffect(() => { loadStats(); }, []);
+  useEffect(() => { load(statusFilter, subdomainFilter); }, [statusFilter, subdomainFilter]);
 
-  const open = (o: Order) => {
-    setExpanded(o.id);
-    setEditStatus(o.status);
-    setEditNotes(o.notes ?? '');
-  };
-
+  const open = (o: Order) => { setExpanded(o.id); setEditStatus(o.status); setEditNotes(o.notes ?? ''); };
   const close = () => setExpanded(null);
 
   const save = async (id: number) => {
@@ -80,10 +103,11 @@ export default function AdminPage() {
     });
     setSaving(false);
     close();
-    load(filter);
+    load(statusFilter, subdomainFilter);
+    loadStats();
   };
 
-  const allNew = orders.filter(o => o.status === 'new').length;
+  const totalNew = stats.reduce((s, r) => s + r.new_count, 0);
   const todayNew = orders.filter(o => {
     const today = new Date().toISOString().slice(0, 10);
     return o.status === 'new' && o.created_at.startsWith(today);
@@ -95,21 +119,58 @@ export default function AdminPage() {
       <header className="bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between">
         <div>
           <h1 className="text-base font-semibold text-gray-900">CRM · Замовлення</h1>
-          <p className="text-xs text-gray-400 mt-0.5">{allNew} нових · {todayNew} сьогодні</p>
+          <p className="text-xs text-gray-400 mt-0.5">{totalNew} нових · {todayNew} сьогодні</p>
         </div>
         <a href="/api/admin/logout" className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
           Вийти →
         </a>
       </header>
 
-      {/* Filter tabs */}
+      {/* Subdomain stats */}
+      {stats.length > 0 && (
+        <div className="bg-white border-b border-gray-200 px-4 py-3 flex gap-2 overflow-x-auto">
+          <button
+            onClick={() => { setSubdomainFilter(''); close(); }}
+            className={`flex-shrink-0 flex flex-col items-center px-4 py-2 rounded-lg border text-xs transition-colors ${
+              subdomainFilter === ''
+                ? 'border-orange-400 bg-orange-50 text-orange-700'
+                : 'border-gray-200 text-gray-500 hover:border-gray-300'
+            }`}
+          >
+            <span className="font-semibold text-sm">{stats.reduce((s, r) => s + r.total, 0)}</span>
+            <span>Всі</span>
+            {stats.reduce((s, r) => s + r.new_count, 0) > 0 && (
+              <span className="mt-0.5 text-orange-500 font-medium">+{stats.reduce((s, r) => s + r.new_count, 0)} нових</span>
+            )}
+          </button>
+          {stats.map(s => (
+            <button
+              key={s.subdomain}
+              onClick={() => { setSubdomainFilter(s.subdomain); close(); }}
+              className={`flex-shrink-0 flex flex-col items-center px-4 py-2 rounded-lg border text-xs transition-colors ${
+                subdomainFilter === s.subdomain
+                  ? 'border-orange-400 bg-orange-50 text-orange-700'
+                  : 'border-gray-200 text-gray-500 hover:border-gray-300'
+              }`}
+            >
+              <span className="font-semibold text-sm">{s.total}</span>
+              <span className="font-mono">{shortHost(s.subdomain)}</span>
+              {s.new_count > 0 && (
+                <span className="mt-0.5 text-orange-500 font-medium">+{s.new_count} нових</span>
+              )}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Status filter tabs */}
       <div className="bg-white border-b border-gray-200 px-4 flex gap-0.5 overflow-x-auto">
         {FILTERS.map(([val, label]) => (
           <button
             key={val}
-            onClick={() => { setFilter(val); close(); }}
+            onClick={() => { setStatusFilter(val); close(); }}
             className={`px-4 py-3 text-sm font-medium whitespace-nowrap border-b-2 transition-colors ${
-              filter === val
+              statusFilter === val
                 ? 'border-orange-500 text-orange-600'
                 : 'border-transparent text-gray-500 hover:text-gray-800'
             }`}
@@ -132,6 +193,7 @@ export default function AdminPage() {
                 <tr>
                   <th className="text-left px-4 py-3 font-medium w-10">#</th>
                   <th className="text-left px-4 py-3 font-medium">Дата</th>
+                  <th className="text-left px-4 py-3 font-medium">Ринок</th>
                   <th className="text-left px-4 py-3 font-medium">Звідки</th>
                   <th className="text-left px-4 py-3 font-medium">Ім&apos;я</th>
                   <th className="text-left px-4 py-3 font-medium">Телефон</th>
@@ -149,6 +211,11 @@ export default function AdminPage() {
                     >
                       <td className="px-4 py-3 text-gray-400 text-xs">{o.id}</td>
                       <td className="px-4 py-3 text-gray-600 whitespace-nowrap">{fmtDate(o.created_at)}</td>
+                      <td className="px-4 py-3">
+                        <span className="font-mono text-xs bg-gray-800 text-white px-1.5 py-0.5 rounded">
+                          {shortHost(o.subdomain)}
+                        </span>
+                      </td>
                       <td className="px-4 py-3">
                         <span className="font-mono text-xs bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">{o.source}</span>
                       </td>
@@ -172,7 +239,7 @@ export default function AdminPage() {
                     {/* Inline edit panel */}
                     {expanded === o.id && (
                       <tr>
-                        <td colSpan={8} className="px-4 py-4 bg-orange-50 border-t border-orange-100">
+                        <td colSpan={9} className="px-4 py-4 bg-orange-50 border-t border-orange-100">
                           <div className="flex flex-wrap items-start gap-4">
                             {o.email && (
                               <div>

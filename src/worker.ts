@@ -39,10 +39,13 @@ async function createOrder(req: Request, env: Env): Promise<Response> {
     product?: string; qty?: number; total?: number; currency?: string;
   };
 
+  const subdomain = req.headers.get('Host') ?? 'unknown';
+
   await env.DB.prepare(
-    `INSERT INTO orders (source, name, phone, email, product, qty, total, currency)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO orders (subdomain, source, name, phone, email, product, qty, total, currency)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
   ).bind(
+    subdomain,
     String(source ?? 'unknown'),
     name ?? null, phone ?? null, email ?? null, product ?? null,
     Number(qty ?? 1), total != null ? Number(total) : null, currency ?? null,
@@ -70,14 +73,38 @@ function logout(): Response {
   });
 }
 
-// GET /api/admin/orders[?status=...]
+// GET /api/admin/stats
+async function getStats(env: Env): Promise<Response> {
+  const { results } = await env.DB.prepare(`
+    SELECT
+      subdomain,
+      COUNT(*) as total,
+      SUM(CASE WHEN status = 'new'      THEN 1 ELSE 0 END) as new_count,
+      SUM(CASE WHEN status = 'called'   THEN 1 ELSE 0 END) as called_count,
+      SUM(CASE WHEN status = 'done'     THEN 1 ELSE 0 END) as done_count,
+      SUM(CASE WHEN status = 'declined' THEN 1 ELSE 0 END) as declined_count
+    FROM orders
+    GROUP BY subdomain
+    ORDER BY total DESC
+  `).all();
+  return json(results);
+}
+
+// GET /api/admin/orders[?status=...][&subdomain=...]
 async function listOrders(req: Request, env: Env): Promise<Response> {
-  const status = new URL(req.url).searchParams.get('status') ?? '';
-  const filtered = VALID_STATUSES.has(status);
-  const stmt = filtered
-    ? env.DB.prepare('SELECT * FROM orders WHERE status = ? ORDER BY created_at DESC LIMIT 500').bind(status)
-    : env.DB.prepare('SELECT * FROM orders ORDER BY created_at DESC LIMIT 500');
-  const { results } = await stmt.all();
+  const params = new URL(req.url).searchParams;
+  const status = params.get('status') ?? '';
+  const subdomain = params.get('subdomain') ?? '';
+
+  const conditions: string[] = [];
+  const vals: unknown[] = [];
+  if (VALID_STATUSES.has(status)) { conditions.push('status = ?'); vals.push(status); }
+  if (subdomain) { conditions.push('subdomain = ?'); vals.push(subdomain); }
+
+  const where = conditions.length ? `WHERE ${conditions.join(' AND ')}` : '';
+  const { results } = await env.DB.prepare(
+    `SELECT * FROM orders ${where} ORDER BY created_at DESC LIMIT 500`,
+  ).bind(...vals).all();
   return json(results);
 }
 
@@ -111,6 +138,10 @@ export default {
     if (p === '/api/admin/logout') return logout();
 
     // Protected API
+    if (p === '/api/admin/stats' && m === 'GET') {
+      if (!await authed(req, env)) return json({ error: 'unauthorized' }, 401);
+      return getStats(env);
+    }
     if (p === '/api/admin/orders' && m === 'GET') {
       if (!await authed(req, env)) return json({ error: 'unauthorized' }, 401);
       return listOrders(req, env);

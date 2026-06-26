@@ -1,6 +1,7 @@
 CREATE TABLE IF NOT EXISTS orders (
   id         INTEGER PRIMARY KEY AUTOINCREMENT,
   created_at TEXT    NOT NULL DEFAULT (datetime('now')),
+  subdomain  TEXT    NOT NULL DEFAULT '',
   source     TEXT    NOT NULL,
   name       TEXT,
   phone      TEXT,
