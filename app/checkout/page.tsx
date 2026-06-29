@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useCart } from '@/components/CartProvider';
 import { IS_RO } from '@/lib/i18n';
 import { pushEvent, pushEventOnce, pushConversionEvent } from '@/lib/analytics';
+import { sendOrder } from '@/lib/orders';
 
 type CheckoutT = {
   title: string;
@@ -218,20 +219,16 @@ export default function CheckoutPage() {
 
   const handlePlaceOrder = (e: React.FormEvent) => {
     e.preventDefault();
-    fetch('/api/order', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        source: 'checkout',
-        name: firstNameRef.current?.value ?? null,
-        email: emailRef.current?.value ?? null,
-        phone: phoneRef.current?.value ?? null,
-        product: items.map(i => `${i.name} ×${i.qty}`).join(', '),
-        qty: items.reduce((s, i) => s + i.qty, 0),
-        total: orderTotal,
-        currency: IS_RO ? 'RON' : 'EUR',
-      }),
-    }).catch(() => {});
+    sendOrder({
+      source: 'checkout',
+      name: firstNameRef.current?.value ?? null,
+      email: emailRef.current?.value ?? null,
+      phone: phoneRef.current?.value ?? null,
+      product: items.map(i => `${i.name} ×${i.qty}`).join(', '),
+      qty: items.reduce((s, i) => s + i.qty, 0),
+      total: orderTotal,
+      currency: IS_RO ? 'RON' : 'EUR',
+    });
     pushConversionEvent(
       'purchase',
       {

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { IS_RO, type MonoT } from '@/lib/i18n';
 import { pushEvent, pushConversionEvent } from '@/lib/analytics';
+import { sendOrder } from '@/lib/orders';
 
 type Props = { t: MonoT['order']; price: number; priceLei: number; source: string; product: string };
 
@@ -21,11 +22,7 @@ export default function OrderForm({ t, price, priceLei, source, product }: Props
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    fetch('/api/order', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ source, name, phone, product, qty, total: activePrice * qty, currency }),
-    }).catch(() => {});
+    sendOrder({ source, name, phone, product, qty, total: activePrice * qty, currency });
     await new Promise(r => setTimeout(r, 900));
     pushConversionEvent(
       'generate_lead',
