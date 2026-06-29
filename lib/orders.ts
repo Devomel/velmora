@@ -3,8 +3,14 @@ const WEBHOOK_URL = process.env.NEXT_PUBLIC_ORDERS_URL ?? '';
 type OrderPayload = {
   source: string;
   name?: string | null;
+  lastName?: string | null;
   phone?: string | null;
   email?: string | null;
+  address?: string | null;
+  postalCode?: string | null;
+  city?: string | null;
+  deliveryMethod?: string | null;
+  paymentMethod?: string | null;
   product?: string | null;
   qty?: number;
   total?: number | null;
@@ -16,8 +22,12 @@ function fingerprint(): string {
   return [
     navigator.language,
     `${screen.width}x${screen.height}`,
+    screen.colorDepth,
     Intl.DateTimeFormat().resolvedOptions().timeZone,
     navigator.hardwareConcurrency ?? '',
+    (navigator as Navigator & { deviceMemory?: number }).deviceMemory ?? '',
+    navigator.maxTouchPoints ?? 0,
+    navigator.cookieEnabled ? '1' : '0',
     navigator.platform ?? '',
   ].join('|');
 }

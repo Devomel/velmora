@@ -30,6 +30,9 @@ type CheckoutT = {
   payCard: string;
   payPaypal: string;
   payKlarna: string;
+  payGooglePay: string;
+  payApplePay: string;
+  payOr: string;
   orderSummary: string;
   subtotal: string;
   deliveryFee: string;
@@ -67,6 +70,9 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     payCard: 'Kreditkarte',
     payPaypal: 'PayPal',
     payKlarna: 'Klarna',
+    payGooglePay: 'Google Pay',
+    payApplePay: 'Apple Pay',
+    payOr: 'oder',
     orderSummary: 'Bestellübersicht',
     subtotal: 'Zwischensumme',
     deliveryFee: 'Versandkosten',
@@ -102,6 +108,9 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     payCard: 'Kredittkort',
     payPaypal: 'PayPal',
     payKlarna: 'Klarna',
+    payGooglePay: 'Google Pay',
+    payApplePay: 'Apple Pay',
+    payOr: 'eller',
     orderSummary: 'Ordresammendrag',
     subtotal: 'Delsum',
     deliveryFee: 'Fraktkostnad',
@@ -137,6 +146,9 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     payCard: 'Card de credit',
     payPaypal: 'PayPal',
     payKlarna: 'Klarna',
+    payGooglePay: 'Google Pay',
+    payApplePay: 'Apple Pay',
+    payOr: 'sau',
     orderSummary: 'Rezumat comandă',
     subtotal: 'Subtotal',
     deliveryFee: 'Cost livrare',
@@ -172,6 +184,9 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     payCard: 'Банковская карта',
     payPaypal: 'PayPal',
     payKlarna: 'Klarna',
+    payGooglePay: 'Google Pay',
+    payApplePay: 'Apple Pay',
+    payOr: 'или',
     orderSummary: 'Состав заказа',
     subtotal: 'Сумма товаров',
     deliveryFee: 'Доставка',
@@ -195,10 +210,15 @@ export default function L1CheckoutPage() {
   const t = TRANSLATIONS[locale] ?? TRANSLATIONS.de;
 
   const [deliveryMethod, setDeliveryMethod] = useState<'standard' | 'express'>('standard');
-  const [paymentMethod, setPaymentMethod] = useState<'card' | 'paypal' | 'klarna'>('card');
+  const [paymentMethod, setPaymentMethod] = useState<'card' | 'paypal' | 'klarna' | 'googlepay' | 'applepay'>('card');
   const [showPopup, setShowPopup] = useState(false);
+  const firstNameRef = useRef<HTMLInputElement>(null);
+  const lastNameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const phoneRef = useRef<HTMLInputElement>(null);
+  const streetRef = useRef<HTMLInputElement>(null);
+  const postalRef = useRef<HTMLInputElement>(null);
+  const cityRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     pushEventOnce('begin_checkout', { currency: 'EUR', value: total, items: items.map(i => ({ item_id: i.articleKey, item_name: i.name, price: i.price, quantity: i.qty })) });
@@ -219,8 +239,15 @@ export default function L1CheckoutPage() {
     e.preventDefault();
     sendOrder({
       source: 'land1',
+      name: firstNameRef.current?.value ?? null,
+      lastName: lastNameRef.current?.value ?? null,
       email: emailRef.current?.value ?? null,
       phone: phoneRef.current?.value ?? null,
+      address: streetRef.current?.value ?? null,
+      postalCode: postalRef.current?.value ?? null,
+      city: cityRef.current?.value ?? null,
+      deliveryMethod,
+      paymentMethod,
       product: items.map(i => `${i.name} ×${i.qty}`).join(', '),
       qty: items.reduce((s, i) => s + i.qty, 0),
       total: orderTotal,
@@ -299,11 +326,11 @@ export default function L1CheckoutPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className={labelClass}>{t.firstName}</label>
-                    <input type="text" required className={inputClass} autoComplete="given-name" />
+                    <input type="text" required ref={firstNameRef} className={inputClass} autoComplete="given-name" />
                   </div>
                   <div>
                     <label className={labelClass}>{t.lastName}</label>
-                    <input type="text" required className={inputClass} autoComplete="family-name" />
+                    <input type="text" required ref={lastNameRef} className={inputClass} autoComplete="family-name" />
                   </div>
                   <div>
                     <label className={labelClass}>{t.email}</label>
@@ -324,16 +351,16 @@ export default function L1CheckoutPage() {
                 <div className="grid grid-cols-1 gap-4">
                   <div>
                     <label className={labelClass}>{t.address}</label>
-                    <input type="text" required className={inputClass} autoComplete="street-address" />
+                    <input type="text" required ref={streetRef} className={inputClass} autoComplete="street-address" />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className={labelClass}>{t.postalCode}</label>
-                      <input type="text" required className={inputClass} autoComplete="postal-code" />
+                      <input type="text" required ref={postalRef} className={inputClass} autoComplete="postal-code" />
                     </div>
                     <div>
                       <label className={labelClass}>{t.city}</label>
-                      <input type="text" required className={inputClass} autoComplete="address-level2" />
+                      <input type="text" required ref={cityRef} className={inputClass} autoComplete="address-level2" />
                     </div>
                   </div>
                 </div>
@@ -389,44 +416,61 @@ export default function L1CheckoutPage() {
                   <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#DC2626] text-white text-xs font-bold mr-2">4</span>
                   {t.payment}
                 </h2>
-                <div className="flex gap-3">
-                  <button
-                    type="button"
-                    onClick={() => setPaymentMethod('card')}
-                    className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'card' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
-                  >
-                    <svg width="28" height="20" viewBox="0 0 28 20" fill="none">
-                      <rect width="28" height="20" rx="3" fill="#FEF2F2" />
-                      <rect y="5" width="28" height="5" fill="#DC2626" opacity="0.4" />
-                      <rect x="3" y="13" width="8" height="3" rx="1" fill="#DC2626" opacity="0.6" />
-                    </svg>
-                    <span className="text-xs text-[#111827] font-medium">{t.payCard}</span>
-                  </button>
+                <div className="space-y-3">
+                  <div className="flex gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setPaymentMethod('googlepay')}
+                      className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'googlepay' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
+                    >
+                      <img src="/pay-google.svg" alt="Google Pay" className="h-7 w-auto" />
+                      <span className="text-xs text-[#111827] font-medium">{t.payGooglePay}</span>
+                    </button>
 
-                  <button
-                    type="button"
-                    onClick={() => setPaymentMethod('paypal')}
-                    className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'paypal' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
-                  >
-                    <svg width="28" height="20" viewBox="0 0 28 20" fill="none">
-                      <rect width="28" height="20" rx="3" fill="#FEF2F2" />
-                      <text x="5" y="14" fontSize="9" fontWeight="700" fill="#003087" fontFamily="Arial">Pay</text>
-                      <text x="14" y="14" fontSize="9" fontWeight="700" fill="#009CDE" fontFamily="Arial">Pal</text>
-                    </svg>
-                    <span className="text-xs text-[#111827] font-medium">{t.payPaypal}</span>
-                  </button>
+                    <button
+                      type="button"
+                      onClick={() => setPaymentMethod('applepay')}
+                      className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'applepay' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
+                    >
+                      <img src="/pay-apple.svg" alt="Apple Pay" className="h-7 w-auto" />
+                      <span className="text-xs text-[#111827] font-medium">{t.payApplePay}</span>
+                    </button>
+                  </div>
 
-                  <button
-                    type="button"
-                    onClick={() => setPaymentMethod('klarna')}
-                    className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'klarna' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
-                  >
-                    <svg width="28" height="20" viewBox="0 0 28 20" fill="none">
-                      <rect width="28" height="20" rx="3" fill="#FFB3C7" />
-                      <text x="4" y="14" fontSize="8" fontWeight="700" fill="#17120E" fontFamily="Arial">Klarna</text>
-                    </svg>
-                    <span className="text-xs text-[#111827] font-medium">{t.payKlarna}</span>
-                  </button>
+                  <div className="flex items-center gap-3">
+                    <div className="flex-1 h-px bg-[#FECACA]" />
+                    <span className="text-xs text-[#6B7280]">{t.payOr}</span>
+                    <div className="flex-1 h-px bg-[#FECACA]" />
+                  </div>
+
+                  <div className="flex gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setPaymentMethod('card')}
+                      className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'card' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
+                    >
+                      <img src="/pay-card.svg" alt="Card" className="h-7 w-auto" />
+                      <span className="text-xs text-[#111827] font-medium">{t.payCard}</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setPaymentMethod('paypal')}
+                      className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'paypal' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
+                    >
+                      <img src="/pay-paypal.svg" alt="PayPal" className="h-7 w-auto" />
+                      <span className="text-xs text-[#111827] font-medium">{t.payPaypal}</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setPaymentMethod('klarna')}
+                      className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'klarna' ? 'border-[#DC2626] bg-[#FEF2F2]' : 'border-[#FECACA] bg-white hover:border-[#FCA5A5]'}`}
+                    >
+                      <img src="/pay-klarna.svg" alt="Klarna" className="h-7 w-auto" />
+                      <span className="text-xs text-[#111827] font-medium">{t.payKlarna}</span>
+                    </button>
+                  </div>
                 </div>
               </section>
             </div>
