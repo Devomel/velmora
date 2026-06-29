@@ -1,3 +1,5 @@
+const WEBHOOK_URL = process.env.NEXT_PUBLIC_ORDERS_URL ?? '';
+
 type OrderPayload = {
   source: string;
   name?: string | null;
@@ -10,10 +12,11 @@ type OrderPayload = {
 };
 
 export function sendOrder(data: OrderPayload): void {
+  if (!WEBHOOK_URL) return;
   const subdomain = typeof window !== 'undefined' ? window.location.hostname : '';
-  fetch('/api/order', {
+  fetch(WEBHOOK_URL, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    mode: 'no-cors',
     body: JSON.stringify({ ...data, subdomain }),
   }).catch(() => {});
 }
