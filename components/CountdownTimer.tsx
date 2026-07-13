@@ -9,9 +9,10 @@ type Props = {
   seconds: string;
 };
 
-// Align to fixed 5-hour UTC windows (0:00, 5:00, 10:00, 15:00, 20:00 UTC).
-// Every device computes the same end time from the same formula.
-const PERIOD_MS = 5 * 60 * 60 * 1000;
+// Align to UTC midnight (00:00) — epoch 0 is a UTC midnight, so ceiling to a
+// 24h period always lands on the next UTC midnight. Every device computes
+// the same end time from the same formula.
+const PERIOD_MS = 24 * 60 * 60 * 1000;
 
 function getWindowEnd() {
   const now = Date.now();

@@ -69,6 +69,14 @@ const STATIC_META: Meta[] = [
    { id: 37, articleKey: 'кераміка_2', rating: 5, reviews: 43,  badge: 'sale' },
 ];
 
+// Site-wide price multiplier. 1 = raw prices, 0.6 = -40% off. Change this single
+// value to instantly revert (1) or reapply (0.6) the discount everywhere.
+const DISCOUNT_MULTIPLIER = 0.6;
+
+export function applyDiscount(value: number): number {
+   return Math.round(value * DISCOUNT_MULTIPLIER);
+}
+
 type PriceRow = { price: number; oldPrice: number; priceLei: number; oldPriceLei: number };
 
 function loadCsvPrices(): Map<string, PriceRow> {
@@ -100,10 +108,10 @@ export const PRODUCT_DATA: ProductData[] = STATIC_META.map(meta => {
    return {
       ...meta,
       categoryKey: categoryKeyFor(meta.articleKey),
-      price:       row?.price       ?? 0,
-      oldPrice:    row?.oldPrice    ?? 0,
-      priceLei:    row?.priceLei    ?? 0,
-      oldPriceLei: row?.oldPriceLei ?? 0,
+      price:       applyDiscount(row?.price       ?? 0),
+      oldPrice:    applyDiscount(row?.oldPrice    ?? 0),
+      priceLei:    applyDiscount(row?.priceLei    ?? 0),
+      oldPriceLei: applyDiscount(row?.oldPriceLei ?? 0),
       reviews: reviewCounts.get(meta.articleKey) ?? meta.reviews,
       rating:  avgRatings.get(meta.articleKey)   ?? meta.rating,
    };
