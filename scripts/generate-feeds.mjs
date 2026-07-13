@@ -36,6 +36,14 @@ const ARTICLE_KEYS = [
   'кераміка_1', 'кераміка_2',
 ];
 
+// Mirrors DISCOUNT_MULTIPLIER in lib/products.ts — keep both in sync.
+// 1 = raw prices, 0.6 = -40% off.
+const DISCOUNT_MULTIPLIER = 0.6;
+
+function applyDiscount(value) {
+  return Math.round(value * DISCOUNT_MULTIPLIER);
+}
+
 // ── Load prices from CSV ───────────────────────────────────────────────────
 function loadPrices() {
   const csvPath = path.join(ROOT, 'products', 'Text_content_translated.csv');
@@ -52,7 +60,12 @@ function loadPrices() {
     const priceLei   = parseInt(parts[5]?.trim() ?? '', 10);
     const oldPriceLei = parseInt(parts[6]?.trim() ?? '', 10);
     if (lang === 'uk' && article && !isNaN(price) && price > 0) {
-      prices.set(article, { price, oldPrice, priceLei, oldPriceLei });
+      prices.set(article, {
+        price:       applyDiscount(price),
+        oldPrice:    applyDiscount(oldPrice),
+        priceLei:    applyDiscount(priceLei),
+        oldPriceLei: applyDiscount(oldPriceLei),
+      });
     }
   }
   return prices;
