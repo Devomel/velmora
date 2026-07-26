@@ -36,12 +36,13 @@ const ARTICLE_KEYS = [
   'кераміка_1', 'кераміка_2',
 ];
 
-// Per-locale multiplier, mirrors lib/discount-rates.json — keep both in sync.
-// 1 = raw prices, 0.6 = -40% off.
+// Per-market multiplier, keyed by the same subdomain flags as FEEDS above
+// (also used by lib/products.ts — keep both in sync). 1 = raw prices,
+// 0.6 = -40% off.
 const DISCOUNT_RATES = require(path.join(ROOT, 'lib', 'discount-rates.json'));
 
-function applyDiscount(value, locale) {
-  return Math.round(value * (DISCOUNT_RATES[locale] ?? 1));
+function applyDiscount(value, market) {
+  return Math.round(value * (DISCOUNT_RATES[market] ?? 1));
 }
 
 // ── Load raw prices from CSV (discount applied per-feed in generateFeed) ──
@@ -113,8 +114,8 @@ function generateFeed(subdomain, config, prices) {
     const product  = products[i];
     const priceRow = prices.get(articleKey) ?? { price: 0, oldPrice: 0, priceLei: 0, oldPriceLei: 0 };
 
-    const currentPrice = applyDiscount(config.useLei ? priceRow.priceLei   : priceRow.price, config.locale);
-    const originalPrice = applyDiscount(config.useLei ? priceRow.oldPriceLei : priceRow.oldPrice, config.locale);
+    const currentPrice = applyDiscount(config.useLei ? priceRow.priceLei   : priceRow.price, subdomain);
+    const originalPrice = applyDiscount(config.useLei ? priceRow.oldPriceLei : priceRow.oldPrice, subdomain);
     const currency = config.currency;
     const productId = i + 1; // matches route /product/[id]/
 

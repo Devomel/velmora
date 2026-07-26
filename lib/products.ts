@@ -2,8 +2,19 @@ import fs from 'fs';
 import path from 'path';
 import { loadAllReviewCounts, loadAverageRatings } from './reviews';
 import { POT_ARTICLE_KEYS, PAN_ARTICLE_KEYS, KNIFE_ARTICLE_KEYS } from './categories';
-import { LOCALE } from './i18n';
+import { LOCALE, type Locale } from './i18n';
 import DISCOUNT_RATES from './discount-rates.json';
+
+// discount-rates.json is keyed by market flag (matches FEEDS in
+// generate-feeds.mjs: de/at/no/ro/eu), not by translation locale — the "de"
+// translation is shared by the de and at markets (same rate), and "ru" is
+// shared by the eu market. Map locale -> market flag here.
+const MARKET_BY_LOCALE: Record<Locale, keyof typeof DISCOUNT_RATES> = {
+   de: 'de',
+   no: 'no',
+   ro: 'ro',
+   ru: 'eu',
+};
 
 export type ProductData = {
    id: number;
@@ -71,9 +82,9 @@ const STATIC_META: Meta[] = [
    { id: 37, articleKey: 'кераміка_2', rating: 5, reviews: 43,  badge: 'sale' },
 ];
 
-// Per-locale price multiplier, see discount-rates.json. 1 = raw prices,
-// 0.6 = -40% off. Edit that file to retune or revert per locale.
-const DISCOUNT_MULTIPLIER = DISCOUNT_RATES[LOCALE] ?? 1;
+// Per-market price multiplier, see discount-rates.json. 1 = raw prices,
+// 0.6 = -40% off. Edit that file to retune or revert per market.
+const DISCOUNT_MULTIPLIER = DISCOUNT_RATES[MARKET_BY_LOCALE[LOCALE]] ?? 1;
 
 export function applyDiscount(value: number): number {
    return Math.round(value * DISCOUNT_MULTIPLIER);
