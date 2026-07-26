@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import { loadAllReviewCounts, loadAverageRatings } from './reviews';
 import { POT_ARTICLE_KEYS, PAN_ARTICLE_KEYS, KNIFE_ARTICLE_KEYS } from './categories';
+import { LOCALE } from './i18n';
+import DISCOUNT_RATES from './discount-rates.json';
 
 export type ProductData = {
    id: number;
@@ -69,9 +71,9 @@ const STATIC_META: Meta[] = [
    { id: 37, articleKey: 'кераміка_2', rating: 5, reviews: 43,  badge: 'sale' },
 ];
 
-// Site-wide price multiplier. 1 = raw prices, 0.6 = -40% off. Change this single
-// value to instantly revert (1) or reapply (0.6) the discount everywhere.
-const DISCOUNT_MULTIPLIER = 0.6;
+// Per-locale price multiplier, see discount-rates.json. 1 = raw prices,
+// 0.6 = -40% off. Edit that file to retune or revert per locale.
+const DISCOUNT_MULTIPLIER = DISCOUNT_RATES[LOCALE] ?? 1;
 
 export function applyDiscount(value: number): number {
    return Math.round(value * DISCOUNT_MULTIPLIER);

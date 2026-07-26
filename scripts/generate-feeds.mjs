@@ -36,15 +36,15 @@ const ARTICLE_KEYS = [
   'кераміка_1', 'кераміка_2',
 ];
 
-// Mirrors DISCOUNT_MULTIPLIER in lib/products.ts — keep both in sync.
+// Per-locale multiplier, mirrors lib/discount-rates.json — keep both in sync.
 // 1 = raw prices, 0.6 = -40% off.
-const DISCOUNT_MULTIPLIER = 0.6;
+const DISCOUNT_RATES = require(path.join(ROOT, 'lib', 'discount-rates.json'));
 
-function applyDiscount(value) {
-  return Math.round(value * DISCOUNT_MULTIPLIER);
+function applyDiscount(value, locale) {
+  return Math.round(value * (DISCOUNT_RATES[locale] ?? 1));
 }
 
-// ── Load prices from CSV ───────────────────────────────────────────────────
+// ── Load raw prices from CSV (discount applied per-feed in generateFeed) ──
 function loadPrices() {
   const csvPath = path.join(ROOT, 'products', 'Text_content_translated.csv');
   const lines = fs.readFileSync(csvPath, 'utf-8').replace(/^﻿/, '').split('\n');
@@ -60,12 +60,7 @@ function loadPrices() {
     const priceLei   = parseInt(parts[5]?.trim() ?? '', 10);
     const oldPriceLei = parseInt(parts[6]?.trim() ?? '', 10);
     if (lang === 'uk' && article && !isNaN(price) && price > 0) {
-      prices.set(article, {
-        price:       applyDiscount(price),
-        oldPrice:    applyDiscount(oldPrice),
-        priceLei:    applyDiscount(priceLei),
-        oldPriceLei: applyDiscount(oldPriceLei),
-      });
+      prices.set(article, { price, oldPrice, priceLei, oldPriceLei });
     }
   }
   return prices;
@@ -118,8 +113,8 @@ function generateFeed(subdomain, config, prices) {
     const product  = products[i];
     const priceRow = prices.get(articleKey) ?? { price: 0, oldPrice: 0, priceLei: 0, oldPriceLei: 0 };
 
-    const currentPrice = config.useLei ? priceRow.priceLei   : priceRow.price;
-    const originalPrice = config.useLei ? priceRow.oldPriceLei : priceRow.oldPrice;
+    const currentPrice = applyDiscount(config.useLei ? priceRow.priceLei   : priceRow.price, config.locale);
+    const originalPrice = applyDiscount(config.useLei ? priceRow.oldPriceLei : priceRow.oldPrice, config.locale);
     const currency = config.currency;
     const productId = i + 1; // matches route /product/[id]/
 
