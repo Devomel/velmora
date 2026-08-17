@@ -32,6 +32,7 @@ type CheckoutT = {
   payKlarna: string;
   payGooglePay: string;
   payApplePay: string;
+  paySepa?: string;
   payOr: string;
   orderSummary: string;
   subtotal: string;
@@ -73,12 +74,13 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     payKlarna: 'Klarna',
     payGooglePay: 'Google Pay',
     payApplePay: 'Apple Pay',
+    paySepa: 'SEPA-Lastschrift',
     payOr: 'oder',
     orderSummary: 'Bestellübersicht',
     subtotal: 'Zwischensumme',
     deliveryFee: 'Versandkosten',
     total: 'Gesamt',
-    placeOrder: 'Bestellung aufgeben',
+    placeOrder: 'Zahlungspflichtig bestellen',
     unavailableTitle: 'Zahlung vorübergehend nicht möglich',
     unavailableText: 'Wir nehmen derzeit keine Online-Zahlungen entgegen. Bitte kontaktieren Sie uns, um Ihre Bestellung abzuschließen.',
     unavailableClose: 'Schließen',
@@ -203,15 +205,35 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
 };
 
 const FREE_DELIVERY_THRESHOLD = 50;
-const EXPRESS_PRICE = 9.99;
+const DEFAULT_DELIVERY_PRICE = { standard: 4.99, express: 9.99 };
+// DE prices rounded to the ,90 pattern customers expect from German retailers
+const DELIVERY_PRICES: Record<string, { standard: number; express: number }> = {
+  de: { standard: 4.9, express: 9.9 },
+};
+
+function addBusinessDays(from: Date, days: number): Date {
+  const date = new Date(from);
+  let added = 0;
+  while (added < days) {
+    date.setDate(date.getDate() + 1);
+    const day = date.getDay();
+    if (day !== 0 && day !== 6) added++;
+  }
+  return date;
+}
+
+function formatDeDeliveryDate(date: Date): string {
+  return new Intl.DateTimeFormat('de-DE', { weekday: 'short', day: 'numeric', month: 'short' }).format(date);
+}
 
 export default function CheckoutPage() {
   const { items, total } = useCart();
   const locale = (process.env.NEXT_PUBLIC_LOCALE ?? 'de') as string;
   const t = TRANSLATIONS[locale] ?? TRANSLATIONS.de;
+  const deliveryPrices = DELIVERY_PRICES[locale] ?? DEFAULT_DELIVERY_PRICE;
 
   const [deliveryMethod, setDeliveryMethod] = useState<'standard' | 'express'>('standard');
-  const [paymentMethod, setPaymentMethod] = useState<'card' | 'paypal' | 'klarna' | 'googlepay' | 'applepay'>('card');
+  const [paymentMethod, setPaymentMethod] = useState<'card' | 'paypal' | 'klarna' | 'googlepay' | 'applepay' | 'sepa'>('card');
   const [showPopup, setShowPopup] = useState(false);
   const firstNameRef = useRef<HTMLInputElement>(null);
   const lastNameRef = useRef<HTMLInputElement>(null);
@@ -226,9 +248,13 @@ export default function CheckoutPage() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const deliveryFee = total >= FREE_DELIVERY_THRESHOLD ? 0 : deliveryMethod === 'express' ? EXPRESS_PRICE : 4.99;
-  const fmt = (n: number) => IS_RO ? `${n.toFixed(2)} lei` : `€${n.toFixed(2)}`;
+  const deliveryFee = total >= FREE_DELIVERY_THRESHOLD ? 0 : deliveryMethod === 'express' ? deliveryPrices.express : deliveryPrices.standard;
+  const fmt = (n: number) => IS_RO ? `${n.toFixed(2)} lei` : locale === 'de' ? `${n.toFixed(2).replace('.', ',')} €` : `€${n.toFixed(2)}`;
   const orderTotal = total + deliveryFee;
+
+  // Upper bound of the "Werktage" range read as a concrete, safer-to-promise date
+  const standardDeliveryDate = formatDeDeliveryDate(addBusinessDays(new Date(), 5));
+  const expressDeliveryDate = formatDeDeliveryDate(addBusinessDays(new Date(), 2));
 
   const inputClass =
     'w-full border border-[#E8DDD4] px-3 py-2.5 text-sm focus:border-[#C4704F] outline-none bg-white transition-colors placeholder:text-[#C4B8AE]';
@@ -337,7 +363,7 @@ export default function CheckoutPage() {
 
           <form onSubmit={handlePlaceOrder} className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-8">
             {/* Left: Form */}
-            <div>
+            <div className="order-2 lg:order-none lg:col-start-1 lg:row-start-1">
               {/* Contact */}
               <section className={sectionClass}>
                 <h2 className={sectionTitleClass}>
@@ -398,10 +424,12 @@ export default function CheckoutPage() {
                   {(['standard', 'express'] as const).map(method => {
                     const isSelected = deliveryMethod === method;
                     const label = method === 'standard' ? t.standardDelivery : t.expressDelivery;
-                    const desc = method === 'standard' ? t.standardDeliveryDesc : t.expressDeliveryDesc;
+                    const desc = locale === 'de'
+                      ? `Lieferung bis ${method === 'standard' ? standardDeliveryDate : expressDeliveryDate}`
+                      : (method === 'standard' ? t.standardDeliveryDesc : t.expressDeliveryDesc);
                     const price = method === 'standard'
-                      ? (total >= FREE_DELIVERY_THRESHOLD ? t.free : fmt(4.99))
-                      : fmt(EXPRESS_PRICE);
+                      ? (total >= FREE_DELIVERY_THRESHOLD ? t.free : fmt(deliveryPrices.standard))
+                      : fmt(deliveryPrices.express);
 
                     return (
                       <label
@@ -494,13 +522,24 @@ export default function CheckoutPage() {
                       <img src="/pay-klarna.svg" alt="Klarna" className="h-7 w-auto" />
                       <span className="text-xs text-[#1A1410] font-medium">{t.payKlarna}</span>
                     </button>
+
+                    {locale === 'de' && (
+                      <button
+                        type="button"
+                        onClick={() => setPaymentMethod('sepa')}
+                        className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'sepa' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
+                      >
+                        <img src="/pay-sepa.svg" alt="SEPA-Lastschrift" className="h-7 w-auto" />
+                        <span className="text-xs text-[#1A1410] font-medium">{t.paySepa}</span>
+                      </button>
+                    )}
                   </div>
                 </div>
               </section>
             </div>
 
             {/* Right: Order summary */}
-            <div className="lg:sticky lg:top-6 h-fit">
+            <div className="order-1 lg:order-none lg:col-start-2 lg:row-start-1 lg:sticky lg:top-6 h-fit">
               <div className="bg-white border border-[#E8DDD4] p-6">
                 <h2 className="text-base font-semibold text-[#1A1410] mb-5">{t.orderSummary}</h2>
 
