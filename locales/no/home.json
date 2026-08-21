@@ -59,6 +59,18 @@
     "title": "Servise-katalog",
     "subtitle": "Over 200 produkter. Ukentlige oppdateringer.",
     "addToCart": "Legg i handlekurv",
+    "sku": "Artikkelnr.",
+    "inStock": "På lager",
+    "youSave": "spart",
+    "tabSpecs": "Egenskaper",
+    "tabDescription": "Beskrivelse",
+    "tabReviews": "Anmeldelser",
+    "contentsLabel": "Innhold i settet",
+    "brandLabel": "Merke",
+    "similarLabel": "Lignende produkter",
+    "setIncludesLabel": "Dette får du i settet",
+    "advantagesLabel": "Fordeler",
+    "giftLabel": "Gaven din",
     "loadMore": "Last inn mer",
     "empty": "Ingen produkter funnet. Prøv å endre filtrene.",
     "badges": {
@@ -2687,16 +2699,37 @@
     "tagline": "Servise for spesielle øyeblikk. Kvalitet du kjenner ved første berøring.",
     "navTitle": "Navigasjon",
     "navLinks": [
-      { "label": "Om oss", "href": "/about" },
-      { "label": "Frakt og betaling", "href": "/delivery" },
-      { "label": "Kontakt", "href": "/contacts" }
+      {
+        "label": "Om oss",
+        "href": "/about"
+      },
+      {
+        "label": "Frakt og betaling",
+        "href": "/delivery"
+      },
+      {
+        "label": "Kontakt",
+        "href": "/contacts"
+      }
     ],
     "sectionsTitle": "På denne siden",
     "sectionLinks": [
-      { "label": "Katalog", "href": "/#catalog" },
-      { "label": "Anmeldelser", "href": "/#reviews" },
-      { "label": "Garantier", "href": "/#guarantees" },
-      { "label": "FAQ", "href": "/#faq" }
+      {
+        "label": "Katalog",
+        "href": "/#catalog"
+      },
+      {
+        "label": "Anmeldelser",
+        "href": "/#reviews"
+      },
+      {
+        "label": "Garantier",
+        "href": "/#guarantees"
+      },
+      {
+        "label": "FAQ",
+        "href": "/#faq"
+      }
     ],
     "contactTitle": "Kontakt",
     "phoneLabel": "Telefon",

@@ -3,14 +3,35 @@ import Link from 'next/link';
 import { getMessages, fmtPrice, IS_RO } from '@/lib/i18n';
 import { getProductById, PRODUCT_DATA } from '@/lib/products';
 import { getProductImages } from '@/lib/product-images';
-import { getProductReviews, type Review } from '@/lib/reviews';
+import { getProductReviews } from '@/lib/reviews';
 import SiteHeader from '@/app/sections/SiteHeader';
 import SiteFooter from '@/app/sections/SiteFooter';
 import AddToCartButton from './AddToCartButton';
-import ProductImageSlider from '@/components/ProductImageSlider';
-import ProductSpecsTables from './ProductSpecsTables';
+import ProductGallery from './ProductGallery';
+import ProductSpecsList from './ProductSpecsList';
+import SimilarProducts from './SimilarProducts';
+import ReviewsSection from './ReviewsSection';
 import ViewItemTracker from '@/components/ViewItemTracker';
 import CountdownTimer from '@/components/CountdownTimer';
+import Tabs from '@/components/Tabs';
+import { featureIcon } from '@/lib/feature-icon';
+import RichText from '@/components/RichText';
+
+const GUARANTEE_ICONS = [
+  <svg key="return" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <polyline points="1 4 1 10 7 10" /><path d="M3.51 15a9 9 0 102.13-9.36L1 10" />
+  </svg>,
+  <svg key="payment" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <rect x="1" y="4" width="22" height="16" rx="2" /><line x1="1" y1="10" x2="23" y2="10" />
+  </svg>,
+  <svg key="delivery" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <rect x="1" y="3" width="15" height="13" rx="1" /><path d="M16 8h4l3 3v5h-7V8z" />
+    <circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
+  </svg>,
+  <svg key="cert" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11 14 15 10" />
+  </svg>,
+];
 
 export async function generateStaticParams() {
   return PRODUCT_DATA.map(p => ({ id: String(p.id) }));
@@ -51,27 +72,6 @@ function Stars({ rating, size = 16 }: { rating: number; size?: number }) {
   );
 }
 
-function ReviewCard({ review }: { review: Review }) {
-  const initials = review.author.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
-  return (
-    <div className="bg-white border border-[#E8DDD4] p-5 flex flex-col gap-3">
-      <div className="flex items-start justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-full bg-[#C8A86B]/20 flex items-center justify-center flex-shrink-0">
-            <span className="text-xs font-semibold text-[#C8A86B]">{initials}</span>
-          </div>
-          <div>
-            <p className="text-sm font-medium text-[#1A1410]">{review.author}</p>
-            <Stars rating={review.rating} size={12} />
-          </div>
-        </div>
-        <span className="text-xs text-[#9C8A7E] whitespace-nowrap">{review.date}</span>
-      </div>
-      <p className="text-sm text-[#6B5B4E] leading-relaxed">{review.text}</p>
-    </div>
-  );
-}
-
 export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const { home, common } = await getMessages();
@@ -82,6 +82,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
   type SpecRow = [string, string];
   const locale = home.catalog.products[idx] as {
     name: string; material: string; description?: string; features?: string[];
+    longDescription?: string[]; contents?: string[]; gift?: string; tagline?: string;
     specs?: {
       detailsLabel: string; materialsLabel: string; highlightsLabel: string;
       details: SpecRow[]; materials: SpecRow[]; highlights: SpecRow[];
@@ -91,6 +92,11 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
   const material = locale?.material ?? '';
   const description = locale?.description ?? '';
   const features = locale?.features ?? [];
+  const longDescription = locale?.longDescription ?? [];
+  const setContents = locale?.contents ?? [];
+  const gift = locale?.gift ?? '';
+  const tagline = locale?.tagline ?? '';
+  const categoryEmoji = data.categoryKey === 'pans' ? '🍳' : data.categoryKey === 'pots' ? '🍲' : data.categoryKey === 'knives' ? '🔪' : '✨';
 
   const images = getProductImages(data.articleKey, data.categoryKey);
   const discountPct = data.oldPrice ? Math.round((1 - data.price / data.oldPrice) * 100) : null;
@@ -100,15 +106,30 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
     ? Math.round(reviews.reduce((s, r) => s + r.rating, 0) / reviews.length * 10) / 10
     : data.rating;
 
+  const similarItems = PRODUCT_DATA
+    .filter(p => p.categoryKey === data.categoryKey && p.id !== data.id)
+    .slice(0, 4)
+    .map(p => ({
+      id: p.id,
+      name: home.catalog.products[p.id - 1]?.name ?? '',
+      image: getProductImages(p.articleKey, p.categoryKey)[0] ?? '',
+      price: p.price,
+      priceLei: p.priceLei,
+      oldPrice: p.oldPrice,
+      oldPriceLei: p.oldPriceLei,
+      rating: p.rating,
+      reviews: p.reviews,
+    }));
+
   const badge = (
     <>
       {data.badge && (
-        <span className={`absolute top-4 left-4 z-10 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 ${data.badge === 'sale' ? 'bg-[#6B8F71]' : 'bg-[#C8A86B]'}`}>
+        <span className={`absolute top-4 left-4 z-10 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-sm ${data.badge === 'sale' ? 'bg-[#6B8F71]' : 'bg-[#C8A86B]'}`}>
           {data.badge === 'sale' ? home.catalog.badges.sale : home.catalog.badges.new}
         </span>
       )}
       {discountPct && (
-        <span className="absolute top-4 right-4 z-10 bg-[#C4704F] text-white text-sm font-bold px-2 py-1">
+        <span className="absolute top-4 right-4 z-10 bg-[#C4704F] text-white text-sm font-bold px-2 py-1 rounded-sm">
           −{discountPct}%
         </span>
       )}
@@ -121,8 +142,8 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
 
       <main className="flex-1 pt-[var(--header-h)]">
         {/* Breadcrumb */}
-        <div className="max-w-6xl mx-auto px-4 py-4">
-          <nav className="text-xs text-[#9C8A7E] flex items-center gap-2">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <nav className="text-xs text-[#7D6C5E] flex items-center gap-2">
             <Link href="/" className="hover:text-[#C4704F] transition-colors">cookware market</Link>
             <span>›</span>
             <Link href="/#catalog" className="hover:text-[#C4704F] transition-colors">{home.catalog.title}</Link>
@@ -132,107 +153,175 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
         </div>
 
         {/* Product detail */}
-        <div className="max-w-6xl mx-auto px-4 pb-20">
+        <div className="max-w-7xl mx-auto px-4 pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-            {/* Slider */}
-            <ProductImageSlider images={images} alt={name} badge={badge} />
+            {/* Gallery */}
+            <div className="lg:sticky lg:top-[calc(var(--header-h)+16px)] lg:self-start">
+              <ProductGallery images={images} alt={name} badge={badge} />
+            </div>
 
             {/* Info */}
             <div className="py-4">
-              <p className="text-xs uppercase tracking-widest text-[#9C8A7E] mb-2">{material}</p>
+              <p className="text-xs uppercase tracking-widest text-[#7D6C5E] mb-2">{material}</p>
               <h1 className="text-2xl md:text-3xl font-light text-[#1A1410] mb-4 leading-snug">{name}</h1>
 
               <div className="flex items-center gap-3 mb-6">
                 <Stars rating={avgRating} />
                 <span className="text-base font-semibold text-[#1A1410]">{avgRating.toFixed(1)}</span>
-                <span className="text-sm text-[#9C8A7E]">({data.reviews})</span>
+                <span className="text-sm text-[#7D6C5E]">({data.reviews})</span>
               </div>
 
-              <div className="flex items-baseline gap-3 mb-6">
-                <span className="text-3xl font-semibold text-[#1A1410]">{fmtPrice(data.price, data.priceLei)}</span>
+              {/* Buy box */}
+              <div className="bg-white border border-[#E8DDD4] shadow-sm p-6">
+                <div className="flex items-baseline gap-3 mb-1">
+                  <span className="text-4xl font-bold text-[#1A1410]">{fmtPrice(data.price, data.priceLei)}</span>
+                  {data.oldPrice && (
+                    <span className="text-lg text-[#7D6C5E] line-through">{fmtPrice(data.oldPrice, data.oldPriceLei)}</span>
+                  )}
+                </div>
+
                 {data.oldPrice && (
-                  <span className="text-lg text-[#9C8A7E] line-through">{fmtPrice(data.oldPrice, data.oldPriceLei)}</span>
+                  <p className="text-sm font-semibold text-[#6B8F71] mb-4">
+                    −{discountPct}% · {fmtPrice(data.oldPrice - data.price, data.oldPriceLei - data.priceLei)} {home.catalog.youSave}
+                  </p>
+                )}
+
+                <div className="flex items-center gap-3 mb-6 text-sm">
+                  <span className="inline-flex items-center gap-1.5 bg-[#6B8F71]/10 text-[#6B8F71] font-medium px-2.5 py-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#6B8F71]" />
+                    {home.catalog.inStock}
+                  </span>
+                  <span className="text-[#7D6C5E]">{home.catalog.sku} {data.articleKey}</span>
+                </div>
+
+                <ViewItemTracker articleKey={data.articleKey} name={name} price={IS_RO ? data.priceLei : data.price} />
+                <AddToCartButton
+                  item={{ id: data.id, articleKey: data.articleKey, name, price: IS_RO ? data.priceLei : data.price, image: images[0] ?? '' }}
+                  label={home.catalog.addToCart}
+                />
+
+                {data.oldPrice && (
+                  <div className="mt-6">
+                    <CountdownTimer
+                      label={home.promoTimer.label}
+                      hours={home.promoTimer.hours}
+                      minutes={home.promoTimer.minutes}
+                      seconds={home.promoTimer.seconds}
+                    />
+                  </div>
                 )}
               </div>
 
-              {description && (
-                <p className="text-[#6B5B4E] leading-relaxed mb-6">{description}</p>
-              )}
-
-              {/* Features */}
-              {features.length > 0 && (
-                <ul className="mb-8 space-y-2">
-                  {features.map((f, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-[#6B5B4E]">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B8F71" strokeWidth="2.5" className="flex-shrink-0 mt-0.5">
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              )}
-
-              {data.oldPrice && (
-                <CountdownTimer
-                  label={home.promoTimer.label}
-                  hours={home.promoTimer.hours}
-                  minutes={home.promoTimer.minutes}
-                  seconds={home.promoTimer.seconds}
-                />
-              )}
-
-              <ViewItemTracker articleKey={data.articleKey} name={name} price={IS_RO ? data.priceLei : data.price} />
-              <AddToCartButton
-                item={{ id: data.id, articleKey: data.articleKey, name, price: IS_RO ? data.priceLei : data.price, image: images[0] ?? '' }}
-                label={home.catalog.addToCart}
-              />
-
-              {/* Guarantees strip */}
-              <div className="mt-8 pt-6 border-t border-[#E8DDD4] grid grid-cols-2 gap-4 text-xs text-[#6B5B4E]">
-                {home.guarantees.items.slice(0, 2).map(item => (
-                  <div key={item.title} className="flex items-start gap-2">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B8F71" strokeWidth="2" className="flex-shrink-0 mt-0.5">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>{item.title}</span>
+              {/* Guarantees grid */}
+              <div className="mt-8 grid grid-cols-2 gap-3">
+                {home.guarantees.items.map((item, i) => (
+                  <div key={item.title} className="flex items-center gap-3 bg-white border border-[#E8DDD4] px-3 py-3 text-xs text-[#5A4A3D]">
+                    <span className="text-[#C4704F] flex-shrink-0 w-8 h-8 rounded-full bg-[#C4704F]/10 flex items-center justify-center [&>svg]:w-[18px] [&>svg]:h-[18px]">
+                      {GUARANTEE_ICONS[i]}
+                    </span>
+                    <span className="font-medium text-[#1A1410]">{item.title}</span>
                   </div>
                 ))}
+              </div>
+
+              {/* Tabs: specs / description / reviews */}
+              <div className="mt-10 pt-8 border-t border-[#E8DDD4]">
+                <Tabs
+                  tabs={[
+                    {
+                      label: home.catalog.tabSpecs,
+                      content: locale?.specs ? (
+                        <ProductSpecsList
+                          specs={locale.specs}
+                          contentsLabel={home.catalog.contentsLabel}
+                          contents={description}
+                          brandLabel={home.catalog.brandLabel}
+                          brandValue="Velmora"
+                        />
+                      ) : null,
+                    },
+                    {
+                      label: home.catalog.tabDescription,
+                      content: (
+                        <div>
+                          <div className="flex items-start gap-2 mb-4">
+                            <span className="text-2xl leading-none flex-shrink-0">{categoryEmoji}</span>
+                            <h3 className="text-xl font-semibold text-[#1A1410] leading-snug pt-0.5">{name}</h3>
+                          </div>
+
+                          <div className="space-y-4">
+                            {longDescription.map((paragraph, i) => (
+                              <p key={i} className="text-[#5A4A3D] leading-relaxed">
+                                <RichText text={paragraph} />
+                              </p>
+                            ))}
+                          </div>
+
+                          {setContents.length > 0 && (
+                            <div className="mt-7 pt-6 border-t border-[#E8DDD4]">
+                              <h4 className="text-lg font-semibold text-[#1A1410] mb-3">
+                                {home.catalog.setIncludesLabel}
+                              </h4>
+                              <ul className="space-y-2">
+                                {setContents.map((item, i) => (
+                                  <li key={i} className="flex items-start gap-2 text-sm text-[#5A4A3D]">
+                                    <span className="text-[#7D6C5E] flex-shrink-0">–</span>
+                                    <RichText text={item} />
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+
+                          {features.length > 0 && (
+                            <div className="mt-7 pt-6 border-t border-[#E8DDD4]">
+                              <h4 className="text-lg font-semibold text-[#1A1410] mb-3">
+                                {home.catalog.advantagesLabel}
+                              </h4>
+                              <ul className="space-y-3">
+                                {features.map((f, i) => (
+                                  <li key={i} className="flex items-start gap-3 text-sm">
+                                    <span className="text-lg leading-none flex-shrink-0">{featureIcon(f)}</span>
+                                    <span className="text-[#5A4A3D] pt-0.5"><RichText text={f} /></span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          )}
+
+                          {gift && (
+                            <div className="mt-7 pt-6 border-t border-[#E8DDD4]">
+                              <h4 className="text-lg font-semibold text-[#1A1410] mb-3">
+                                {home.catalog.giftLabel}
+                              </h4>
+                              <p className="flex items-start gap-2 text-sm text-[#5A4A3D]">
+                                <span className="text-lg leading-none flex-shrink-0">🎁</span>
+                                <RichText text={gift} />
+                              </p>
+                            </div>
+                          )}
+
+                          {tagline && (
+                            <p className="mt-7 pt-6 border-t border-[#E8DDD4] text-sm font-semibold text-[#1A1410]">
+                              {tagline}
+                            </p>
+                          )}
+                        </div>
+                      ),
+                    },
+                    {
+                      label: home.catalog.tabReviews,
+                      badge: reviews.length,
+                      content: <ReviewsSection reviews={reviews} avgRating={avgRating} t={common.reviews} />,
+                    },
+                  ]}
+                />
               </div>
             </div>
           </div>
 
-          {/* Specs tables */}
-          {locale?.specs && <ProductSpecsTables specs={locale.specs} />}
-
-          {/* Reviews */}
-          {reviews.length > 0 && (
-            <section className="mt-16">
-              <div className="flex items-end gap-4 mb-8">
-                <h2 className="text-xl font-light text-[#1A1410]">{common.reviews.title}</h2>
-                <span className="text-sm text-[#9C8A7E] mb-0.5">
-                  {common.reviews.basedOn.replace('{count}', String(reviews.length))}
-                </span>
-              </div>
-
-              {/* Summary bar */}
-              <div className="flex items-center gap-4 mb-8 p-5 bg-white border border-[#E8DDD4] w-fit">
-                <span className="text-4xl font-light text-[#1A1410]">{avgRating.toFixed(1)}</span>
-                <div>
-                  <Stars rating={avgRating} size={20} />
-                  <p className="text-xs text-[#9C8A7E] mt-1">{common.reviews.average}</p>
-                </div>
-              </div>
-
-              {/* Cards grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {reviews.map((review, i) => (
-                  <ReviewCard key={i} review={review} />
-                ))}
-              </div>
-            </section>
-          )}
+          <SimilarProducts title={home.catalog.similarLabel} items={similarItems} />
 
           {/* Back */}
           <div className="mt-12">

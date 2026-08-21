@@ -1,6 +1,14 @@
 {
-  "nav": { "home": "Startseite", "about": "Über uns", "delivery": "Versand & Zahlung", "contacts": "Kontakt", "cart": "Warenkorb" },
-  "footer": { "rights": "Alle Rechte vorbehalten" },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "delivery": "Versand & Zahlung",
+    "contacts": "Kontakt",
+    "cart": "Warenkorb"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten"
+  },
   "cart": {
     "title": "Warenkorb",
     "empty": "Ihr Warenkorb ist leer",
@@ -15,8 +23,14 @@
     "promoApply": "Anwenden",
     "paymentNote": "Zahlung per Karte, PayPal oder Klarna",
     "upsellItems": [
-      { "name": "Topfuntersetzer", "price": 5 },
-      { "name": "Servietten-Set", "price": 6 }
+      {
+        "name": "Topfuntersetzer",
+        "price": 5
+      },
+      {
+        "name": "Servietten-Set",
+        "price": 6
+      }
     ]
   },
   "checkout": {
@@ -52,13 +66,32 @@
     "unavailableClose": "Schließen",
     "contactUs": "Kontakt aufnehmen",
     "secure": "Sichere Zahlung",
-    "countries": ["Deutschland", "Österreich", "Schweiz", "Belgien", "Niederlande", "Luxemburg"]
+    "countries": [
+      "Deutschland",
+      "Österreich",
+      "Schweiz",
+      "Belgien",
+      "Niederlande",
+      "Luxemburg"
+    ]
   },
-  "buttons": { "buy": "Kaufen", "more": "Mehr erfahren", "back": "Zurück" },
+  "buttons": {
+    "buy": "Kaufen",
+    "more": "Mehr erfahren",
+    "back": "Zurück"
+  },
   "reviews": {
     "title": "Kundenbewertungen",
     "average": "Durchschnitt",
     "basedOn": "basierend auf {count} Bewertungen",
-    "verifiedPurchase": "Verifizierter Kauf"
+    "verifiedPurchase": "Verifizierter Kauf",
+    "newReviewTitle": "Neue Bewertung oder Kommentar",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "E-Mail-Adresse",
+    "messagePlaceholder": "Ihre Nachricht",
+    "rateLabel": "Bewerten Sie das Produkt",
+    "submit": "Absenden",
+    "success": "Vielen Dank! Ihre Bewertung wird nach kurzer Prüfung veröffentlicht.",
+    "reply": "Antworten"
   }
 }

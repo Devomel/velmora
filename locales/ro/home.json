@@ -59,6 +59,18 @@
     "title": "Catalog de veselă",
     "subtitle": "Peste 200 de produse. Actualizări săptămânale.",
     "addToCart": "Adaugă în coș",
+    "sku": "Cod produs",
+    "inStock": "În stoc",
+    "youSave": "economisiți",
+    "tabSpecs": "Caracteristici",
+    "tabDescription": "Descriere",
+    "tabReviews": "Recenzii",
+    "contentsLabel": "Conținutul setului",
+    "brandLabel": "Brand",
+    "similarLabel": "Produse similare",
+    "setIncludesLabel": "Ce conține setul",
+    "advantagesLabel": "Avantaje",
+    "giftLabel": "Cadoul dvs.",
     "loadMore": "Încarcă mai mult",
     "empty": "Niciun produs găsit. Încearcă să schimbi filtrele.",
     "badges": {
@@ -2687,16 +2699,37 @@
     "tagline": "Veselă pentru momente speciale. Calitate care se simte la prima atingere.",
     "navTitle": "Navigare",
     "navLinks": [
-      { "label": "Despre noi", "href": "/about" },
-      { "label": "Livrare & plată", "href": "/delivery" },
-      { "label": "Contact", "href": "/contacts" }
+      {
+        "label": "Despre noi",
+        "href": "/about"
+      },
+      {
+        "label": "Livrare & plată",
+        "href": "/delivery"
+      },
+      {
+        "label": "Contact",
+        "href": "/contacts"
+      }
     ],
     "sectionsTitle": "Pe această pagină",
     "sectionLinks": [
-      { "label": "Catalog", "href": "/#catalog" },
-      { "label": "Recenzii", "href": "/#reviews" },
-      { "label": "Garanții", "href": "/#guarantees" },
-      { "label": "FAQ", "href": "/#faq" }
+      {
+        "label": "Catalog",
+        "href": "/#catalog"
+      },
+      {
+        "label": "Recenzii",
+        "href": "/#reviews"
+      },
+      {
+        "label": "Garanții",
+        "href": "/#guarantees"
+      },
+      {
+        "label": "FAQ",
+        "href": "/#faq"
+      }
     ],
     "contactTitle": "Contact",
     "phoneLabel": "Telefon",

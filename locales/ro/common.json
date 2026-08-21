@@ -1,6 +1,14 @@
 {
-  "nav": { "home": "Acasă", "about": "Despre noi", "delivery": "Livrare & plată", "contacts": "Contact", "cart": "Coș" },
-  "footer": { "rights": "Toate drepturile rezervate" },
+  "nav": {
+    "home": "Acasă",
+    "about": "Despre noi",
+    "delivery": "Livrare & plată",
+    "contacts": "Contact",
+    "cart": "Coș"
+  },
+  "footer": {
+    "rights": "Toate drepturile rezervate"
+  },
   "cart": {
     "title": "Coș de cumpărături",
     "empty": "Coșul tău este gol",
@@ -15,8 +23,14 @@
     "promoApply": "Aplică",
     "paymentNote": "Plată cu Visa, Mastercard, PayU sau ramburs",
     "upsellItems": [
-      { "name": "Suport pentru oale", "price": 5 },
-      { "name": "Set șervețele", "price": 6 }
+      {
+        "name": "Suport pentru oale",
+        "price": 5
+      },
+      {
+        "name": "Set șervețele",
+        "price": 6
+      }
     ]
   },
   "checkout": {
@@ -52,13 +66,32 @@
     "unavailableClose": "Închide",
     "contactUs": "Contactați-ne",
     "secure": "Plată securizată",
-    "countries": ["România", "Germania", "Austria", "Franța", "Italia", "Spania"]
+    "countries": [
+      "România",
+      "Germania",
+      "Austria",
+      "Franța",
+      "Italia",
+      "Spania"
+    ]
   },
-  "buttons": { "buy": "Cumpără", "more": "Află mai mult", "back": "Înapoi" },
+  "buttons": {
+    "buy": "Cumpără",
+    "more": "Află mai mult",
+    "back": "Înapoi"
+  },
   "reviews": {
     "title": "Recenzii clienți",
     "average": "Medie",
     "basedOn": "bazat pe {count} recenzii",
-    "verifiedPurchase": "Cumpărătură verificată"
+    "verifiedPurchase": "Cumpărătură verificată",
+    "newReviewTitle": "Recenzie sau comentariu nou",
+    "namePlaceholder": "Numele dvs.",
+    "emailPlaceholder": "Adresa de e-mail",
+    "messagePlaceholder": "Mesajul dvs.",
+    "rateLabel": "Evaluați produsul",
+    "submit": "Trimite",
+    "success": "Mulțumim! Recenzia dvs. va fi publicată după o scurtă verificare.",
+    "reply": "Răspunde"
   }
 }

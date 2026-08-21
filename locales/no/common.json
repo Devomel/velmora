@@ -1,6 +1,14 @@
 {
-  "nav": { "home": "Hjem", "about": "Om oss", "delivery": "Frakt & betaling", "contacts": "Kontakt", "cart": "Handlekurv" },
-  "footer": { "rights": "Alle rettigheter forbeholdt" },
+  "nav": {
+    "home": "Hjem",
+    "about": "Om oss",
+    "delivery": "Frakt & betaling",
+    "contacts": "Kontakt",
+    "cart": "Handlekurv"
+  },
+  "footer": {
+    "rights": "Alle rettigheter forbeholdt"
+  },
   "cart": {
     "title": "Handlekurv",
     "empty": "Handlekurven din er tom",
@@ -15,8 +23,14 @@
     "promoApply": "Bruk",
     "paymentNote": "Betaling med Visa, Mastercard eller Vipps",
     "upsellItems": [
-      { "name": "Grytedeksel", "price": 5 },
-      { "name": "Serviettesett", "price": 6 }
+      {
+        "name": "Grytedeksel",
+        "price": 5
+      },
+      {
+        "name": "Serviettesett",
+        "price": 6
+      }
     ]
   },
   "checkout": {
@@ -52,13 +66,32 @@
     "unavailableClose": "Lukk",
     "contactUs": "Kontakt oss",
     "secure": "Sikker betaling",
-    "countries": ["Norge", "Sverige", "Danmark", "Finland", "Nederland", "Belgia"]
+    "countries": [
+      "Norge",
+      "Sverige",
+      "Danmark",
+      "Finland",
+      "Nederland",
+      "Belgia"
+    ]
   },
-  "buttons": { "buy": "Kjøp", "more": "Les mer", "back": "Tilbake" },
+  "buttons": {
+    "buy": "Kjøp",
+    "more": "Les mer",
+    "back": "Tilbake"
+  },
   "reviews": {
     "title": "Kundeomtaler",
     "average": "Gjennomsnitt",
     "basedOn": "basert på {count} omtaler",
-    "verifiedPurchase": "Bekreftet kjøp"
+    "verifiedPurchase": "Bekreftet kjøp",
+    "newReviewTitle": "Ny anmeldelse eller kommentar",
+    "namePlaceholder": "Ditt navn",
+    "emailPlaceholder": "E-postadresse",
+    "messagePlaceholder": "Din melding",
+    "rateLabel": "Vurder produktet",
+    "submit": "Send inn",
+    "success": "Takk! Anmeldelsen din publiseres etter en kort gjennomgang.",
+    "reply": "Svar"
   }
 }

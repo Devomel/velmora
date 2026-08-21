@@ -59,6 +59,18 @@
     "title": "Geschirrkatalog",
     "subtitle": "Über 200 Positionen. Wöchentliche Updates.",
     "addToCart": "In den Warenkorb",
+    "sku": "Art.-Nr.",
+    "inStock": "Auf Lager",
+    "youSave": "gespart",
+    "tabSpecs": "Merkmale",
+    "tabDescription": "Beschreibung",
+    "tabReviews": "Bewertungen",
+    "contentsLabel": "Lieferumfang",
+    "brandLabel": "Marke",
+    "similarLabel": "Ähnliche Produkte",
+    "setIncludesLabel": "Das gehört zum Set",
+    "advantagesLabel": "Vorteile",
+    "giftLabel": "Ihr Geschenk zum Set",
     "loadMore": "Mehr laden",
     "empty": "Keine Produkte gefunden. Bitte ändern Sie die Filter.",
     "badges": {
@@ -86,17 +98,23 @@
     "sortDefault": "Standard",
     "sortAsc": "Preis ↑",
     "sortDesc": "Preis ↓",
+    "longDescriptionLabel": "Produktbeschreibung",
     "products": [
       {
         "name": "Pfannen-Set Berlin Velmora ⌀26cm und ⌀28cm",
         "material": "Geschmiedetes Aluminium",
         "description": "Pfanne Berlin Velmora ⌀28 cm, Pfanne Berlin Velmora ⌀26 cm",
         "features": [
-          "Geschmiedetes Aluminium",
-          "Gleichmäßige Erwärmung und Antihaftbeschichtung",
-          "Bequemer und ergonomischer Griff",
-          "Geeignet für intensiven Einsatz",
-          "Verzerrungsresistente Pfanne"
+          "**Geschmiedetes Aluminium** — sorgt für eine stabile, langlebige Grundlage, die auch intensivem Küchenalltag standhält.",
+          "**Antihaftbeschichtung** — verteilt die Hitze gleichmäßig und lässt Speisen mühelos aus der Pfanne gleiten.",
+          "**Ergonomischer Griff** — liegt bequem in der Hand und bleibt auch bei längerem Braten angenehm zu halten.",
+          "**Verzerrungsresistente Bauweise** — hält intensivem Einsatz stand, ohne sich zu verziehen."
+        ],
+        "longDescription": [
+          "Mit dem Pfannen-Set Berlin Velmora entscheiden Sie sich für zwei Pfannengrößen, die gemeinsam fast jede Aufgabe in Ihrer Küche abdecken: ⌀26 cm für den schnellen Alltag, ⌀28 cm für größere Portionen und die ganze Familie.",
+          "Der Korpus aus geschmiedetem Aluminium verteilt die Hitze gleichmäßig über die gesamte Fläche – keine kalten Ecken, keine verbrannten Stellen. Die Antihaftbeschichtung sorgt dafür, dass Fisch, Fleisch und Gemüse mühelos aus der Pfanne gleiten, ganz ohne literweise Öl.",
+          "Dank der verzerrungsresistenten Konstruktion behält jede Pfanne auch nach intensivem Einsatz ihre plane Form. Der ergonomische Griff liegt sicher in der Hand, bleibt kühl und macht das Wenden von Pfannengerichten entspannt. Beide Pfannen funktionieren auf jeder Herdart.",
+          "Ob Sonntagsfrühstück oder Feierabend-Pfannengericht – dieses Set begleitet Sie über Jahre und ist ebenso eine durchdachte Ergänzung für die eigene Küche wie ein Geschenk, das ankommt."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -152,18 +170,28 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Pfanne Berlin Velmora **⌀28 cm** — 1 Stk.",
+          "Pfanne Berlin Velmora **⌀26 cm** — 1 Stk."
+        ],
+        "tagline": "Velmora Berlin — zwei Pfannengrößen, die zu einem verlässlichen Küchenalltag zusammenfinden."
       },
       {
         "name": "Tiefe Pfanne 28 cm Velmora Fry Power",
         "material": "Innovative Antihaftbeschichtung der neuen Generation",
         "description": "Tiefe Pfanne Fry Power mit 28 cm Durchmesser",
         "features": [
-          "Innovative Antihaftbeschichtung der neuen Generation",
-          "Gleichmäßige Erwärmung über die gesamte Fläche",
-          "Bequemer ergonomischer Griff",
-          "Geeignet für alle Herdarten",
-          "Verzerrungsresistente Pfanne"
+          "**Antihaftbeschichtung der neuen Generation** — gleitet besonders leicht und bleibt auch nach häufigem Gebrauch leistungsfähig.",
+          "**Gleichmäßige Wärmeverteilung** — über die gesamte Fläche, für Bratergebnisse ohne Anbrennen.",
+          "**Ergonomischer Griff** — liegt sicher in der Hand und bleibt beim Kochen angenehm kühl.",
+          "**Verzerrungsresistente Bauweise** — bleibt auch nach Jahren plan und einsatzbereit, auf jeder Herdart."
+        ],
+        "longDescription": [
+          "Die tiefe Pfanne Fry Power 28 cm von Velmora ist für alles gemacht, was mehr Volumen braucht als eine klassische flache Pfanne: Schmorgerichte, Currys, größere Mengen Gemüse oder ein Familien-Omelett.",
+          "Herzstück ist die Antihaftbeschichtung der neuen Generation – sie hält deutlich länger als klassische Beschichtungen und bleibt auch nach häufigem Gebrauch glatt und leistungsfähig. In Kombination mit dem geschmiedeten Aluminiumkorpus verteilt sich die Wärme gleichmäßig über den gesamten Boden.",
+          "Die erhöhten Wände machen Wenden und Umrühren sicherer, ohne dass etwas herausspritzt. Der ergonomische Griff bleibt beim Kochen angenehm kühl, und dank der verzerrungsresistenten Bauweise liegt die Pfanne auch nach Jahren noch plan auf dem Herd auf – egal ob Gas, Ceran oder Induktion.",
+          "Wer eine vielseitige zweite Pfanne für Gerichte mit mehr Fülle sucht, findet in der Fry Power 28 cm einen zuverlässigen Alltagsbegleiter für kleine und große Küchen."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -219,19 +247,28 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Tiefe Pfanne Fry Power **⌀28 cm** — 1 Stk."
+        ],
+        "tagline": "Velmora Fry Power — die zweite Pfanne, die für alles reicht, was mehr Volumen braucht."
       },
       {
         "name": "Pfannen-Set Transform Velmora",
         "material": "Abnehmbarer Griff – zum Braten und Backen im Ofen geeignet",
         "description": "Pfannkuchenpfanne Transform Velmora 24 cm, Universalpfanne Transform Velmora 26 cm, 24cm",
         "features": [
-          "Abnehmbarer Griff – zum Braten und Backen im Ofen geeignet",
-          "Geschmiedetes Aluminium",
-          "Gleichmäßige Erwärmung und Antihaftbeschichtung",
-          "Bequemer und ergonomischer Griff",
-          "Geeignet für intensiven Einsatz",
-          "Verzerrungsresistente Pfanne"
+          "**Abnehmbarer Griff** — macht beide Pfannen ofenfest, ideal für Gerichte vom Herd bis in den Ofen.",
+          "**Geschmiedetes Aluminium** — verteilt die Hitze gleichmäßig für zuverlässige Bratergebnisse.",
+          "**Antihaftbeschichtung** — lässt Speisen mühelos gleiten und erleichtert die Reinigung.",
+          "**Ergonomischer Griff** — bleibt auch bei intensivem Einsatz bequem und griffig.",
+          "**Verzerrungsresistente Konstruktion** — hält dauerhaftem Gebrauch stand, ohne sich zu verformen."
+        ],
+        "longDescription": [
+          "Das Transform-Set macht aus zwei Pfannen einen ganzen Küchen-Werkzeugkasten: die Pfannkuchenpfanne 24 cm für dünne Pfannkuchen und Omeletts, die Universalpfanne 26 cm für Braten, Schmoren und mehr.",
+          "Das Besondere ist der abnehmbare Griff – er macht beide Pfannen ofenfest und damit ideal für Gerichte, die auf dem Herd beginnen und im Ofen fertig gegart werden, etwa überbackene Aufläufe oder Tarte Tatin. Der geschmiedete Aluminiumkorpus sorgt dabei für eine gleichmäßige Erwärmung ohne Hitzenester.",
+          "Beide Pfannen sind verzerrungsresistent und bleiben auch bei hohen Temperaturen plan, während der ergonomische Griff im aufgesetzten Zustand sicheren Halt gibt. Geeignet für alle Herdarten, sodass das Set beim Umzug oder Herdwechsel weiter mitwächst.",
+          "Wer wenig Stauraum, aber viele Ansprüche hat, bekommt mit Transform zwei Pfannen und praktisch drei Funktionen – Herd, Ofen und Familienküche in einem kompakten Set."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -287,17 +324,28 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Pfannkuchenpfanne Transform Velmora **⌀24 cm** — 1 Stk.",
+          "Universalpfanne Transform Velmora **⌀26 cm** — 1 Stk."
+        ],
+        "tagline": "Velmora Transform — zwei Pfannen, ein Griff, unzählige Gerichte von Herd bis Ofen."
       },
       {
         "name": "Topfset mit Schöpfkelle Steil + GESCHENKE: Pfannenwender, Schöpflöffel, Kartoffelstampfer",
         "material": "Edelstahl",
         "description": "Topf mit Deckel 5,8 l; Topf mit Deckel 4,5 l; Topf mit Deckel 3,4 l; Topf mit Deckel 2,5 l; Topf mit Deckel 1,7 l; Schöpfkelle mit Deckel 1,2 l; Pfannenwender; Schöpflöffel; Kartoffelstampfer",
         "features": [
-          "Edelstahl",
-          "5-lagiger Kapselböden",
-          "Sechs Elemente für jede Aufgabe",
-          "Geeignet für alle Herdarten"
+          "**Hochwertiger Edelstahl** — sorgt für Langlebigkeit und macht die Reinigung besonders einfach.",
+          "**5-lagiger Kapselboden** — verteilt die Wärme gleichmäßig und hält sie länger, für energiesparendes Köcheln.",
+          "**Sechs aufeinander abgestimmte Elemente** — decken jede Aufgabe vom Anrichten bis zum Servieren ab.",
+          "**Alle Herdarten** — kompatibel vom Gasherd bis zur Induktion."
+        ],
+        "longDescription": [
+          "Neun Teile, ein Set: Das Topfset Steil mit Schöpfkelle deckt vom kleinen Sößchen bis zum Familieneintopf jede Menge ab – fünf Töpfe von 1,7 bis 5,8 Litern, dazu eine Schöpfkelle und drei praktische Utensilien.",
+          "Der Edelstahlkorpus mit 5-lagigem Kapselboden speichert die Wärme und gibt sie gleichmäßig an den Topfinhalt ab – Speisen köcheln sanft weiter, auch wenn die Herdplatte längst heruntergeregelt ist.",
+          "Mit Pfannenwender, Schöpflöffel und Kartoffelstampfer im Set müssen Sie zum Kochstart keine weiteren Utensilien mehr besorgen. Alle Teile sind für sämtliche Herdarten geeignet.",
+          "Als komplettes Küchen-Grundset – von der Schöpfkelle bis zum größten Topf – wächst dieses Set mit jedem Rezept mit und eignet sich ideal für alle, die einmal alles auf einen Schlag anschaffen möchten."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -353,18 +401,34 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf mit Deckel **5,8 l** — 1 Stk.",
+          "Topf mit Deckel **4,5 l** — 1 Stk.",
+          "Topf mit Deckel **3,4 l** — 1 Stk.",
+          "Topf mit Deckel **2,5 l** — 1 Stk.",
+          "Topf mit Deckel **1,7 l** — 1 Stk.",
+          "Schöpfkelle mit Deckel **1,2 l** — 1 Stk."
+        ],
+        "tagline": "Velmora Steil — ein komplettes Topfset, das vom ersten Tag an einsatzbereit ist.",
+        "gift": "Pfannenwender, Schöpflöffel und Kartoffelstampfer — die passenden Küchenhelfer für den direkten Kochstart, ganz ohne Zusatzkäufe."
       },
       {
         "name": "Kochgeschirr-Set 12-teilig Velmora Saporis und Pfannen Berlin 26, 28 cm",
         "material": "5-lagiger Kapselboden;",
         "description": "Töpfe mit Deckeln: 1,5 l 2,0 l 3,0 l 5,0 l Bratentopf 3,0 l mit Deckel Schöpfkelle 1,5 l mit Deckel Pfanne Berlin 26 cm, 28 cm",
         "features": [
-          "5-lagiger Kapselboden;",
-          "Edelstahl der Premiumklasse;",
-          "Glasdeckel ermöglichen die Kontrolle des Gerichts ohne Wärmeverlust;",
-          "Griffe erhitzen sich nicht;",
-          "Vielseitigkeit: Set kompatibel mit allen Herdarten, einschließlich Induktion."
+          "**5-lagiger Kapselboden** — speichert die Wärme und verteilt sie gleichmäßig für energiesparendes Kochen.",
+          "**Edelstahl der Premiumklasse** — verleiht dem gesamten Set Stabilität und eine lange Lebensdauer.",
+          "**Glasdeckel** — erlauben die Kontrolle des Gerichts, ohne dass Wärme verloren geht.",
+          "**Griffe, die sich nicht erhitzen** — bleiben auch bei langem Kochen angenehm zu halten.",
+          "**Alle Herdarten** — kompatibel, Induktion inbegriffen."
+        ],
+        "longDescription": [
+          "Ein komplettes Kochgeschirr-Set für die ganze Küche: vier Töpfe von 1,5 bis 5 Litern, ein Bratentopf, eine Schöpfkelle und zusätzlich zwei Pfannen Berlin in 26 und 28 cm – zwölf Teile, die jede Kochsituation abdecken.",
+          "Der Edelstahlkorpus der Premiumklasse ruht auf einem 5-lagigen Kapselboden, der Wärme speichert und gleichmäßig verteilt. Die Glasdeckel lassen Sie jedes Gericht im Blick behalten, ohne dass beim Anheben Wärme und Feuchtigkeit verloren gehen.",
+          "Die Griffe bleiben auch bei langem Köcheln angenehm kühl, und das gesamte Set ist mit allen Herdarten kompatibel, Induktion eingeschlossen. So wandert dasselbe Set problemlos vom Gasherd in die Induktionsküche.",
+          "Für alle, die ihre Küche einmal komplett und hochwertig ausstatten möchten, ist dieses 12-teilige Set eine Investition, die einzelne Neuanschaffungen über Jahre überflüssig macht."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -424,17 +488,34 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf mit Deckel **1,5 l** — 1 Stk.",
+          "Topf mit Deckel **2,0 l** — 1 Stk.",
+          "Topf mit Deckel **3,0 l** — 1 Stk.",
+          "Topf mit Deckel **5,0 l** — 1 Stk.",
+          "Bratentopf mit Deckel **3,0 l** — 1 Stk.",
+          "Schöpfkelle mit Deckel **1,5 l** — 1 Stk.",
+          "Pfanne Berlin **⌀26 cm** — 1 Stk.",
+          "Pfanne Berlin **⌀28 cm** — 1 Stk."
+        ],
+        "tagline": "Velmora Saporis — die Grundausstattung für alle, die ihre Küche einmal richtig ausstatten wollen."
       },
       {
         "name": "Topfset Steil Velmora mit Schöpfkelle",
         "material": "5-lagiger wärmespeichernder Boden,",
         "description": "Schöpfkelle 1,2l mit Deckel Steil ⌀14cm; Topf 1,7l mit Glasdeckel Steil ⌀16cm; Topf 2,5l mit Glasdeckel Steil ⌀18cm; Topf 3,4l mit Glasdeckel Steil ⌀20cm; Topf 4,5l mit Glasdeckel Steil ⌀22cm; Topf 5,8l mit Glasdeckel Steil ⌀24cm;",
         "features": [
-          "5-lagiger wärmespeichernder Boden,",
-          "hochwertiger Edelstahl (18/10),",
-          "Deckel mit Dampfventil, Maßskala,",
-          "spülmaschinenfest."
+          "**5-lagiger wärmespeichernder Boden** — hält die Temperatur konstant und verteilt sie gleichmäßig im gesamten Topf.",
+          "**Hochwertiger Edelstahl 18/10** — steht für Langlebigkeit und einfache Pflege im Alltag.",
+          "**Deckel mit Dampfventil und Maßskala** — erleichtern präzises, kontrolliertes Kochen.",
+          "**Spülmaschinenfest** — spart nach dem Kochen wertvolle Zeit."
+        ],
+        "longDescription": [
+          "Sechs Größen, ein System: Das Topfset Steil begleitet Sie von der kleinen Beilage in der ⌀14-cm-Schöpfkelle bis zum großen Sonntagsbraten im ⌀24-cm-Topf.",
+          "Der hochwertige Edelstahl 18/10 in Kombination mit dem 5-lagigen wärmespeichernden Boden hält die Temperatur konstant, sodass Speisen gleichmäßig garen, statt an einzelnen Stellen anzubrennen.",
+          "Jeder Deckel hat ein Dampfventil, das überschüssige Feuchtigkeit kontrolliert entweichen lässt, während die eingeprägte Maßskala das Abmessen von Wasser und Zutaten ohne Messbecher erlaubt. Nach dem Kochen wandert das gesamte Set einfach in die Spülmaschine.",
+          "Wer ein Grundset sucht, das für jede Topfgröße im Alltag gerüstet ist, findet in der Steil-Serie einen verlässlichen Partner für die tägliche Küchenpraxis."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -490,18 +571,32 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Schöpfkelle mit Deckel Steil **1,2 l** (⌀14 cm) — 1 Stk.",
+          "Topf mit Glasdeckel Steil **1,7 l** (⌀16 cm) — 1 Stk.",
+          "Topf mit Glasdeckel Steil **2,5 l** (⌀18 cm) — 1 Stk.",
+          "Topf mit Glasdeckel Steil **3,4 l** (⌀20 cm) — 1 Stk.",
+          "Topf mit Glasdeckel Steil **4,5 l** (⌀22 cm) — 1 Stk.",
+          "Topf mit Glasdeckel Steil **5,8 l** (⌀24 cm) — 1 Stk."
+        ],
+        "tagline": "Velmora Steil — sechs Größen, ein verlässliches System für jeden Kochtag."
       },
       {
         "name": "Topfset Steil Velmora + GESCHENK: Pfannkuchenpfanne 24 cm Fry Power",
         "material": "Edelstahl",
         "description": "Topf 5,8 l Topf 4,5 l Topf 3,4 l Topf 2,5 l Topf 1,7 l Schöpfkelle 1,2 l Pfannkuchenpfanne 24 cm Fry Power",
         "features": [
-          "Edelstahl",
-          "5-lagiger Kapselboden",
-          "Gleichmäßige Erwärmung",
-          "Geeignet für alle Herdarten",
-          "Deckel aus gehärtetem Glas"
+          "**Edelstahl** — sorgt für eine robuste und langlebige Grundlage in jedem der sechs Töpfe.",
+          "**5-lagiger Kapselboden** — verteilt die Hitze gleichmäßig und schützt zuverlässig vor Anbrennen.",
+          "**Deckel aus gehärtetem Glas** — halten dem Küchenalltag stand und geben jederzeit Einblick ins Gericht.",
+          "**Alle Herdarten** — kompatibel, eine flexible Wahl für jede Küche."
+        ],
+        "longDescription": [
+          "Dieses Set kombiniert sechs Steil-Töpfe von 1,2 bis 5,8 Litern mit einer zusätzlichen Pfannkuchenpfanne Fry Power 24 cm – Kochgeschirr und Bratpfanne in einem Karton.",
+          "Der Edelstahlkorpus mit 5-lagigem Kapselboden verteilt die Hitze gleichmäßig über den gesamten Topfboden, sodass Saucen und Suppen nicht an einzelnen Stellen anbrennen, während man am Herd nebenbei die Pfannkuchen wendet.",
+          "Die Deckel aus gehärtetem Glas halten auch stärkerem Alltagsgebrauch stand und lassen dabei jederzeit einen Blick ins Kochgeschirr zu. Alle Teile sind für sämtliche Herdarten ausgelegt.",
+          "Für alle, die ihre Küche mit einem Griff komplett ausstatten möchten, liefert dieses Set das komplette Topf-Fundament plus eine vielseitige Pfanne obendrauf – ideal auch als durchdachtes Geschenk."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -557,16 +652,32 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf **5,8 l** — 1 Stk.",
+          "Topf **4,5 l** — 1 Stk.",
+          "Topf **3,4 l** — 1 Stk.",
+          "Topf **2,5 l** — 1 Stk.",
+          "Topf **1,7 l** — 1 Stk.",
+          "Schöpfkelle **1,2 l** — 1 Stk."
+        ],
+        "tagline": "Velmora Steil — Topfset und Pfanne in einem, für den unkomplizierten Küchenstart.",
+        "gift": "Pfannkuchenpfanne Fry Power 24 cm — perfekt für dünne Pfannkuchen, Omeletts und schnelle Frühstücksgerichte."
       },
       {
         "name": "Topfset Prime Chef Velmora mit Bratentopf",
         "material": "5-lagiger wärmespeichernder Boden,",
         "description": "Schöpfkelle Prime Chef Velmora 2,1 l, 16 cm mit Deckel; Topf Prime Chef Velmora 3,8 l, 20 cm mit Deckel; Topf Prime Chef Velmora 6,3 l, 24 cm mit Deckel; Pfanne Prime Chef Velmora 24 cm mit Antihaftbeschichtung;",
         "features": [
-          "5-lagiger wärmespeichernder Boden,",
-          "Hochwertiger Edelstahl (18/10),",
-          "Deckel mit Dampfventil."
+          "**5-lagiger wärmespeichernder Boden** — hält die Wärme und verteilt sie gleichmäßig über den gesamten Topf.",
+          "**Hochwertiger Edelstahl 18/10** — macht das Set robust, hygienisch und langlebig.",
+          "**Deckel mit Dampfventil** — lässt Sie die Feuchtigkeit im Topf gezielt steuern."
+        ],
+        "longDescription": [
+          "Prime Chef ist für alle gemacht, die mit wenigen, aber vielseitigen Teilen kochen möchten: eine Schöpfkelle 2,1 l, zwei Töpfe (3,8 l und 6,3 l) und eine Pfanne 24 cm mit Antihaftbeschichtung.",
+          "Der 5-lagige wärmespeichernde Boden und der hochwertige Edelstahl 18/10 sorgen dafür, dass Wärme lange gehalten wird – ideal, um Energie zu sparen und Gerichte sanft weitergaren zu lassen.",
+          "Die Deckel mit Dampfventil lassen Sie steuern, wie viel Feuchtigkeit entweicht, ganz ohne den Deckel abzunehmen. Die integrierte Antihaft-Pfanne rundet das Set ab und ist sofort einsatzbereit für Fleisch, Fisch oder Gemüse.",
+          "Für Einsteiger-Haushalte wie für die Zweitküche im Ferienhaus ist Prime Chef ein kompaktes Set, das ohne Kompromisse alle Grundfunktionen abdeckt."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -626,17 +737,30 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Schöpfkelle Prime Chef mit Deckel **2,1 l** (⌀16 cm) — 1 Stk.",
+          "Topf Prime Chef mit Deckel **3,8 l** (⌀20 cm) — 1 Stk.",
+          "Topf Prime Chef mit Deckel **6,3 l** (⌀24 cm) — 1 Stk.",
+          "Pfanne Prime Chef mit Antihaftbeschichtung **⌀24 cm** — 1 Stk."
+        ],
+        "tagline": "Prime Chef Velmora — kompakte Vielseitigkeit für Einsteiger- wie Zweitküchen."
       },
       {
         "name": "Küchen-Set \"Premium\"",
         "material": "5-lagiger Kapselboden;",
         "description": "Topf 1,8 l mit Deckel; Topf 2,5 l mit Deckel; Topf 3,5 l mit Deckel; Topf 6,3 l mit Deckel;",
         "features": [
-          "5-lagiger Kapselboden;",
-          "Edelstahl der Premiumklasse;",
-          "Bequeme Griffe und hitzebeständige Glasdeckel;",
-          "Spezielle Konstruktion von Topf und Deckel zum Abgießen von Flüssigkeiten."
+          "**5-lagiger Kapselboden** — sorgt für gleichmäßige Wärmeverteilung und schont dabei Energie.",
+          "**Edelstahl der Premiumklasse** — steht für Stabilität und eine lange Lebensdauer im Küchenalltag.",
+          "**Bequeme Griffe und hitzebeständige Glasdeckel** — machen das Kochen komfortabel und übersichtlich.",
+          "**Spezielle Topf-Deckel-Konstruktion** — erlaubt es, Kochwasser bequem und sicher abzugießen."
+        ],
+        "longDescription": [
+          "Das Küchen-Set „Premium“ besteht aus vier Töpfen von 1,8 bis 6,3 Litern und deckt damit vom Ei bis zum großen Nudeltopf jede Alltagsgröße ab.",
+          "Edelstahl der Premiumklasse und ein 5-lagiger Kapselboden sorgen für gleichmäßige Wärmeverteilung, während die hitzebeständigen Glasdeckel den Blick aufs Gericht freigeben, ohne dass Wärme entweicht.",
+          "Besonders praktisch: Topf und Deckel sind so konstruiert, dass sich Kochwasser bequem abgießen lässt, ohne dass Nudeln oder Gemüse aus dem Topf rutschen. Die ergonomischen Griffe liegen dabei sicher in der Hand.",
+          "Wer eine solide Grundausstattung ohne Schnickschnack sucht, bekommt mit dem Premium-Set vier Töpfe, die die wichtigsten Küchenmomente über Jahre zuverlässig meistern."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -696,18 +820,31 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf mit Deckel **1,8 l** — 1 Stk.",
+          "Topf mit Deckel **2,5 l** — 1 Stk.",
+          "Topf mit Deckel **3,5 l** — 1 Stk.",
+          "Topf mit Deckel **6,3 l** — 1 Stk."
+        ],
+        "tagline": "Velmora Premium — die solide Grundausstattung ohne Schnickschnack."
       },
       {
         "name": "Topf Smart Fry Velmora 6,6l mit Glasdeckel +GESCHENK: Pfannenwender, Schöpflöffel und Kartoffelstampfer",
         "material": "Robustes geschmiedetes Aluminium",
         "description": "Topf Velmora Smart Fry 6,6 l Ø28 cm mit Deckel Pfannenwender Velmora Schöpflöffel Velmora Kartoffelstampfer Velmora",
         "features": [
-          "Robustes geschmiedetes Aluminium",
-          "Antihaftbeschichtung Greblon C2",
-          "Temperaturanzeige in Form einer Flamme",
-          "Griffe mit Soft-Touch-Beschichtung",
-          "Kompatibel mit allen Herdarten, einschließlich Induktion"
+          "**Robustes, geschmiedetes Aluminium** — bildet eine stabile Grundlage für intensiven Küchenalltag.",
+          "**Antihaftbeschichtung Greblon C2** — bleibt auch bei häufigem Gebrauch glatt und pflegeleicht.",
+          "**Temperaturanzeige in Flammenform** — zeigt an, wann die ideale Brattemperatur erreicht ist.",
+          "**Griffe mit Soft-Touch-Beschichtung** — bleiben beim Kochen angenehm kühl und griffig.",
+          "**Alle Herdarten inkl. Induktion** — kompatibel, passt in jede Küche."
+        ],
+        "longDescription": [
+          "Der Topf Smart Fry 6,6 l ist mehr als ein einfacher Kochtopf: Mit ⌀28 cm Durchmesser bietet er reichlich Platz für Familienportionen, Eintöpfe oder große Mengen Pasta.",
+          "Der Korpus aus robustem, geschmiedetem Aluminium trägt die Antihaftbeschichtung Greblon C2 – eine Beschichtung, die auch bei häufigem Rühren mit Metalllöffeln lange glatt und funktionstüchtig bleibt. Eine Temperaturanzeige in Form einer Flamme zeigt an, wann der Topf die ideale Bratwärme erreicht hat, statt raten zu müssen.",
+          "Die Griffe mit Soft-Touch-Beschichtung bleiben beim Kochen angenehm kühl und liegen sicher in der Hand, während der Topf dank seiner Bauweise auf allen Herdarten, Induktion eingeschlossen, funktioniert.",
+          "Dank der beigelegten Utensilien – Pfannenwender, Schöpflöffel und Kartoffelstampfer – ist dieser Topf direkt einsatzbereit und eine durchdachte Wahl für alle, die eine vielseitige Kochstelle für den Alltag suchen."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -767,16 +904,27 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf Smart Fry mit Deckel **6,6 l** (⌀28 cm) — 1 Stk."
+        ],
+        "tagline": "Smart Fry Velmora — der Topf, der Technik und Komfort in einem Gefäß vereint.",
+        "gift": "Pfannenwender, Schöpflöffel und Kartoffelstampfer — praktische Helfer, die den Topf direkt einsatzbereit machen."
       },
       {
         "name": "Töpfe Velmora Serie Winzig 1,2 l und 0,7 l",
         "material": "5-lagiger wärmespeichernder Boden,",
         "description": "Topf Winzig mit Deckel 1,2 l; Topf Winzig mit Deckel 0,7 l;",
         "features": [
-          "5-lagiger wärmespeichernder Boden,",
-          "Hochwertiger Edelstahl (18/10),",
-          "Deckel mit Dampfventil."
+          "**5-lagiger wärmespeichernder Boden** — sorgt auch bei kleinen Mengen für gleichmäßiges Garen.",
+          "**Hochwertiger Edelstahl 18/10** — macht beide Töpfe robust und langlebig.",
+          "**Deckel mit Dampfventil** — verhindert zuverlässig das Überkochen kleiner Portionen."
+        ],
+        "longDescription": [
+          "Nicht jedes Gericht braucht einen großen Topf – die Serie Winzig bringt mit 0,7 und 1,2 Litern genau die richtige Größe für Beilagen, Saucen oder eine Portion Haferbrei mit.",
+          "Trotz der kompakten Maße stecken in beiden Töpfen die gleichen Qualitätsmerkmale wie in den großen Modellen: hochwertiger Edelstahl 18/10 und ein 5-lagiger wärmespeichernder Boden, der Wärme gleichmäßig verteilt und speichert.",
+          "Die Deckel mit Dampfventil lassen sich präzise steuern, sodass kleine Mengen nicht überkochen. Beide Töpfe sind für alle Herdarten geeignet und damit ebenso für den Single-Haushalt wie als Ergänzung zum bestehenden Kochgeschirr.",
+          "Für alle, die genau die richtige Topfgröße für kleine Portionen vermissen, schließt die Serie Winzig eine Lücke, die in vielen Küchen fehlt."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -832,17 +980,28 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf Winzig mit Deckel **1,2 l** — 1 Stk.",
+          "Topf Winzig mit Deckel **0,7 l** — 1 Stk."
+        ],
+        "tagline": "Velmora Winzig — die richtige Größe für kleine Portionen, endlich verfügbar."
       },
       {
         "name": "Topfset Elite Velmora 1,3l, 1,9l, 4,7l",
         "material": "5-lagiger wärmespeichernder Boden.",
         "description": "Topf mit Deckel 1,9 l 16 cm, Topf mit Deckel 1,3 l 14 cm, Topf mit Deckel 4,7 l 22 cm, Topf mit Deckel 6,1 l 24 cm",
         "features": [
-          "5-lagiger wärmespeichernder Boden.",
-          "Ergonomische Griffe mit Soft-Touch-Beschichtung.",
-          "Hitzebeständige Litermarkierung.",
-          "Hitzebeständiges Glas mit Dampfventil."
+          "**5-lagiger wärmespeichernder Boden** — verteilt die Wärme gleichmäßig und hält sie länger.",
+          "**Ergonomische Griffe mit Soft-Touch-Beschichtung** — liegen auch bei längerem Kochen angenehm in der Hand.",
+          "**Hitzebeständige Litermarkierung** — im Topf erspart lästiges Abmessen mit dem Messbecher.",
+          "**Hitzebeständiges Glas mit Dampfventil** — macht den Garprozess sichtbar und kontrollierbar."
+        ],
+        "longDescription": [
+          "Vier Größen zwischen 1,3 und 6,1 Litern machen das Topfset Elite zu einer vielseitigen Grundausstattung für Suppen, Saucen und alles dazwischen.",
+          "Der 5-lagige wärmespeichernde Boden aus Edelstahl verteilt die Wärme gleichmäßig und hält sie, sodass Gerichte auch bei reduzierter Herdstufe sanft weiterköcheln.",
+          "Die hitzebeständige Litermarkierung im Topf erspart das Abmessen mit separaten Gefäßen, während die Glasdeckel mit Dampfventil den Garprozess sichtbar und kontrollierbar machen. Die Soft-Touch-Griffe bleiben dabei angenehm kühl in der Hand.",
+          "Elite eignet sich für alle Herdarten und ist damit eine langfristige Wahl für alle, die Wert auf durchdachte Details im täglichen Kochablauf legen."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -902,16 +1061,29 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf mit Deckel **1,9 l** (⌀16 cm) — 1 Stk.",
+          "Topf mit Deckel **1,3 l** (⌀14 cm) — 1 Stk.",
+          "Topf mit Deckel **4,7 l** (⌀22 cm) — 1 Stk.",
+          "Topf mit Deckel **6,1 l** (⌀24 cm) — 1 Stk."
+        ],
+        "tagline": "Velmora Elite — durchdachte Details für den täglichen Kochablauf."
       },
       {
         "name": "Topfset Cook&Joy 4,6l, 3,5l, 1,8l und Pfannen Smart Fry Velmora + GESCHENKE: Pfannkuchenpfanne Smart Fry",
         "material": "Heizungsanzeige in Form einer Flamme innen",
         "description": "",
         "features": [
-          "Heizungsanzeige in Form einer Flamme innen",
-          "Hitzebeständiger Glasdeckel – Kontrolle ohne Öffnen.",
-          "Edelstahl 18/10 – zuverlässige Basis zum Kochen."
+          "**Heizungsanzeige in Flammenform** — zeigt zuverlässig an, wann die ideale Kochtemperatur erreicht ist.",
+          "**Hitzebeständiger Glasdeckel** — erlaubt die Kontrolle des Gerichts, ohne ihn abnehmen zu müssen.",
+          "**Edelstahl 18/10** — bildet eine zuverlässige, langlebige Basis für jedes Rezept."
+        ],
+        "longDescription": [
+          "Cook&Joy bündelt Töpfe von 1,8 bis 4,6 Litern mit Smart-Fry-Pfannen und einer zusätzlichen Pfannkuchenpfanne als Geschenk – ein Set für alle, die Töpfe und Pfannen aus einer Serie wollen.",
+          "Die Heizungsanzeige in Form einer Flamme im Topfinneren zeigt an, wann die ideale Temperatur erreicht ist, sodass Anbrennen und langes Warten der Vergangenheit angehören.",
+          "Der hitzebeständige Glasdeckel erlaubt die Kontrolle des Garprozesses, ohne dass Sie den Deckel abnehmen und Wärme verlieren müssen. Der Edelstahl 18/10 bildet dabei eine zuverlässige, langlebige Basis für jedes Rezept.",
+          "Mit Töpfen, Pfannen und einem Geschenk in einem Set ist Cook&Joy eine unkomplizierte Möglichkeit, die Küche in einem Rutsch neu und stimmig auszustatten."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -967,18 +1139,32 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf **1,8 l** — 1 Stk.",
+          "Topf **3,5 l** — 1 Stk.",
+          "Topf **4,6 l** — 1 Stk.",
+          "**Pfannen Smart Fry Velmora** — im Set enthalten"
+        ],
+        "tagline": "Cook&Joy Velmora — Töpfe und Pfannen aus einer Serie, für stimmige Küchenmomente.",
+        "gift": "Pfannkuchenpfanne Smart Fry — ideal für Pfannkuchen, Omeletts und kleine Portionen im Alltag."
       },
       {
         "name": "Topf Velmora Moxie 6,5 l +GESCHENK: Untersetzer Velmora Galaxy",
         "material": "Wandstärke 0,5mm;",
         "description": "Topf Velmora Moxie mit Glasdeckel 6,5 l ⌀24 cm; Untersetzer für Heißes Velmora Galaxy.",
         "features": [
-          "Wandstärke 0,5mm;",
-          "Griffe mit Silikoneinlagen;",
-          "5-lagiger wärmespeichernder Induktionsboden;",
-          "Spiegelpolierung innen und außen;",
-          "Möglichkeit zum Abgießen von Flüssigkeiten dank der Topfkonstruktion (Ausguss), spezieller Deckel mit Abflussöffnungen."
+          "**Wandstärke von 0,5 mm** — sorgt für ein hochwertiges, solides Handling.",
+          "**Griffe mit Silikoneinlagen** — liegen griffsicher in der Hand, auch wenn sie nass werden.",
+          "**5-lagiger Induktionsboden** — macht den Topf fit für jede Herdart, Induktion eingeschlossen.",
+          "**Spiegelpolierung innen und außen** — verleiht dem Topf eine edle, langlebige Optik.",
+          "**Ausguss-Konstruktion** — lässt Kochwasser bequem und ohne Spritzer abgießen."
+        ],
+        "longDescription": [
+          "Der Topf Moxie 6,5 l mit ⌀24 cm ist für alle gedacht, die einen großen, repräsentativen Topf für Familienessen und besondere Anlässe suchen.",
+          "Die Wandstärke von 0,5 mm sorgt für ein solides, hochwertiges Handling, während die Spiegelpolierung innen und außen dem Topf eine edle, langlebige Optik verleiht, die auch nach vielen Spülgängen erhalten bleibt.",
+          "Dank Ausguss-Konstruktion und passendem Deckel mit Abflussöffnungen lässt sich Kochwasser bequem und ohne Spritzer abgießen. Die Griffe mit Silikoneinlagen bleiben griffig und angenehm in der Hand, und der 5-lagige Induktionsboden macht den Topf fit für jede Herdart, Induktion inklusive.",
+          "Mit dem Untersetzer Galaxy als Geschenk kommt der Topf direkt tischfertig bei Ihnen an – ideal für alle, die Kochen und Servieren in einem Schritt verbinden möchten."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1038,16 +1224,27 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf Moxie mit Glasdeckel **6,5 l** (⌀24 cm) — 1 Stk."
+        ],
+        "tagline": "Velmora Moxie — ein repräsentativer Topf für Familienessen und besondere Anlässe.",
+        "gift": "Untersetzer Velmora Galaxy — schützt die Tischoberfläche und sorgt für einen stilvollen Auftritt beim Servieren."
       },
       {
         "name": "Topf mit Deckel Smart Fry 2,3l, 6,6l",
         "material": "5-lagiger Kapselboden;",
         "description": "Topf mit Deckel Smart Fry 2,3l, Topf mit Deckel Smart Fry 6,6l",
         "features": [
-          "5-lagiger Kapselboden;",
-          "Kompatibel mit allen Herdarten;",
-          "Edelstahl 18/10 der Premiumklasse;"
+          "**5-lagiger Kapselboden** — sorgt in beiden Größen für gleichmäßige Wärmeverteilung.",
+          "**Alle Herdarten** — kompatibel, unabhängig vom aktuellen Herd einsetzbar.",
+          "**Premium-Edelstahl 18/10** — steht für Langlebigkeit und einfache Pflege."
+        ],
+        "longDescription": [
+          "Mit 2,3 und 6,6 Litern deckt das Smart-Fry-Duo die zwei häufigsten Topfgrößen im Küchenalltag ab – von der schnellen Beilage bis zum großen Eintopf.",
+          "Der Premium-Edelstahl 18/10 in Kombination mit dem 5-lagigen Kapselboden sorgt für gleichmäßige Wärmeverteilung und schützt vor Anbrennen, selbst bei sämigen Saucen.",
+          "Beide Töpfe sind mit allen Herdarten kompatibel, sodass sie unabhängig vom aktuellen oder zukünftigen Herd zuverlässig funktionieren.",
+          "Wer ein reduziertes, aber hochwertiges Zweier-Set sucht, findet in Smart Fry 2,3/6,6 l eine langlebige Grundausstattung ohne unnötigen Ballast."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1099,19 +1296,29 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf mit Deckel Smart Fry **2,3 l** — 1 Stk.",
+          "Topf mit Deckel Smart Fry **6,6 l** — 1 Stk."
+        ],
+        "tagline": "Smart Fry Velmora — zwei Größen, eine verlässliche Qualität."
       },
       {
         "name": "Set aus 2 Töpfen Prime Chef Velmora 3,6l, 6,1l + GESCHENK: Pfannenwender, Schöpflöffel, Pinsel",
         "material": "Edelstahl 18/10;",
         "description": "Topf Prime Chef Velmora 6,1 l Glasdeckel Topf Prime Chef Velmora 3,6 l Glasdeckel Pfannenwender Galaxy Schöpflöffel Galaxy Pinsel Galaxy",
         "features": [
-          "Edelstahl 18/10;",
-          "5-lagiger Kapselboden;",
-          "Kompatibel mit allen Herdarten;",
-          "Klappbare Bakelit-Griffe;",
-          "Integrierte Maßskala;",
-          "Glasdeckel."
+          "**Edelstahl 18/10 mit 5-lagigem Kapselboden** — sorgt für gleichmäßiges Garen und lange Haltbarkeit.",
+          "**Alle Herdarten** — kompatibel, passt sich jeder Küche an.",
+          "**Klappbare Bakelit-Griffe** — sparen beim Verstauen wertvollen Schrankplatz.",
+          "**Integrierte Maßskala** — erlaubt präzises Abmessen direkt im Topf.",
+          "**Glasdeckel** — behalten stets den Blick auf das Gericht frei."
+        ],
+        "longDescription": [
+          "Zwei Töpfe, drei Utensilien: Das Prime-Chef-Set kombiniert 3,6 und 6,1 Liter Fassungsvermögen mit Pfannenwender, Schöpflöffel und Pinsel für den direkten Küchenstart.",
+          "Edelstahl 18/10 und ein 5-lagiger Kapselboden bilden die Basis für gleichmäßiges Garen, während die integrierte Maßskala das genaue Abmessen von Flüssigkeiten direkt im Topf erlaubt.",
+          "Die klappbaren Bakelit-Griffe sparen beim Verstauen wertvollen Schrankplatz – ein Detail, das besonders in kleineren Küchen den Unterschied macht. Die Glasdeckel behalten dabei jederzeit den Blick auf das Gericht frei.",
+          "Für alle Herdarten geeignet, ist dieses Set eine platzsparende und zugleich vollständige Lösung für alle, die auch in kompakten Küchen nicht auf Qualität verzichten möchten."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1171,19 +1378,29 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf Prime Chef mit Glasdeckel **6,1 l** — 1 Stk.",
+          "Topf Prime Chef mit Glasdeckel **3,6 l** — 1 Stk."
+        ],
+        "tagline": "Prime Chef Velmora — kompakt, platzsparend und bereit für den Küchenalltag.",
+        "gift": "Pfannenwender, Schöpflöffel und Pinsel — drei Küchenhelfer, die das neue Topfset direkt komplettieren."
       },
       {
         "name": "Topf mit Deckel 3,4 l Steil und Grillpfanne",
         "material": "5-lagiger wärmespeichernder Boden;",
         "description": "Topf aus Edelstahl 3,4 l Ø20 cm Velmora; Silikonlöffel Schoco.",
         "features": [
-          "5-lagiger wärmespeichernder Boden;",
-          "Hochwertiger Edelstahl (18/10);",
-          "Deckel mit Dampfventil;",
-          "Maßskala;",
-          "Spülmaschinenfest;",
-          "Kompatibel mit allen Herdarten"
+          "**5-lagiger wärmespeichernder Boden** — verteilt die Hitze gleichmäßig über den gesamten Topf.",
+          "**Hochwertiger Edelstahl 18/10** — sorgt für Stabilität und eine lange Lebensdauer.",
+          "**Deckel mit Dampfventil und Maßskala** — erleichtern präzises Kochen.",
+          "**Spülmaschinenfest** — und für alle Herdarten geeignet."
+        ],
+        "longDescription": [
+          "Dieses Duo kombiniert einen 3,4-Liter-Topf ⌀20 cm mit einer Grillpfanne und deckt damit Kochen und Braten in einem kompakten Set ab.",
+          "Der 5-lagige wärmespeichernde Boden aus hochwertigem Edelstahl 18/10 verteilt die Hitze gleichmäßig, während die eingeprägte Maßskala das Abmessen von Wasser oder Brühe direkt im Topf erlaubt.",
+          "Ein Dampfventil im Deckel steuert die Feuchtigkeit beim Köcheln, und die Grillpfanne ergänzt das Set um Röstaromen, die im normalen Topf nicht entstehen. Beide Teile sind spülmaschinenfest und für alle Herdarten geeignet.",
+          "Wer einen soliden Alltagstopf mit einer zusätzlichen Grillpfanne sucht, bekommt hier zwei Werkzeuge, die sich in der Küche gegenseitig ergänzen."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1239,18 +1456,28 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf aus Edelstahl Velmora **3,4 l** (⌀20 cm) — 1 Stk.",
+          "Silikonlöffel Schoco — 1 Stk."
+        ],
+        "tagline": "Velmora Steil — der Alltagstopf mit Röstaromen-Bonus."
       },
       {
         "name": "Topfset Steil und Pfanne Hamburg",
         "material": "Edelstahl 18/10",
         "description": "Topf Velmora Steil 4,5 l mit Deckel Topf Velmora Steil 3,4 l mit Deckel Pfanne Hamburg 20 cm",
         "features": [
-          "Edelstahl 18/10",
-          "Antihaftbeschichtung",
-          "Maßskala in den Töpfen",
-          "Hitzebeständige Griffe mit Nieten",
-          "Geeignet für alle Herdarten"
+          "**Edelstahl 18/10** — sorgt in beiden Töpfen für zuverlässige, gleichmäßige Wärmeleitung.",
+          "**Antihaftbeschichtung der Pfanne Hamburg** — lässt Speisen mühelos aus der Pfanne gleiten.",
+          "**Eingeprägte Maßskala** — in den Töpfen erleichtert das genaue Abmessen.",
+          "**Hitzebeständige, vernietete Griffe** — sitzen fest und bleiben auch bei langem Köcheln griffig."
+        ],
+        "longDescription": [
+          "Zwei Steil-Töpfe (3,4 l und 4,5 l) treffen auf die Pfanne Hamburg 20 cm – ein kompaktes Set für alle, die Töpfe und eine Pfanne in einem Aufwasch anschaffen möchten.",
+          "Der Edelstahl 18/10 der Töpfe sorgt für zuverlässige, gleichmäßige Wärmeleitung, während die Pfanne Hamburg mit ihrer Antihaftbeschichtung Fleisch und Gemüse mühelos aus der Pfanne gleiten lässt.",
+          "Die eingeprägte Maßskala in den Töpfen erleichtert das Abmessen, und die hitzebeständigen, vernieteten Griffe sitzen fest und bleiben auch bei langem Köcheln angenehm zu halten. Das gesamte Set ist für alle Herdarten ausgelegt.",
+          "Für alle, die eine kompakte Grundausstattung aus Topf und Pfanne suchen, ist dieses Set ein unkomplizierter Einstieg in die Velmora-Kollektion."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1306,18 +1533,29 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf Velmora Steil mit Deckel **4,5 l** — 1 Stk.",
+          "Topf Velmora Steil mit Deckel **3,4 l** — 1 Stk.",
+          "Pfanne Hamburg **⌀20 cm** — 1 Stk."
+        ],
+        "tagline": "Velmora Steil & Hamburg — Töpfe und Pfanne, die sich im Alltag ergänzen."
       },
       {
         "name": "Topfset Fry Power",
         "material": "Geschmiedetes Aluminium;",
         "description": "Topf Fry Power 2,3 l mit Deckel; Topf Fry Power 4,2 l mit Deckel; Topf Fry Power 6,4 l mit Deckel;",
         "features": [
-          "Geschmiedetes Aluminium;",
-          "Antihaftbeschichtung PTFE;",
-          "Äußere Marmorierung;",
-          "Glasdeckel mit Dampfventil;",
-          "Kompatibel mit allen Herdarten."
+          "**Geschmiedetes Aluminium** — bildet eine stabile, langlebige Grundlage für alle drei Töpfe.",
+          "**PTFE-Antihaftbeschichtung** — reduziert das Anbrennen deutlich und erleichtert die Reinigung.",
+          "**Marmoroptik** — verleiht dem Set eine hochwertige, moderne Optik.",
+          "**Glasdeckel mit Dampfventil** — machen den Garprozess sichtbar und gut kontrollierbar."
+        ],
+        "longDescription": [
+          "Drei Töpfe von 2,3 bis 6,4 Litern mit markanter Marmoroptik machen das Fry-Power-Set zu einem Hingucker, der sich auch auf dem Herd sehen lassen kann.",
+          "Der Korpus aus geschmiedetem Aluminium trägt eine PTFE-Antihaftbeschichtung, die das Anbrennen von Saucen und sämigen Gerichten deutlich reduziert und die Reinigung erleichtert.",
+          "Die Glasdeckel mit Dampfventil lassen Sie den Garprozess im Blick behalten und die Feuchtigkeit gezielt steuern. Alle drei Töpfe sind mit sämtlichen Herdarten kompatibel.",
+          "Wer Optik und Funktion verbinden möchte, findet in Fry Power ein Topfset, das nicht nur zuverlässig kocht, sondern auch offen im Regal gut aussieht."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1377,17 +1615,29 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf Fry Power mit Deckel **2,3 l** — 1 Stk.",
+          "Topf Fry Power mit Deckel **4,2 l** — 1 Stk.",
+          "Topf Fry Power mit Deckel **6,4 l** — 1 Stk."
+        ],
+        "tagline": "Fry Power Velmora — Optik und Funktion in einem Topfset vereint."
       },
       {
         "name": "Set aus 2 Töpfen Steil Velmora und Schöpfkelle 1,2 l Steil",
         "material": "5-lagiger wärmespeichernder Boden;",
         "description": "Topf 3,4l mit Glasdeckel Steil 20cm; Topf 4,5l mit Glasdeckel Steil 22cm; Schöpfkelle 1,2l mit Glasdeckel Durchmesser 14cm;",
         "features": [
-          "5-lagiger wärmespeichernder Boden;",
-          "Hochwertiger Edelstahl (18/10);",
-          "Deckel mit Dampfventil; Maßskala;",
-          "Spülmaschinenfest."
+          "**5-lagiger wärmespeichernder Boden** — hält die Temperatur konstant und verteilt sie gleichmäßig.",
+          "**Hochwertiger Edelstahl 18/10** — sorgt für Robustheit und lange Haltbarkeit.",
+          "**Dampfventil und Maßskala** — erleichtern präzises, kontrolliertes Kochen.",
+          "**Spülmaschinenfest** — spart nach dem Essen wertvolle Zeit."
+        ],
+        "longDescription": [
+          "Zwei Steil-Töpfe (3,4 l und 4,5 l) und eine Schöpfkelle 1,2 l bilden ein kompaktes Trio für Suppen, Saucen und Beilagen im Alltag.",
+          "Der 5-lagige wärmespeichernde Boden aus Edelstahl 18/10 hält die Temperatur konstant und verteilt sie gleichmäßig über den gesamten Topfboden.",
+          "Dampfventil und Maßskala in den Deckeln bzw. Töpfen erleichtern das präzise Kochen, und alle drei Teile sind spülmaschinenfest sowie für jede Herdart geeignet.",
+          "Als kompaktes Ergänzungsset ist dieses Trio ideal für alle, die ihr bestehendes Kochgeschirr um verlässliche Grundgrößen erweitern möchten."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1443,18 +1693,29 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf mit Glasdeckel Steil **3,4 l** (⌀20 cm) — 1 Stk.",
+          "Topf mit Glasdeckel Steil **4,5 l** (⌀22 cm) — 1 Stk.",
+          "Schöpfkelle mit Glasdeckel **1,2 l** (⌀14 cm) — 1 Stk."
+        ],
+        "tagline": "Velmora Steil — die verlässliche Ergänzung für jedes bestehende Kochgeschirr."
       },
       {
         "name": "Topf mit Deckel 2,7l und Schöpfkelle mit Deckel 2l Prime Chef Velmora",
         "material": "Geeignet für alle Herdarten",
         "description": "Topf mit Deckel 2,7 l ⌀18cm Prime Chef; Schöpfkelle mit Deckel 2 l ⌀16cm Prime Chef;",
         "features": [
-          "Geeignet für alle Herdarten",
-          "5-lagiger wärmespeichernder Boden",
-          "Ergonomische Griffe",
-          "Hitzebeständige Litermarkierung",
-          "Hitzebeständiges Glas mit Dampfventil"
+          "**5-lagiger wärmespeichernder Boden** — sorgt für gleichmäßiges Garen in beiden Gefäßen.",
+          "**Ergonomische Griffe** — liegen sicher in der Hand und bleiben beim Kochen angenehm kühl.",
+          "**Hitzebeständige Litermarkierung** — im Inneren macht separates Abmessen überflüssig.",
+          "**Dampfventil im Glasdeckel** — lässt Sie die Feuchtigkeit gezielt kontrollieren."
+        ],
+        "longDescription": [
+          "Ein Topf mit 2,7 Litern und eine Schöpfkelle mit 2 Litern – dieses kleine Duo von Prime Chef eignet sich perfekt für Saucen, Suppen für zwei oder als Ergänzung zum bestehenden Set.",
+          "Der 5-lagige wärmespeichernde Boden sorgt für gleichmäßiges Garen, während die hitzebeständige Litermarkierung im Inneren das Abmessen von Flüssigkeiten überflüssig macht.",
+          "Die ergonomischen Griffe liegen sicher in der Hand, und das Dampfventil im hitzebeständigen Glasdeckel lässt Sie die Feuchtigkeit im Topf kontrollieren, ohne den Deckel abzunehmen.",
+          "Für alle Herdarten geeignet, ist dieses kompakte Duo eine unkomplizierte Wahl für kleinere Haushalte oder als praktische Zweitausstattung."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1514,17 +1775,28 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf mit Deckel Prime Chef **2,7 l** (⌀18 cm) — 1 Stk.",
+          "Schöpfkelle mit Deckel Prime Chef **2,0 l** (⌀16 cm) — 1 Stk."
+        ],
+        "tagline": "Prime Chef Velmora — das kompakte Duo für zwei oder als Zweitausstattung."
       },
       {
         "name": "Topfset Prime Chef Velmora 8-teilig",
         "material": "5-lagiger wärmespeichernder Boden.",
         "description": "Schöpfkelle mit Deckel 2l Ø 16cm; Topf mit Deckel 2,7l Ø 18cm; Topf mit Deckel 4,7l Ø 22cm; Topf mit Deckel 2,0 l ⌀16 cm;",
         "features": [
-          "5-lagiger wärmespeichernder Boden.",
-          "Ergonomische Griffe.",
-          "Hitzebeständige Litermarkierung.",
-          "Hitzebeständiges Glas mit Dampfventil."
+          "**5-lagiger wärmespeichernder Boden** — verteilt die Hitze gleichmäßig über alle acht Teile.",
+          "**Ergonomische Griffe** — sorgen für sicheren Halt bei jedem Handgriff.",
+          "**Hitzebeständige Litermarkierung** — erspart das Abmessen mit separaten Gefäßen.",
+          "**Glasdeckel mit Dampfventil** — geben jederzeit Einblick in den Garprozess."
+        ],
+        "longDescription": [
+          "Acht Teile für die komplette Grundausstattung: Das Prime-Chef-Set 8-teilig vereint Schöpfkelle und Töpfe von 2,0 bis 4,7 Litern samt passenden Deckeln.",
+          "Der 5-lagige wärmespeichernde Boden verteilt die Hitze gleichmäßig, während die hitzebeständige Litermarkierung in jedem Topf das Abmessen erspart.",
+          "Ergonomische Griffe sorgen für sicheren Halt, und die Glasdeckel mit Dampfventil geben jederzeit Einblick in den Garprozess, ohne Wärme zu verlieren. Alle Teile sind für sämtliche Herdarten geeignet.",
+          "Als vollständiges 8-teiliges Set deckt Prime Chef praktisch jede Topfgröße im Alltag ab und eignet sich damit ideal für die Neuausstattung einer ganzen Küche."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1584,17 +1856,30 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Schöpfkelle mit Deckel **2,0 l** (⌀16 cm) — 1 Stk.",
+          "Topf mit Deckel **2,7 l** (⌀18 cm) — 1 Stk.",
+          "Topf mit Deckel **4,7 l** (⌀22 cm) — 1 Stk.",
+          "Topf mit Deckel **2,0 l** (⌀16 cm) — 1 Stk."
+        ],
+        "tagline": "Prime Chef Velmora — acht Teile für nahezu jede Topfgröße im Alltag."
       },
       {
         "name": "Topfset mit Schöpfkelle 10-teilig Cook&Joy",
         "material": "Edelstahl 18/10 — Robustheit und Hygiene",
         "description": "Schöpfkelle 1,8 l mit Deckel Topf 2,5 l Topf 3,5 l Topf 4,6 l Topf 5,8 l",
         "features": [
-          "Edelstahl 18/10 — Robustheit und Hygiene",
-          "5-lagiger Kapselboden — gleichmäßige Wärme ohne Anbrennen",
-          "Funktionale Deckel aus gehärtetem Glas",
-          "Innere Maßskala — Präzision für tägliche Rezepte"
+          "**Edelstahl 18/10** — steht für Robustheit und eine besonders hygienische Oberfläche.",
+          "**5-lagiger Kapselboden** — sorgt für gleichmäßige Wärme, ganz ohne Anbrennen.",
+          "**Deckel aus gehärtetem Glas** — halten dem Küchenalltag zuverlässig stand.",
+          "**Innere Maßskala** — liefert die nötige Präzision für tägliche Rezepte."
+        ],
+        "longDescription": [
+          "Mit zehn Teilen – Schöpfkelle und vier Töpfe von 2,5 bis 5,8 Litern samt Deckeln – ist das Cook&Joy-Set eine der umfangreichsten Grundausstattungen der Velmora-Kollektion.",
+          "Edelstahl 18/10 sorgt für Robustheit und einfache Hygiene, während der 5-lagige Kapselboden für gleichmäßige Wärme ohne Anbrennen steht – auch bei sämigen Saucen oder Milchgerichten.",
+          "Die Deckel aus gehärtetem Glas halten dem Küchenalltag stand, und die innere Maßskala liefert die nötige Präzision für tägliche Rezepte, ohne einen separaten Messbecher zu benötigen.",
+          "Für alle, die ihre Küche in einem großen Schritt komplett und hochwertig ausstatten möchten, bietet Cook&Joy zehn aufeinander abgestimmte Teile für jede Kochsituation."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1650,16 +1935,31 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Schöpfkelle mit Deckel **1,8 l** — 1 Stk.",
+          "Topf **2,5 l** — 1 Stk.",
+          "Topf **3,5 l** — 1 Stk.",
+          "Topf **4,6 l** — 1 Stk.",
+          "Topf **5,8 l** — 1 Stk."
+        ],
+        "tagline": "Cook&Joy Velmora — zehn Teile für eine große, stimmige Küchenausstattung."
       },
       {
         "name": "Topfset Elegance und Schöpfkelle",
         "material": "Möglichkeit zum Abgießen von Flüssigkeiten beim Fixieren des Deckels mit beweglichen Seitengriffen;",
         "description": "16x10,5cm Schöpfkelle mit Deckel, 2,0l 20x11,5cm Topf mit Deckel, 3,7l 24x14,5cm Topf mit Deckel, 6,3l Pfanne mit abnehmbarem Griff, Ø 26cm.",
         "features": [
-          "Möglichkeit zum Abgießen von Flüssigkeiten beim Fixieren des Deckels mit beweglichen Seitengriffen;",
-          "Deckelgriff-Geometrie ermöglicht die Aufnahme von Küchengeräten;",
-          "Griffe mit Soft-Touch-Beschichtung."
+          "**Bewegliche Seitengriffe** — fixieren den Deckel beim Abgießen, ohne dass etwas verrutscht.",
+          "**Deckelgriff-Geometrie** — erlaubt es, Kochlöffel und andere Küchengeräte griffbereit abzulegen.",
+          "**Griffe mit Soft-Touch-Beschichtung** — liegen angenehm kühl in der Hand.",
+          "**Abnehmbarer Pfannengriff** — macht das Set besonders vielseitig einsetzbar."
+        ],
+        "longDescription": [
+          "Elegance vereint drei Töpfe (2,0 bis 6,3 Liter) mit einer Pfanne ⌀26 cm mit abnehmbarem Griff – ein durchdacht gestaltetes Set für alle, die Funktion und Optik gleichermaßen schätzen.",
+          "Die beweglichen Seitengriffe fixieren den Deckel beim Abgießen von Kochwasser, sodass sich Nudeln oder Gemüse sicher und ohne Verrutschen abgießen lassen – ein Detail, das im Alltag viel Ärger erspart.",
+          "Die besondere Geometrie der Deckelgriffe erlaubt es sogar, Kochlöffel und andere Küchengeräte griffbereit darauf abzulegen. Die Soft-Touch-Beschichtung der Griffe liegt dabei angenehm kühl in der Hand.",
+          "Mit abnehmbarem Pfannengriff und durchdachten Detaillösungen ist Elegance ein Set für alle, die kleine, kluge Details im Küchenalltag zu schätzen wissen."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1715,16 +2015,29 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Schöpfkelle mit Deckel **2,0 l** (16×10,5 cm) — 1 Stk.",
+          "Topf mit Deckel **3,7 l** (20×11,5 cm) — 1 Stk.",
+          "Topf mit Deckel **6,3 l** (24×14,5 cm) — 1 Stk.",
+          "Pfanne mit abnehmbarem Griff **⌀26 cm** — 1 Stk."
+        ],
+        "tagline": "Velmora Elegance — durchdachte Details, die den Küchenalltag spürbar erleichtern."
       },
       {
         "name": "Topf 6,3 l Herzog Velmora",
         "material": "Deckel mit Abflussöffnungen.",
         "description": "Topf Velmora Herzog, mit Glasdeckel, 24 cm, 6,3 l",
         "features": [
-          "Deckel mit Abflussöffnungen.",
-          "5-lagiger wärmespeichernder Boden.",
-          "Litermarkierung"
+          "**Glasdeckel mit Abflussöffnungen** — macht das Abgießen von Kochwasser besonders einfach.",
+          "**5-lagiger wärmespeichernder Boden** — verteilt die Wärme gleichmäßig über die gesamte Fläche.",
+          "**Innere Litermarkierung** — erlaubt präzises Abmessen direkt im Topf."
+        ],
+        "longDescription": [
+          "Der Topf Herzog Velmora mit 6,3 Litern und ⌀24 cm ist für alle gedacht, die einen großen, verlässlichen Topf für Familienessen, Suppen oder Eingemachtes suchen.",
+          "Der 5-lagige wärmespeichernde Boden verteilt die Wärme gleichmäßig über die gesamte Fläche und hält die Temperatur auch bei reduzierter Herdstufe stabil.",
+          "Der Glasdeckel mit integrierten Abflussöffnungen macht das Abgießen von Kochwasser besonders einfach, während die innere Litermarkierung das Abmessen von Flüssigkeiten direkt im Topf erlaubt.",
+          "Als großzügiger Einzeltopf ergänzt Herzog jedes bestehende Kochgeschirr um genau das Fassungsvermögen, das für größere Portionen oft fehlt."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1780,18 +2093,26 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf Herzog mit Glasdeckel **6,3 l** (⌀24 cm) — 1 Stk."
+        ],
+        "tagline": "Velmora Herzog — großzügiges Fassungsvermögen für Familienessen und mehr."
       },
       {
         "name": "Topfset mit Deckeln Steil Velmora + GESCHENKE: Schneidebrett",
         "material": "5-lagiger wärmespeichernder Boden,",
         "description": "Topf 3,4 l mit Glasdeckel Steil Ø20cm; Topf 2,5 l mit Glasdeckel Steil Ø18cm; Topf 4,5 l mit Glasdeckel Steil Ø22 cm; Kunststoff-Schneidebrett KuchenArt",
         "features": [
-          "5-lagiger wärmespeichernder Boden,",
-          "Hochwertiger Edelstahl (18/10),",
-          "Deckel mit Dampfventil,",
-          "Maßskala,",
-          "Spülmaschinenfest."
+          "**5-lagiger wärmespeichernder Boden aus Edelstahl 18/10** — sorgt für gleichmäßiges, energiesparendes Garen.",
+          "**Dampfventil und Maßskala** — erleichtern präzises Kochen im Alltag.",
+          "**Spülmaschinenfest** — spart nach dem Essen wertvolle Zeit."
+        ],
+        "longDescription": [
+          "Drei Steil-Töpfe von 2,5 bis 4,5 Litern werden hier durch ein praktisches Schneidebrett KuchenArt ergänzt – ein Set, das über den Topfrand hinausdenkt.",
+          "Der 5-lagige wärmespeichernde Boden aus Edelstahl 18/10 sorgt für gleichmäßiges Garen, während Dampfventil und Maßskala im Deckel bzw. Topf das präzise Kochen erleichtern.",
+          "Alle Töpfe sind spülmaschinenfest und für sämtliche Herdarten geeignet, sodass die Reinigung nach dem Essen keine zusätzliche Aufgabe mehr ist.",
+          "Mit dem Schneidebrett als Geschenk ist dieses Set ein rundes Paket für alle, die Kochgeschirr und praktisches Zubehör in einem Schritt anschaffen möchten."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1851,18 +2172,29 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf mit Glasdeckel Steil **3,4 l** (⌀20 cm) — 1 Stk.",
+          "Topf mit Glasdeckel Steil **2,5 l** (⌀18 cm) — 1 Stk.",
+          "Topf mit Glasdeckel Steil **4,5 l** (⌀22 cm) — 1 Stk."
+        ],
+        "tagline": "Velmora Steil — Kochgeschirr und praktisches Zubehör in einem Paket.",
+        "gift": "Schneidebrett KuchenArt — ein praktischer Begleiter zum Schneiden und Anrichten im Küchenalltag."
       },
       {
         "name": "Topfset 6-teilig Steil Velmora",
         "material": "5-lagiger wärmespeichernder Boden;",
         "description": "Topf mit Deckel Steil ⌀18 cm — 2,5 l Topf mit Deckel Steil ⌀20 cm — 3,4 l Topf mit Deckel Steil ⌀22 cm — 4,5 l",
         "features": [
-          "5-lagiger wärmespeichernder Boden;",
-          "Hochwertiger Edelstahl (18/10);",
-          "Deckel mit Dampfventil;",
-          "Maßskala;",
-          "Spülmaschinenfest."
+          "**5-lagiger wärmespeichernder Boden aus Edelstahl 18/10** — verteilt die Wärme gleichmäßig in allen drei Töpfen.",
+          "**Dampfventil und Maßskala** — erleichtern das präzise Kochen im Alltag.",
+          "**Spülmaschinenfest** — unkompliziert in der Pflege."
+        ],
+        "longDescription": [
+          "Das 6-teilige Steil-Set bündelt drei Topfgrößen von 2,5 bis 4,5 Litern samt passenden Deckeln – eine kompakte Grundausstattung für Suppen, Saucen und Beilagen.",
+          "Der 5-lagige wärmespeichernde Boden aus Edelstahl 18/10 verteilt die Wärme gleichmäßig, sodass Gerichte sanft garen statt anzubrennen.",
+          "Dampfventil und eingeprägte Maßskala erleichtern das tägliche Kochen, und alle Töpfe sind spülmaschinenfest sowie für jede Herdart geeignet.",
+          "Wer ein reduziertes, aber vollständiges Set für die drei häufigsten Topfgrößen sucht, findet in diesem 6-teiligen Steil-Set eine solide Basis für den Küchenalltag."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1918,17 +2250,29 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Topf mit Deckel Steil **2,5 l** (⌀18 cm) — 1 Stk.",
+          "Topf mit Deckel Steil **3,4 l** (⌀20 cm) — 1 Stk.",
+          "Topf mit Deckel Steil **4,5 l** (⌀22 cm) — 1 Stk."
+        ],
+        "tagline": "Velmora Steil — die solide Basis für die drei häufigsten Topfgrößen."
       },
       {
         "name": "Messer-Set auf Halter Prime Chef Velmora",
         "material": "Vollmetallkonstruktion",
         "description": "Halter; Kochmesser 20,5 cm; Schnitzmesser 20,8 cm; Brotmesser 20,8 cm; Universalmesser 12,8 cm; Gemüseschälmesser 9,5 cm;",
         "features": [
-          "Vollmetallkonstruktion",
-          "Hochwertiger Edelstahl",
-          "Ergonomische Griffe",
-          "Stilvolles Design"
+          "**Vollmetallkonstruktion** — sorgt für Balance und Langlebigkeit ohne Schwachstellen an Nieten oder Übergängen.",
+          "**Hochwertiger Edelstahl** — hält die Schärfe über viele Schnitte hinweg.",
+          "**Ergonomisch integrierte Griffe** — liegen auch bei längerem Schneiden ermüdungsfrei in der Hand.",
+          "**Stilvolles Design** — macht den Halter zum dauerhaften Blickfang auf der Arbeitsplatte."
+        ],
+        "longDescription": [
+          "Fünf Messer für jede Aufgabe – vom Kochmesser über Schnitz- und Brotmesser bis zum Gemüseschälmesser – vereint auf einem eleganten Halter.",
+          "Die Vollmetallkonstruktion sorgt für Balance und Langlebigkeit: Klinge und Griff bilden ein durchgehendes Stück, ohne Schwachstellen an Nieten oder Übergängen.",
+          "Der hochwertige Edelstahl hält die Schärfe über viele Schnitte hinweg, während die ergonomisch integrierten Griffe auch bei längerem Schneiden nicht ermüden.",
+          "Das stilvolle Design macht den Halter zum dauerhaften Blickfang auf der Arbeitsplatte – griffbereit für jedes Rezept, ohne in der Schublade zu verschwinden."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1984,16 +2328,31 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Messerhalter — 1 Stk.",
+          "Kochmesser **20,5 cm** — 1 Stk.",
+          "Schnitzmesser **20,8 cm** — 1 Stk.",
+          "Brotmesser **20,8 cm** — 1 Stk.",
+          "Universalmesser **12,8 cm** — 1 Stk.",
+          "Gemüseschälmesser **9,5 cm** — 1 Stk."
+        ],
+        "tagline": "Prime Chef Velmora — fünf Messer, ein eleganter Halter, jede Schneideaufgabe abgedeckt."
       },
       {
         "name": "Messer-Set Luxus",
         "material": "Klingen aus hochwertigem Stahl X30Cr14 — korrosionsbeständig, langanhaltend scharf",
         "description": "Messer-Set Luxus 5-teilig auf Halter",
         "features": [
-          "Klingen aus hochwertigem Stahl X30Cr14 — korrosionsbeständig, langanhaltend scharf",
-          "Ergonomische Griffe aus ABS-Kunststoff — robust, rutschfest, angenehm zu greifen",
-          "Ideal für den täglichen Einsatz in jeder Küche"
+          "**Klingen aus Spezialstahl X30Cr14** — korrosionsbeständig und lange scharf.",
+          "**Ergonomische Griffe aus ABS-Kunststoff** — liegen rutschfest und angenehm in der Hand.",
+          "**Ideal für den täglichen Einsatz** — meistert jede Schneideaufgabe in der Küche."
+        ],
+        "longDescription": [
+          "Das Messer-Set Luxus vereint fünf Klingen für den kompletten Küchenalltag – kompakt auf einem eigenen Halter organisiert.",
+          "Die Klingen aus dem Spezialstahl X30Cr14 sind korrosionsbeständig und behalten ihre Schärfe deutlich länger als einfache Küchenmesser – ein Detail, das sich besonders beim täglichen Schneiden von Gemüse und Fleisch bemerkbar macht.",
+          "Die ergonomischen Griffe aus robustem ABS-Kunststoff liegen rutschfest in der Hand, auch wenn sie beim Kochen feucht werden.",
+          "Für den täglichen Einsatz in jeder Küche konzipiert, ist dieses Set eine unkomplizierte Möglichkeit, alle wichtigen Schnittarten mit einem einzigen Kauf abzudecken."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -2045,17 +2404,27 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Messer-Set Luxus **5-teilig** mit Halter"
+        ],
+        "tagline": "Messer-Set Luxus — scharfe Klingen für den unkomplizierten Küchenalltag."
       },
       {
         "name": "Set aus 5 Messern auf Halter Prime Chef Velmora",
         "material": "Edelstahl;",
         "description": "Kochmesser 20,5 cm; Santokumesser 17,5 cm; Santokumesser 13,5 cm; Universalmesser 12,5 cm; Gemüseschälmesser 9 cm;",
         "features": [
-          "Edelstahl;",
-          "Robuste Griffe;",
-          "Stilvoller Holzhalter;",
-          "Einfache Pflege."
+          "**Edelstahl** — sorgt für zuverlässige Schärfe und lange Haltbarkeit jeder Klinge.",
+          "**Robuste Griffe** — liegen auch bei intensivem Gebrauch sicher in der Hand.",
+          "**Stilvoller Holzhalter** — hält alle Messer griffbereit und schützt die Klingen in der Schublade.",
+          "**Einfache Pflege** — macht dieses Set zum unkomplizierten Küchenbegleiter."
+        ],
+        "longDescription": [
+          "Kochmesser, zwei Santokumesser in unterschiedlichen Größen, ein Universalmesser und ein Gemüseschälmesser – dieses Fünferset deckt praktisch jede Schneidetechnik ab.",
+          "Der Edelstahl der Klingen sorgt für zuverlässige Schärfe, während die robusten Griffe auch bei intensivem Gebrauch sicher in der Hand liegen.",
+          "Der stilvolle Holzhalter hält alle Messer griffbereit und schützt gleichzeitig die Klingen vor Beschädigungen in der Schublade. Die Pflege bleibt dabei denkbar einfach.",
+          "Wer sowohl europäische als auch asiatische Schneidetechniken zu Hause anwenden möchte, findet mit diesem Set von Kochmesser bis Santoku alles in einer stimmigen Serie."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -2111,17 +2480,31 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Kochmesser **20,5 cm** — 1 Stk.",
+          "Santokumesser **17,5 cm** — 1 Stk.",
+          "Santokumesser **13,5 cm** — 1 Stk.",
+          "Universalmesser **12,5 cm** — 1 Stk.",
+          "Gemüseschälmesser **9 cm** — 1 Stk."
+        ],
+        "tagline": "Prime Chef Velmora — von Kochmesser bis Santoku, alles in einer stimmigen Serie."
       },
       {
         "name": "Set aus 5 Messern Solvar Velmora",
         "material": "Perfekte Schärfe;",
         "description": "Kochmesser 20,5 cm; Santokumesser 17,5 cm; Santokumesser 13,5 cm; Universalmesser 12,8 cm; Gemüsemesser 9 cm; Messerblock;",
         "features": [
-          "Perfekte Schärfe;",
-          "Durchgehende Klingen;",
-          "Vollständiges Set;",
-          "Stilvoller Block."
+          "**Perfekte Schärfe** — jede Klinge bleibt auch nach häufigem Einsatz zuverlässig scharf.",
+          "**Durchgehende Klingen** — vom Griff bis zur Spitze, für Stabilität und ausgewogene Balance.",
+          "**Vollständiges Set** — deckt vom Kochmesser bis zum Gemüsemesser jede Schneideaufgabe ab.",
+          "**Stilvoller Block** — hält alle Messer organisiert und griffbereit."
+        ],
+        "longDescription": [
+          "Das Solvar-Set liefert fünf Messer vom Kochmesser bis zum Gemüsemesser, ordentlich verstaut in einem stilvollen Messerblock.",
+          "Die durchgehenden Klingen – vom Griff bis zur Spitze aus einem Stück Edelstahl gefertigt – sorgen für Stabilität und eine ausgewogene Balance beim Schneiden.",
+          "Jede Klinge ist auf perfekte Schärfe geschliffen und behält diese auch nach wiederholtem Einsatz an Fleisch, Gemüse und Brot.",
+          "Als vollständiges Set aus einem Guss ist Solvar für alle gedacht, die auf durchgehende Qualität von der Klingenspitze bis zum Blockstandort Wert legen."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -2173,17 +2556,32 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Kochmesser **20,5 cm** — 1 Stk.",
+          "Santokumesser **17,5 cm** — 1 Stk.",
+          "Santokumesser **13,5 cm** — 1 Stk.",
+          "Universalmesser **12,8 cm** — 1 Stk.",
+          "Gemüsemesser **9 cm** — 1 Stk.",
+          "Messerblock — 1 Stk."
+        ],
+        "tagline": "Solvar Velmora — durchgehende Klingen für dauerhafte Schärfe."
       },
       {
         "name": "Messer-Set auf Halter Prime Chef",
         "material": "Hochwertiger Edelstahl",
         "description": "Kochmesser 20,5 cm; Santokumesser 17,5 cm; Santokumesser 13,5 cm; Universalmesser 12,8 cm; Gemüsemesser 9 cm; Messerblock;",
         "features": [
-          "Hochwertiger Edelstahl",
-          "Ergonomische Griffe aus ABS-Kunststoff",
-          "Optimale Balance",
-          "Modernes Design"
+          "**Hochwertiger Edelstahl** — sorgt für zuverlässige Schärfe bei jedem Schnitt.",
+          "**Ergonomische Griffe aus ABS-Kunststoff** — liegen rutschfest und sicher in der Hand.",
+          "**Optimale Balance** — zwischen Klinge und Griff macht das Schneiden angenehm.",
+          "**Modernes Design** — fügt sich stilvoll in jede Küche ein."
+        ],
+        "longDescription": [
+          "Fünf Messer – Kochmesser, zwei Santokumesser, Universal- und Gemüsemesser – bilden zusammen mit dem Messerblock ein vollständiges Set für den Küchenalltag.",
+          "Der hochwertige Edelstahl der Klingen sorgt für zuverlässige Schärfe, während die optimale Balance zwischen Klinge und Griff das Schneiden über längere Zeit angenehm macht.",
+          "Die ergonomischen Griffe aus ABS-Kunststoff liegen rutschfest in der Hand und fügen sich in ein modernes, aufgeräumtes Design ein, das auf der Arbeitsplatte gut aussieht.",
+          "Für alle, die Wert auf ein stimmiges, modernes Messerset legen, ist Prime Chef eine ausgewogene Wahl zwischen Optik und täglicher Funktion."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -2235,17 +2633,31 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Kochmesser **20,5 cm** — 1 Stk.",
+          "Santokumesser **17,5 cm** — 1 Stk.",
+          "Santokumesser **13,5 cm** — 1 Stk.",
+          "Universalmesser **12,8 cm** — 1 Stk.",
+          "Gemüsemesser **9 cm** — 1 Stk.",
+          "Messerblock — 1 Stk."
+        ],
+        "tagline": "Prime Chef Velmora — moderne Optik trifft auf verlässliche Schärfe."
       },
       {
         "name": "Glasbehälter-Set Locker + GESCHENKE: Thermobecher Komfort 380 ml 2 Stk",
         "material": "Luftdichte Deckel mit Silikon-Dichtungen",
         "description": "Behälter mit Deckel 1500 ml; Behälter mit Deckel 1040 ml; Behälter mit Deckel 640 ml; Behälter mit Deckel 380 ml; Thermobecher Komfort 380 ml; Thermobecher Komfort 380 ml",
         "features": [
-          "Luftdichte Deckel mit Silikon-Dichtungen",
-          "Hitzebeständiges Glas",
-          "Für die Mikrowelle geeignet (ohne Deckel)",
-          "Universelle Aufbewahrungsmöglichkeiten"
+          "**Luftdichte Deckel mit Silikon-Dichtungen** — halten Aromen zuverlässig im Behälter.",
+          "**Hitzebeständiges Glas** — ist ohne Deckel mikrowellengeeignet.",
+          "**Universelle Aufbewahrung** — eignet sich für Reste, Meal-Prep und mehr."
+        ],
+        "longDescription": [
+          "Vier Glasbehälter von 380 bis 1500 ml plus zwei Thermobecher Komfort als Geschenk – das Locker-Set organisiert Reste, Meal-Prep und unterwegs-Getränke gleichermaßen.",
+          "Die luftdichten Deckel mit Silikon-Dichtungen halten Aromen zuverlässig im Behälter, sodass Salate, Suppen oder geschnittenes Obst länger frisch bleiben.",
+          "Das hitzebeständige Glas ist ohne Deckel mikrowellengeeignet, sodass sich Reste direkt im Aufbewahrungsbehälter aufwärmen lassen, ohne extra umzufüllen.",
+          "Mit den beiden Thermobechern obendrauf ist dieses Set eine runde Lösung für alle, die Vorräte organisiert halten und dabei auch unterwegs nicht auf ihren Kaffee verzichten möchten."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -2301,16 +2713,30 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Behälter mit Deckel **1500 ml** — 1 Stk.",
+          "Behälter mit Deckel **1040 ml** — 1 Stk.",
+          "Behälter mit Deckel **640 ml** — 1 Stk.",
+          "Behälter mit Deckel **380 ml** — 1 Stk."
+        ],
+        "tagline": "Velmora Locker — Vorräte organisiert, Kaffee immer griffbereit.",
+        "gift": "2× Thermobecher Komfort 380 ml — halten Heißgetränke unterwegs warm und ergänzen das Set perfekt."
       },
       {
         "name": "Set Glasbehälter zur Aufbewahrung und Thermosflasche 600ml",
         "material": "Deckel mit innovativem Öffnungsmechanismus;",
         "description": "Aufbewahrungsbehälter Prime Chef Velmora 1,7 l mit Deckel Höhe 30 cm; Aufbewahrungsbehälter Prime Chef Velmora 0,84 l mit Deckel Höhe 17 cm; Aufbewahrungsbehälter Prime Chef Velmora 0,58 l mit Deckel Höhe 13 cm; Thermosflasche 600 ml",
         "features": [
-          "Deckel mit innovativem Öffnungsmechanismus;",
-          "Tagesanzahl auf den Deckeln;",
-          "Verschiedene Größen;"
+          "**Innovativer Öffnungsmechanismus** — macht das Öffnen und Schließen besonders komfortabel.",
+          "**Tagesanzahl auf den Deckeln** — hilft, den Überblick über die Haltbarkeit zu behalten.",
+          "**Verschiedene Größen** — passen zu jeder Restmenge, von klein bis groß."
+        ],
+        "longDescription": [
+          "Drei Aufbewahrungsbehälter unterschiedlicher Höhe – von 13 bis 30 cm – und eine Thermosflasche 600 ml bilden ein durchdachtes Set für Vorratshaltung und unterwegs.",
+          "Der innovative Öffnungsmechanismus der Deckel macht das Öffnen und Schließen auch mit nur einer Hand komfortabel – praktisch, wenn die andere Hand gerade den Kochlöffel hält.",
+          "Die aufgedruckte Tagesanzahl auf den Deckeln hilft dabei, den Überblick über Meal-Prep und Haltbarkeit zu behalten, während die unterschiedlichen Größen für Reste jeder Menge passen.",
+          "Zusammen mit der Thermosflasche ist dieses Set eine praktische Ergänzung für alle, die Vorräte organisiert lagern und Getränke auch unterwegs warm oder kalt halten möchten."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -2362,17 +2788,29 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Aufbewahrungsbehälter mit Deckel **1,7 l** (Höhe 30 cm) — 1 Stk.",
+          "Aufbewahrungsbehälter mit Deckel **0,84 l** (Höhe 17 cm) — 1 Stk.",
+          "Aufbewahrungsbehälter mit Deckel **0,58 l** (Höhe 13 cm) — 1 Stk.",
+          "Thermosflasche **600 ml** — 1 Stk."
+        ],
+        "tagline": "Velmora Prime Chef — Vorratshaltung und unterwegs, in einem Set vereint."
       },
       {
         "name": "Wasserkocher Velmora Nebion 3 l",
         "material": "Elegante Körperlinien.",
         "description": "Dreilagiger ferromagnetischer Boden Sicheres und kontrolliertes Einschenken",
         "features": [
-          "Elegante Körperlinien.",
-          "Präzise Griffgeometrie.",
-          "Dreilagiger ferromagnetischer Boden",
-          "Sicheres und kontrolliertes Einschenken."
+          "**Elegante Linienführung** — macht den Wasserkocher zum stilvollen Küchenobjekt.",
+          "**Präzise Griffgeometrie** — sorgt für sicheres, kontrolliertes Einschenken ohne Tropfen.",
+          "**Dreilagiger, ferromagnetischer Boden** — kompatibel mit allen Herdarten, Induktion eingeschlossen."
+        ],
+        "longDescription": [
+          "Der Wasserkocher Nebion fasst 3 Liter und ist damit für größere Haushalte, Familienfeiern oder den täglichen Tee- und Kaffeebedarf mehrerer Personen ausgelegt.",
+          "Der dreilagige ferromagnetische Boden macht ihn kompatibel mit allen Herdarten, Induktion eingeschlossen, und sorgt für eine schnelle, gleichmäßige Erwärmung des Wassers.",
+          "Die präzise Griffgeometrie und die elegante Linienführung des Körpers machen das Einschenken sicher und kontrolliert, ganz ohne Tropfen oder Verbrühungsgefahr.",
+          "Mit seinem zeitlosen Design ist Nebion ebenso ein zuverlässiges Küchenwerkzeug wie ein Objekt, das auf dem Herd gut aussieht."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -2428,18 +2866,27 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Wasserkocher Nebion **3 l** — 1 Stk."
+        ],
+        "tagline": "Velmora Nebion — der Wasserkocher, der auf dem Herd gut aussieht."
       },
       {
         "name": "Keramik-Kochgeschirr-Sets 15-teilig. Topf- und Pfannen-Set mit Antihaftbeschichtung (schwarz 15)",
         "material": "Keramische Antihaftbeschichtung ist sicher und ungiftig",
         "description": "Keramik-Kochgeschirr-Set mit Antihaftbeschichtung — ungiftig und besser als Teflon! Set mit 9\"/11\"-Frittierpfanne, 11\"/4,5-Quart-Frittierpfanne mit Deckel, 1,5-Quart-Schmortopf-Deckel, Silikon-Pfannenwendern, Löffeln, Zangen und 4 Schutzabdeckungen.",
         "features": [
-          "Keramische Antihaftbeschichtung ist sicher und ungiftig",
-          "Kratzfest und sorgt für hervorragendes Gleiten der Speisen",
-          "Geschirr leicht zu reinigen",
-          "Geeignet für alle Herdarten",
-          "Nicht erhitzende Bakelit-Griffe"
+          "**Keramische Antihaftbeschichtung** — sicher und ungiftig, eine schonende Alternative zu klassischem Teflon.",
+          "**Kratzfest und gleitfähig** — sorgt für hervorragende Bratergebnisse.",
+          "**Leichte Reinigung** — das Geschirr lässt sich nach dem Kochen mühelos säubern.",
+          "**Nicht erhitzende Bakelit-Griffe** — bleiben auch bei langem Kochen sicher zu greifen."
+        ],
+        "longDescription": [
+          "Fünfzehn Teile – Frittierpfannen in 9 und 11 Zoll, ein Schmortopf mit Deckel, dazu Silikon-Pfannenwender, Löffel, Zange und vier Schutzabdeckungen – machen dieses Set zu einer kompletten Küchenausstattung mit Keramikbeschichtung.",
+          "Die keramische Antihaftbeschichtung ist sicher und ungiftig und gilt als Alternative zu klassischem Teflon, ohne bei Speisen an Gleitfähigkeit einzubüßen.",
+          "Die Beschichtung ist zudem kratzfest, sodass auch der gelegentliche Einsatz von Metallutensilien keine bleibenden Spuren hinterlässt, und lässt sich nach dem Kochen leicht auswischen. Die Bakelit-Griffe erhitzen sich dabei nicht und bleiben immer sicher zu greifen.",
+          "Mit vier Schutzabdeckungen für den Transport oder die Aufbewahrung im Schrank ist dieses Set eine durchdachte Komplettlösung für alle, die auf eine schonendere Beschichtung setzen möchten, ohne auf Vielseitigkeit zu verzichten."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -2495,18 +2942,31 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "Frittierpfanne **9 Zoll** — 1 Stk.",
+          "Frittierpfanne mit Deckel **11 Zoll** — 1 Stk.",
+          "Schmortopf mit Deckel **1,5 Quart** — 1 Stk.",
+          "Silikon-Pfannenwender, Löffel und Zange — im Set enthalten",
+          "**4 Schutzabdeckungen** — im Set enthalten"
+        ],
+        "tagline": "Velmora Keramik-Set — komplette Ausstattung mit gesünderer Beschichtung."
       },
       {
         "name": "Keramik-Topf- und Pfannen-Set Kikcoin 16-teilig mit Antihaftbeschichtung, inklusive 9,5-Zoll-Grillpfanne, Induktions-Kochgeschirr-Set",
         "material": "Keramische Antihaftbeschichtung ist sicher und ungiftig",
         "description": "Aus natürlichen Mineralien hergestellt, gibt keine Dämpfe beim Überhitzen ab.",
         "features": [
-          "Keramische Antihaftbeschichtung ist sicher und ungiftig",
-          "Kratzfest und sorgt für hervorragendes Gleiten der Speisen",
-          "Geschirr leicht zu reinigen",
-          "Geeignet für alle Herdarten",
-          "Nicht erhitzende Bakelit-Griffe"
+          "**Antihaftbeschichtung aus natürlichen Mineralien** — gibt selbst bei Überhitzung keine schädlichen Dämpfe ab.",
+          "**Kratzfest und gleitfähig** — sorgt für hervorragende Ergebnisse bei jedem Gericht.",
+          "**Leichte Reinigung** — für alle Herdarten geeignet, Induktion eingeschlossen.",
+          "**Nicht erhitzende Bakelit-Griffe** — bleiben stets sicher zu greifen."
+        ],
+        "longDescription": [
+          "Sechzehn Teile, darunter eine 9,5-Zoll-Grillpfanne, machen dieses Keramik-Set zu einer der umfangreichsten Induktions-Kochgeschirr-Lösungen der Kollektion.",
+          "Die keramische Antihaftbeschichtung besteht aus natürlichen Mineralien und gibt selbst bei versehentlicher Überhitzung keine schädlichen Dämpfe ab – ein Sicherheitsplus, das klassische Beschichtungen so nicht bieten.",
+          "Trotz der schonenden Zusammensetzung ist die Beschichtung kratzfest und sorgt für hervorragendes Gleiten der Speisen, während sich das Geschirr nach dem Essen leicht reinigen lässt. Bakelit-Griffe bleiben dabei kühl, und das komplette Set funktioniert auf allen Herdarten, Induktion eingeschlossen.",
+          "Für alle, die eine große, in sich stimmige Kochgeschirr-Ausstattung mit Fokus auf Sicherheit und einfache Pflege suchen, ist Kikcoin eine umfassende Lösung für Töpfe, Pfannen und Grillgerichte gleichermaßen."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -2558,7 +3018,14 @@
               "✓"
             ]
           ]
-        }
+        },
+        "contents": [
+          "**Bratpfannen und Töpfe** mit Keramikbeschichtung — im Set enthalten",
+          "Grillpfanne **9,5 Zoll** — 1 Stk.",
+          "Passende Deckel — im Set enthalten",
+          "Silikon-Pfannenwender und Utensilien — im Set enthalten"
+        ],
+        "tagline": "Velmora Kikcoin — Töpfe, Pfannen und Grillgerichte in einem großen Set."
       }
     ]
   },
@@ -2687,16 +3154,37 @@
     "tagline": "Geschirr für besondere Momente. Qualität, die man beim ersten Berühren spürt.",
     "navTitle": "Navigation",
     "navLinks": [
-      { "label": "Über uns", "href": "/about" },
-      { "label": "Versand & Zahlung", "href": "/delivery" },
-      { "label": "Kontakt", "href": "/contacts" }
+      {
+        "label": "Über uns",
+        "href": "/about"
+      },
+      {
+        "label": "Versand & Zahlung",
+        "href": "/delivery"
+      },
+      {
+        "label": "Kontakt",
+        "href": "/contacts"
+      }
     ],
     "sectionsTitle": "Auf dieser Seite",
     "sectionLinks": [
-      { "label": "Katalog", "href": "/#catalog" },
-      { "label": "Bewertungen", "href": "/#reviews" },
-      { "label": "Garantien", "href": "/#guarantees" },
-      { "label": "FAQ", "href": "/#faq" }
+      {
+        "label": "Katalog",
+        "href": "/#catalog"
+      },
+      {
+        "label": "Bewertungen",
+        "href": "/#reviews"
+      },
+      {
+        "label": "Garantien",
+        "href": "/#guarantees"
+      },
+      {
+        "label": "FAQ",
+        "href": "/#faq"
+      }
     ],
     "contactTitle": "Kontakt",
     "phoneLabel": "Telefon",
