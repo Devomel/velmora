@@ -1234,18 +1234,19 @@
       },
       {
         "name": "Topf mit Deckel Smart Fry 2,3l, 6,6l",
-        "material": "5-lagiger Kapselboden;",
-        "description": "Topf mit Deckel Smart Fry 2,3l, Topf mit Deckel Smart Fry 6,6l",
+        "material": "Geschmiedetes Aluminium mit Antihaftbeschichtung",
+        "description": "Topf mit Glasdeckel Smart Fry 2,3 l; Topf mit Glasdeckel Smart Fry 6,6 l",
         "features": [
-          "**5-lagiger Kapselboden** — sorgt in beiden Größen für gleichmäßige Wärmeverteilung.",
-          "**Alle Herdarten** — kompatibel, unabhängig vom aktuellen Herd einsetzbar.",
-          "**Premium-Edelstahl 18/10** — steht für Langlebigkeit und einfache Pflege."
+          "**Geschmiedetes Aluminium** — wird schnell und gleichmäßig heiß und bleibt dabei angenehm leicht.",
+          "**Antihaftbeschichtung** — nichts brennt an, die Reinigung geht schnell.",
+          "**Temperaturanzeige in Flammenform** — zeigt an, wann die richtige Brathitze erreicht ist.",
+          "**Alle Herdarten inkl. Induktion** — dank Induktionsboden auf jedem Kochfeld einsetzbar."
         ],
         "longDescription": [
-          "Mit 2,3 und 6,6 Litern deckt das Smart-Fry-Duo die zwei häufigsten Topfgrößen im Küchenalltag ab – von der schnellen Beilage bis zum großen Eintopf.",
-          "Der Premium-Edelstahl 18/10 in Kombination mit dem 5-lagigen Kapselboden sorgt für gleichmäßige Wärmeverteilung und schützt vor Anbrennen, selbst bei sämigen Saucen.",
-          "Beide Töpfe sind mit allen Herdarten kompatibel, sodass sie unabhängig vom aktuellen oder zukünftigen Herd zuverlässig funktionieren.",
-          "Wer ein reduziertes, aber hochwertiges Zweier-Set sucht, findet in Smart Fry 2,3/6,6 l eine langlebige Grundausstattung ohne unnötigen Ballast."
+          "Mit 2,3 und 6,6 Litern deckt das Smart-Fry-Duo die zwei häufigsten Topfgrößen im Küchenalltag ab – von Reis und Soßen bis zum großen Gulasch für die ganze Familie.",
+          "Der Körper aus geschmiedetem Aluminium wird schnell und gleichmäßig heiß, die Antihaftbeschichtung innen lässt nichts ankleben. So braten Sie Fleisch und Zwiebeln direkt im Topf an, löschen ab und lassen alles weiterschmoren – ein Topf weniger zum Spülen.",
+          "Die Temperaturanzeige in Flammenform im Topfboden zeigt, wann die richtige Hitze erreicht ist. Durch die Glasdeckel behalten Sie das Gericht im Blick, ohne den Deckel anzuheben, und dank Induktionsboden funktionieren beide Töpfe auf allen Herdarten.",
+          "Wer ein kompaktes Zweier-Set zum Anbraten, Schmoren und Kochen sucht, findet in Smart Fry 2,3/6,6 l eine praktische Grundausstattung für jeden Tag."
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1266,43 +1267,47 @@
             ],
             [
               "Kompatibilität",
-              "Alle Herdarten"
+              "Alle Herdarten inkl. Induktion"
             ]
           ],
           "materials": [
             [
               "Körper",
-              "Edelstahl 18/10 Premium"
+              "Geschmiedetes Aluminium"
             ],
             [
-              "Boden",
-              "5-lagiger Kapselboden"
+              "Beschichtung",
+              "Antihaftbeschichtung"
+            ],
+            [
+              "Deckel",
+              "Glas"
             ]
           ],
           "highlights": [
             [
-              "Premium-Edelstahl 18/10",
+              "Flammentemperaturanzeige",
               "✓"
             ],
             [
-              "5-lagiger Kapselboden",
+              "Induktionsgeeignet",
               "✓"
             ],
             [
-              "Alle Herdarten",
+              "Antihaftbeschichtung",
               "✓"
             ],
             [
-              "Langlebige Qualität",
+              "Glasdeckel",
               "✓"
             ]
           ]
         },
         "contents": [
-          "Topf mit Deckel Smart Fry **2,3 l** — 1 Stk.",
-          "Topf mit Deckel Smart Fry **6,6 l** — 1 Stk."
+          "Topf mit Glasdeckel Smart Fry **2,3 l** — 1 Stk.",
+          "Topf mit Glasdeckel Smart Fry **6,6 l** — 1 Stk."
         ],
-        "tagline": "Smart Fry Velmora — zwei Größen, eine verlässliche Qualität."
+        "tagline": "Smart Fry Velmora — anbraten und schmoren im selben Topf."
       },
       {
         "name": "Set aus 2 Töpfen Prime Chef Velmora 3,6l, 6,1l + GESCHENK: Pfannenwender, Schöpflöffel, Pinsel",

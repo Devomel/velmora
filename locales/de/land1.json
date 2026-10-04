@@ -1066,12 +1066,14 @@
       },
       {
         "name": "Topf mit Deckel Smart Fry 2,3l, 6,6l",
-        "material": "5-lagiger Kapselboden;",
-        "desc": "Topf mit Deckel Smart Fry 2,3l, Topf mit Deckel Smart Fry 6,6l",
+        "material": "Geschmiedetes Aluminium mit Antihaftbeschichtung",
+        "desc": "Topf mit Glasdeckel Smart Fry 2,3 l; Topf mit Glasdeckel Smart Fry 6,6 l",
         "features": [
-          "5-lagiger Kapselboden;",
-          "Kompatibel mit allen Herdarten;",
-          "Edelstahl 18/10 der Premiumklasse;"
+          "Geschmiedetes Aluminium",
+          "Antihaftbeschichtung",
+          "Temperaturanzeige in Form einer Flamme",
+          "Glasdeckel",
+          "Kompatibel mit allen Herdarten, einschließlich Induktion"
         ],
         "specs": {
           "detailsLabel": "Produktdetails",
@@ -1092,34 +1094,38 @@
             ],
             [
               "Kompatibilität",
-              "Alle Herdarten"
+              "Alle Herdarten inkl. Induktion"
             ]
           ],
           "materials": [
             [
               "Körper",
-              "Edelstahl 18/10 Premium"
+              "Geschmiedetes Aluminium"
             ],
             [
-              "Boden",
-              "5-lagiger Kapselboden"
+              "Beschichtung",
+              "Antihaftbeschichtung"
+            ],
+            [
+              "Deckel",
+              "Glas"
             ]
           ],
           "highlights": [
             [
-              "Premium-Edelstahl 18/10",
+              "Flammentemperaturanzeige",
               "✓"
             ],
             [
-              "5-lagiger Kapselboden",
+              "Induktionsgeeignet",
               "✓"
             ],
             [
-              "Alle Herdarten",
+              "Antihaftbeschichtung",
               "✓"
             ],
             [
-              "Langlebige Qualität",
+              "Glasdeckel",
               "✓"
             ]
           ]
