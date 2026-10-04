@@ -53,7 +53,7 @@ https://de.cookware-market.com/product/17/
 ```text
 Grillsaison vorbei? Mit der Grillpfanne grillen Sie einfach weiter – bei jedem Wetter, direkt am Herd.
 
-Dazu der Topf 3,4 l für Eintopf, Suppe und Kartoffeln. Sein 5-lagiger Boden speichert die Wärme: Nichts brennt an, und Sie können früher abschalten und mit Restwärme fertig garen – gut für die Stromrechnung. Edelstahl 18/10 ohne Beschichtung, die sich ablösen könnte. Glasdeckel mit Dampfventil, Maßskala innen, spülmaschinenfest.
+Die Rillen sorgen für echte Grillstreifen auf Steak, Hähnchen und Gemüse, die Antihaftbeschichtung in Steinoptik lässt nichts ankleben. Dazu der Topf 3,4 l aus Edelstahl 18/10 für Eintopf, Suppe und Kartoffeln: Sein 5-lagiger Boden speichert die Wärme – nichts brennt an, und Sie können früher abschalten und mit Restwärme fertig garen. Glasdeckel mit Dampfventil, Maßskala innen, spülmaschinenfest.
 
 🔥 Topf für alle Herdarten – auch Induktion
 ✅ Kauf auf Rechnung (Klarna) – erst erhalten, dann bezahlen
@@ -69,22 +69,22 @@ Dazu der Topf 3,4 l für Eintopf, Suppe und Kartoffeln. Sein 5-lagiger Boden spe
 **Переклад:**
 > Сезон гриля закінчився? Зі сковородою-гриль ви просто грилите далі — за будь-якої погоди, прямо на плиті.
 >
-> До неї — каструля 3,4 л для айнтопфу, супу й картоплі. Її 5-шарове дно накопичує тепло: нічого не пригорає, а плиту можна вимкнути раніше й доготувати на залишковому теплі, і рахунок за електрику буде меншим. Нержавіюча сталь 18/10 без покриття, яке могло б облізти. Скляна кришка з клапаном для пари, мірна шкала всередині, можна мити в посудомийці.
+> Рифлене дно дає справжні смужки гриля на стейку, курці й овочах, а антипригарне покриття під камінь не дає нічому прилипнути. До неї — каструля 3,4 л з нержавіючої сталі 18/10 для айнтопфу, супу й картоплі: її 5-шарове дно накопичує тепло, тож нічого не пригорає, а плиту можна вимкнути раніше й доготувати на залишковому теплі. Скляна кришка з клапаном для пари, мірна шкала всередині, можна мити в посудомийці.
 >
 > 🔥 Каструля для всіх типів плит, зокрема індукційних
 >
 > 👉 Замовляйте зараз і грильте за будь-якої погоди.
 
 **Заголовки**
-1. Topf für Induktion · spülmaschinenfest
-   *Каструля для індукції · можна мити в посудомийці*
+1. Echte Grillstreifen – direkt am Herd
+   *Справжні смужки гриля — прямо на плиті*
 2. Eintopf & Steak · nichts brennt an
    *Айнтопф і стейк · нічого не пригорає*
-3. Echte Grillstreifen – direkt am Herd
-   *Справжні смужки гриля — прямо на плиті*
+3. Edelstahltopf 3,4 l + Grillpfanne
+   *Каструля з нержавіючої сталі 3,4 л + сковорода-гриль*
 
-**Опис:** Nichts brennt an, nichts blättert ab: Edelstahl 18/10, auch für Induktion
-*Нічого не пригорає, нічого не облазить: нержавіюча сталь 18/10, підходить і для індукції*
+**Опис:** Topf 3,4 l aus Edelstahl 18/10 + Antihaft-Grillpfanne – Topf auch für Induktion
+*Каструля 3,4 л з нержавіючої сталі 18/10 + антипригарна сковорода-гриль — каструля підходить і для індукції*
 
 ---
 
@@ -177,9 +177,9 @@ https://de.cookware-market.com/product/15/
 
 **Основний текст**
 ```text
-Kennen Sie das? Unten angebrannt, oben noch lauwarm. Der 5-lagige Kapselboden macht damit Schluss.
+Kennen Sie das? Das Gulasch brennt an, und der Topf muss erst einweichen. Mit der Antihaftbeschichtung von Smart Fry gleitet alles heraus.
 
-Er verteilt die Hitze gleichmäßig über den ganzen Topfboden und speichert sie lange – Sie können früher herunterschalten und mit Restwärme fertig garen. Das schont die Stromrechnung. Der 2,3-l-Topf für Reis, Kartoffeln und Soßen, der 6,6-l-Topf für Suppe, Eintopf und Nudeln für die ganze Familie. Beide aus Edelstahl 18/10 mit Deckel – ohne Beschichtung, die sich ablösen könnte. Rostfrei und pflegeleicht.
+Geschmiedetes Aluminium wird schnell und gleichmäßig heiß. Die Temperaturanzeige in Flammenform im Topfboden zeigt, wann die richtige Hitze erreicht ist: Fleisch und Zwiebeln direkt im Topf anbraten, ablöschen und weiterschmoren lassen – ein Topf weniger zum Spülen. Der 2,3-l-Topf für Reis, Soßen und Beilagen, der 6,6-l-Topf für Gulasch, Suppe und Eintopf für die ganze Familie. Beide mit Glasdeckel, damit Sie alles im Blick behalten.
 
 🔥 Für Induktion und alle anderen Herdarten
 ✅ Kauf auf Rechnung (Klarna) – erst erhalten, dann bezahlen
@@ -189,28 +189,28 @@ Er verteilt die Hitze gleichmäßig über den ganzen Topfboden und speichert sie
 ↩️ Rückerstattung innerhalb von 3 Werktagen nach Wareneingang
 💳 Oder per PayPal, Karte und SEPA-Lastschrift
 
-👉 Jetzt bestellen – zwei Töpfe für jeden Tag.
+👉 Jetzt bestellen – anbraten und schmoren im selben Topf.
 ```
 
 **Переклад:**
-> Знайома ситуація? Знизу пригоріло, а зверху ледь тепле. 5-шарове капсульне дно покладе цьому край.
+> Знайома ситуація? Гуляш пригорів, і каструлю спершу треба замочувати. З антипригарним покриттям Smart Fry усе легко виходить з каструлі.
 >
-> Воно рівномірно розподіляє тепло по всьому дну каструлі й довго його тримає, тож можна раніше зменшити вогонь і доготувати на залишковому теплі. Це економить електрику. Каструля на 2,3 л — для рису, картоплі й соусів, на 6,6 л — для супу, айнтопфу та макаронів на всю родину. Обидві з нержавіючої сталі 18/10, з кришками й без покриття, яке могло б облізти. Не іржавіють, легко доглядати.
+> Кований алюміній швидко й рівномірно нагрівається. Індикатор температури у формі полум'я на дні показує, коли досягнуто потрібного жару: обсмажуєте м'ясо й цибулю прямо в каструлі, додаєте рідину й тушкуєте далі — на одну каструлю менше мити. Каструля на 2,3 л — для рису, соусів і гарнірів, на 6,6 л — для гуляшу, супу й айнтопфу на всю родину. Обидві зі скляними кришками, тож усе видно.
 >
 > 🔥 Для індукції та всіх інших типів плит · 📦 Безкоштовна доставка
 >
-> 👉 Замовляйте зараз — дві каструлі на кожен день.
+> 👉 Замовляйте зараз — обсмажуйте й тушкуйте в одній каструлі.
 
 **Заголовки**
-1. Nichts brennt an · ohne Beschichtung
-   *Нічого не пригорає · без покриття*
-2. 2 Edelstahltöpfe · auch für Induktion
-   *2 каструлі з нержавіючої сталі · підходять і для індукції*
-3. Topf-Duo 2,3 + 6,6 l · 5-lagiger Boden
-   *Дует каструль 2,3 + 6,6 л · 5-шарове дно*
+1. Nichts brennt an · Antihaft-Töpfe
+   *Нічого не пригорає · антипригарні каструлі*
+2. Geschmiedetes Alu · auch für Induktion
+   *Кований алюміній · підходять і для індукції*
+3. Temperaturanzeige · 2,3 + 6,6 l
+   *Індикатор температури · 2,3 + 6,6 л*
 
-**Опис:** Edelstahl 18/10 ohne Beschichtung, 5-lagiger Boden – ideal für Induktion
-*Нержавіюча сталь 18/10 без покриття, 5-шарове дно — ідеально для індукції*
+**Опис:** Geschmiedetes Aluminium, Antihaft, Temperaturanzeige – auch für Induktion
+*Кований алюміній, антипригарне покриття, індикатор температури — підходять і для індукції*
 
 ---
 
