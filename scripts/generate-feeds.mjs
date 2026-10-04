@@ -122,7 +122,11 @@ function generateFeed(subdomain, config, prices) {
     const imgUrl = `${config.domain}/products/${firstImageFile(articleKey)}`;
     const link   = `${config.domain}/product/${productId}/`;
 
-    const description = [product.description, ...(product.features ?? [])].join('. ');
+    // Locale strings may carry `**bold**` markup (rendered by RichText on the site)
+    // and their own trailing punctuation — strip both so the feed gets plain text.
+    const plain = (s) => String(s ?? '').replace(/\*\*/g, '').trim().replace(/[\s.;,]+$/, '');
+    const parts = [product.description, ...(product.features ?? [])].map(plain).filter(Boolean);
+    const description = parts.length ? `${parts.join('. ')}.` : '';
 
     const lines = [
       `    <item>`,
