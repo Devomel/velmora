@@ -25,6 +25,7 @@ type CheckoutT = {
   standardDeliveryDesc: string;
   expressDelivery: string;
   expressDeliveryDesc: string;
+  deliveryBy?: string;
   free: string;
   payment: string;
   payCard: string;
@@ -67,6 +68,7 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     standardDeliveryDesc: '3–5 Werktage',
     expressDelivery: 'Expressversand',
     expressDeliveryDesc: '1–2 Werktage',
+    deliveryBy: 'Lieferung bis',
     free: 'Kostenlos',
     payment: 'Zahlungsmethode',
     payCard: 'Kreditkarte',
@@ -182,6 +184,7 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     standardDeliveryDesc: '3–5 рабочих дней',
     expressDelivery: 'Экспресс-доставка',
     expressDeliveryDesc: '1–2 рабочих дня',
+    deliveryBy: 'Доставка до',
     free: 'Бесплатно',
     payment: 'Способ оплаты',
     payCard: 'Банковская карта',
@@ -189,12 +192,13 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     payKlarna: 'Klarna',
     payGooglePay: 'Google Pay',
     payApplePay: 'Apple Pay',
+    paySepa: 'SEPA-списание',
     payOr: 'или',
     orderSummary: 'Состав заказа',
     subtotal: 'Сумма товаров',
     deliveryFee: 'Доставка',
     total: 'Итого',
-    placeOrder: 'Оформить заказ',
+    placeOrder: 'Заказать с обязательством оплаты',
     unavailableTitle: 'Оплата временно недоступна',
     unavailableText: 'В данный момент мы не принимаем онлайн-платежи. Пожалуйста, свяжитесь с нами для завершения заказа.',
     unavailableClose: 'Закрыть',
@@ -209,6 +213,15 @@ const DEFAULT_DELIVERY_PRICE = { standard: 4.99, express: 9.99 };
 // DE prices rounded to the ,90 pattern customers expect from German retailers
 const DELIVERY_PRICES: Record<string, { standard: number; express: number }> = {
   de: { standard: 4.9, express: 9.9 },
+  ru: { standard: 4.9, express: 9.9 },
+};
+
+// German-market storefronts: de, plus ru — the Russian-language shop for the
+// same market (eu.cookware-market.com). They share the concrete delivery date,
+// SEPA and "4,90 €" price formatting; only the date language differs.
+const DE_MARKET_DATE_LOCALES: Record<string, string> = {
+  de: 'de-DE',
+  ru: 'ru-RU',
 };
 
 function addBusinessDays(from: Date, days: number): Date {
@@ -222,8 +235,8 @@ function addBusinessDays(from: Date, days: number): Date {
   return date;
 }
 
-function formatDeDeliveryDate(date: Date): string {
-  return new Intl.DateTimeFormat('de-DE', { weekday: 'short', day: 'numeric', month: 'short' }).format(date);
+function formatDeliveryDate(date: Date, dateLocale: string): string {
+  return new Intl.DateTimeFormat(dateLocale, { weekday: 'short', day: 'numeric', month: 'short' }).format(date);
 }
 
 export default function CheckoutPage() {
@@ -231,6 +244,8 @@ export default function CheckoutPage() {
   const locale = (process.env.NEXT_PUBLIC_LOCALE ?? 'de') as string;
   const t = TRANSLATIONS[locale] ?? TRANSLATIONS.de;
   const deliveryPrices = DELIVERY_PRICES[locale] ?? DEFAULT_DELIVERY_PRICE;
+  const deMarketDateLocale = DE_MARKET_DATE_LOCALES[locale];
+  const isDeMarket = deMarketDateLocale !== undefined;
 
   const [deliveryMethod, setDeliveryMethod] = useState<'standard' | 'express'>('standard');
   const [paymentMethod, setPaymentMethod] = useState<'card' | 'paypal' | 'klarna' | 'googlepay' | 'applepay' | 'sepa'>('card');
@@ -249,12 +264,12 @@ export default function CheckoutPage() {
   }, []);
 
   const deliveryFee = total >= FREE_DELIVERY_THRESHOLD ? 0 : deliveryMethod === 'express' ? deliveryPrices.express : deliveryPrices.standard;
-  const fmt = (n: number) => IS_RO ? `${n.toFixed(2)} lei` : locale === 'de' ? `${n.toFixed(2).replace('.', ',')} €` : `€${n.toFixed(2)}`;
+  const fmt = (n: number) => IS_RO ? `${n.toFixed(2)} lei` : isDeMarket ? `${n.toFixed(2).replace('.', ',')} €` : `€${n.toFixed(2)}`;
   const orderTotal = total + deliveryFee;
 
   // Upper bound of the "Werktage" range read as a concrete, safer-to-promise date
-  const standardDeliveryDate = formatDeDeliveryDate(addBusinessDays(new Date(), 5));
-  const expressDeliveryDate = formatDeDeliveryDate(addBusinessDays(new Date(), 2));
+  const standardDeliveryDate = isDeMarket ? formatDeliveryDate(addBusinessDays(new Date(), 5), deMarketDateLocale) : '';
+  const expressDeliveryDate = isDeMarket ? formatDeliveryDate(addBusinessDays(new Date(), 2), deMarketDateLocale) : '';
 
   const inputClass =
     'w-full border border-[#E8DDD4] px-3 py-2.5 text-sm focus:border-[#C4704F] outline-none bg-white transition-colors placeholder:text-[#C4B8AE]';
@@ -424,8 +439,8 @@ export default function CheckoutPage() {
                   {(['standard', 'express'] as const).map(method => {
                     const isSelected = deliveryMethod === method;
                     const label = method === 'standard' ? t.standardDelivery : t.expressDelivery;
-                    const desc = locale === 'de'
-                      ? `Lieferung bis ${method === 'standard' ? standardDeliveryDate : expressDeliveryDate}`
+                    const desc = isDeMarket
+                      ? `${t.deliveryBy} ${method === 'standard' ? standardDeliveryDate : expressDeliveryDate}`
                       : (method === 'standard' ? t.standardDeliveryDesc : t.expressDeliveryDesc);
                     const price = method === 'standard'
                       ? (total >= FREE_DELIVERY_THRESHOLD ? t.free : fmt(deliveryPrices.standard))
@@ -523,13 +538,13 @@ export default function CheckoutPage() {
                       <span className="text-xs text-[#1A1410] font-medium">{t.payKlarna}</span>
                     </button>
 
-                    {locale === 'de' && (
+                    {isDeMarket && (
                       <button
                         type="button"
                         onClick={() => setPaymentMethod('sepa')}
                         className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'sepa' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
                       >
-                        <img src="/pay-sepa.svg" alt="SEPA-Lastschrift" className="h-7 w-auto" />
+                        <img src="/pay-sepa.svg" alt={t.paySepa} className="h-7 w-auto" />
                         <span className="text-xs text-[#1A1410] font-medium">{t.paySepa}</span>
                       </button>
                     )}
