@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, type InputHTMLAttributes, type ReactNode, type RefObject } from 'react';
 import Link from 'next/link';
 import { useCart } from '@/components/CartProvider';
 import { IS_RO } from '@/lib/i18n';
 import { pushEvent, pushEventOnce, pushConversionEvent } from '@/lib/analytics';
 import { sendOrder } from '@/lib/orders';
+import { smallImage } from '@/lib/image-variants';
 
 type CheckoutT = {
   title: string;
@@ -15,6 +16,7 @@ type CheckoutT = {
   lastName: string;
   email: string;
   phone: string;
+  optional: string;
   shipping: string;
   address: string;
   city: string;
@@ -26,6 +28,7 @@ type CheckoutT = {
   expressDelivery: string;
   expressDeliveryDesc: string;
   deliveryBy?: string;
+  change: string;
   free: string;
   payment: string;
   payCard: string;
@@ -36,10 +39,21 @@ type CheckoutT = {
   paySepa?: string;
   payOr: string;
   orderSummary: string;
+  showSummary: string;
+  hideSummary: string;
   subtotal: string;
   deliveryFee: string;
   total: string;
   placeOrder: string;
+  errRequired: string;
+  errEmail: string;
+  errPhone: string;
+  errPostal: string;
+  errSummary: string;
+  trustShipping: string;
+  trustRefund: string;
+  infoLink: string;
+  plzSource?: string;
   unavailableTitle: string;
   unavailableText: string;
   unavailableClose: string;
@@ -58,6 +72,7 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     lastName: 'Nachname',
     email: 'E-Mail-Adresse',
     phone: 'Telefonnummer',
+    optional: 'optional',
     shipping: 'Lieferadresse',
     address: 'Straße und Hausnummer',
     city: 'Stadt',
@@ -69,6 +84,7 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     expressDelivery: 'Expressversand',
     expressDeliveryDesc: '1–2 Werktage',
     deliveryBy: 'Lieferung bis',
+    change: 'ändern',
     free: 'Kostenlos',
     payment: 'Zahlungsmethode',
     payCard: 'Kreditkarte',
@@ -79,10 +95,21 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     paySepa: 'SEPA-Lastschrift',
     payOr: 'oder',
     orderSummary: 'Bestellübersicht',
+    showSummary: 'Bestellübersicht anzeigen',
+    hideSummary: 'Bestellübersicht ausblenden',
     subtotal: 'Zwischensumme',
     deliveryFee: 'Versandkosten',
     total: 'Gesamt',
     placeOrder: 'Zahlungspflichtig bestellen',
+    errRequired: 'Bitte füllen Sie dieses Feld aus.',
+    errEmail: 'Bitte geben Sie eine gültige E-Mail-Adresse ein.',
+    errPhone: 'Bitte geben Sie eine gültige Telefonnummer ein.',
+    errPostal: 'Bitte geben Sie eine gültige Postleitzahl ein.',
+    errSummary: 'Bitte prüfen Sie die markierten Felder.',
+    trustShipping: 'Kostenloser Versand ab {amount}',
+    trustRefund: 'Rückerstattung innerhalb von 3 Werktagen nach Wareneingang',
+    infoLink: 'Versand, Zahlung & Rückgabe',
+    plzSource: 'PLZ-Daten',
     unavailableTitle: 'Zahlung vorübergehend nicht möglich',
     unavailableText: 'Wir nehmen derzeit keine Online-Zahlungen entgegen. Bitte kontaktieren Sie uns, um Ihre Bestellung abzuschließen.',
     unavailableClose: 'Schließen',
@@ -98,6 +125,7 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     lastName: 'Etternavn',
     email: 'E-postadresse',
     phone: 'Telefonnummer',
+    optional: 'valgfritt',
     shipping: 'Leveringsadresse',
     address: 'Gate og husnummer',
     city: 'By',
@@ -108,6 +136,7 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     standardDeliveryDesc: '3–5 virkedager',
     expressDelivery: 'Expresslevering',
     expressDeliveryDesc: '1–2 virkedager',
+    change: 'endre',
     free: 'Gratis',
     payment: 'Betalingsmetode',
     payCard: 'Kredittkort',
@@ -117,10 +146,20 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     payApplePay: 'Apple Pay',
     payOr: 'eller',
     orderSummary: 'Ordresammendrag',
+    showSummary: 'Vis ordresammendrag',
+    hideSummary: 'Skjul ordresammendrag',
     subtotal: 'Delsum',
     deliveryFee: 'Fraktkostnad',
     total: 'Totalt',
     placeOrder: 'Legg inn bestilling',
+    errRequired: 'Vennligst fyll ut dette feltet.',
+    errEmail: 'Vennligst oppgi en gyldig e-postadresse.',
+    errPhone: 'Vennligst oppgi et gyldig telefonnummer.',
+    errPostal: 'Vennligst oppgi et gyldig postnummer.',
+    errSummary: 'Vennligst sjekk de markerte feltene.',
+    trustShipping: 'Gratis frakt fra {amount}',
+    trustRefund: 'Refusjon innen 3 virkedager etter at vi har mottatt varene',
+    infoLink: 'Frakt, betaling og retur',
     unavailableTitle: 'Betaling midlertidig utilgjengelig',
     unavailableText: 'Vi tar for øyeblikket ikke imot nettbetalinger. Vennligst kontakt oss for å fullføre bestillingen.',
     unavailableClose: 'Lukk',
@@ -136,6 +175,7 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     lastName: 'Nume de familie',
     email: 'Adresă de email',
     phone: 'Număr de telefon',
+    optional: 'opțional',
     shipping: 'Adresă de livrare',
     address: 'Stradă și număr',
     city: 'Oraș',
@@ -146,6 +186,7 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     standardDeliveryDesc: '3–5 zile lucrătoare',
     expressDelivery: 'Livrare express',
     expressDeliveryDesc: '1–2 zile lucrătoare',
+    change: 'modifică',
     free: 'Gratuit',
     payment: 'Metodă de plată',
     payCard: 'Card de credit',
@@ -155,10 +196,20 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     payApplePay: 'Apple Pay',
     payOr: 'sau',
     orderSummary: 'Rezumat comandă',
+    showSummary: 'Afișează rezumatul comenzii',
+    hideSummary: 'Ascunde rezumatul comenzii',
     subtotal: 'Subtotal',
     deliveryFee: 'Cost livrare',
     total: 'Total',
     placeOrder: 'Plasează comanda',
+    errRequired: 'Vă rugăm să completați acest câmp.',
+    errEmail: 'Vă rugăm să introduceți o adresă de email validă.',
+    errPhone: 'Vă rugăm să introduceți un număr de telefon valid.',
+    errPostal: 'Vă rugăm să introduceți un cod poștal valid.',
+    errSummary: 'Vă rugăm să verificați câmpurile marcate.',
+    trustShipping: 'Transport gratuit de la {amount}',
+    trustRefund: 'Rambursare în 3 zile lucrătoare de la primirea produselor returnate',
+    infoLink: 'Livrare, plată și retur',
     unavailableTitle: 'Plata temporar indisponibilă',
     unavailableText: 'În prezent nu acceptăm plăți online. Vă rugăm să ne contactați pentru a finaliza comanda.',
     unavailableClose: 'Închide',
@@ -174,6 +225,7 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     lastName: 'Фамилия',
     email: 'Электронная почта',
     phone: 'Номер телефона',
+    optional: 'необязательно',
     shipping: 'Адрес доставки',
     address: 'Улица и номер дома',
     city: 'Город',
@@ -185,6 +237,7 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     expressDelivery: 'Экспресс-доставка',
     expressDeliveryDesc: '1–2 рабочих дня',
     deliveryBy: 'Доставка до',
+    change: 'изменить',
     free: 'Бесплатно',
     payment: 'Способ оплаты',
     payCard: 'Банковская карта',
@@ -195,10 +248,21 @@ const TRANSLATIONS: Record<string, CheckoutT> = {
     paySepa: 'SEPA-списание',
     payOr: 'или',
     orderSummary: 'Состав заказа',
+    showSummary: 'Показать состав заказа',
+    hideSummary: 'Скрыть состав заказа',
     subtotal: 'Сумма товаров',
     deliveryFee: 'Доставка',
     total: 'Итого',
     placeOrder: 'Заказать с обязательством оплаты',
+    errRequired: 'Пожалуйста, заполните это поле.',
+    errEmail: 'Введите корректный адрес электронной почты.',
+    errPhone: 'Введите корректный номер телефона.',
+    errPostal: 'Введите корректный почтовый индекс.',
+    errSummary: 'Проверьте отмеченные поля.',
+    trustShipping: 'Бесплатная доставка от {amount}',
+    trustRefund: 'Возврат денег в течение 3 рабочих дней после получения товара',
+    infoLink: 'Доставка, оплата и возврат',
+    plzSource: 'Почтовые индексы',
     unavailableTitle: 'Оплата временно недоступна',
     unavailableText: 'В данный момент мы не принимаем онлайн-платежи. Пожалуйста, свяжитесь с нами для завершения заказа.',
     unavailableClose: 'Закрыть',
@@ -224,6 +288,17 @@ const DE_MARKET_DATE_LOCALES: Record<string, string> = {
   ru: 'ru-RU',
 };
 
+type Field = 'firstName' | 'lastName' | 'email' | 'phone' | 'street' | 'postalCode' | 'city';
+type PaymentMethod = 'card' | 'paypal' | 'klarna' | 'googlepay' | 'applepay' | 'sepa';
+
+// Page order: validation scrolls to the first invalid field in this order
+const FIELD_ORDER: Field[] = ['firstName', 'lastName', 'email', 'phone', 'street', 'postalCode', 'city'];
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const POSTAL_RE = /^(?=.*\d)[A-Za-z0-9][A-Za-z0-9 -]{2,9}$/;
+
+// public/plz-de.json (built by scripts/build-plz.mjs): one town, or several to pick from
+type PlzMap = Record<string, string | string[]>;
+
 function addBusinessDays(from: Date, days: number): Date {
   const date = new Date(from);
   let added = 0;
@@ -239,6 +314,37 @@ function formatDeliveryDate(date: Date, dateLocale: string): string {
   return new Intl.DateTimeFormat(dateLocale, { weekday: 'short', day: 'numeric', month: 'short' }).format(date);
 }
 
+// 16px on phones so iOS Safari doesn't zoom into the field on focus
+const inputClass =
+  'w-full border px-3 py-2.5 text-base sm:text-sm outline-none transition-colors placeholder:text-[#C4B8AE]';
+const inputOkClass = 'border-[#E8DDD4] focus:border-[#C4704F] bg-white';
+const inputErrorClass = 'border-[#D93025] focus:border-[#D93025] bg-[#FFF8F7]';
+const labelClass = 'block text-xs font-medium text-[#6B5B4E] uppercase tracking-wider mb-1';
+
+type CheckoutFieldProps = InputHTMLAttributes<HTMLInputElement> & {
+  id: string;
+  label: ReactNode;
+  error?: string;
+  inputRef: RefObject<HTMLInputElement | null>;
+};
+
+function CheckoutField({ id, label, error, inputRef, ...props }: CheckoutFieldProps) {
+  return (
+    <div>
+      <label htmlFor={id} className={labelClass}>{label}</label>
+      <input
+        {...props}
+        id={id}
+        ref={inputRef}
+        aria-invalid={error ? true : undefined}
+        aria-describedby={error ? `${id}-error` : undefined}
+        className={`${inputClass} ${error ? inputErrorClass : inputOkClass}`}
+      />
+      {error && <p id={`${id}-error`} className="mt-1 text-xs text-[#C5221F]">{error}</p>}
+    </div>
+  );
+}
+
 export default function CheckoutPage() {
   const { items, total } = useCart();
   const locale = (process.env.NEXT_PUBLIC_LOCALE ?? 'de') as string;
@@ -248,7 +354,11 @@ export default function CheckoutPage() {
   const isDeMarket = deMarketDateLocale !== undefined;
 
   const [deliveryMethod, setDeliveryMethod] = useState<'standard' | 'express'>('standard');
-  const [paymentMethod, setPaymentMethod] = useState<'card' | 'paypal' | 'klarna' | 'googlepay' | 'applepay' | 'sepa'>('card');
+  const [deliveryOpen, setDeliveryOpen] = useState(false);
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('card');
+  const [summaryOpen, setSummaryOpen] = useState(false);
+  const [errors, setErrors] = useState<Partial<Record<Field, string>>>({});
+  const [cityOptions, setCityOptions] = useState<string[]>([]);
   const [showPopup, setShowPopup] = useState(false);
   const firstNameRef = useRef<HTMLInputElement>(null);
   const lastNameRef = useRef<HTMLInputElement>(null);
@@ -257,6 +367,19 @@ export default function CheckoutPage() {
   const streetRef = useRef<HTMLInputElement>(null);
   const postalRef = useRef<HTMLInputElement>(null);
   const cityRef = useRef<HTMLInputElement>(null);
+  const plzMapRef = useRef<Promise<PlzMap | null> | null>(null);
+  // Only overwrite the city we filled in ourselves, never one the customer typed
+  const cityAutoFilledRef = useRef(false);
+
+  const fieldRefs: Record<Field, typeof firstNameRef> = {
+    firstName: firstNameRef,
+    lastName: lastNameRef,
+    email: emailRef,
+    phone: phoneRef,
+    street: streetRef,
+    postalCode: postalRef,
+    city: cityRef,
+  };
 
   useEffect(() => {
     pushEventOnce('begin_checkout', { currency: 'EUR', value: total, items: items.map(i => ({ item_id: i.articleKey, item_name: i.name, price: i.price, quantity: i.qty })) });
@@ -265,20 +388,92 @@ export default function CheckoutPage() {
 
   const deliveryFee = total >= FREE_DELIVERY_THRESHOLD ? 0 : deliveryMethod === 'express' ? deliveryPrices.express : deliveryPrices.standard;
   const fmt = (n: number) => IS_RO ? `${n.toFixed(2)} lei` : isDeMarket ? `${n.toFixed(2).replace('.', ',')} €` : `€${n.toFixed(2)}`;
+  const fmtWhole = (n: number) => IS_RO ? `${n} lei` : isDeMarket ? `${n} €` : `€${n}`;
   const orderTotal = total + deliveryFee;
+  const hasErrors = Object.keys(errors).length > 0;
 
   // Upper bound of the "Werktage" range read as a concrete, safer-to-promise date
   const standardDeliveryDate = isDeMarket ? formatDeliveryDate(addBusinessDays(new Date(), 5), deMarketDateLocale) : '';
   const expressDeliveryDate = isDeMarket ? formatDeliveryDate(addBusinessDays(new Date(), 2), deMarketDateLocale) : '';
 
-  const inputClass =
-    'w-full border border-[#E8DDD4] px-3 py-2.5 text-sm focus:border-[#C4704F] outline-none bg-white transition-colors placeholder:text-[#C4B8AE]';
-  const labelClass = 'block text-xs font-medium text-[#6B5B4E] uppercase tracking-wider mb-1';
   const sectionClass = 'mb-8';
   const sectionTitleClass = 'text-base font-semibold text-[#1A1410] mb-4 pb-2 border-b border-[#E8DDD4]';
+  const stepClass = 'inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#C4704F] text-white text-xs font-bold mr-2';
+
+  const clearError = (field: Field) => {
+    setErrors(prev => {
+      if (!prev[field]) return prev;
+      const next = { ...prev };
+      delete next[field];
+      return next;
+    });
+  };
+
+  const validate = () => {
+    const next: Partial<Record<Field, string>> = {};
+    for (const field of FIELD_ORDER) {
+      const value = fieldRefs[field].current?.value.trim() ?? '';
+      if (!value) {
+        if (field !== 'phone') next[field] = t.errRequired;
+      } else if (field === 'email' && !EMAIL_RE.test(value)) {
+        next[field] = t.errEmail;
+      } else if (field === 'phone' && value.replace(/\D/g, '').length < 6) {
+        next[field] = t.errPhone;
+      } else if (field === 'postalCode' && !POSTAL_RE.test(value)) {
+        next[field] = t.errPostal;
+      }
+    }
+    return next;
+  };
+
+  const loadPlzMap = () => {
+    plzMapRef.current ??= fetch('/plz-de.json')
+      .then(res => (res.ok ? res.json() : null))
+      .catch(() => null);
+    return plzMapRef.current;
+  };
+
+  const lookupCity = async (plz: string) => {
+    if (!isDeMarket) return;
+    if (!/^\d{5}$/.test(plz)) {
+      setCityOptions([]);
+      return;
+    }
+    const map = await loadPlzMap();
+    const city = cityRef.current;
+    // The customer may have kept typing while the lookup table loaded
+    if (!map || !city || postalRef.current?.value.trim() !== plz) return;
+    const hit = map[plz];
+    const canOverwrite = !city.value.trim() || cityAutoFilledRef.current;
+    if (typeof hit === 'string') {
+      setCityOptions([]);
+      if (canOverwrite) {
+        city.value = hit;
+        cityAutoFilledRef.current = true;
+        clearError('city');
+      }
+    } else {
+      setCityOptions(hit ?? []);
+      if (canOverwrite && cityAutoFilledRef.current) {
+        city.value = '';
+        cityAutoFilledRef.current = false;
+      }
+    }
+  };
 
   const handlePlaceOrder = (e: React.FormEvent) => {
     e.preventDefault();
+    const nextErrors = validate();
+    setErrors(nextErrors);
+    const firstInvalid = FIELD_ORDER.find(field => nextErrors[field]);
+    if (firstInvalid) {
+      const input = fieldRefs[firstInvalid].current;
+      input?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      input?.focus({ preventScroll: true });
+      pushEvent('checkout_validation_error', { field: firstInvalid, count: Object.keys(nextErrors).length });
+      return;
+    }
+
     sendOrder({
       source: 'checkout',
       name: firstNameRef.current?.value ?? null,
@@ -307,6 +502,129 @@ export default function CheckoutPage() {
     );
     setShowPopup(true);
   };
+
+  const renderPaymentOption = (method: PaymentMethod, icon: string, label: string) => {
+    const isSelected = paymentMethod === method;
+    return (
+      <button
+        key={method}
+        type="button"
+        aria-pressed={isSelected}
+        onClick={() => setPaymentMethod(method)}
+        className={`relative flex flex-col items-center justify-center gap-2 min-h-[88px] py-4 px-2 border transition-colors ${isSelected ? 'border-[#C4704F] bg-[#FFF5F0] ring-1 ring-[#C4704F]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
+      >
+        {isSelected && (
+          <span className="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-[#C4704F] flex items-center justify-center">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20 6L9 17l-5-5" />
+            </svg>
+          </span>
+        )}
+        <img src={icon} alt="" draggable={false} className="h-7 w-auto pointer-events-none select-none" />
+        <span className="text-xs text-[#1A1410] font-medium pointer-events-none">{label}</span>
+      </button>
+    );
+  };
+
+  const renderSummaryBody = () => (
+    <>
+      <div className="space-y-4 mb-5">
+        {items.length === 0 ? (
+          <p className="text-sm text-[#9C8A7E]">{t.backToCart}</p>
+        ) : (
+          items.map(item => (
+            <div key={item.id} className="flex gap-3">
+              <Link href={`/product/${item.id}`} className="relative w-14 h-14 bg-[#F5F0EB] flex-shrink-0 overflow-hidden block">
+                {item.image ? (
+                  <img src={smallImage(item.image)} alt={item.name} className="w-full h-full object-cover" />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4B8AE" strokeWidth="1.5">
+                      <circle cx="12" cy="12" r="9" />
+                    </svg>
+                  </div>
+                )}
+                {item.qty > 1 && (
+                  <span className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-[#C4704F] text-white text-[10px] rounded-full flex items-center justify-center font-bold">
+                    {item.qty}
+                  </span>
+                )}
+              </Link>
+              <div className="flex-1 min-w-0">
+                <Link href={`/product/${item.id}`} className="text-sm text-[#1A1410] truncate hover:text-[#C4704F] transition-colors block">{item.name}</Link>
+                <p className="text-xs text-[#9C8A7E]">x{item.qty}</p>
+              </div>
+              <p className="text-sm font-medium text-[#1A1410] flex-shrink-0">
+                {fmt(item.price * item.qty)}
+              </p>
+            </div>
+          ))
+        )}
+      </div>
+
+      <div className="border-t border-[#E8DDD4] pt-4 space-y-2">
+        <div className="flex justify-between text-sm text-[#6B5B4E]">
+          <span>{t.subtotal}</span>
+          <span>{fmt(total)}</span>
+        </div>
+        <div className="flex justify-between text-sm text-[#6B5B4E]">
+          <span>{t.deliveryFee}</span>
+          <span className={deliveryFee === 0 ? 'text-[#6B8F71] font-medium' : ''}>
+            {deliveryFee === 0 ? t.free : fmt(deliveryFee)}
+          </span>
+        </div>
+        <div className="flex justify-between text-base font-semibold text-[#1A1410] pt-2 border-t border-[#E8DDD4]">
+          <span>{t.total}</span>
+          <span>{fmt(orderTotal)}</span>
+        </div>
+      </div>
+    </>
+  );
+
+  const renderPlaceOrder = () => (
+    <>
+      {hasErrors && (
+        <p role="alert" className="mt-5 text-sm text-[#C5221F]">{t.errSummary}</p>
+      )}
+      <button
+        type="submit"
+        className="w-full mt-5 bg-[#C4704F] hover:bg-[#A85A3A] text-white py-4 text-sm font-semibold uppercase tracking-wider transition-colors"
+      >
+        {t.placeOrder}
+      </button>
+
+      {/* Trust: only what the delivery page already promises */}
+      <ul className="mt-4 space-y-1.5 text-xs text-[#6B5B4E]">
+        <li className="flex items-start gap-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B8F71" strokeWidth="2" className="flex-shrink-0 mt-0.5">
+            <rect x="1" y="3" width="15" height="13" /><path d="M16 8h4l3 3v5h-7V8z" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" />
+          </svg>
+          {t.trustShipping.replace('{amount}', fmtWhole(FREE_DELIVERY_THRESHOLD))}
+        </li>
+        <li className="flex items-start gap-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B8F71" strokeWidth="2" className="flex-shrink-0 mt-0.5">
+            <polyline points="1 4 1 10 7 10" /><path d="M3.51 15a9 9 0 102.13-9.36L1 10" />
+          </svg>
+          {t.trustRefund}
+        </li>
+        <li className="flex items-start gap-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B8F71" strokeWidth="2" className="flex-shrink-0 mt-0.5">
+            <rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0110 0v4" />
+          </svg>
+          {t.secure} · SSL
+        </li>
+      </ul>
+      <Link
+        href="/delivery"
+        target="_blank"
+        className="inline-block mt-3 text-xs text-[#9C8A7E] underline underline-offset-2 hover:text-[#C4704F] transition-colors"
+      >
+        {t.infoLink}
+      </Link>
+    </>
+  );
+
+  const visibleDeliveryMethods = deliveryOpen ? (['standard', 'express'] as const) : [deliveryMethod];
 
   return (
     <>
@@ -362,11 +680,11 @@ export default function CheckoutPage() {
           </div>
         </header>
 
-        <div className="max-w-6xl mx-auto px-4 py-10">
+        <div className="max-w-6xl mx-auto px-4 py-6 lg:py-10">
           {/* Back link */}
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 text-sm text-[#9C8A7E] hover:text-[#C4704F] transition-colors mb-8"
+            className="inline-flex items-center gap-1.5 text-sm text-[#9C8A7E] hover:text-[#C4704F] transition-colors mb-6 lg:mb-8"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M19 12H5M12 19l-7-7 7-7" />
@@ -374,69 +692,123 @@ export default function CheckoutPage() {
             {t.backToCart}
           </Link>
 
-          <h1 className="text-2xl font-light text-[#1A1410] mb-8">{t.title}</h1>
+          <h1 className="text-2xl font-light text-[#1A1410] mb-6 lg:mb-8">{t.title}</h1>
 
-          <form onSubmit={handlePlaceOrder} className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-8">
+          <form noValidate onSubmit={handlePlaceOrder} className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-6 lg:gap-8">
+            {/* Mobile: collapsed summary on top, the order button lives below the payment step */}
+            <div className="lg:hidden bg-white border border-[#E8DDD4]">
+              <button
+                type="button"
+                onClick={() => setSummaryOpen(open => !open)}
+                aria-expanded={summaryOpen}
+                className="w-full flex items-center justify-between gap-3 px-4 py-3.5 text-sm"
+              >
+                <span className="flex items-center gap-2 text-[#C4704F] font-medium">
+                  {summaryOpen ? t.hideSummary : t.showSummary}
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={`transition-transform ${summaryOpen ? 'rotate-180' : ''}`}>
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </span>
+                <span className="font-semibold text-[#1A1410]">{fmt(orderTotal)}</span>
+              </button>
+              {summaryOpen && (
+                <div className="px-4 pt-4 pb-4 border-t border-[#E8DDD4]">{renderSummaryBody()}</div>
+              )}
+            </div>
+
             {/* Left: Form */}
-            <div className="order-2 lg:order-none lg:col-start-1 lg:row-start-1">
+            <div className="lg:col-start-1 lg:row-start-1">
               {/* Contact */}
               <section className={sectionClass}>
                 <h2 className={sectionTitleClass}>
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#C4704F] text-white text-xs font-bold mr-2">1</span>
+                  <span className={stepClass}>1</span>
                   {t.contact}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className={labelClass}>{t.firstName}</label>
-                    <input type="text" required ref={firstNameRef} className={inputClass} autoComplete="given-name" />
+                  <div className="grid grid-cols-2 gap-3 sm:contents">
+                    <CheckoutField
+                      id="checkout-firstName" label={t.firstName} error={errors.firstName} inputRef={firstNameRef}
+                      onInput={() => clearError('firstName')}
+                      type="text" required autoComplete="given-name"
+                    />
+                    <CheckoutField
+                      id="checkout-lastName" label={t.lastName} error={errors.lastName} inputRef={lastNameRef}
+                      onInput={() => clearError('lastName')}
+                      type="text" required autoComplete="family-name"
+                    />
                   </div>
-                  <div>
-                    <label className={labelClass}>{t.lastName}</label>
-                    <input type="text" required ref={lastNameRef} className={inputClass} autoComplete="family-name" />
-                  </div>
-                  <div>
-                    <label className={labelClass}>{t.email}</label>
-                    <input type="email" required ref={emailRef} className={inputClass} autoComplete="email" />
-                  </div>
-                  <div>
-                    <label className={labelClass}>{t.phone}</label>
-                    <input type="tel" required ref={phoneRef} className={inputClass} autoComplete="tel" />
-                  </div>
+                  <CheckoutField
+                    id="checkout-email" label={t.email} error={errors.email} inputRef={emailRef}
+                    onInput={() => clearError('email')}
+                    type="email" required autoComplete="email"
+                  />
+                  <CheckoutField
+                    id="checkout-phone"
+                    label={<>{t.phone} <span className="normal-case tracking-normal font-normal text-[#9C8A7E]">({t.optional})</span></>}
+                    error={errors.phone} inputRef={phoneRef}
+                    onInput={() => clearError('phone')}
+                    type="tel" autoComplete="tel"
+                  />
                 </div>
               </section>
 
               {/* Shipping */}
               <section className={sectionClass}>
                 <h2 className={sectionTitleClass}>
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#C4704F] text-white text-xs font-bold mr-2">2</span>
+                  <span className={stepClass}>2</span>
                   {t.shipping}
                 </h2>
                 <div className="grid grid-cols-1 gap-4">
-                  <div>
-                    <label className={labelClass}>{t.address}</label>
-                    <input type="text" required ref={streetRef} className={inputClass} autoComplete="street-address" />
+                  <CheckoutField
+                    id="checkout-street" label={t.address} error={errors.street} inputRef={streetRef}
+                    onInput={() => clearError('street')}
+                    type="text" required autoComplete="street-address"
+                  />
+                  <div className="grid grid-cols-[2fr_3fr] gap-3 sm:gap-4">
+                    <CheckoutField
+                      id="checkout-postalCode" label={t.postalCode} error={errors.postalCode} inputRef={postalRef}
+                      onFocus={isDeMarket ? () => { loadPlzMap(); } : undefined}
+                      onInput={e => {
+                        clearError('postalCode');
+                        lookupCity(e.currentTarget.value.trim());
+                      }}
+                      type="text" required autoComplete="postal-code" inputMode={isDeMarket ? 'numeric' : undefined}
+                    />
+                    <CheckoutField
+                      id="checkout-city" label={t.city} error={errors.city} inputRef={cityRef}
+                      onInput={() => {
+                        clearError('city');
+                        cityAutoFilledRef.current = false;
+                      }}
+                      type="text" required autoComplete="address-level2"
+                      list={cityOptions.length > 0 ? 'checkout-city-options' : undefined}
+                    />
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className={labelClass}>{t.postalCode}</label>
-                      <input type="text" required ref={postalRef} className={inputClass} autoComplete="postal-code" />
-                    </div>
-                    <div>
-                      <label className={labelClass}>{t.city}</label>
-                      <input type="text" required ref={cityRef} className={inputClass} autoComplete="address-level2" />
-                    </div>
-                  </div>
+                  <datalist id="checkout-city-options">
+                    {cityOptions.map(city => <option key={city} value={city} />)}
+                  </datalist>
                 </div>
               </section>
 
-              {/* Delivery method */}
+              {/* Delivery method: standard is preselected, so it stays one line until "change" */}
               <section className={sectionClass}>
-                <h2 className={sectionTitleClass}>
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#C4704F] text-white text-xs font-bold mr-2">3</span>
-                  {t.delivery}
-                </h2>
+                <div className={`flex items-center justify-between ${sectionTitleClass}`}>
+                  <h2 className="flex items-center">
+                    <span className={stepClass}>3</span>
+                    {t.delivery}
+                  </h2>
+                  {!deliveryOpen && (
+                    <button
+                      type="button"
+                      onClick={() => setDeliveryOpen(true)}
+                      className="text-xs font-normal text-[#C4704F] underline underline-offset-2 px-1 py-1"
+                    >
+                      {t.change}
+                    </button>
+                  )}
+                </div>
                 <div className="space-y-3">
-                  {(['standard', 'express'] as const).map(method => {
+                  {visibleDeliveryMethods.map(method => {
                     const isSelected = deliveryMethod === method;
                     const label = method === 'standard' ? t.standardDelivery : t.expressDelivery;
                     const desc = isDeMarket
@@ -449,6 +821,7 @@ export default function CheckoutPage() {
                     return (
                       <label
                         key={method}
+                        onClick={deliveryOpen ? undefined : () => setDeliveryOpen(true)}
                         className={`flex items-center justify-between px-4 py-4 border cursor-pointer transition-colors ${isSelected ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
                       >
                         <div className="flex items-center gap-3">
@@ -478,30 +851,15 @@ export default function CheckoutPage() {
               </section>
 
               {/* Payment */}
-              <section className={sectionClass}>
+              <section>
                 <h2 className={sectionTitleClass}>
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#C4704F] text-white text-xs font-bold mr-2">4</span>
+                  <span className={stepClass}>4</span>
                   {t.payment}
                 </h2>
                 <div className="space-y-3">
-                  <div className="flex gap-3">
-                    <button
-                      type="button"
-                      onClick={() => setPaymentMethod('googlepay')}
-                      className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'googlepay' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
-                    >
-                      <img src="/pay-google.svg" alt="Google Pay" className="h-7 w-auto" />
-                      <span className="text-xs text-[#1A1410] font-medium">{t.payGooglePay}</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setPaymentMethod('applepay')}
-                      className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'applepay' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
-                    >
-                      <img src="/pay-apple.svg" alt="Apple Pay" className="h-7 w-auto" />
-                      <span className="text-xs text-[#1A1410] font-medium">{t.payApplePay}</span>
-                    </button>
+                  <div className="grid grid-cols-2 gap-3">
+                    {renderPaymentOption('googlepay', '/pay-google.svg', t.payGooglePay)}
+                    {renderPaymentOption('applepay', '/pay-apple.svg', t.payApplePay)}
                   </div>
 
                   <div className="flex items-center gap-3">
@@ -510,133 +868,38 @@ export default function CheckoutPage() {
                     <div className="flex-1 h-px bg-[#E8DDD4]" />
                   </div>
 
-                  <div className="flex gap-3">
-                    <button
-                      type="button"
-                      onClick={() => setPaymentMethod('card')}
-                      className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'card' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
-                    >
-                      <img src="/pay-card.svg" alt="Card" className="h-7 w-auto" />
-                      <span className="text-xs text-[#1A1410] font-medium">{t.payCard}</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setPaymentMethod('paypal')}
-                      className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'paypal' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
-                    >
-                      <img src="/pay-paypal.svg" alt="PayPal" className="h-7 w-auto" />
-                      <span className="text-xs text-[#1A1410] font-medium">{t.payPaypal}</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={() => setPaymentMethod('klarna')}
-                      className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'klarna' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
-                    >
-                      <img src="/pay-klarna.svg" alt="Klarna" className="h-7 w-auto" />
-                      <span className="text-xs text-[#1A1410] font-medium">{t.payKlarna}</span>
-                    </button>
-
-                    {isDeMarket && (
-                      <button
-                        type="button"
-                        onClick={() => setPaymentMethod('sepa')}
-                        className={`flex-1 flex flex-col items-center gap-2 py-4 px-2 border transition-colors ${paymentMethod === 'sepa' ? 'border-[#C4704F] bg-[#FFF5F0]' : 'border-[#E8DDD4] bg-white hover:border-[#C4B8AE]'}`}
-                      >
-                        <img src="/pay-sepa.svg" alt={t.paySepa} className="h-7 w-auto" />
-                        <span className="text-xs text-[#1A1410] font-medium">{t.paySepa}</span>
-                      </button>
-                    )}
+                  <div className={`grid gap-3 ${isDeMarket ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-3'}`}>
+                    {renderPaymentOption('card', '/pay-card.svg', t.payCard)}
+                    {renderPaymentOption('paypal', '/pay-paypal.svg', t.payPaypal)}
+                    {renderPaymentOption('klarna', '/pay-klarna.svg', t.payKlarna)}
+                    {isDeMarket && renderPaymentOption('sepa', '/pay-sepa.svg', t.paySepa ?? '')}
                   </div>
                 </div>
               </section>
             </div>
 
-            {/* Right: Order summary */}
-            <div className="order-1 lg:order-none lg:col-start-2 lg:row-start-1 lg:sticky lg:top-6 h-fit">
+            {/* Mobile: review + order button right after the last step */}
+            <div className="lg:hidden bg-white border border-[#E8DDD4] p-5">
+              <h2 className="text-base font-semibold text-[#1A1410] mb-5">{t.orderSummary}</h2>
+              {renderSummaryBody()}
+              {renderPlaceOrder()}
+            </div>
+
+            {/* Desktop: sticky order summary */}
+            <div className="hidden lg:block lg:col-start-2 lg:row-start-1 lg:sticky lg:top-6 h-fit">
               <div className="bg-white border border-[#E8DDD4] p-6">
                 <h2 className="text-base font-semibold text-[#1A1410] mb-5">{t.orderSummary}</h2>
-
-                {/* Items */}
-                <div className="space-y-4 mb-5">
-                  {items.length === 0 ? (
-                    <p className="text-sm text-[#9C8A7E]">{t.backToCart}</p>
-                  ) : (
-                    items.map(item => (
-                      <div key={item.id} className="flex gap-3">
-                        <Link href={`/product/${item.id}`} className="relative w-14 h-14 bg-[#F5F0EB] flex-shrink-0 overflow-hidden block">
-                          {item.image ? (
-                            <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
-                          ) : (
-                            <div className="w-full h-full flex items-center justify-center">
-                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4B8AE" strokeWidth="1.5">
-                                <circle cx="12" cy="12" r="9" />
-                              </svg>
-                            </div>
-                          )}
-                          {item.qty > 1 && (
-                            <span className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-[#C4704F] text-white text-[10px] rounded-full flex items-center justify-center font-bold">
-                              {item.qty}
-                            </span>
-                          )}
-                        </Link>
-                        <div className="flex-1 min-w-0">
-                          <Link href={`/product/${item.id}`} className="text-sm text-[#1A1410] truncate hover:text-[#C4704F] transition-colors block">{item.name}</Link>
-                          <p className="text-xs text-[#9C8A7E]">x{item.qty}</p>
-                        </div>
-                        <p className="text-sm font-medium text-[#1A1410] flex-shrink-0">
-                          {fmt(item.price * item.qty)}
-                        </p>
-                      </div>
-                    ))
-                  )}
-                </div>
-
-                <div className="border-t border-[#E8DDD4] pt-4 space-y-2">
-                  <div className="flex justify-between text-sm text-[#6B5B4E]">
-                    <span>{t.subtotal}</span>
-                    <span>{fmt(total)}</span>
-                  </div>
-                  <div className="flex justify-between text-sm text-[#6B5B4E]">
-                    <span>{t.deliveryFee}</span>
-                    <span className={deliveryFee === 0 ? 'text-[#6B8F71] font-medium' : ''}>
-                      {deliveryFee === 0 ? t.free : fmt(deliveryFee)}
-                    </span>
-                  </div>
-                  <div className="flex justify-between text-base font-semibold text-[#1A1410] pt-2 border-t border-[#E8DDD4]">
-                    <span>{t.total}</span>
-                    <span>{fmt(orderTotal)}</span>
-                  </div>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full mt-6 bg-[#C4704F] hover:bg-[#A85A3A] text-white py-4 text-sm font-semibold uppercase tracking-wider transition-colors"
-                >
-                  {t.placeOrder}
-                </button>
-
-                {/* Trust badges */}
-                <div className="flex items-center justify-center gap-4 mt-4">
-                  <div className="flex items-center gap-1 text-[10px] text-[#9C8A7E]">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <rect x="3" y="11" width="18" height="11" rx="2" />
-                      <path d="M7 11V7a5 5 0 0110 0v4" />
-                    </svg>
-                    SSL
-                  </div>
-                  <div className="w-px h-3 bg-[#E8DDD4]" />
-                  <div className="flex items-center gap-1 text-[10px] text-[#9C8A7E]">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                    </svg>
-                    {t.secure}
-                  </div>
-                </div>
+                {renderSummaryBody()}
+                {renderPlaceOrder()}
               </div>
             </div>
           </form>
+
+          {isDeMarket && t.plzSource && (
+            <p className="mt-10 text-[10px] text-[#C4B8AE]">
+              {t.plzSource}: <a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer" className="underline">GeoNames</a> (CC BY 4.0)
+            </p>
+          )}
         </div>
       </div>
     </>
