@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { fmtPrice } from '@/lib/i18n';
+import { smallImage } from '@/lib/image-variants';
 
 type SimilarItem = {
   id: number;
@@ -60,7 +61,7 @@ export default function SimilarProducts({ title, items }: { title: string; items
           >
             <div className="relative bg-white overflow-hidden aspect-square">
               <div className="w-full h-full group-hover:scale-[1.02] transition-transform duration-300">
-                <img src={item.image} alt={item.name} className="w-full h-full object-contain p-3" />
+                <img src={smallImage(item.image)} alt={item.name} loading="lazy" decoding="async" className="w-full h-full object-contain p-3" />
               </div>
               {item.oldPrice > 0 && (
                 <span className="absolute top-2 right-2 bg-[#C4704F] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-sm">

@@ -66,11 +66,11 @@ export default function HeroSection({ t }: Props) {
             <div className="relative flex-none h-[min(100vw,60svh)] landscape:h-auto landscape:lg:aspect-auto landscape:lg:col-start-2 landscape:lg:row-start-1 sq:order-first sq:!h-[calc(100svh-var(--header-h))] sq:w-full">
                <div className="absolute inset-0">
                   <Image
-                     src="/hero-banner.png"
+                     src="/hero-banner.webp"
                      alt={t.bannerTitle}
                      fill
                      className="object-cover sq:object-contain sq:object-right"
-                     priority
+                     preload
                   />
                   <div className="landscape:lg:hidden sq:!flex absolute top-0 left-0 w-[70%] h-[40%] flex flex-col justify-end px-5 pb-3 pointer-events-none">
                      <span

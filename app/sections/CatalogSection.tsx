@@ -7,6 +7,7 @@ import type { HomeT } from '@/lib/i18n';
 import { fmtPrice, IS_RO } from '@/lib/i18n';
 import type { ProductData } from '@/lib/products';
 import { useCart } from '@/components/CartProvider';
+import { smallImage } from '@/lib/image-variants';
 
 type AddItemFn = (item: { id: number; articleKey: string; name: string; price: number; image: string }) => void;
 type Props = { t: HomeT['catalog']; productImages: Record<string, string>; products: ProductData[]; productLinkPrefix?: string; priceOnly?: boolean; onAddItem?: AddItemFn };
@@ -75,8 +76,10 @@ function ProductCard({ product, addToCartLabel, badges, imageSrc, productLinkPre
          <div className="relative bg-white overflow-hidden aspect-square">
             <div className="w-full h-full group-hover:scale-[1.02] transition-transform duration-300">
                <img
-                  src={imageSrc}
+                  src={smallImage(imageSrc)}
                   alt={product.name}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-contain p-3"
                />
             </div>

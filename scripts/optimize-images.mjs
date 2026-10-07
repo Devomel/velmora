@@ -104,3 +104,48 @@ if (fs.existsSync(CSV_PATH)) {
 
   console.log(`category-images: converted ${catConverted}, skipped ${catSkipped} (up to date)`);
 }
+
+// ---- Small copies for catalog cards, thumbnails and cart (see lib/image-variants.ts) ----
+// Cards are ~170px wide on phones, so 480px covers 3x screens at a quarter of the bytes
+const SMALL_DEST = path.join(DEST, 'sm');
+const SMALL_SIZE = 480;
+
+function listWebp(dir, rel = '') {
+  return fs.readdirSync(path.join(dir, rel), { withFileTypes: true }).flatMap(e => {
+    const relPath = path.join(rel, e.name);
+    if (e.isDirectory()) return relPath === 'sm' ? [] : listWebp(dir, relPath);
+    return e.name.endsWith('.webp') ? [relPath] : [];
+  });
+}
+
+let smConverted = 0, smSkipped = 0;
+
+for (const rel of listWebp(DEST)) {
+  const srcPath = path.join(DEST, rel);
+  const destPath = path.join(SMALL_DEST, rel);
+  const destStat = fs.existsSync(destPath) ? fs.statSync(destPath) : null;
+
+  if (!FORCE && destStat && destStat.mtimeMs > fs.statSync(srcPath).mtimeMs) { smSkipped++; continue; }
+
+  fs.mkdirSync(path.dirname(destPath), { recursive: true });
+  await sharp(srcPath)
+    .resize(SMALL_SIZE, SMALL_SIZE, { fit: 'inside', withoutEnlargement: true })
+    .webp({ quality: 80 })
+    .toFile(destPath);
+
+  smConverted++;
+}
+
+console.log(`small-images: converted ${smConverted}, skipped ${smSkipped} (up to date)`);
+
+// ---- Hero banner: WebP instead of a 1 MB PNG ----
+const HERO_SRC = 'public/hero-banner.png';
+const HERO_DEST = 'public/hero-banner.webp';
+
+if (fs.existsSync(HERO_SRC)) {
+  const heroStat = fs.existsSync(HERO_DEST) ? fs.statSync(HERO_DEST) : null;
+  if (FORCE || !heroStat || heroStat.mtimeMs <= fs.statSync(HERO_SRC).mtimeMs) {
+    await sharp(HERO_SRC).webp({ quality: 82 }).toFile(HERO_DEST);
+    console.log('hero-banner: converted');
+  }
+}

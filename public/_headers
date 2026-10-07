@@ -1,0 +1,21 @@
+# Cloudflare browser-cache rules. Without them every asset is served with
+# "max-age=0, must-revalidate" and phones re-check each file on every page.
+# HTML keeps that default so a new deploy shows up immediately.
+# Rules must not overlap: Cloudflare joins duplicate headers with commas.
+
+# Content-hashed build output: a changed file always gets a new name
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Photos keep their names when replaced, so cache for a day and refresh in the background
+/products/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/hero-banner.webp
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/pay-*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/plz-de.json
+  Cache-Control: public, max-age=604800

@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import type { CommonT } from '@/lib/i18n';
 import { IS_RO } from '@/lib/i18n';
 import { useCart } from './CartProvider';
+import { smallImage } from '@/lib/image-variants';
 
 type Props = { t: CommonT['cart'] };
 
@@ -77,7 +78,7 @@ export default function CartPanel({ t }: Props) {
                 <div key={item.id} className="flex gap-3">
                   <Link href={`/product/${item.id}`} onClick={closeCart} className="w-16 h-16 bg-[#F5F0EB] rounded-sm flex-shrink-0 overflow-hidden block">
                     {item.image ? (
-                      <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                      <img src={smallImage(item.image)} alt={item.name} className="w-full h-full object-cover" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C4704F" strokeWidth="1.5">

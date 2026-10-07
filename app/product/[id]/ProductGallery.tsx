@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { smallImage } from '@/lib/image-variants';
 
 type Props = {
   images: string[];
@@ -30,7 +31,7 @@ export default function ProductGallery({ images, alt, badge }: Props) {
                 i === idx ? 'border-[#C4704F]' : 'border-[#E8DDD4] hover:border-[#C4704F]/50'
               }`}
             >
-              <img src={src} alt="" className="w-full h-full object-contain p-1" />
+              <img src={smallImage(src)} alt="" decoding="async" className="w-full h-full object-contain p-1" />
             </button>
           ))}
         </div>
@@ -45,6 +46,7 @@ export default function ProductGallery({ images, alt, badge }: Props) {
           key={idx}
           src={images[idx]}
           alt={alt}
+          fetchPriority="high"
           className="w-full h-full object-contain p-4"
         />
 
