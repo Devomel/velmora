@@ -37,7 +37,7 @@ export default function SiteHeader({ t, nav }: Props) {
                      <circle cx="16" cy="16" r="3" fill="#C4704F" />
                   </svg>
                   <span className="text-xl font-semibold tracking-tight text-[#1A1410]">
-                     cookware market
+                     Velmora
                   </span>
                </Link>
 

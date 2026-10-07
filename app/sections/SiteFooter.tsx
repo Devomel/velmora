@@ -16,7 +16,7 @@ export default function SiteFooter({ t }: Props) {
                 <circle cx="16" cy="16" r="8" stroke="#C4704F" strokeWidth="1" />
                 <circle cx="16" cy="16" r="3" fill="#C4704F" />
               </svg>
-              <span className="text-white font-semibold text-lg">cookware market</span>
+              <span className="text-white font-semibold text-lg">Velmora</span>
             </div>
             <p className="text-sm leading-relaxed">{t.tagline}</p>
           </div>
@@ -53,17 +53,12 @@ export default function SiteFooter({ t }: Props) {
                 <span className="block text-[#6B5B4E] text-xs mb-0.5">{t.hoursLabel}</span>
                 {t.hours}
               </p>
-              <p className="text-xs pt-2 border-t border-[#2D2420]">
-                {t.legalName}<br />
-                {t.legalId}<br />
-                {t.legalVat}
-              </p>
             </div>
           </div>
         </div>
 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-          <p>© {new Date().getFullYear()} cookware market. {t.rights}</p>
+          <p>© {new Date().getFullYear()} Velmora. {t.rights}</p>
           <div className="flex items-center gap-3">
             {['Visa', 'MC', 'NP'].map(p => (
               <span key={p} className="border border-[#2D2420] px-2 py-1 text-[10px] tracking-wider">{p}</span>

@@ -44,7 +44,7 @@ export default function NavBar({ t }: Props) {
             <circle cx="16" cy="16" r="8" stroke="#C4704F" strokeWidth="1" />
             <circle cx="16" cy="16" r="3" fill="#C4704F" />
           </svg>
-          <span className="text-lg font-semibold tracking-tight text-[#1A1410]">cookware market</span>
+          <span className="text-lg font-semibold tracking-tight text-[#1A1410]">Velmora</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-5 flex-1">

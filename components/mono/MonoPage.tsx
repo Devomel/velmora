@@ -268,9 +268,9 @@ export default function MonoPage({ t, newPrice, oldPrice, newPriceLei, oldPriceL
               <circle cx="16" cy="16" r="8" stroke="#C4704F" strokeWidth="1" />
               <circle cx="16" cy="16" r="3" fill="#C4704F" />
             </svg>
-            <span className="text-white font-semibold">cookware market</span>
+            <span className="text-white font-semibold">Velmora</span>
           </div>
-          <p>© {new Date().getFullYear()} cookware market. {t.footer.rights}</p>
+          <p>© {new Date().getFullYear()} Velmora. {t.footer.rights}</p>
           <div className="flex items-center gap-3">
             {['Visa', 'MC', 'PayPal'].map(p => (
               <span key={p} className="border border-[#2D2420] px-2 py-1 text-[10px] tracking-wider">{p}</span>

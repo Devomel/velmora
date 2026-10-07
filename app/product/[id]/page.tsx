@@ -144,7 +144,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
         {/* Breadcrumb */}
         <div className="max-w-7xl mx-auto px-4 py-4">
           <nav className="text-xs text-[#7D6C5E] flex items-center gap-2">
-            <Link href="/" className="hover:text-[#C4704F] transition-colors">cookware market</Link>
+            <Link href="/" className="hover:text-[#C4704F] transition-colors">Velmora</Link>
             <span>›</span>
             <Link href="/#catalog" className="hover:text-[#C4704F] transition-colors">{home.catalog.title}</Link>
             <span>›</span>

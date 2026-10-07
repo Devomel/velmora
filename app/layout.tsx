@@ -6,7 +6,7 @@ import CartPanel from "@/components/CartPanel";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "cookware market — Premium tableware",
+  title: "Velmora — Premium tableware",
   description: "Premium porcelain, ceramic and glass tableware. Free delivery from 50 €. Over 500 satisfied customers.",
 };
 
